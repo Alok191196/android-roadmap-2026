@@ -249,30 +249,6 @@ const html = `<!doctype html>
   }
   .drawer-close:hover { background: #e9eaf2; }
 
-  .sync-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #cdd2dd; margin-right: 4px; vertical-align: middle; }
-  .sync-dot[data-state="ok"] { background: #22c55e; }
-  .sync-dot[data-state="syncing"] { background: #eab308; }
-  .sync-dot[data-state="error"] { background: #ef4444; }
-
-  .sync-modal { position: fixed; inset: 0; background: rgba(15,20,48,0.45); display: none; align-items: center; justify-content: center; z-index: 50; }
-  .sync-modal[aria-hidden="false"] { display: flex; }
-  .sync-card { background: #fff; width: 520px; max-width: 92vw; border-radius: 12px; box-shadow: 0 24px 60px rgba(15,20,48,0.25); overflow: hidden; }
-  .sync-head { display: flex; align-items: center; justify-content: space-between; padding: 18px 22px; border-bottom: 1px solid var(--border); }
-  .sync-head h3 { margin: 0; font-size: 17px; font-weight: 700; }
-  .sync-body { padding: 18px 22px 22px; }
-  .sync-help { margin: 0 0 14px; font-size: 13.5px; color: var(--muted); line-height: 1.5; }
-  .sync-help code { background: #f1f3f8; padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
-  .sync-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; font-size: 13px; }
-  .sync-field span { color: var(--d-fg); font-weight: 500; }
-  .sync-field input { padding: 9px 11px; border: 1px solid var(--border); border-radius: 8px; font-size: 13px; font-family: inherit; }
-  .sync-field input:focus { outline: 2px solid #93c5fd; outline-offset: -1px; }
-  .sync-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
-  .btn-primary { background: #0f1430; color: #fff; border-color: #0f1430; }
-  .btn-primary:hover { background: #1f2547; }
-  .sync-status { margin-top: 12px; font-size: 13px; min-height: 18px; color: var(--muted); }
-  .sync-status[data-kind="ok"] { color: #15803d; }
-  .sync-status[data-kind="error"] { color: #b91c1c; }
-
   .drawer-body { padding: 26px 32px 36px; overflow-y: auto; flex: 1; }
   .drawer-body h1.topic-title { margin: 0 0 18px; font-size: 38px; font-weight: 800; line-height: 1.15; letter-spacing: -0.01em; }
   .topic-desc { color: var(--d-fg); font-size: 17px; line-height: 1.6; }
@@ -339,7 +315,9 @@ const html = `<!doctype html>
     <span class="spacer"></span>
     <input type="search" id="search" placeholder="Search topics…" autocomplete="off">
     <span class="progress-text" style="font-size:13px;color:var(--muted)"><span id="progress-done">0</span>/<span id="progress-total">0</span> done</span>
-    <button class="btn" id="sync-btn" title="Sync progress across devices"><span id="sync-status-dot" class="sync-dot"></span> <span id="sync-label">Sync</span></button>
+    <button class="btn" id="backup-btn" title="Download progress as a file">Backup</button>
+    <button class="btn" id="restore-btn" title="Load progress from a file">Restore</button>
+    <input type="file" id="restore-input" accept="application/json,.json" style="display:none">
     <button class="btn" id="reset" title="Reset all progress">Reset</button>
   </div>
   <div class="stages" id="stages">
@@ -406,153 +384,46 @@ ${svg}
   </div>
 </aside>
 
-<div class="sync-modal" id="sync-modal" aria-hidden="true">
-  <div class="sync-card" role="dialog" aria-labelledby="sync-title">
-    <div class="sync-head">
-      <h3 id="sync-title">Sync progress across devices</h3>
-      <button class="drawer-close" id="sync-close" aria-label="Close">×</button>
-    </div>
-    <div class="sync-body">
-      <p class="sync-help">Progress is stored in a <b>private GitHub Gist</b>. Paste a Personal Access Token with the <code>gist</code> scope. Token stays in this browser only.</p>
-      <label class="sync-field">
-        <span>GitHub token (<a href="https://github.com/settings/tokens/new?scopes=gist&description=Android%20Roadmap%20Sync" target="_blank" rel="noopener">create one</a>)</span>
-        <input type="password" id="sync-token" placeholder="ghp_… or github_pat_…" autocomplete="off">
-      </label>
-      <label class="sync-field">
-        <span>Gist ID <em style="color:var(--muted);font-style:normal">(leave blank to create a new private gist)</em></span>
-        <input type="text" id="sync-gist" placeholder="e.g. a1b2c3d4e5…" autocomplete="off">
-      </label>
-      <div class="sync-row">
-        <button class="btn btn-primary" id="sync-save">Save & Sync now</button>
-        <button class="btn" id="sync-pull">Pull from gist</button>
-        <button class="btn" id="sync-disconnect">Disconnect</button>
-      </div>
-      <div class="sync-status" id="sync-msg"></div>
-    </div>
-  </div>
-</div>
-
 <script>
 (function() {
   const STORAGE_KEY = "androidRoadmap2026Status.v1";
-  const SYNC_KEY = "androidRoadmap2026Sync.v1";
   const CONTENT = ${contentJson};
 
   let status = {};
   try { status = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); } catch (e) { status = {}; }
 
-  let syncCfg = { token: "", gistId: "" };
-  try { syncCfg = Object.assign(syncCfg, JSON.parse(localStorage.getItem(SYNC_KEY) || "{}")); } catch (e) {}
-
   const $ = (sel) => document.querySelector(sel);
   const $$ = (sel) => Array.from(document.querySelectorAll(sel));
   const nodeEls = () => $$('svg [data-kind="node"]');
 
-  function save() {
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(status)); } catch (e) {}
-    schedulePush();
+  function save() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(status)); } catch (e) {} }
+
+  function backup() {
+    const blob = new Blob([JSON.stringify({ status, updatedAt: Date.now() }, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "android-roadmap-progress.json";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   }
 
-  function setSyncDot(state, label) {
-    const dot = document.getElementById("sync-status-dot");
-    const lab = document.getElementById("sync-label");
-    if (dot) dot.setAttribute("data-state", state || "");
-    if (lab && label) lab.textContent = label;
-  }
-
-  function setSyncMsg(text, kind) {
-    const m = document.getElementById("sync-msg");
-    if (!m) return;
-    m.textContent = text || "";
-    if (kind) m.setAttribute("data-kind", kind); else m.removeAttribute("data-kind");
-  }
-
-  async function ghFetch(path, opts) {
-    if (!syncCfg.token) throw new Error("No token configured");
-    const res = await fetch("https://api.github.com" + path, Object.assign({
-      headers: {
-        "Authorization": "Bearer " + syncCfg.token,
-        "Accept": "application/vnd.github+json",
-        "Content-Type": "application/json",
-      },
-    }, opts || {}));
-    if (!res.ok) {
-      const body = await res.text().catch(() => "");
-      throw new Error("GitHub " + res.status + ": " + body.slice(0, 140));
-    }
-    return res.json();
-  }
-
-  async function ensureGist() {
-    if (syncCfg.gistId) return syncCfg.gistId;
-    const data = await ghFetch("/gists", {
-      method: "POST",
-      body: JSON.stringify({
-        description: "Android Developer Roadmap 2026 — progress",
-        public: false,
-        files: { "progress.json": { content: JSON.stringify({ status, updatedAt: Date.now() }, null, 2) } },
-      }),
-    });
-    syncCfg.gistId = data.id;
-    localStorage.setItem(SYNC_KEY, JSON.stringify(syncCfg));
-    return data.id;
-  }
-
-  let pushTimer = null;
-  function schedulePush() {
-    if (!syncCfg.token || !syncCfg.gistId) return;
-    if (pushTimer) clearTimeout(pushTimer);
-    pushTimer = setTimeout(() => { syncPush().catch(() => {}); }, 1200);
-  }
-
-  async function syncPush() {
-    if (!syncCfg.token) return;
-    setSyncDot("syncing", "Syncing…");
-    try {
-      await ensureGist();
-      await ghFetch("/gists/" + syncCfg.gistId, {
-        method: "PATCH",
-        body: JSON.stringify({ files: { "progress.json": { content: JSON.stringify({ status, updatedAt: Date.now() }, null, 2) } } }),
-      });
-      setSyncDot("ok", "Synced");
-      setSyncMsg("Pushed to gist · " + new Date().toLocaleTimeString(), "ok");
-    } catch (e) {
-      setSyncDot("error", "Sync error");
-      setSyncMsg(String(e.message || e), "error");
-    }
-  }
-
-  async function syncPull() {
-    if (!syncCfg.token || !syncCfg.gistId) return;
-    setSyncDot("syncing", "Pulling…");
-    try {
-      const data = await ghFetch("/gists/" + syncCfg.gistId);
-      const file = data.files && data.files["progress.json"];
-      if (file && file.content) {
-        const parsed = JSON.parse(file.content);
-        if (parsed && parsed.status && typeof parsed.status === "object") {
-          status = parsed.status;
-          try { localStorage.setItem(STORAGE_KEY, JSON.stringify(status)); } catch (e) {}
-          applyStatus();
-        }
-      }
-      setSyncDot("ok", "Synced");
-      setSyncMsg("Pulled from gist · " + new Date().toLocaleTimeString(), "ok");
-    } catch (e) {
-      setSyncDot("error", "Sync error");
-      setSyncMsg(String(e.message || e), "error");
-    }
-  }
-
-  function openSyncModal() {
-    const m = document.getElementById("sync-modal");
-    document.getElementById("sync-token").value = syncCfg.token || "";
-    document.getElementById("sync-gist").value = syncCfg.gistId || "";
-    setSyncMsg("");
-    m.setAttribute("aria-hidden", "false");
-  }
-  function closeSyncModal() {
-    document.getElementById("sync-modal").setAttribute("aria-hidden", "true");
+  function restore(file) {
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const parsed = JSON.parse(reader.result);
+        const incoming = parsed && typeof parsed === "object" && parsed.status && typeof parsed.status === "object" ? parsed.status : (parsed && typeof parsed === "object" ? parsed : null);
+        if (!incoming) throw new Error("not a progress file");
+        status = incoming;
+        save();
+        applyStatus();
+        alert("Progress restored.");
+      } catch (e) { alert("Could not read that file: " + (e.message || e)); }
+    };
+    reader.readAsText(file);
   }
 
   function applyStatus() {
@@ -746,48 +617,15 @@ ${svg}
     });
   });
 
-  // Sync UI wiring
-  document.getElementById("sync-btn").addEventListener("click", openSyncModal);
-  document.getElementById("sync-close").addEventListener("click", closeSyncModal);
-  document.getElementById("sync-modal").addEventListener("click", (e) => {
-    if (e.target.id === "sync-modal") closeSyncModal();
-  });
-  document.getElementById("sync-save").addEventListener("click", async () => {
-    syncCfg.token = document.getElementById("sync-token").value.trim();
-    syncCfg.gistId = document.getElementById("sync-gist").value.trim();
-    if (!syncCfg.token) { setSyncMsg("Token required.", "error"); return; }
-    localStorage.setItem(SYNC_KEY, JSON.stringify(syncCfg));
-    setSyncMsg("Saved. Syncing…");
-    try {
-      if (syncCfg.gistId) {
-        await syncPull();
-      } else {
-        await syncPush();
-        document.getElementById("sync-gist").value = syncCfg.gistId;
-        setSyncMsg("Created gist " + syncCfg.gistId.slice(0, 8) + "… · synced", "ok");
-      }
-    } catch (e) { setSyncMsg(String(e.message || e), "error"); }
-  });
-  document.getElementById("sync-pull").addEventListener("click", () => {
-    syncCfg.token = document.getElementById("sync-token").value.trim() || syncCfg.token;
-    syncCfg.gistId = document.getElementById("sync-gist").value.trim() || syncCfg.gistId;
-    localStorage.setItem(SYNC_KEY, JSON.stringify(syncCfg));
-    syncPull();
-  });
-  document.getElementById("sync-disconnect").addEventListener("click", () => {
-    syncCfg = { token: "", gistId: "" };
-    localStorage.removeItem(SYNC_KEY);
-    document.getElementById("sync-token").value = "";
-    document.getElementById("sync-gist").value = "";
-    setSyncDot("", "Sync");
-    setSyncMsg("Disconnected.", "ok");
+  document.getElementById("backup-btn").addEventListener("click", backup);
+  document.getElementById("restore-btn").addEventListener("click", () => document.getElementById("restore-input").click());
+  document.getElementById("restore-input").addEventListener("change", (e) => {
+    const f = e.target.files && e.target.files[0];
+    if (f) restore(f);
+    e.target.value = "";
   });
 
   applyStatus();
-  if (syncCfg.token && syncCfg.gistId) {
-    setSyncDot("ok", "Synced");
-    syncPull();
-  }
 })();
 </script>
 
