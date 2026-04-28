@@ -1,0 +1,158 @@
+[
+  {
+    "id": "adaptive-ui-form-factors/adaptive/windowsizeclass",
+    "title": "WindowSizeClass",
+    "sectionTitle": "Adaptive UI & Form Factors",
+    "groupLabel": "Adaptive"
+  },
+  {
+    "id": "adaptive-ui-form-factors/adaptive/material-3-adaptive",
+    "title": "Material 3 Adaptive",
+    "sectionTitle": "Adaptive UI & Form Factors",
+    "groupLabel": "Adaptive"
+  },
+  {
+    "id": "adaptive-ui-form-factors/adaptive/navigationsuitescaffold",
+    "title": "NavigationSuiteScaffold",
+    "sectionTitle": "Adaptive UI & Form Factors",
+    "groupLabel": "Adaptive"
+  },
+  {
+    "id": "adaptive-ui-form-factors/adaptive/listdetailpanescaffold",
+    "title": "ListDetailPaneScaffold",
+    "sectionTitle": "Adaptive UI & Form Factors",
+    "groupLabel": "Adaptive"
+  },
+  {
+    "id": "adaptive-ui-form-factors/adaptive/supportingpanescaffold",
+    "title": "SupportingPaneScaffold",
+    "sectionTitle": "Adaptive UI & Form Factors",
+    "groupLabel": "Adaptive"
+  },
+  {
+    "id": "adaptive-ui-form-factors/form-factors/foldables-foldingfeature",
+    "title": "Foldables (FoldingFeature)",
+    "sectionTitle": "Adaptive UI & Form Factors",
+    "groupLabel": "Form Factors"
+  },
+  {
+    "id": "adaptive-ui-form-factors/form-factors/large-screens-tablet",
+    "title": "Large Screens / Tablet",
+    "sectionTitle": "Adaptive UI & Form Factors",
+    "groupLabel": "Form Factors"
+  },
+  {
+    "id": "adaptive-ui-form-factors/form-factors/compose-for-wear-os",
+    "title": "Compose for Wear OS",
+    "sectionTitle": "Adaptive UI & Form Factors",
+    "groupLabel": "Form Factors"
+  },
+  {
+    "id": "adaptive-ui-form-factors/form-factors/compose-for-tv",
+    "title": "Compose for TV",
+    "sectionTitle": "Adaptive UI & Form Factors",
+    "groupLabel": "Form Factors"
+  },
+  {
+    "id": "adaptive-ui-form-factors/form-factors/android-xr",
+    "title": "Android XR",
+    "sectionTitle": "Adaptive UI & Form Factors",
+    "groupLabel": "Form Factors"
+  },
+  {
+    "id": "adaptive-ui-form-factors/insets/edge-to-edge",
+    "title": "Edge-to-edge",
+    "sectionTitle": "Adaptive UI & Form Factors",
+    "groupLabel": "Insets"
+  },
+  {
+    "id": "adaptive-ui-form-factors/insets/windowinsets",
+    "title": "WindowInsets",
+    "sectionTitle": "Adaptive UI & Form Factors",
+    "groupLabel": "Insets"
+  },
+  {
+    "id": "widgets-glance/glance/glanceappwidget",
+    "title": "GlanceAppWidget",
+    "sectionTitle": "Widgets (Glance)",
+    "groupLabel": "Glance"
+  },
+  {
+    "id": "widgets-glance/glance/glancestatedefinition",
+    "title": "GlanceStateDefinition",
+    "sectionTitle": "Widgets (Glance)",
+    "groupLabel": "Glance"
+  },
+  {
+    "id": "widgets-glance/glance/glance-material-3",
+    "title": "Glance + Material 3",
+    "sectionTitle": "Widgets (Glance)",
+    "groupLabel": "Glance"
+  },
+  {
+    "id": "camera-media/camera/camerax",
+    "title": "CameraX",
+    "sectionTitle": "Camera & Media",
+    "groupLabel": "Camera"
+  },
+  {
+    "id": "camera-media/camera/camera2",
+    "title": "Camera2",
+    "sectionTitle": "Camera & Media",
+    "groupLabel": "Camera"
+  },
+  {
+    "id": "camera-media/media/media3-exoplayer",
+    "title": "Media3 / ExoPlayer",
+    "sectionTitle": "Camera & Media",
+    "groupLabel": "Media"
+  },
+  {
+    "id": "camera-media/media/photo-picker",
+    "title": "Photo Picker",
+    "sectionTitle": "Camera & Media",
+    "groupLabel": "Media"
+  },
+  {
+    "id": "camera-media/media/mediastore-scoped",
+    "title": "MediaStore (scoped)",
+    "sectionTitle": "Camera & Media",
+    "groupLabel": "Media"
+  },
+  {
+    "id": "background-work/foreground/foreground-service-types",
+    "title": "Foreground Service Types",
+    "sectionTitle": "Background Work",
+    "groupLabel": "Foreground"
+  },
+  {
+    "id": "background-work/foreground/expedited-work",
+    "title": "Expedited Work",
+    "sectionTitle": "Background Work",
+    "groupLabel": "Foreground"
+  },
+  {
+    "id": "background-work/scheduling/alarmmanager",
+    "title": "AlarmManager",
+    "sectionTitle": "Background Work",
+    "groupLabel": "Scheduling"
+  },
+  {
+    "id": "background-work/scheduling/exact-alarms-permission",
+    "title": "Exact Alarms permission",
+    "sectionTitle": "Background Work",
+    "groupLabel": "Scheduling"
+  },
+  {
+    "id": "background-work/scheduling/jobscheduler",
+    "title": "JobScheduler",
+    "sectionTitle": "Background Work",
+    "groupLabel": "Scheduling"
+  },
+  {
+    "id": "background-work/scheduling/doze-app-standby",
+    "title": "Doze & App Standby",
+    "sectionTitle": "Background Work",
+    "groupLabel": "Scheduling"
+  }
+]

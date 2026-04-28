@@ -1,0 +1,272 @@
+[
+  {
+    "id": "user-interface-views-legacy/layouts/constraintlayout",
+    "title": "ConstraintLayout",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Layouts"
+  },
+  {
+    "id": "user-interface-views-legacy/layouts/motionlayout",
+    "title": "MotionLayout",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Layouts"
+  },
+  {
+    "id": "user-interface-views-legacy/layouts/linearlayout",
+    "title": "LinearLayout",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Layouts"
+  },
+  {
+    "id": "user-interface-views-legacy/layouts/framelayout",
+    "title": "FrameLayout",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Layouts"
+  },
+  {
+    "id": "user-interface-views-legacy/layouts/recyclerview",
+    "title": "RecyclerView",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Layouts"
+  },
+  {
+    "id": "user-interface-views-legacy/design/material-3-material-you",
+    "title": "Material 3 / Material You",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Design"
+  },
+  {
+    "id": "user-interface-views-legacy/design/material-3-expressive",
+    "title": "Material 3 Expressive",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Design"
+  },
+  {
+    "id": "user-interface-views-legacy/design/dynamic-color-monet",
+    "title": "Dynamic Color (Monet)",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Design"
+  },
+  {
+    "id": "user-interface-views-legacy/styles/light-theme",
+    "title": "Light Theme",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Styles"
+  },
+  {
+    "id": "user-interface-views-legacy/styles/dark-theme",
+    "title": "Dark Theme",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Styles"
+  },
+  {
+    "id": "user-interface-views-legacy/messages/toast",
+    "title": "Toast",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Messages"
+  },
+  {
+    "id": "user-interface-views-legacy/messages/snackbar",
+    "title": "Snackbar",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Messages"
+  },
+  {
+    "id": "user-interface-views-legacy/messages/notification",
+    "title": "Notification",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Messages"
+  },
+  {
+    "id": "user-interface-views-legacy/messages/notification-permission",
+    "title": "Notification Permission",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Messages"
+  },
+  {
+    "id": "user-interface-views-legacy/messages/notification-channels",
+    "title": "Notification Channels",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Messages"
+  },
+  {
+    "id": "user-interface-views-legacy/animation/valueanimator",
+    "title": "ValueAnimator",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Animation"
+  },
+  {
+    "id": "user-interface-views-legacy/animation/objectanimator",
+    "title": "ObjectAnimator",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Animation"
+  },
+  {
+    "id": "user-interface-views-legacy/animation/lottie",
+    "title": "Lottie",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Animation"
+  },
+  {
+    "id": "user-interface-views-legacy/animation/material-motion",
+    "title": "Material Motion",
+    "sectionTitle": "User Interface (Views — Legacy)",
+    "groupLabel": "Animation"
+  },
+  {
+    "id": "compose-ui/recomposition/snapshot",
+    "title": "Snapshot",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Recomposition"
+  },
+  {
+    "id": "compose-ui/recomposition/strong-skipping-mode",
+    "title": "Strong Skipping Mode",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Recomposition"
+  },
+  {
+    "id": "compose-ui/recomposition/compose-compiler-reports",
+    "title": "Compose Compiler Reports",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Recomposition"
+  },
+  {
+    "id": "compose-ui/recomposition/stability-stable-immutable",
+    "title": "Stability (@Stable, @Immutable)",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Recomposition"
+  },
+  {
+    "id": "compose-ui/recomposition/deferred-reads",
+    "title": "Deferred reads",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Recomposition"
+  },
+  {
+    "id": "compose-ui/state/mutablestate",
+    "title": "MutableState",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "State"
+  },
+  {
+    "id": "compose-ui/state/remember",
+    "title": "remember",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "State"
+  },
+  {
+    "id": "compose-ui/state/remembersaveable",
+    "title": "rememberSaveable",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "State"
+  },
+  {
+    "id": "compose-ui/state/derivedstateof",
+    "title": "derivedStateOf",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "State"
+  },
+  {
+    "id": "compose-ui/state/producestate",
+    "title": "produceState",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "State"
+  },
+  {
+    "id": "compose-ui/state/snapshotflow",
+    "title": "snapshotFlow",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "State"
+  },
+  {
+    "id": "compose-ui/state-hoisting/state-holder",
+    "title": "State Holder",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "State Hoisting"
+  },
+  {
+    "id": "compose-ui/state-hoisting/remembercoroutinescope",
+    "title": "rememberCoroutineScope",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "State Hoisting"
+  },
+  {
+    "id": "compose-ui/side-effects/launchedeffect",
+    "title": "LaunchedEffect",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Side-effects"
+  },
+  {
+    "id": "compose-ui/side-effects/disposableeffect",
+    "title": "DisposableEffect",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Side-effects"
+  },
+  {
+    "id": "compose-ui/side-effects/rememberupdatedstate",
+    "title": "rememberUpdatedState",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Side-effects"
+  },
+  {
+    "id": "compose-ui/theming-material-3/color",
+    "title": "Color",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Theming (Material 3)"
+  },
+  {
+    "id": "compose-ui/theming-material-3/typography",
+    "title": "Typography",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Theming (Material 3)"
+  },
+  {
+    "id": "compose-ui/theming-material-3/shape",
+    "title": "Shape",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Theming (Material 3)"
+  },
+  {
+    "id": "compose-ui/theming-material-3/dimens",
+    "title": "Dimens",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Theming (Material 3)"
+  },
+  {
+    "id": "compose-ui/theming-material-3/motionscheme",
+    "title": "MotionScheme",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Theming (Material 3)"
+  },
+  {
+    "id": "compose-ui/theming-material-3/custom-theme",
+    "title": "Custom Theme",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Theming (Material 3)"
+  },
+  {
+    "id": "compose-ui/modifier/modifier-order",
+    "title": "Modifier Order",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Modifier"
+  },
+  {
+    "id": "compose-ui/modifier/chaining",
+    "title": "Chaining",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Modifier"
+  },
+  {
+    "id": "compose-ui/modifier/composed-modifier",
+    "title": "Composed modifier",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Modifier"
+  },
+  {
+    "id": "compose-ui/modifier/modifier-node-api",
+    "title": "Modifier.Node API",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Modifier"
+  }
+]

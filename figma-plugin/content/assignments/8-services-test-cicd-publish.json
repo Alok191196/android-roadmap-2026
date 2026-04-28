@@ -1,0 +1,332 @@
+[
+  {
+    "id": "service/google/google-play-services",
+    "title": "Google Play Services",
+    "sectionTitle": "Service",
+    "groupLabel": "Google"
+  },
+  {
+    "id": "service/google/google-maps",
+    "title": "Google Maps",
+    "sectionTitle": "Service",
+    "groupLabel": "Google"
+  },
+  {
+    "id": "service/google/health-connect",
+    "title": "Health Connect",
+    "sectionTitle": "Service",
+    "groupLabel": "Google"
+  },
+  {
+    "id": "service/google/credential-manager",
+    "title": "Credential Manager",
+    "sectionTitle": "Service",
+    "groupLabel": "Google"
+  },
+  {
+    "id": "service/firebase/authentication",
+    "title": "Authentication",
+    "sectionTitle": "Service",
+    "groupLabel": "Firebase"
+  },
+  {
+    "id": "service/firebase/crashlytics",
+    "title": "Crashlytics",
+    "sectionTitle": "Service",
+    "groupLabel": "Firebase"
+  },
+  {
+    "id": "service/firebase/remote-config",
+    "title": "Remote Config",
+    "sectionTitle": "Service",
+    "groupLabel": "Firebase"
+  },
+  {
+    "id": "service/firebase/cloud-messaging",
+    "title": "Cloud Messaging",
+    "sectionTitle": "Service",
+    "groupLabel": "Firebase"
+  },
+  {
+    "id": "service/firebase/firestore",
+    "title": "FireStore",
+    "sectionTitle": "Service",
+    "groupLabel": "Firebase"
+  },
+  {
+    "id": "service/firebase/realtime-database",
+    "title": "Realtime Database",
+    "sectionTitle": "Service",
+    "groupLabel": "Firebase"
+  },
+  {
+    "id": "service/firebase/app-check",
+    "title": "App Check",
+    "sectionTitle": "Service",
+    "groupLabel": "Firebase"
+  },
+  {
+    "id": "service/firebase/performance-monitoring",
+    "title": "Performance Monitoring",
+    "sectionTitle": "Service",
+    "groupLabel": "Firebase"
+  },
+  {
+    "id": "service/firebase/firebase-ai-logic",
+    "title": "Firebase AI Logic",
+    "sectionTitle": "Service",
+    "groupLabel": "Firebase"
+  },
+  {
+    "id": "service/advertisement/google-admob",
+    "title": "Google AdMob",
+    "sectionTitle": "Service",
+    "groupLabel": "Advertisement"
+  },
+  {
+    "id": "service/advertisement/applovin-max",
+    "title": "AppLovin MAX",
+    "sectionTitle": "Service",
+    "groupLabel": "Advertisement"
+  },
+  {
+    "id": "service/advertisement/unity-levelplay",
+    "title": "Unity LevelPlay",
+    "sectionTitle": "Service",
+    "groupLabel": "Advertisement"
+  },
+  {
+    "id": "code-analysis-test/linter/ktlint",
+    "title": "Ktlint",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Linter"
+  },
+  {
+    "id": "code-analysis-test/linter/detekt",
+    "title": "Detekt",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Linter"
+  },
+  {
+    "id": "code-analysis-test/linter/android-lint",
+    "title": "Android Lint",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Linter"
+  },
+  {
+    "id": "code-analysis-test/linter/spotless",
+    "title": "Spotless",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Linter"
+  },
+  {
+    "id": "code-analysis-test/debugging/timber",
+    "title": "Timber",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Debugging"
+  },
+  {
+    "id": "code-analysis-test/debugging/leakcanary",
+    "title": "LeakCanary",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Debugging"
+  },
+  {
+    "id": "code-analysis-test/debugging/chucker",
+    "title": "Chucker",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Debugging"
+  },
+  {
+    "id": "code-analysis-test/debugging/layout-inspector",
+    "title": "Layout Inspector",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Debugging"
+  },
+  {
+    "id": "code-analysis-test/debugging/app-inspection",
+    "title": "App Inspection",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Debugging"
+  },
+  {
+    "id": "code-analysis-test/unit-test/junit-4-junit-5",
+    "title": "JUnit 4 / JUnit 5",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Unit Test"
+  },
+  {
+    "id": "code-analysis-test/unit-test/kluent",
+    "title": "Kluent",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Unit Test"
+  },
+  {
+    "id": "code-analysis-test/unit-test/mockk",
+    "title": "MockK",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Unit Test"
+  },
+  {
+    "id": "code-analysis-test/unit-test/robolectric",
+    "title": "Robolectric",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Unit Test"
+  },
+  {
+    "id": "code-analysis-test/unit-test/turbine",
+    "title": "Turbine",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Unit Test"
+  },
+  {
+    "id": "code-analysis-test/unit-test/truth-assertk-kotest",
+    "title": "Truth / AssertK / Kotest",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Unit Test"
+  },
+  {
+    "id": "code-analysis-test/android-test/espresso",
+    "title": "Espresso",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Android Test"
+  },
+  {
+    "id": "code-analysis-test/android-test/kaspresso",
+    "title": "Kaspresso",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Android Test"
+  },
+  {
+    "id": "code-analysis-test/android-test/compose-test-rule",
+    "title": "Compose Test Rule",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Android Test"
+  },
+  {
+    "id": "code-analysis-test/android-test/maestro",
+    "title": "Maestro",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Android Test"
+  },
+  {
+    "id": "code-analysis-test/android-test/ui-automator",
+    "title": "UI Automator",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Android Test"
+  },
+  {
+    "id": "code-analysis-test/benchmark/microbenchmark",
+    "title": "Microbenchmark",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Benchmark"
+  },
+  {
+    "id": "code-analysis-test/benchmark/macrobenchmark",
+    "title": "Macrobenchmark",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Benchmark"
+  },
+  {
+    "id": "code-analysis-test/screenshot-test/paparazzi",
+    "title": "Paparazzi",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Screenshot Test"
+  },
+  {
+    "id": "code-analysis-test/screenshot-test/roborazzi",
+    "title": "Roborazzi",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Screenshot Test"
+  },
+  {
+    "id": "code-analysis-test/screenshot-test/compose-preview-screenshot-testing",
+    "title": "Compose Preview Screenshot Testing",
+    "sectionTitle": "Code Analysis & Test",
+    "groupLabel": "Screenshot Test"
+  },
+  {
+    "id": "ci-cd/pipelines/github-actions",
+    "title": "GitHub Actions",
+    "sectionTitle": "CI/CD",
+    "groupLabel": "Pipelines"
+  },
+  {
+    "id": "ci-cd/pipelines/gitlab-ci",
+    "title": "GitLab CI",
+    "sectionTitle": "CI/CD",
+    "groupLabel": "Pipelines"
+  },
+  {
+    "id": "ci-cd/pipelines/jenkins",
+    "title": "Jenkins",
+    "sectionTitle": "CI/CD",
+    "groupLabel": "Pipelines"
+  },
+  {
+    "id": "ci-cd/tooling/fastlane",
+    "title": "Fastlane",
+    "sectionTitle": "CI/CD",
+    "groupLabel": "Tooling"
+  },
+  {
+    "id": "ci-cd/tooling/gradle-build-cache-remote",
+    "title": "Gradle Build Cache (remote)",
+    "sectionTitle": "CI/CD",
+    "groupLabel": "Tooling"
+  },
+  {
+    "id": "ci-cd/tooling/gradle-enterprise-develocity",
+    "title": "Gradle Enterprise / Develocity",
+    "sectionTitle": "CI/CD",
+    "groupLabel": "Tooling"
+  },
+  {
+    "id": "qa-app-publishing/distribution/firebase-app-distribution",
+    "title": "Firebase App Distribution",
+    "sectionTitle": "QA & App Publishing",
+    "groupLabel": "Distribution"
+  },
+  {
+    "id": "qa-app-publishing/distribution/google-play-store",
+    "title": "Google Play Store",
+    "sectionTitle": "QA & App Publishing",
+    "groupLabel": "Distribution"
+  },
+  {
+    "id": "qa-app-publishing/play-console/internal-closed-open-testing",
+    "title": "Internal / Closed / Open Testing",
+    "sectionTitle": "QA & App Publishing",
+    "groupLabel": "Play Console"
+  },
+  {
+    "id": "qa-app-publishing/play-console/play-app-signing",
+    "title": "Play App Signing",
+    "sectionTitle": "QA & App Publishing",
+    "groupLabel": "Play Console"
+  },
+  {
+    "id": "qa-app-publishing/play-console/play-integrity-api",
+    "title": "Play Integrity API",
+    "sectionTitle": "QA & App Publishing",
+    "groupLabel": "Play Console"
+  },
+  {
+    "id": "qa-app-publishing/play-console/in-app-updates",
+    "title": "In-App Updates",
+    "sectionTitle": "QA & App Publishing",
+    "groupLabel": "Play Console"
+  },
+  {
+    "id": "qa-app-publishing/play-console/in-app-reviews",
+    "title": "In-App Reviews",
+    "sectionTitle": "QA & App Publishing",
+    "groupLabel": "Play Console"
+  },
+  {
+    "id": "qa-app-publishing/play-console/play-asset-delivery",
+    "title": "Play Asset Delivery",
+    "sectionTitle": "QA & App Publishing",
+    "groupLabel": "Play Console"
+  }
+]

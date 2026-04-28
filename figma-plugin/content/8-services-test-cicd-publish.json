@@ -1,0 +1,1432 @@
+[
+  {
+    "id": "service/google/google-play-services",
+    "title": "Google Play Services",
+    "description": "Google Play Services is a collection of SDKs that powers core Android app capabilities — maps, location, authentication, payments, machine learning, and more — through a shared background service that updates independently of the OS. Apps include only small client libraries that delegate to the full implementation running in the Google Play Services app itself, conserving storage and memory. Use it whenever your app relies on Google APIs such as Maps, Sign-In, or ML Kit. Supports Android 6.0+.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Google Play Services Overview",
+        "url": "https://developers.google.com/android/guides/overview"
+      },
+      {
+        "type": "Article",
+        "title": "What is Google Play Services and why does it matter?",
+        "url": "https://www.androidauthority.com/google-play-services-1094356/"
+      },
+      {
+        "type": "Video",
+        "title": "Google Play Services – YouTube Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLWz5rJ2EKKc9Qk1_iCZNbBp6adYnJf9Vf"
+      },
+      {
+        "type": "Repo",
+        "title": "google-services – Official Google Services Android Samples",
+        "url": "https://github.com/googlesamples/google-services"
+      }
+    ]
+  },
+  {
+    "id": "service/google/google-maps",
+    "title": "Google Maps",
+    "description": "The Maps SDK for Android lets you embed interactive Google Maps into your app, including support for markers, polygons, overlays, and gesture handling. It requires an API key and uses Google Maps Platform infrastructure. Use it for any feature that involves displaying maps, routing, or geocoding within an Android or Wear OS app. Both Kotlin and Java are supported.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Maps SDK for Android Overview",
+        "url": "https://developers.google.com/maps/documentation/android-sdk/overview"
+      },
+      {
+        "type": "Article",
+        "title": "Getting Started with Google Maps Android API",
+        "url": "https://www.raywenderlich.com/230-google-maps-android-api-tutorial"
+      },
+      {
+        "type": "Video",
+        "title": "How to Implement Google Map in Android Studio 2024",
+        "url": "https://www.youtube.com/watch?v=gnvbxMfuZc0"
+      },
+      {
+        "type": "Repo",
+        "title": "android-maps-ktx – Kotlin Extensions for Maps SDK",
+        "url": "https://github.com/googlemaps/android-maps-ktx"
+      }
+    ]
+  },
+  {
+    "id": "service/google/health-connect",
+    "title": "Health Connect",
+    "description": "Health Connect is Android's unified platform for reading and writing health and fitness data — steps, heart rate, sleep, exercise routes, and FHIR® medical records — with strong user permission controls. It replaces Google Fit APIs (being retired in 2026) and enables apps to share data with each other securely. Use it whenever your app produces or consumes health metrics. Requires Android 9 (API 28)+.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Health Connect Overview – Android Developers",
+        "url": "https://developer.android.com/health-and-fitness/guides/health-connect"
+      },
+      {
+        "type": "Article",
+        "title": "Introducing Health Connect on Android",
+        "url": "https://android-developers.googleblog.com/2022/05/introducing-health-connect.html"
+      },
+      {
+        "type": "Course",
+        "title": "Build a complete integration with Health Connect – Codelab",
+        "url": "https://developer.android.com/codelabs/health-connect"
+      },
+      {
+        "type": "Repo",
+        "title": "android-health-connect-codelab – Official Sample",
+        "url": "https://github.com/android/android-health-connect-codelab"
+      }
+    ]
+  },
+  {
+    "id": "service/google/credential-manager",
+    "title": "Credential Manager",
+    "description": "Credential Manager is the recommended Jetpack API for handling sign-in on Android, supporting **passkeys**, Sign-in with Google, passwords, and digital credentials (driver's licenses, corporate IDs) through a single, unified bottom-sheet UI. It replaces the legacy Google Sign-In, One Tap, Smart Lock, and FIDO2 APIs. Use it in any new or migrated authentication flow to provide phishing-resistant, cross-device credential management.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Credential Manager – Android Developers",
+        "url": "https://developer.android.com/identity/sign-in/credential-manager"
+      },
+      {
+        "type": "Article",
+        "title": "Passkeys and the Credential Manager API",
+        "url": "https://medium.com/androiddevelopers/bring-seamless-authentication-to-your-apps-using-credential-manager-api-5b6d1a5b4f2b"
+      },
+      {
+        "type": "Video",
+        "title": "How to reduce reliance on passwords in Android apps with passkey support",
+        "url": "https://www.youtube.com/watch?v=36peNZUlgzU"
+      },
+      {
+        "type": "Course",
+        "title": "Credential Manager API for Android – Codelab",
+        "url": "https://codelabs.developers.google.com/credential-manager-api-for-android"
+      }
+    ]
+  },
+  {
+    "id": "service/firebase/authentication",
+    "title": "Authentication",
+    "description": "Firebase Authentication provides backend services and SDKs to authenticate users via email/password, phone SMS, or federated providers (Google, Apple, Facebook, GitHub). It integrates directly with Firestore and Storage Security Rules to control access per user. Use it when you need a managed, scalable auth solution without building your own token infrastructure. Optionally upgrade to Identity Platform for MFA, SAML, and OIDC.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Firebase Authentication Docs",
+        "url": "https://firebase.google.com/docs/auth"
+      },
+      {
+        "type": "Article",
+        "title": "Firebase Auth on Android – Getting Started",
+        "url": "https://firebase.google.com/docs/auth/android/start"
+      },
+      {
+        "type": "Video",
+        "title": "Firebase on Android – Tutorials Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLl-K7zZEsYLmxfvI4Ds2Atko79iVvxlaq"
+      },
+      {
+        "type": "Course",
+        "title": "Firebase Android Codelab – Build Friendly Chat",
+        "url": "https://firebase.google.com/codelabs/firebase-android"
+      },
+      {
+        "type": "Repo",
+        "title": "firebase/quickstart-android – Auth Sample",
+        "url": "https://github.com/firebase/quickstart-android"
+      }
+    ]
+  },
+  {
+    "id": "service/firebase/crashlytics",
+    "title": "Crashlytics",
+    "description": "Firebase Crashlytics is a lightweight, real-time crash reporter that automatically collects crashes and non-fatal exceptions, groups them into actionable issues, and surfaces contextual insights (breadcrumbs, custom keys, Analytics events) to help you prioritize fixes. It is the primary tool for tracking app stability at scale. Integrate it early in development so crash data is available from the first release.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Firebase Crashlytics Docs",
+        "url": "https://firebase.google.com/docs/crashlytics"
+      },
+      {
+        "type": "Article",
+        "title": "Get Started with Firebase Crashlytics on Android",
+        "url": "https://firebase.google.com/docs/crashlytics/get-started?platform=android"
+      },
+      {
+        "type": "Video",
+        "title": "Crashlytics on Android – Implement Firebase Crashlytics for Crash Reporting",
+        "url": "https://www.youtube.com/watch?v=7651He51zRE"
+      },
+      {
+        "type": "Video",
+        "title": "Optimize app health with Firebase Performance Monitoring and Crashlytics",
+        "url": "https://www.youtube.com/watch?v=ENaOg5YefjQ"
+      },
+      {
+        "type": "Repo",
+        "title": "firebase/quickstart-android – Crashlytics Sample",
+        "url": "https://github.com/firebase/quickstart-android/tree/master/crash"
+      }
+    ]
+  },
+  {
+    "id": "service/firebase/remote-config",
+    "title": "Remote Config",
+    "description": "Firebase Remote Config is a cloud service that lets you change your app's behavior and appearance without publishing an update. Define in-app default values, then override them server-side for specific user segments or analytics audiences, enabling feature flags, A/B tests, personalization, and emergency fixes. Use it any time you want runtime control over app configuration without a forced update.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Firebase Remote Config Docs",
+        "url": "https://firebase.google.com/docs/remote-config"
+      },
+      {
+        "type": "Article",
+        "title": "Get Started with Remote Config on Android",
+        "url": "https://firebase.google.com/docs/remote-config/get-started?platform=android"
+      },
+      {
+        "type": "Video",
+        "title": "Getting Started with Remote Config on Android – Firecasts",
+        "url": "https://www.youtube.com/watch?v=XbNcQqoi_S8"
+      },
+      {
+        "type": "Repo",
+        "title": "firebase/quickstart-android – Remote Config Sample",
+        "url": "https://github.com/firebase/quickstart-android/tree/master/config"
+      }
+    ]
+  },
+  {
+    "id": "service/firebase/cloud-messaging",
+    "title": "Cloud Messaging",
+    "description": "Firebase Cloud Messaging (FCM) is a cross-platform push-notification solution that reliably delivers notification and data messages to Android, iOS, and the web. It supports targeting individual devices, device groups, or topic subscribers, and provides a Notifications composer for testing. Use FCM whenever your app needs to send push notifications or trigger background data syncs on the client.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Firebase Cloud Messaging Docs",
+        "url": "https://firebase.google.com/docs/cloud-messaging"
+      },
+      {
+        "type": "Article",
+        "title": "Set Up FCM on Android",
+        "url": "https://firebase.google.com/docs/cloud-messaging/android/client"
+      },
+      {
+        "type": "Video",
+        "title": "Getting Started with Firebase Cloud Messaging on Android – Firecasts",
+        "url": "https://www.youtube.com/watch?v=KPpK65BX80o"
+      },
+      {
+        "type": "Repo",
+        "title": "firebase/quickstart-android – FCM Messaging Sample",
+        "url": "https://github.com/firebase/quickstart-android/tree/master/messaging"
+      }
+    ]
+  },
+  {
+    "id": "service/firebase/firestore",
+    "title": "FireStore",
+    "description": "Cloud Firestore is Firebase's flexible, scalable NoSQL document database that synchronizes data in real time across clients, with full offline support via local caching. Data is organized as documents inside collections, supporting expressive queries with multiple filters and pagination. Use it for apps that need collaborative, real-time, or offline-capable data — such as chat, social feeds, or collaborative editing.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Cloud Firestore Docs",
+        "url": "https://firebase.google.com/docs/firestore"
+      },
+      {
+        "type": "Article",
+        "title": "Get Started with Cloud Firestore on Android",
+        "url": "https://firebase.google.com/docs/firestore/quickstart"
+      },
+      {
+        "type": "Course",
+        "title": "Cloud Firestore Android Codelab",
+        "url": "https://firebase.google.com/codelabs/firestore-android"
+      },
+      {
+        "type": "Video",
+        "title": "Build an Android App with Firebase and Jetpack Compose – Codelab Walkthrough",
+        "url": "https://www.youtube.com/watch?v=jWS2te_65cM"
+      },
+      {
+        "type": "Repo",
+        "title": "firebase/quickstart-android – Firestore Sample",
+        "url": "https://github.com/firebase/quickstart-android/tree/master/firestore"
+      }
+    ]
+  },
+  {
+    "id": "service/firebase/realtime-database",
+    "title": "Realtime Database",
+    "description": "Firebase Realtime Database is a cloud-hosted JSON database that syncs data to all connected clients within milliseconds. It persists data locally so the app remains functional offline and automatically reconciles changes on reconnect. Choose it over Firestore when you need simple, low-latency, high-frequency data updates (e.g., live scoreboards, presence indicators) and your data structure is relatively flat.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Firebase Realtime Database Docs",
+        "url": "https://firebase.google.com/docs/database"
+      },
+      {
+        "type": "Article",
+        "title": "Get Started with Realtime Database on Android",
+        "url": "https://firebase.google.com/docs/database/android/start"
+      },
+      {
+        "type": "Video",
+        "title": "Firebase on Android – Tutorials Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLl-K7zZEsYLmxfvI4Ds2Atko79iVvxlaq"
+      },
+      {
+        "type": "Repo",
+        "title": "firebase/quickstart-android – Realtime Database Sample",
+        "url": "https://github.com/firebase/quickstart-android/tree/master/database"
+      }
+    ]
+  },
+  {
+    "id": "service/firebase/app-check",
+    "title": "App Check",
+    "description": "Firebase App Check protects your backend resources (Firestore, Storage, Cloud Functions) from abuse by verifying that requests come from your authentic, unmodified app running on a genuine device. On Android it uses the Play Integrity provider to obtain attestation tokens attached to every Firebase API call. Use it alongside Firebase Authentication — Auth identifies who the user is; App Check verifies the app itself is legitimate.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Firebase App Check Docs",
+        "url": "https://firebase.google.com/docs/app-check"
+      },
+      {
+        "type": "Article",
+        "title": "Get Started with App Check on Android (Play Integrity)",
+        "url": "https://firebase.google.com/docs/app-check/android/play-integrity-provider"
+      },
+      {
+        "type": "Video",
+        "title": "How to Setup Firebase App Check for Android & Web",
+        "url": "https://www.youtube.com/watch?v=2HUpASA5WHY"
+      },
+      {
+        "type": "Repo",
+        "title": "firebase/quickstart-android – App Check Sample",
+        "url": "https://github.com/firebase/quickstart-android/tree/master/appcheck"
+      }
+    ]
+  },
+  {
+    "id": "service/firebase/performance-monitoring",
+    "title": "Performance Monitoring",
+    "description": "Firebase Performance Monitoring automatically collects app-startup time, screen-rendering performance, HTTP/S network request timings, and foreground/background activity durations — all without initial code instrumentation. You can also add custom code traces to measure specific user flows. Use it to identify performance bottlenecks, filter metrics by device, OS version, or country, and catch regressions before users complain.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Firebase Performance Monitoring Docs",
+        "url": "https://firebase.google.com/docs/perf-mon"
+      },
+      {
+        "type": "Article",
+        "title": "Get Started with Performance Monitoring on Android",
+        "url": "https://firebase.google.com/docs/perf-mon/get-started-android"
+      },
+      {
+        "type": "Video",
+        "title": "Debug app performance with Firebase Performance Monitoring",
+        "url": "https://www.youtube.com/watch?v=52dqwWOyKy0"
+      },
+      {
+        "type": "Video",
+        "title": "Fix performance pitfalls and level up your app with Firebase",
+        "url": "https://www.youtube.com/watch?v=z4A7sb6EnNk"
+      },
+      {
+        "type": "Repo",
+        "title": "firebase/quickstart-android – Performance Sample",
+        "url": "https://github.com/firebase/quickstart-android/tree/master/perf"
+      }
+    ]
+  },
+  {
+    "id": "service/firebase/firebase-ai-logic",
+    "title": "Firebase AI Logic",
+    "description": "Firebase AI Logic provides Kotlin and Java client SDKs that let your Android app send multimodal prompts directly to Google's Gemini models, with Firebase App Check integration for security. It acts as a managed proxy layer so you can build generative AI features — chat, image generation, function calling, streaming — without standing up your own backend. Use it when you want to add Gemini-powered AI features to a mobile app with minimal infrastructure.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Firebase AI Logic Docs",
+        "url": "https://firebase.google.com/docs/ai-logic"
+      },
+      {
+        "type": "Article",
+        "title": "Get Started with Firebase AI Logic on Android",
+        "url": "https://firebase.google.com/docs/ai-logic/get-started?platform=android"
+      },
+      {
+        "type": "Video",
+        "title": "Get Started with Firebase AI Logic on Android",
+        "url": "https://www.youtube.com/watch?v=0UoReIOwC-Q"
+      },
+      {
+        "type": "Video",
+        "title": "Build AI into your app! Gemini API + Firebase AI Logic",
+        "url": "https://www.youtube.com/watch?v=JFUkCY7pGvw"
+      },
+      {
+        "type": "Repo",
+        "title": "firebase/quickstart-android – AI Logic / Gemini Sample",
+        "url": "https://github.com/firebase/quickstart-android/tree/master/vertexai"
+      }
+    ]
+  },
+  {
+    "id": "service/advertisement/google-admob",
+    "title": "Google AdMob",
+    "description": "Google AdMob is Google's mobile advertising platform for Android apps, providing banner, interstitial, native, rewarded, rewarded-interstitial, and app-open ad formats through the Google Mobile Ads SDK. It handles ad loading, mediation with partner networks, and privacy/consent management via the User Messaging Platform. Use AdMob when you want to monetize a free app through advertising with minimal mediation complexity.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "AdMob Android Quick-Start",
+        "url": "https://developers.google.com/admob/android/quick-start"
+      },
+      {
+        "type": "Article",
+        "title": "Get Started with the Google Mobile Ads SDK on Android",
+        "url": "https://developers.google.com/admob/android/sdk"
+      },
+      {
+        "type": "Video",
+        "title": "Google AdMob Developer Tutorials – Official Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLcJhXDSkclw3N1Mtmz8k-nWBxdffa9xBg"
+      },
+      {
+        "type": "Repo",
+        "title": "googleads/googleads-mobile-android-examples",
+        "url": "https://github.com/googleads/googleads-mobile-android-examples"
+      }
+    ]
+  },
+  {
+    "id": "service/advertisement/applovin-max",
+    "title": "AppLovin MAX",
+    "description": "AppLovin MAX is an industry-leading ad-mediation SDK that aggregates demand from 25+ ad networks through open-source adapters to maximize eCPM via real-time bidding and waterfall logic. It supports banner, MREC, interstitial, rewarded, and native ad formats, and includes a Mediation Debugger for validating network integrations. Use MAX when you need sophisticated multi-network mediation to maximize ad revenue on Android (requires minSdkVersion 23+).",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "AppLovin MAX Android Integration Guide",
+        "url": "https://support.axon.ai/en/max/android/overview/integration"
+      },
+      {
+        "type": "Repo",
+        "title": "AppLovin MAX SDK Android – GitHub",
+        "url": "https://github.com/AppLovin/AppLovin-MAX-SDK-Android"
+      },
+      {
+        "type": "Video",
+        "title": "AppLovin MAX Mediation Setup – Official YouTube",
+        "url": "https://www.youtube.com/c/AppLovin"
+      }
+    ]
+  },
+  {
+    "id": "service/advertisement/unity-levelplay",
+    "title": "Unity LevelPlay",
+    "description": "Unity LevelPlay (formerly ironSource Mediation) is a mobile ad-mediation platform that aggregates 20+ leading ad networks — supporting banner, MREC, interstitial, and rewarded video — with smart loading, ad-placement technology, and delivery optimization. Network adapters are self-contained so you don't need to integrate each network's SDK separately. Use LevelPlay when your monetization stack is Unity-based or you want tight integration with ironSource's bidding infrastructure.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Unity LevelPlay – Unity",
+        "url": "https://unity.com/products/levelplay"
+      },
+      {
+        "type": "Official",
+        "title": "LevelPlay Android SDK – Unity Docs",
+        "url": "https://docs.unity.com/en-us/grow/levelplay/sdk/android/mediation-networks"
+      },
+      {
+        "type": "Video",
+        "title": "ironSource / LevelPlay SDK Integration Tutorial",
+        "url": "https://www.youtube.com/c/ironsource"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/linter/ktlint",
+    "title": "Ktlint",
+    "description": "ktlint is an anti-bikeshedding Kotlin linter with a built-in formatter, inspired by JavaScript's `standard` and Go's `gofmt`. It enforces the official Kotlin coding conventions with zero configuration needed, and can auto-fix most violations. Use it in any Kotlin or Android project to maintain consistent formatting without long style debates — integrate it as a Gradle task or Git pre-commit hook.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "ktlint – GitHub (pinterest/ktlint)",
+        "url": "https://github.com/pinterest/ktlint"
+      },
+      {
+        "type": "Article",
+        "title": "Enforcing Kotlin Code Style with ktlint",
+        "url": "https://proandroiddev.com/enforcing-kotlin-code-style-with-ktlint-7c3e6f3d66cd"
+      },
+      {
+        "type": "Video",
+        "title": "Code Quality at Scale: KtLint and Detekt for Android",
+        "url": "https://www.youtube.com/watch?v=WTWW7OOHQIw"
+      },
+      {
+        "type": "Video",
+        "title": "ktlint: a kotlin code style linter tool with built-in formatter",
+        "url": "https://www.youtube.com/watch?v=NmWCSbgHZGQ"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/linter/detekt",
+    "title": "Detekt",
+    "description": "Detekt is a static analysis tool for Kotlin that detects code smells, complexity violations, and potential bugs using highly configurable rule sets. It produces reports in HTML, Markdown, SARIF, and XML, supports baseline files to manage legacy issues, and is extensible via custom rule sets and plugins. Use it alongside ktlint — ktlint handles formatting, while Detekt focuses on code quality and complexity metrics.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Detekt Documentation",
+        "url": "https://detekt.dev/docs/intro"
+      },
+      {
+        "type": "Article",
+        "title": "Getting Started with Detekt in Android Projects",
+        "url": "https://proandroiddev.com/getting-started-with-detekt-in-android-projects-4a3278e6cb59"
+      },
+      {
+        "type": "Video",
+        "title": "Boost Android Code Quality with Detekt | Kotlin Static Code Analysis Guide",
+        "url": "https://www.youtube.com/watch?v=CMXrlcZVWbw"
+      },
+      {
+        "type": "Video",
+        "title": "detekt: a static code analysis linter tool for Kotlin Android projects",
+        "url": "https://www.youtube.com/watch?v=o384NbCDB0U"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/linter/android-lint",
+    "title": "Android Lint",
+    "description": "Android Lint is the built-in static analysis tool in the Android Gradle Plugin that scans your source files — Kotlin, Java, XML — for correctness, security, performance, usability, accessibility, and internationalization issues without running the app. It runs automatically on every build and can also be invoked via `./gradlew lint`. It is strongly recommended to fix all Lint errors before publishing; custom Lint rules can also be written to enforce project-specific policies.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Improve Your Code with Android Lint",
+        "url": "https://developer.android.com/studio/write/lint"
+      },
+      {
+        "type": "Article",
+        "title": "Writing Custom Lint Rules for Android",
+        "url": "https://proandroiddev.com/writing-custom-lint-rules-for-android-6aea89ee8bd"
+      },
+      {
+        "type": "Video",
+        "title": "Android Lint – Improving Code Correctness (Android Developers)",
+        "url": "https://www.youtube.com/watch?v=Y5mSPEKMsIc"
+      },
+      {
+        "type": "Repo",
+        "title": "googlesamples/android-custom-lint-rules",
+        "url": "https://github.com/googlesamples/android-custom-lint-rules"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/linter/spotless",
+    "title": "Spotless",
+    "description": "Spotless is a general-purpose Gradle (and Maven) plugin that applies multiple code formatters — ktlint, google-java-format, Prettier, and more — in a single `spotlessApply` task. It supports incremental builds, remote build cache, ratchet mode (format only changed files via git diff), and automatic license-header prepending. Use it as the outer automation layer that drives ktlint and other formatters together in one CI step.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Spotless – GitHub (diffplug/spotless)",
+        "url": "https://github.com/diffplug/spotless"
+      },
+      {
+        "type": "Article",
+        "title": "Keep Your Android Code Spotless",
+        "url": "https://proandroiddev.com/keep-your-android-code-spotless-9e5a2ead6025"
+      },
+      {
+        "type": "Video",
+        "title": "Code Quality at Scale: KtLint and Detekt for Android (covers Spotless integration)",
+        "url": "https://www.youtube.com/watch?v=WTWW7OOHQIw"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/debugging/timber",
+    "title": "Timber",
+    "description": "Timber is a lightweight Android logging library by Jake Wharton that extends `android.util.Log` with an injectable `Tree` API. The bundled `DebugTree` auto-tags logs from the calling class and ships with built-in Lint checks to catch incorrect argument counts and oversized tags. Use Timber to log in debug builds (plant `DebugTree`) and silently discard or send logs to a crash reporter in release builds by installing a different tree — no `if (BuildConfig.DEBUG)` guards needed.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Timber – GitHub (JakeWharton/timber)",
+        "url": "https://github.com/JakeWharton/timber"
+      },
+      {
+        "type": "Article",
+        "title": "Better Logging with Timber in Android",
+        "url": "https://medium.com/@dilip2882/better-logging-with-timber-in-androidintroduction-73e83342b278"
+      },
+      {
+        "type": "Video",
+        "title": "Android Logging with Timber – Tutorial",
+        "url": "https://www.youtube.com/watch?v=Hq5F0lJ_8Dk"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/debugging/leakcanary",
+    "title": "LeakCanary",
+    "description": "LeakCanary is Square's automatic memory-leak detection library for Android. It hooks into the Android lifecycle to watch destroyed Activities, Fragments, and ViewModels via weak references; when retained objects exceed a threshold it dumps the heap to a `.hprof` file and analyzes the leak trace, grouping related leaks and surfacing actionable retention paths. Square engineers reduced OOM crash rates by 94% after enabling it. Add it only to `debugImplementation` — it has zero overhead in release builds.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "LeakCanary Documentation",
+        "url": "https://square.github.io/leakcanary/"
+      },
+      {
+        "type": "Article",
+        "title": "How LeakCanary Works",
+        "url": "https://square.github.io/leakcanary/fundamentals-how-leakcanary-works/"
+      },
+      {
+        "type": "Video",
+        "title": "LeakCanary 2: Leaner, Better, Faster, Kotliner! – Pierre-Yves Ricau",
+        "url": "https://www.youtube.com/watch?v=LEX8dn4BLUw"
+      },
+      {
+        "type": "Video",
+        "title": "Find and Fix MEMORY LEAKS with LeakCanary in Android",
+        "url": "https://www.youtube.com/watch?v=VvkRe9vP5Oc"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/debugging/chucker",
+    "title": "Chucker",
+    "description": "Chucker is an in-device HTTP inspector for Android OkHttp clients — similar to Charles Proxy but running entirely on the device. It works as an OkHttp `Interceptor` and displays a notification summarizing all HTTP traffic; tapping opens a full UI showing request/response headers, bodies, timings, and SSL info. Use `debugImplementation` for the full library and `releaseImplementation` of the no-op variant to ensure zero overhead in production.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Chucker – GitHub (ChuckerTeam/chucker)",
+        "url": "https://github.com/ChuckerTeam/chucker"
+      },
+      {
+        "type": "Article",
+        "title": "Debugging HTTP with Chucker on Android",
+        "url": "https://proandroiddev.com/debugging-http-with-chucker-on-android-8de1c6cce8e4"
+      },
+      {
+        "type": "Video",
+        "title": "Inspect HTTP Traffic on Android with Chucker",
+        "url": "https://www.youtube.com/watch?v=3iKQWMlCt78"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/debugging/layout-inspector",
+    "title": "Layout Inspector",
+    "description": "Layout Inspector is an Android Studio tool that shows a live view of your app's view hierarchy and composable tree at runtime, letting you inspect properties, recomposition counts, and 3D layer separation without modifying app code. It supports overlay comparison against design mockups and can export snapshots for sharing. Use it when your UI behaves unexpectedly at runtime or when you need to verify Compose recomposition frequency.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Debug Your Layout with Layout Inspector",
+        "url": "https://developer.android.com/studio/debug/layout-inspector"
+      },
+      {
+        "type": "Article",
+        "title": "Layout Inspector in Android Studio",
+        "url": "https://medium.com/androiddevelopers/layout-inspector-1f8d446d048"
+      },
+      {
+        "type": "Video",
+        "title": "Layout Inspector in Android Studio – Official Demo",
+        "url": "https://www.youtube.com/watch?v=7M-RbGRb7no"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/debugging/app-inspection",
+    "title": "App Inspection",
+    "description": "App Inspection in Android Studio is an umbrella toolset that provides three live inspectors accessible under **View > Tool Windows > App Inspection**: the **Database Inspector** (query and modify Room/SQLite databases at runtime), the **Network Inspector** (view HTTP traffic for OkHttp/HttpsURLConnection), and the **Background Task Inspector** (visualize WorkManager workers, Jobs, Alarms, and Wakelocks). Requires API 26+ on the connected device or emulator.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Debug Your Database with Database Inspector",
+        "url": "https://developer.android.com/studio/inspect/database"
+      },
+      {
+        "type": "Official",
+        "title": "Debug WorkManager with Background Task Inspector",
+        "url": "https://developer.android.com/studio/inspect/task"
+      },
+      {
+        "type": "Video",
+        "title": "Android Studio App Inspection Tools – Database, Network, Background Tasks",
+        "url": "https://www.youtube.com/watch?v=aZu46tgaAFo"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/unit-test/junit-4-junit-5",
+    "title": "JUnit 4 / JUnit 5",
+    "description": "JUnit is the foundational unit-testing framework for the JVM. **JUnit 4** is the default test runner on Android (via AndroidJUnitRunner) and is widely supported by the Android Gradle Plugin. **JUnit 5** (Jupiter) brings parameterized tests, nested test classes, extensions, and a cleaner annotation model, but requires the `android-junit5` Gradle plugin by mannodermaus for Android projects. Write local unit tests in `src/test/` with either version; instrumented tests on device use JUnit 4.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Build Local Unit Tests – Android Developers",
+        "url": "https://developer.android.com/training/testing/local-tests"
+      },
+      {
+        "type": "Official",
+        "title": "JUnit 5 User Guide",
+        "url": "https://junit.org/junit5/docs/current/user-guide/"
+      },
+      {
+        "type": "Course",
+        "title": "Advanced Android in Kotlin – Testing Basics Codelab",
+        "url": "https://codelabs.developers.google.com/codelabs/advanced-android-kotlin-training-testing-basics"
+      },
+      {
+        "type": "Video",
+        "title": "Android Unit Testing with JUnit 5, MockK & Kotest",
+        "url": "https://www.youtube.com/watch?v=earJE0MBQ3g"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/unit-test/kluent",
+    "title": "Kluent",
+    "description": "Kluent is a Fluent Assertions library for Kotlin that wraps JUnit assertions using Kotlin infix and extension functions, producing test code that reads like natural English (e.g., `\"hello\" shouldBeEqualTo \"hello\"`). It is fully type-safe, handles coroutines and suspend functions natively, and provides backtick-version aliases for even more descriptive assertions. Use it to make test assertions more readable and self-documenting in Kotlin projects.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Kluent – GitHub (MarkusAmshove/Kluent)",
+        "url": "https://github.com/MarkusAmshove/Kluent"
+      },
+      {
+        "type": "Article",
+        "title": "Introduction to Kluent Assertion Library",
+        "url": "https://www.baeldung.com/kotlin/kluent"
+      },
+      {
+        "type": "Video",
+        "title": "Kotlin Fluent Assertions – Kluent and AssertK Overview",
+        "url": "https://www.youtube.com/watch?v=rk6aKkWqqcI"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/unit-test/mockk",
+    "title": "MockK",
+    "description": "MockK is a Kotlin-first mocking library built from the ground up to leverage Kotlin language features — named parameters, object mocks, coroutine support, and extension function mocking — unlike Mockito which was designed for Java. It provides `coEvery`, `coVerify`, and `coAnswers` for mocking suspend functions out of the box. Use MockK in Android unit tests as the standard replacement for Mockito when working in Kotlin.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "MockK – Mocking Library for Kotlin",
+        "url": "https://mockk.io/"
+      },
+      {
+        "type": "Article",
+        "title": "MockK Android Support",
+        "url": "https://mockk.io/ANDROID.html"
+      },
+      {
+        "type": "Video",
+        "title": "MockK Tutorial: Kotlin Mocking Framework for Beginners",
+        "url": "https://www.youtube.com/watch?v=yf8om3E9Ny8"
+      },
+      {
+        "type": "Video",
+        "title": "Master Kotlin Testing: Unit Tests and MockK Explained for Beginners",
+        "url": "https://www.youtube.com/watch?v=vMZq30ZwVpo"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/unit-test/robolectric",
+    "title": "Robolectric",
+    "description": "Robolectric runs Android unit tests directly on the JVM in seconds by simulating the Android framework through Shadow classes — no emulator or device required. It is fully compatible with AndroidX Test APIs and supports Compose testing. Use it for tests that need Android framework classes (Context, Resources, Views) but are too slow or fragile to run as instrumented tests; it occupies the middle ground between pure unit tests and full instrumented tests.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Robolectric",
+        "url": "https://robolectric.org/"
+      },
+      {
+        "type": "Article",
+        "title": "Getting Started with Robolectric",
+        "url": "https://robolectric.org/getting-started/"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose UI testing with Robolectric – without device or emulator",
+        "url": "https://www.youtube.com/watch?v=6jWYRK0OPcs"
+      },
+      {
+        "type": "Video",
+        "title": "Learn How to Unit Test Your Android Application (with Robolectric)",
+        "url": "https://www.youtube.com/watch?v=T6FWL877txw"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/unit-test/turbine",
+    "title": "Turbine",
+    "description": "Turbine is a small testing library for `kotlinx.coroutines` `Flow` by Cash App. It wraps a Flow in a `test { }` block providing `awaitItem()`, `awaitComplete()`, and `awaitError()` suspending functions with a configurable timeout (default 3 s) that fails fast instead of hanging. Use it in any Kotlin Android project that emits `Flow` from ViewModels, repositories, or use-cases — it is the standard approach for Flow unit testing.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Turbine – GitHub (cashapp/turbine)",
+        "url": "https://github.com/cashapp/turbine"
+      },
+      {
+        "type": "Article",
+        "title": "Testing Kotlin Flows with Turbine",
+        "url": "https://proandroiddev.com/testing-kotlin-flows-with-turbine-95b7e0d9a47a"
+      },
+      {
+        "type": "Video",
+        "title": "Easy ViewModel UI State Testing with KotlinX Coroutine Test and Turbine",
+        "url": "https://www.youtube.com/watch?v=FkdDZRbdfPs"
+      },
+      {
+        "type": "Video",
+        "title": "Unit Testing View Model – MockK, Turbine, Coroutines",
+        "url": "https://www.youtube.com/watch?v=mA3q7PBb4lA"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/unit-test/truth-assertk-kotest",
+    "title": "Truth / AssertK / Kotest",
+    "description": "These three Kotlin/Java assertion libraries provide fluent, expressive alternatives to JUnit's bare `assertEquals`. **Google Truth** (`truth.dev`) offers clean failure messages and deep Android/Guava/Protobuf support. **AssertK** is a Kotlin-idiomatic port of AssertJ with the fastest benchmark performance. **Kotest** offers 350+ built-in matchers, property-based testing, and a full test framework with multiple specification styles. Pick based on project needs: Truth for Google-aligned stacks, AssertK for pure Kotlin speed, Kotest for a rich all-in-one solution.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Google Truth – Fluent Assertions for Java and Android",
+        "url": "https://truth.dev/"
+      },
+      {
+        "type": "Official",
+        "title": "Kotest – Kotlin Test Framework",
+        "url": "https://kotest.io/"
+      },
+      {
+        "type": "Video",
+        "title": "Android Unit Testing with JUnit 5, MockK & Kotest",
+        "url": "https://www.youtube.com/watch?v=earJE0MBQ3g"
+      },
+      {
+        "type": "Repo",
+        "title": "willowtreeapps/assertk – AssertK on GitHub",
+        "url": "https://github.com/willowtreeapps/assertk"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/android-test/espresso",
+    "title": "Espresso",
+    "description": "Espresso is Android's built-in instrumented UI testing framework that lets you write concise, reliable UI tests with automatic synchronization — it waits for the message queue and async tasks to be idle before performing each action or assertion. Use `onView()`, `perform()`, and `check()` to interact with and verify Views. It is best suited for white-box testing where you have full access to the codebase, and integrates with the Espresso Test Recorder in Android Studio.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Espresso – Android Developers",
+        "url": "https://developer.android.com/training/testing/espresso/"
+      },
+      {
+        "type": "Article",
+        "title": "Espresso Basics",
+        "url": "https://developer.android.com/training/testing/espresso/basics"
+      },
+      {
+        "type": "Video",
+        "title": "Quick start guide to writing Espresso UI tests on Android",
+        "url": "https://www.youtube.com/watch?v=_bEfTbAxRHA"
+      },
+      {
+        "type": "Video",
+        "title": "UI testing with Espresso – Android Testing Patterns #2",
+        "url": "https://www.youtube.com/watch?v=kL3MCQV2M2s"
+      },
+      {
+        "type": "Course",
+        "title": "Android Testing Codelab – Espresso & Test Doubles",
+        "url": "https://developer.android.com/codelabs/android-testing"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/android-test/kaspresso",
+    "title": "Kaspresso",
+    "description": "Kaspresso is an Android UI test framework built on top of Espresso and UI Automator that adds a Kotlin DSL for dramatically more readable tests, an interceptor mechanism for flakiness mitigation (auto-retry on exceptions), and UI Automator commands that run up to 10× faster. It supports Allure reporting and both View-based and Compose UIs. Use it when Espresso alone becomes too verbose or flaky — Kaspresso's DSL and retry logic reduce boilerplate and test instability significantly.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Kaspresso – GitHub (KasperskyLab/Kaspresso)",
+        "url": "https://github.com/KasperskyLab/Kaspresso"
+      },
+      {
+        "type": "Article",
+        "title": "Kaspresso: The Autotest Framework You've Been Waiting For",
+        "url": "https://proandroiddev.com/kaspresso-the-autotest-framework-that-you-have-been-looking-forward-to-part-i-e102ed384d11"
+      },
+      {
+        "type": "Video",
+        "title": "Kaspresso – Android UI Testing Framework Introduction",
+        "url": "https://www.youtube.com/watch?v=TLJIUh-i0xI"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/android-test/compose-test-rule",
+    "title": "Compose Test Rule",
+    "description": "Compose Test Rule (`ComposeTestRule`) is the Jetpack Compose testing API that provides `createComposeRule()` and `createAndroidComposeRule()` factory functions to set up a composable under test, find nodes by semantics (`onNodeWithText`, `onNodeWithTag`), perform actions (`performClick`, `performScrollTo`), and assert state (`assertIsDisplayed`, `assertTextEquals`). It integrates with JUnit 4 via `@get:Rule` and handles UI-idle synchronization automatically. Use it for all Compose UI tests.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Test Your Compose Layout – Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/testing"
+      },
+      {
+        "type": "Official",
+        "title": "ComposeTestRule API Reference",
+        "url": "https://developer.android.com/reference/kotlin/androidx/compose/ui/test/junit4/ComposeTestRule"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose: Testing – Android Developers",
+        "url": "https://www.youtube.com/watch?v=kdwofTaEHrs"
+      },
+      {
+        "type": "Course",
+        "title": "Testing in Jetpack Compose – Official Codelab",
+        "url": "https://developer.android.com/codelabs/jetpack-compose-testing"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/android-test/maestro",
+    "title": "Maestro",
+    "description": "Maestro is a cross-platform mobile UI testing framework that uses simple YAML flow files to describe user interactions, making tests easy to write, read, and maintain without writing any code. It drives apps through the Accessibility Tree and supports Android (Views and Compose), iOS, React Native, Flutter, and Web Views from the same test definition. Use it for end-to-end regression tests and smoke test suites where simplicity and cross-platform coverage matter more than code-level assertions.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Maestro Documentation",
+        "url": "https://maestro.mobile.dev/"
+      },
+      {
+        "type": "Article",
+        "title": "Getting Started with Maestro for Android UI Testing",
+        "url": "https://medium.com/@burak.berk.ozer/getting-started-with-maestro-mobile-ui-testing-9a0f2e5e7e7b"
+      },
+      {
+        "type": "Video",
+        "title": "Maestro – Mobile UI Testing with YAML Flows",
+        "url": "https://www.youtube.com/watch?v=rqRYK4AQZV8"
+      },
+      {
+        "type": "Repo",
+        "title": "mobile-dev-inc/maestro – GitHub",
+        "url": "https://github.com/mobile-dev-inc/maestro"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/android-test/ui-automator",
+    "title": "UI Automator",
+    "description": "UI Automator is an Android instrumented testing framework for **cross-app** UI testing — it can interact with system apps, the launcher, and Settings regardless of which Activity is in focus, making it ideal for testing scenarios that span app boundaries. The modern 2.4+ API uses predicate-based element finding and built-in wait mechanisms for deterministic, flake-resistant tests. It is also the backbone of Jetpack Macrobenchmark and Baseline Profile generation. Requires API 18+.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Write Automated Tests with UI Automator",
+        "url": "https://developer.android.com/training/testing/other-components/ui-automator"
+      },
+      {
+        "type": "Article",
+        "title": "UI Automator and Macrobenchmark",
+        "url": "https://developer.android.com/topic/performance/benchmarking/macrobenchmark-overview"
+      },
+      {
+        "type": "Video",
+        "title": "Android UI Testing with UI Automator – Tutorial",
+        "url": "https://www.youtube.com/watch?v=isJc-Ya4UaA"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/benchmark/microbenchmark",
+    "title": "Microbenchmark",
+    "description": "The Jetpack Microbenchmark library measures the CPU performance of small, frequently-executed code paths — RecyclerView item binding, data transformation, custom draw operations — with automatic warmup and allocation count tracking. Results are written to the Android Studio console and a JSON file. Use it to benchmark **hot code paths** in isolation; it runs as an instrumented test on a real device to produce realistic, non-JIT-inflated numbers.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Microbenchmark Overview – Android Developers",
+        "url": "https://developer.android.com/topic/performance/benchmarking/microbenchmark-overview"
+      },
+      {
+        "type": "Article",
+        "title": "Write a Microbenchmark",
+        "url": "https://developer.android.com/topic/performance/benchmarking/microbenchmark-write"
+      },
+      {
+        "type": "Video",
+        "title": "Measuring Jank and Startup with Macrobenchmark – Android Performance",
+        "url": "https://www.youtube.com/watch?v=0adLO2VRJtc"
+      },
+      {
+        "type": "Repo",
+        "title": "android/performance-samples – Microbenchmark Sample",
+        "url": "https://github.com/android/performance-samples"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/benchmark/macrobenchmark",
+    "title": "Macrobenchmark",
+    "description": "The Jetpack Macrobenchmark library measures large end-user interactions — app startup, scrolling, animations — by driving the app through UI Automator and collecting system-level metrics: `StartupTimingMetric`, `FrameTimingMetric`, `TraceSectionMetric`, and `PowerMetric`. It also generates Baseline Profiles to pre-compile critical code paths for faster startup. Use it to catch user-visible performance regressions and measure the impact of optimization work.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Write a Macrobenchmark – Android Developers",
+        "url": "https://developer.android.com/topic/performance/benchmarking/macrobenchmark-overview"
+      },
+      {
+        "type": "Article",
+        "title": "Inspect App Performance with Macrobenchmark (Codelab)",
+        "url": "https://developer.android.com/codelabs/android-macrobenchmark-inspect"
+      },
+      {
+        "type": "Video",
+        "title": "Measuring Jank and Startup with Macrobenchmark",
+        "url": "https://www.youtube.com/watch?v=0adLO2VRJtc"
+      },
+      {
+        "type": "Repo",
+        "title": "android/performance-samples – Macrobenchmark Sample",
+        "url": "https://github.com/android/performance-samples/tree/main/MacrobenchmarkSample"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/screenshot-test/paparazzi",
+    "title": "Paparazzi",
+    "description": "Paparazzi is a Gradle plugin and library by Cash App that renders Android Views and Composables into screenshots entirely on the JVM — no emulator or device needed — using Android's `layoutlib`. It provides `recordPaparazzi` and `verifyPaparazzi` Gradle tasks for baseline recording and diff-based regression detection. Use it for fast, CI-friendly screenshot tests of individual components where you want pixel-level UI regression coverage without the overhead of instrumented tests.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Paparazzi – GitHub (cashapp/paparazzi)",
+        "url": "https://github.com/cashapp/paparazzi"
+      },
+      {
+        "type": "Article",
+        "title": "Screenshot Testing with Paparazzi",
+        "url": "https://proandroiddev.com/screenshot-testing-with-paparazzi-in-jetpack-compose-7654afc4c0e"
+      },
+      {
+        "type": "Video",
+        "title": "Snapshot testing (and more!) with Paparazzi – John Rodriguez | droidcon London 2022",
+        "url": "https://www.youtube.com/watch?v=jZPoF7tGTzI"
+      },
+      {
+        "type": "Video",
+        "title": "How to do screenshot tests on Android (Paparazzi & Roborazzi)",
+        "url": "https://www.youtube.com/watch?v=pyQqyvz5I84"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/screenshot-test/roborazzi",
+    "title": "Roborazzi",
+    "description": "Roborazzi generates screenshot tests for Android on the JVM by combining Robolectric with screenshot capture, making JVM integration tests visually verifiable. It supports Compose Preview auto-scanning via `ComposablePreviewScanner`, accessibility checks via an optional integration module, and experimental AI-powered image assertions (Gemini and OpenAI). Use it when you want screenshot coverage integrated into your existing Robolectric test suite without a separate instrumented test run.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Roborazzi – GitHub (takahirom/roborazzi)",
+        "url": "https://github.com/takahirom/roborazzi"
+      },
+      {
+        "type": "Article",
+        "title": "Make JVM Android Integration Tests Visible with Roborazzi",
+        "url": "https://medium.com/@takahirom/make-jvm-android-integration-test-visible-4b7a6f45c0b5"
+      },
+      {
+        "type": "Video",
+        "title": "Sneak Peek at the Screenshot Testing Landscape in 2024 – droidcon Berlin",
+        "url": "https://www.youtube.com/watch?v=lj9YDn85NNI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid – Uses Roborazzi for Screenshot Testing",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "code-analysis-test/screenshot-test/compose-preview-screenshot-testing",
+    "title": "Compose Preview Screenshot Testing",
+    "description": "Compose Preview Screenshot Testing is Google's official Gradle plugin (`com.android.compose.screenshot`) that turns `@Preview`-annotated Composables into host-side screenshot tests with a `screenshotTest` source set. It integrates directly into Android Studio — green run icons appear in the gutter, and reference images can be generated, compared, and reviewed inside the IDE. Use it as the zero-boilerplate, first-party way to add screenshot regression testing to any Compose project; currently in alpha.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Compose Preview Screenshot Testing – Android Developers",
+        "url": "https://developer.android.com/studio/preview/compose-screenshot-testing"
+      },
+      {
+        "type": "Article",
+        "title": "Exploring the Compose Preview Screenshot Testing Tool",
+        "url": "https://joebirch.co/android/exploring-screenshot-testing-for-jetpack-compose/"
+      },
+      {
+        "type": "Video",
+        "title": "Mastering Screenshot Testing for Android Apps – DroidKaigi 2024",
+        "url": "https://www.youtube.com/watch?v=5i4RAciOi2s"
+      }
+    ]
+  },
+  {
+    "id": "ci-cd/pipelines/github-actions",
+    "title": "GitHub Actions",
+    "description": "GitHub Actions is GitHub's built-in CI/CD platform that lets you define workflows as YAML files in `.github/workflows/`. Workflows trigger on events (push, pull_request, schedule, workflow_dispatch), run on GitHub-hosted runners (including macOS for signing), and can build, test, lint, and publish Android apps. It is the most widely used CI solution for open-source and GitHub-hosted Android projects due to tight repository integration and a large marketplace of community actions.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "About Continuous Integration with GitHub Actions",
+        "url": "https://docs.github.com/actions/automating-builds-and-tests/about-continuous-integration"
+      },
+      {
+        "type": "Article",
+        "title": "Building Android Apps with GitHub Actions",
+        "url": "https://proandroiddev.com/building-android-apps-with-github-actions-3e6f4d4c8c6b"
+      },
+      {
+        "type": "Video",
+        "title": "CI/CD for Android Projects using GitHub Actions | Pipelines + Workflows",
+        "url": "https://www.youtube.com/watch?v=uBXzaaOHVzY"
+      },
+      {
+        "type": "Video",
+        "title": "How to Set Up CI/CD for Android Using GitHub Actions",
+        "url": "https://www.youtube.com/watch?v=Fh4UyfqeB4Y"
+      },
+      {
+        "type": "Repo",
+        "title": "TharunBalaji2004/android-ci-cd – CI/CD Pipeline Reference",
+        "url": "https://github.com/TharunBalaji2004/android-ci-cd"
+      }
+    ]
+  },
+  {
+    "id": "ci-cd/pipelines/gitlab-ci",
+    "title": "GitLab CI",
+    "description": "GitLab CI/CD uses a `.gitlab-ci.yml` file at the repo root to define pipeline stages — build, test, sign, distribute — that run inside Docker containers on GitLab-hosted or self-managed runners. The official Android CI template provides a ready-to-use starting point, and the Mobile DevOps distribution integrations support direct upload to Google Play. Use it when your organization already hosts code on GitLab or when you need tight merge-request gating.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Build Android Apps with GitLab Mobile DevOps",
+        "url": "https://docs.gitlab.com/ci/mobile_devops/mobile_devops_tutorial_android/"
+      },
+      {
+        "type": "Article",
+        "title": "Android CI/CD with GitLab",
+        "url": "https://about.gitlab.com/blog/android-cicd-with-gitlab/"
+      },
+      {
+        "type": "Video",
+        "title": "Firebase App Distribution Android in GitLab CI",
+        "url": "https://www.youtube.com/watch?v=9VPhlGUtfaI"
+      }
+    ]
+  },
+  {
+    "id": "ci-cd/pipelines/jenkins",
+    "title": "Jenkins",
+    "description": "Jenkins is the most widely deployed open-source CI/CD server, using declarative or scripted Pipelines (Groovy DSL) to build, test, sign, and release Android apps. The **Google Play Publisher** plugin enables direct APK/AAB uploads to Play tracks from a pipeline stage. Use Jenkins when you need full control over your build infrastructure, have on-premise security requirements, or your organization already runs Jenkins for other platforms.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Jenkins and Android",
+        "url": "https://www.jenkins.io/solutions/android/"
+      },
+      {
+        "type": "Article",
+        "title": "Building Android Apps with Jenkins – Introduction",
+        "url": "https://www.jenkins.io/blog/2023/04/07/android-and-jenkins-discovery/"
+      },
+      {
+        "type": "Video",
+        "title": "Jenkins CI/CD Pipeline for Android – Tutorial",
+        "url": "https://www.youtube.com/watch?v=L-NIGaVkAaw"
+      }
+    ]
+  },
+  {
+    "id": "ci-cd/tooling/fastlane",
+    "title": "Fastlane",
+    "description": "Fastlane is an open-source automation platform that codifies the entire Android (and iOS) release workflow — building, testing, signing, taking screenshots, and deploying — into reusable Ruby `lane` definitions in a `Fastfile`. The `supply` action uploads APKs, AABs, metadata, and screenshots to Google Play and supports promoting builds between tracks. Use Fastlane to standardize release steps across machines and CI environments with a single command.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Fastlane – App Automation Done Right",
+        "url": "https://fastlane.tools/"
+      },
+      {
+        "type": "Official",
+        "title": "Getting Started with Fastlane for Android",
+        "url": "https://docs.fastlane.tools/getting-started/android/setup/"
+      },
+      {
+        "type": "Video",
+        "title": "CI/CD for Android: Automate App Upload with Fastlane & GitHub Actions to Firebase",
+        "url": "https://www.youtube.com/watch?v=sk3Lz54CphU"
+      },
+      {
+        "type": "Video",
+        "title": "Automating Android Builds and Releases With Fastlane",
+        "url": "https://www.youtube.com/watch?v=kTIRV6g_3-U"
+      }
+    ]
+  },
+  {
+    "id": "ci-cd/tooling/gradle-build-cache-remote",
+    "title": "Gradle Build Cache (remote)",
+    "description": "The Gradle remote build cache stores and shares task outputs (compiled classes, resources, test results) across machines via an HTTP endpoint so that any developer or CI agent can reuse outputs already produced by another build. The recommended pattern is to have CI push to the cache while local builds only pull. The Android Gradle Plugin 3.1+ and Kotlin plugin are fully cache-compatible, and enabling the cache can reduce Android CI build times by 30–40%.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Gradle Build Cache – Gradle User Manual",
+        "url": "https://docs.gradle.org/current/userguide/build_cache.html"
+      },
+      {
+        "type": "Article",
+        "title": "Caching Android Projects with Gradle",
+        "url": "https://docs.gradle.org/current/userguide/caching_android_projects.html"
+      },
+      {
+        "type": "Video",
+        "title": "Gradle Build Cache – Speeding Up Android CI Builds",
+        "url": "https://www.youtube.com/watch?v=_A_FjFGXMKY"
+      }
+    ]
+  },
+  {
+    "id": "ci-cd/tooling/gradle-enterprise-develocity",
+    "title": "Gradle Enterprise / Develocity",
+    "description": "Develocity (formerly Gradle Enterprise) is a commercial platform that wraps Gradle's remote build cache with **Build Scans** — rich, shareable reports showing every task's inputs, outputs, timeline, and failure context — plus predictive test selection, test distribution, and flaky-test detection. A Build Scan for every CI run allows teams to diagnose failures in seconds by comparing two scans side-by-side. Use it when you need deep observability and acceleration for large, multi-module Android builds.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Develocity – Gradle Technologies",
+        "url": "https://gradle.com/develocity/"
+      },
+      {
+        "type": "Official",
+        "title": "Getting Started with Develocity for Gradle",
+        "url": "https://docs.gradle.com/enterprise/get-started/"
+      },
+      {
+        "type": "Video",
+        "title": "Gradle Build Scans and Develocity – Faster Android CI",
+        "url": "https://www.youtube.com/watch?v=5GFv_FiRjU8"
+      }
+    ]
+  },
+  {
+    "id": "qa-app-publishing/distribution/firebase-app-distribution",
+    "title": "Firebase App Distribution",
+    "description": "Firebase App Distribution lets you distribute pre-release APKs and AABs to trusted testers quickly via email invites, with tester groups managed in the Firebase console. It integrates with Gradle, the Firebase CLI, and Fastlane for CI/CD automation, and the optional Android SDK lets testers receive in-app new-build alerts. Use it during development and QA cycles before promoting to Google Play tracks — it is the fastest path to getting builds into testers' hands.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Firebase App Distribution Docs",
+        "url": "https://firebase.google.com/docs/app-distribution"
+      },
+      {
+        "type": "Official",
+        "title": "Distribute Android Apps via Gradle",
+        "url": "https://firebase.google.com/docs/app-distribution/android/distribute-gradle"
+      },
+      {
+        "type": "Video",
+        "title": "Deploy your Android app to Firebase App Distribution with GitHub Actions (CI/CD)",
+        "url": "https://www.youtube.com/watch?v=KYG8lXZCVr4"
+      },
+      {
+        "type": "Video",
+        "title": "CI/CD for Android: Fastlane & GitHub Actions to Firebase App Distribution",
+        "url": "https://www.youtube.com/watch?v=sk3Lz54CphU"
+      }
+    ]
+  },
+  {
+    "id": "qa-app-publishing/distribution/google-play-store",
+    "title": "Google Play Store",
+    "description": "Google Play is the primary distribution channel for Android apps, reaching 2.5 billion+ active devices worldwide. Publishing requires a one-time $25 developer account fee, an Android App Bundle (`.aab`) as of August 2021, and passing Google's review for policy compliance. The Play Developer API allows programmatic management of releases, reviews, and subscriptions. All new apps must pass a closed testing phase with at least 12 opted-in testers before production access.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Publish Your App – Android Developers",
+        "url": "https://developer.android.com/studio/publish"
+      },
+      {
+        "type": "Official",
+        "title": "Create and Set Up Your App – Play Console Help",
+        "url": "https://support.google.com/googleplay/android-developer/answer/9859152"
+      },
+      {
+        "type": "Video",
+        "title": "How to Publish an Android App to Google Play | Updated 2024",
+        "url": "https://www.youtube.com/watch?v=d8uEdeMgikU"
+      },
+      {
+        "type": "Video",
+        "title": "Release with confidence with the new Play Console",
+        "url": "https://www.youtube.com/watch?v=vyReHI1eSSU"
+      }
+    ]
+  },
+  {
+    "id": "qa-app-publishing/play-console/internal-closed-open-testing",
+    "title": "Internal / Closed / Open Testing",
+    "description": "Google Play Console provides three pre-production testing tracks for gradually rolling out your app. **Internal testing** distributes to up to 100 trusted testers within seconds. **Closed testing** (alpha) reaches tester groups of up to 2,000 users per list and is required before production access — at least 12 testers must be opted-in for 14 consecutive days. **Open testing** (beta) is publicly listed on the Play Store for anyone to join. Use them in sequence to gather feedback and meet Google's release requirements.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Set Up an Open, Closed, or Internal Test – Play Console Help",
+        "url": "https://support.google.com/googleplay/android-developer/answer/9845334"
+      },
+      {
+        "type": "Article",
+        "title": "Understanding Google Play Store Testing Tracks",
+        "url": "https://www.centercode.com/blog/understanding-google-play-store-testing-tracks"
+      },
+      {
+        "type": "Video",
+        "title": "How to Publish an Android App to Google Play – Testing Tracks Walkthrough",
+        "url": "https://www.youtube.com/watch?v=5GHT4QtotE4"
+      }
+    ]
+  },
+  {
+    "id": "qa-app-publishing/play-console/play-app-signing",
+    "title": "Play App Signing",
+    "description": "Play App Signing lets Google manage and protect your app's signing key on its Key Management Service infrastructure, using it to sign optimized APKs generated from your uploaded AAB. You retain an **upload key** (separate from the signing key) for authenticating uploads; if the upload key is lost, it can be reset without losing the signing key. Enrolling in Play App Signing is strongly recommended — it protects you from keystore loss and enables AAB optimization.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Use Play App Signing – Play Console Help",
+        "url": "https://support.google.com/googleplay/android-developer/answer/9842756"
+      },
+      {
+        "type": "Article",
+        "title": "Android App Signing Explained",
+        "url": "https://medium.com/androiddevelopers/android-app-signing-3f5bb47e3e7"
+      },
+      {
+        "type": "Video",
+        "title": "Google Play App Signing – Step-by-Step Tutorial",
+        "url": "https://www.youtube.com/watch?v=jvEI-um-P7Q"
+      }
+    ]
+  },
+  {
+    "id": "qa-app-publishing/play-console/play-integrity-api",
+    "title": "Play Integrity API",
+    "description": "The Play Integrity API lets your Android app obtain a signed attestation token from Google that verifies three things: 1) the app binary is unmodified and recognized by Play (`appIntegrity`), 2) the user's account installed the app via Play (`accountDetails`), and 3) the device is a genuine certified Android device (`deviceIntegrity`). Call it at critical moments (purchases, account actions) and verify the token server-side to block fraud, cheating, and abuse. Requires Google Play on the device.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Play Integrity API Overview – Android Developers",
+        "url": "https://developer.android.com/google/play/integrity/overview"
+      },
+      {
+        "type": "Article",
+        "title": "A Practical Guide to Play Integrity API",
+        "url": "https://proandroiddev.com/a-practical-guide-to-play-integrity-api-everything-you-need-to-implement-attestation-on-android-c010f0fc8f09"
+      },
+      {
+        "type": "Video",
+        "title": "Play Integrity API for Android Developers – Official Overview",
+        "url": "https://www.youtube.com/watch?v=dqUTX6hR9Mk"
+      },
+      {
+        "type": "Video",
+        "title": "How to Integrate Google Play Integrity API for Fraud Detection",
+        "url": "https://www.youtube.com/watch?v=D5nVG8wC2Nk"
+      }
+    ]
+  },
+  {
+    "id": "qa-app-publishing/play-console/in-app-updates",
+    "title": "In-App Updates",
+    "description": "The In-App Updates API (Play Core) lets you prompt users to update your app without leaving it, via two modes: **Flexible** (downloads in the background while the user continues using the app) and **Immediate** (full-screen blocking flow that forces update before continuing). Use `app-update-ktx` with the Play In-App Update library; Google Play assigns update priority (0–5) so your app can decide how urgently to surface the prompt. Requires Android 5.0 (API 21)+.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "In-App Updates – Android Developers",
+        "url": "https://developer.android.com/guide/playcore/in-app-updates"
+      },
+      {
+        "type": "Article",
+        "title": "Support In-App Updates (Kotlin/Java)",
+        "url": "https://developer.android.com/guide/playcore/in-app-updates/kotlin-java"
+      },
+      {
+        "type": "Video",
+        "title": "How to implement In-App Updates in Android | Flexible & Immediate | 2024",
+        "url": "https://www.youtube.com/watch?v=cAHdoSSU6a0"
+      },
+      {
+        "type": "Video",
+        "title": "How to Use the Google Play In-App Update API | Android Studio Tutorial",
+        "url": "https://www.youtube.com/watch?v=Z5VjmLhnoJU"
+      }
+    ]
+  },
+  {
+    "id": "qa-app-publishing/play-console/in-app-reviews",
+    "title": "In-App Reviews",
+    "description": "The Google Play In-App Review API lets you trigger the Play Store rating sheet (1–5 stars + optional comment) directly within your app without navigating to the Play Store. Google controls display frequency to avoid user fatigue, so the flow is not guaranteed to appear on every call. Trigger it after meaningful user milestones, never ask users questions before showing it, and do not gate any feature on the outcome. Requires Play Core 1.8.0+, Android 5.0 (API 21)+.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Google Play In-App Reviews API – Android Developers",
+        "url": "https://developer.android.com/guide/playcore/in-app-review"
+      },
+      {
+        "type": "Article",
+        "title": "Leverage the In-App Review API for Google Play Reviews",
+        "url": "https://android-developers.googleblog.com/2020/08/in-app-review-api.html"
+      },
+      {
+        "type": "Video",
+        "title": "Implement Google Play In-App Review API – Android Tutorial",
+        "url": "https://www.youtube.com/watch?v=RhM28M2FGEM"
+      }
+    ]
+  },
+  {
+    "id": "qa-app-publishing/play-console/play-asset-delivery",
+    "title": "Play Asset Delivery",
+    "description": "Play Asset Delivery (PAD) lets you package large assets — textures, audio, shaders — into **asset packs** delivered in three modes: **install-time** (bundled at install, available immediately), **fast-follow** (auto-downloaded after install without blocking app open), and **on-demand** (downloaded when explicitly requested by the app). PAD replaces OBB files and works with App Bundles to optimize what each device downloads. Use it for games or media apps with large asset footprints exceeding the 200 MB base APK limit.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Play Asset Delivery – Android Developers",
+        "url": "https://developer.android.com/guide/playcore/asset-delivery"
+      },
+      {
+        "type": "Article",
+        "title": "Introducing Google Play Asset Delivery",
+        "url": "https://android-developers.googleblog.com/2020/06/introducing-google-play-asset-delivery.html"
+      },
+      {
+        "type": "Video",
+        "title": "Introducing Play Asset Delivery – Android Game Dev Show",
+        "url": "https://www.youtube.com/watch?v=AJmMD-UIcd0"
+      },
+      {
+        "type": "Video",
+        "title": "Deliver optimized assets for your users with Play Asset Delivery",
+        "url": "https://www.youtube.com/watch?v=AZ3xmG5iFDU"
+      }
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "modularization-build-logic/build/gradle-kotlin-dsl",
+    "title": "Gradle Kotlin DSL",
+    "sectionTitle": "Modularization & Build Logic",
+    "groupLabel": "Build"
+  },
+  {
+    "id": "modularization-build-logic/build/version-catalogs",
+    "title": "Version Catalogs",
+    "sectionTitle": "Modularization & Build Logic",
+    "groupLabel": "Build"
+  },
+  {
+    "id": "modularization-build-logic/build/convention-plugins-build-logic",
+    "title": "Convention Plugins (build-logic)",
+    "sectionTitle": "Modularization & Build Logic",
+    "groupLabel": "Build"
+  },
+  {
+    "id": "modularization-build-logic/build/ksp",
+    "title": "KSP",
+    "sectionTitle": "Modularization & Build Logic",
+    "groupLabel": "Build"
+  },
+  {
+    "id": "modularization-build-logic/build/dependency-analysis-plugin",
+    "title": "Dependency Analysis Plugin",
+    "sectionTitle": "Modularization & Build Logic",
+    "groupLabel": "Build"
+  },
+  {
+    "id": "modularization-build-logic/module-structure/app",
+    "title": ":app",
+    "sectionTitle": "Modularization & Build Logic",
+    "groupLabel": "Module Structure"
+  },
+  {
+    "id": "modularization-build-logic/module-structure/feature",
+    "title": ":feature:*",
+    "sectionTitle": "Modularization & Build Logic",
+    "groupLabel": "Module Structure"
+  },
+  {
+    "id": "modularization-build-logic/module-structure/core",
+    "title": ":core:*",
+    "sectionTitle": "Modularization & Build Logic",
+    "groupLabel": "Module Structure"
+  },
+  {
+    "id": "modularization-build-logic/module-structure/data",
+    "title": ":data:*",
+    "sectionTitle": "Modularization & Build Logic",
+    "groupLabel": "Module Structure"
+  },
+  {
+    "id": "modularization-build-logic/module-structure/domain",
+    "title": ":domain:*",
+    "sectionTitle": "Modularization & Build Logic",
+    "groupLabel": "Module Structure"
+  },
+  {
+    "id": "network/clients-i-o/okhttp",
+    "title": "OkHttp",
+    "sectionTitle": "Network",
+    "groupLabel": "Clients & I/O"
+  },
+  {
+    "id": "network/clients-i-o/interceptor",
+    "title": "Interceptor",
+    "sectionTitle": "Network",
+    "groupLabel": "Clients & I/O"
+  },
+  {
+    "id": "network/clients-i-o/retrofit",
+    "title": "Retrofit",
+    "sectionTitle": "Network",
+    "groupLabel": "Clients & I/O"
+  },
+  {
+    "id": "network/clients-i-o/okio",
+    "title": "Okio",
+    "sectionTitle": "Network",
+    "groupLabel": "Clients & I/O"
+  },
+  {
+    "id": "network/clients-i-o/ktor",
+    "title": "Ktor",
+    "sectionTitle": "Network",
+    "groupLabel": "Clients & I/O"
+  },
+  {
+    "id": "network/clients-i-o/ktorfit",
+    "title": "Ktorfit",
+    "sectionTitle": "Network",
+    "groupLabel": "Clients & I/O"
+  },
+  {
+    "id": "network/data-formats/kotlinx-serialization",
+    "title": "kotlinx.serialization",
+    "sectionTitle": "Network",
+    "groupLabel": "Data Formats"
+  },
+  {
+    "id": "network/data-formats/moshi",
+    "title": "Moshi",
+    "sectionTitle": "Network",
+    "groupLabel": "Data Formats"
+  },
+  {
+    "id": "network/data-formats/apollo-kotlin-graphql",
+    "title": "Apollo Kotlin (GraphQL)",
+    "sectionTitle": "Network",
+    "groupLabel": "Data Formats"
+  },
+  {
+    "id": "image-loading/libraries/coil-3-kmp",
+    "title": "Coil 3 (KMP)",
+    "sectionTitle": "Image Loading",
+    "groupLabel": "Libraries"
+  },
+  {
+    "id": "image-loading/libraries/glide",
+    "title": "Glide",
+    "sectionTitle": "Image Loading",
+    "groupLabel": "Libraries"
+  },
+  {
+    "id": "image-loading/libraries/coil-compose",
+    "title": "coil-compose",
+    "sectionTitle": "Image Loading",
+    "groupLabel": "Libraries"
+  },
+  {
+    "id": "image-loading/libraries/landscapist",
+    "title": "Landscapist",
+    "sectionTitle": "Image Loading",
+    "groupLabel": "Libraries"
+  },
+  {
+    "id": "local-storage/databases/room-kmp",
+    "title": "Room (KMP)",
+    "sectionTitle": "Local Storage",
+    "groupLabel": "Databases"
+  },
+  {
+    "id": "local-storage/databases/sqlite",
+    "title": "SQLite",
+    "sectionTitle": "Local Storage",
+    "groupLabel": "Databases"
+  },
+  {
+    "id": "local-storage/databases/sqldelight",
+    "title": "SQLDelight",
+    "sectionTitle": "Local Storage",
+    "groupLabel": "Databases"
+  },
+  {
+    "id": "local-storage/databases/realm-kotlin-atlas-device-sdk",
+    "title": "Realm Kotlin / Atlas Device SDK",
+    "sectionTitle": "Local Storage",
+    "groupLabel": "Databases"
+  },
+  {
+    "id": "local-storage/key-value/datastore",
+    "title": "DataStore",
+    "sectionTitle": "Local Storage",
+    "groupLabel": "Key-Value"
+  },
+  {
+    "id": "local-storage/key-value/encrypted-datastore",
+    "title": "Encrypted DataStore",
+    "sectionTitle": "Local Storage",
+    "groupLabel": "Key-Value"
+  },
+  {
+    "id": "local-storage/key-value/sharedpreferences-legacy",
+    "title": "SharedPreferences (legacy)",
+    "sectionTitle": "Local Storage",
+    "groupLabel": "Key-Value"
+  },
+  {
+    "id": "asynchronous-concurrency/coroutines/flow",
+    "title": "Flow",
+    "sectionTitle": "Asynchronous & Concurrency",
+    "groupLabel": "Coroutines"
+  },
+  {
+    "id": "asynchronous-concurrency/coroutines/stateflow",
+    "title": "StateFlow",
+    "sectionTitle": "Asynchronous & Concurrency",
+    "groupLabel": "Coroutines"
+  },
+  {
+    "id": "asynchronous-concurrency/coroutines/sharedflow",
+    "title": "SharedFlow",
+    "sectionTitle": "Asynchronous & Concurrency",
+    "groupLabel": "Coroutines"
+  },
+  {
+    "id": "asynchronous-concurrency/coroutines/channels",
+    "title": "Channels",
+    "sectionTitle": "Asynchronous & Concurrency",
+    "groupLabel": "Coroutines"
+  },
+  {
+    "id": "asynchronous-concurrency/coroutines/structured-concurrency",
+    "title": "Structured Concurrency",
+    "sectionTitle": "Asynchronous & Concurrency",
+    "groupLabel": "Coroutines"
+  },
+  {
+    "id": "asynchronous-concurrency/coroutines/dispatchers",
+    "title": "Dispatchers",
+    "sectionTitle": "Asynchronous & Concurrency",
+    "groupLabel": "Coroutines"
+  },
+  {
+    "id": "asynchronous-concurrency/other/thread",
+    "title": "Thread",
+    "sectionTitle": "Asynchronous & Concurrency",
+    "groupLabel": "Other"
+  },
+  {
+    "id": "asynchronous-concurrency/other/workmanager",
+    "title": "WorkManager",
+    "sectionTitle": "Asynchronous & Concurrency",
+    "groupLabel": "Other"
+  },
+  {
+    "id": "asynchronous-concurrency/other/expedited-jobs",
+    "title": "Expedited Jobs",
+    "sectionTitle": "Asynchronous & Concurrency",
+    "groupLabel": "Other"
+  },
+  {
+    "id": "asynchronous-concurrency/other/rxjava-legacy",
+    "title": "RxJava (legacy)",
+    "sectionTitle": "Asynchronous & Concurrency",
+    "groupLabel": "Other"
+  }
+]

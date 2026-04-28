@@ -1,0 +1,1297 @@
+[
+  {
+    "id": "user-interface-views-legacy/layouts/constraintlayout",
+    "title": "ConstraintLayout",
+    "description": "ConstraintLayout is a `ViewGroup` that lets you position and size widgets using flexible constraints relative to sibling views and the parent, eliminating the need for deeply nested layouts. It is the recommended layout for complex screens in the Views toolkit because a single flat hierarchy is faster to measure and draw than an equivalent nested hierarchy. Use it whenever your screen requires multiple aligned, chained, or ratio-constrained elements; for trivially simple layouts (one or two views), `FrameLayout` is lighter. **Modern alternative:** Jetpack Compose `Box`, `Row`, and `Column` composables replace layout XML entirely.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Build a responsive UI with ConstraintLayout",
+        "url": "https://developer.android.com/develop/ui/views/layout/constraint-layout"
+      },
+      {
+        "type": "Article",
+        "title": "ConstraintLayout Performance — GitHub Wiki",
+        "url": "https://github.com/androidx/constraintlayout/wiki/ConstraintLayout-Performance"
+      },
+      {
+        "type": "Video",
+        "title": "Constraint Layout — Beginner's Guide to Android App Development",
+        "url": "https://www.youtube.com/watch?v=o6lQ9YNl4C0"
+      },
+      {
+        "type": "Video",
+        "title": "Android ConstraintLayout Tutorials — Playlist",
+        "url": "https://www.youtube.com/playlist?list=PL7W-WmzNxofJm0G_lmAH9Vm6PZIdlhwfh"
+      },
+      {
+        "type": "Repo",
+        "title": "androidx/constraintlayout — GitHub",
+        "url": "https://github.com/androidx/constraintlayout"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/layouts/motionlayout",
+    "title": "MotionLayout",
+    "description": "`MotionLayout` is a subclass of `ConstraintLayout` that adds fully declarative, keyframe-driven animations between two or more constraint sets defined in a `MotionScene` XML file. It supports touch-controlled, seekable transitions and can interpolate virtually any view attribute (alpha, elevation, rotation, custom properties) without a single line of animation code. Use it when you need coordinated, physics-feel motion tied to gestures or scroll position in a Views-based screen. **Modern alternative:** Jetpack Compose's `AnimatedVisibility`, `animate*AsState`, and `Transition` APIs cover similar use-cases.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Manage motion and widget animation with MotionLayout",
+        "url": "https://developer.android.com/develop/ui/views/animations/motionlayout"
+      },
+      {
+        "type": "Article",
+        "title": "MotionLayout — Material Design 3 Motion Blog",
+        "url": "https://m3.material.io/blog/android-material-motion"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced Android in Kotlin 03.2: Animation with MotionLayout — Codelab",
+        "url": "https://codelabs.developers.google.com/codelabs/motion-layout"
+      },
+      {
+        "type": "Article",
+        "title": "Introduction to MotionLayout (part I) — Google Developers",
+        "url": "https://medium.com/google-developers/introduction-to-motionlayout-part-i-29208674b10d"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples — Compose Youtube Motion Layout example",
+        "url": "https://github.com/android/compose-samples"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/layouts/linearlayout",
+    "title": "LinearLayout",
+    "description": "`LinearLayout` stacks child views in a single row or column and distributes space using `layout_weight`. It is simple and predictable but can become slow when nested deeply, because Android may perform multiple measure passes per nesting level. Prefer `ConstraintLayout` for complex screens and `LinearLayout` only for genuinely linear, shallow hierarchies such as a button row or a vertical form. **Modern alternative:** Compose `Row` and `Column` are the direct successors and avoid the nested-weight performance trap.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Create a linear layout",
+        "url": "https://developer.android.com/develop/ui/views/layout/linear"
+      },
+      {
+        "type": "Article",
+        "title": "Performance and view hierarchies",
+        "url": "https://developer.android.com/topic/performance/rendering/optimizing-view-hierarchies"
+      },
+      {
+        "type": "Video",
+        "title": "Thinking in Compose — Android Developers",
+        "url": "https://www.youtube.com/watch?v=SMOhl9RK0BA"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Android Developer Roadmap — roadmap.sh",
+        "url": "https://roadmap.sh/android"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/layouts/framelayout",
+    "title": "FrameLayout",
+    "description": "`FrameLayout` is the lightest built-in layout container; it places each child view at the top-left and stacks them in Z order. It is ideal for single-child containers — such as fragment containers, overlay layers, or loading spinners centred over content — and performs better than heavier layout classes when only one child is present. Avoid it for multi-child positioning because `gravity` is the only alignment tool and children will overlap unintentionally. **Modern alternative:** Compose `Box` provides the same stacking semantics with alignment modifiers.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "FrameLayout — API reference",
+        "url": "https://developer.android.com/reference/android/widget/FrameLayout"
+      },
+      {
+        "type": "Article",
+        "title": "How Android draws views",
+        "url": "https://developer.android.com/guide/topics/ui/how-android-draws"
+      },
+      {
+        "type": "Video",
+        "title": "Thinking in Compose — Android Developers",
+        "url": "https://www.youtube.com/watch?v=SMOhl9RK0BA"
+      },
+      {
+        "type": "Course",
+        "title": "Android Basics with Compose — Google official free course",
+        "url": "https://developer.android.com/courses/android-basics-compose/course"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/layouts/recyclerview",
+    "title": "RecyclerView",
+    "description": "`RecyclerView` efficiently displays large, scrollable datasets by recycling off-screen item views through a `ViewHolder` pattern. A pluggable `LayoutManager` controls arrangement (linear, grid, staggered), while `DiffUtil` and `ListAdapter` minimise re-binds by computing the minimal set of changes between lists. It is the go-to widget for any scrollable list or grid in the Views toolkit. **Modern alternative:** Jetpack Compose's `LazyColumn`, `LazyRow`, and `LazyVerticalGrid` replace `RecyclerView` without boilerplate adapters.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Create dynamic lists with RecyclerView",
+        "url": "https://developer.android.com/develop/ui/views/layout/recyclerview"
+      },
+      {
+        "type": "Article",
+        "title": "Best Practices for Efficient RecyclerView Performance in Android",
+        "url": "https://medium.com/@fitareq/best-practices-for-efficient-recyclerview-performance-in-android-b405eedc6d34"
+      },
+      {
+        "type": "Video",
+        "title": "RecyclerView Android Studio Tutorial 2024",
+        "url": "https://www.youtube.com/watch?v=TAEbP_ccjsk"
+      },
+      {
+        "type": "Video",
+        "title": "RECYCLERVIEW — Android Fundamentals",
+        "url": "https://www.youtube.com/watch?v=HtwDXRWjMcU"
+      },
+      {
+        "type": "Course",
+        "title": "Advanced RecyclerView use cases — Android Developers Pathway",
+        "url": "https://developer.android.com/courses/pathways/android-development-with-kotlin-10"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/design/material-3-material-you",
+    "title": "Material 3 / Material You",
+    "description": "Material 3 (M3), also branded Material You, is Google's current design language introduced with Android 12. It brings a richer color system built on five tonal palettes, updated shape expressiveness, and deep personalization through Dynamic Color derived from the user's wallpaper. For Views-based apps, the `com.google.android.material` library provides M3 components; for Compose apps, `androidx.compose.material3` is used. Adopting M3 keeps your app consistent with system UI and other Google apps on Android 12+.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Material Design 3 for MDC-Android",
+        "url": "https://m3.material.io/develop/android/mdc-android"
+      },
+      {
+        "type": "Official",
+        "title": "Material Design 3 in Compose",
+        "url": "https://developer.android.com/develop/ui/compose/designsystems/material3"
+      },
+      {
+        "type": "Video",
+        "title": "How to Build Stunning Material 3 Apps with Jetpack Compose — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=h7K4n9C2jkI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples — Jetsnack (custom M3 theme example)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — full M3 production app",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/design/material-3-expressive",
+    "title": "Material 3 Expressive",
+    "description": "Material 3 Expressive is the next evolution of M3, announced by Google in 2025, featuring research-backed updates to motion, typography (variable fonts), shapes, and component behavior aimed at making UIs feel more engaging and emotionally resonant. The motion system is powered by the new `MotionScheme` API in Compose material3, and shape tokens have expanded to support more nuanced curvature. It is enabled incrementally through Compose Material 3 1.4+ and the updated MDC-Android library.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Start building with Material 3 Expressive",
+        "url": "https://m3.material.io/blog/building-with-m3-expressive"
+      },
+      {
+        "type": "Article",
+        "title": "M3 Expressive: New Motion System",
+        "url": "https://m3.material.io/blog/m3-expressive-motion-theming"
+      },
+      {
+        "type": "Video",
+        "title": "What's new in Jetpack Compose at I/O 2024 — Android Developers Blog",
+        "url": "https://www.youtube.com/playlist?list=PLWz5rJ2EKKc8L8WlmqPD6zPEyVSKrL5PJ"
+      },
+      {
+        "type": "Repo",
+        "title": "meticha/material-3-expressive-catalog — M3 Expressive components catalog",
+        "url": "https://github.com/meticha/material-3-expressive-catalog"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/design/dynamic-color-monet",
+    "title": "Dynamic Color (Monet)",
+    "description": "Dynamic Color (internally codenamed Monet) is an Android 12+ feature that extracts a harmonious five-palette tonal scheme from the user's wallpaper and injects it as system-level color tokens. Apps that adopt Material 3 theming automatically inherit these colors, making every app feel personal without manual theming effort. For Views-based apps, call `DynamicColors.applyToActivitiesIfAvailable(app)` at startup; for Compose, set `dynamicColorScheme()` as your `MaterialTheme` color scheme on supported API levels.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Enable users to personalize their color experience in your app",
+        "url": "https://developer.android.com/develop/ui/views/theming/dynamic-colors"
+      },
+      {
+        "type": "Official",
+        "title": "Material Design 3 in Compose — Dynamic Color",
+        "url": "https://developer.android.com/develop/ui/compose/designsystems/material3"
+      },
+      {
+        "type": "Video",
+        "title": "How to Build Stunning Material 3 Apps with Jetpack Compose — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=h7K4n9C2jkI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — Dynamic Color in production",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/styles/light-theme",
+    "title": "Light Theme",
+    "description": "A light theme uses light-colored backgrounds with dark text and iconography, which is the traditional default for Android apps. In the Views toolkit, you define a light theme by inheriting from `Theme.Material3.Light` (or `Theme.MaterialComponents.Light`) in `res/values/themes.xml` and customizing color attributes. Theming is critical because it ensures brand consistency, accessibility contrast ratios, and proper integration with system UI elements such as the status bar. **Modern alternative:** Compose's `MaterialTheme` with a `lightColorScheme()` replaces XML theme files.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Styles and Themes",
+        "url": "https://developer.android.com/develop/ui/views/theming/themes"
+      },
+      {
+        "type": "Article",
+        "title": "Material Theming with Jetpack Compose — Codelab",
+        "url": "https://developer.android.com/codelabs/basic-android-kotlin-compose-material-theming"
+      },
+      {
+        "type": "Video",
+        "title": "How to Build Stunning Material 3 Apps with Jetpack Compose — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=h7K4n9C2jkI"
+      },
+      {
+        "type": "Course",
+        "title": "Theming in Compose with Material 3 — Codelab",
+        "url": "https://developer.android.com/codelabs/jetpack-compose-theming"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/styles/dark-theme",
+    "title": "Dark Theme",
+    "description": "Dark theme (also called night mode) inverts the luminance of background and surface colors to reduce eye strain in low-light conditions and save power on OLED displays. In the Views toolkit, inherit from `Theme.Material3.DayNight` and provide a `values-night/themes.xml` override; the system switches automatically based on the device setting. Call `AppCompatDelegate.setDefaultNightMode()` to offer an in-app toggle. **Modern alternative:** Compose uses `darkColorScheme()` and system-aware `isSystemInDarkTheme()` to react automatically.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Implement dark theme",
+        "url": "https://developer.android.com/develop/ui/views/theming/darktheme"
+      },
+      {
+        "type": "Article",
+        "title": "Theming in Compose with Material 3 — Codelab",
+        "url": "https://developer.android.com/codelabs/jetpack-compose-theming"
+      },
+      {
+        "type": "Video",
+        "title": "How to Build Stunning Material 3 Apps with Jetpack Compose — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=h7K4n9C2jkI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — dark/light theme implementation",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/messages/toast",
+    "title": "Toast",
+    "description": "A `Toast` displays a brief, non-interactive popup message that auto-dismisses after a short or long delay. It requires no user action and floats above the current activity, making it suitable for simple confirmations like \"Saved\" or \"Copied\". On Android 12+ (API 31+), toasts shown while the app is in the background are suppressed, and visible toasts are limited to two lines with an app icon. For richer feedback with optional actions, prefer `Snackbar`; for background-initiated messages, use a `Notification`.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Toasts overview",
+        "url": "https://developer.android.com/guide/topics/ui/notifiers/toasts"
+      },
+      {
+        "type": "Official",
+        "title": "Toast — API reference",
+        "url": "https://developer.android.com/reference/android/widget/Toast"
+      },
+      {
+        "type": "Video",
+        "title": "Thinking in Compose — Android Developers (UI fundamentals)",
+        "url": "https://www.youtube.com/watch?v=SMOhl9RK0BA"
+      },
+      {
+        "type": "Course",
+        "title": "Android Basics with Compose — Google official free course",
+        "url": "https://developer.android.com/courses/android-basics-compose/course"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/messages/snackbar",
+    "title": "Snackbar",
+    "description": "`Snackbar` is a Material Design feedback component that appears at the bottom of the screen and can include a single optional action button (e.g., \"Undo\"). Unlike `Toast`, it is tied to a `CoordinatorLayout` or `View` context, allowing automatic repositioning of floating action buttons and swipe-to-dismiss behavior. It is the preferred mechanism for transient messages in foreground apps because it is accessible, dismissible, and actionable. In Compose, the `SnackbarHost` API is used with `SnackbarHostState` inside a `Scaffold`.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Snackbar — API reference (MDC-Android)",
+        "url": "https://developer.android.com/reference/com/google/android/material/snackbar/Snackbar"
+      },
+      {
+        "type": "Official",
+        "title": "Snackbar in Jetpack Compose",
+        "url": "https://developer.android.com/develop/ui/compose/components/snackbar"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced state and side effects in Jetpack Compose — Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=TbxCz5AljQk"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples — Scaffold + SnackbarHost usage",
+        "url": "https://github.com/android/compose-samples"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/messages/notification",
+    "title": "Notification",
+    "description": "Notifications are system-managed messages that appear in the status bar, notification shade, lock screen, and as heads-up banners, and can also be mirrored to Wear OS. They are the primary communication channel between an app and the user when the app is in the background. Build notifications with `NotificationCompat.Builder`, set at least a small icon, title, and content text, and always assign them to a `NotificationChannel` (required on Android 8.0+). Rich notifications can include images, actions, progress bars, and inline reply.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "About notifications",
+        "url": "https://developer.android.com/develop/ui/views/notifications"
+      },
+      {
+        "type": "Official",
+        "title": "Create a notification",
+        "url": "https://developer.android.com/develop/ui/views/notifications/build-notification"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced State and Side Effects in Jetpack Compose — Codelab (notification permission flow)",
+        "url": "https://www.youtube.com/watch?v=TbxCz5AljQk"
+      },
+      {
+        "type": "Course",
+        "title": "Android Basics with Compose — Google official free course",
+        "url": "https://developer.android.com/courses/android-basics-compose/course"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/messages/notification-permission",
+    "title": "Notification Permission",
+    "description": "Starting with Android 13 (API 33), apps must declare and request the `POST_NOTIFICATIONS` runtime permission before they can display non-exempt notifications. Users can grant, deny, or permanently dismiss the request; if denied twice the system will no longer show the rationale dialog. Apps targeting API 32 or lower are granted a one-time exemption on upgrade, but must still declare the permission in `AndroidManifest.xml`. Always explain the value of notifications before requesting the permission and gracefully degrade if denied.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Notification runtime permission",
+        "url": "https://developer.android.com/develop/ui/views/notifications/notification-permission"
+      },
+      {
+        "type": "Article",
+        "title": "Advanced State and Side Effects in Jetpack Compose — Codelab (notification permission flow)",
+        "url": "https://developer.android.com/codelabs/jetpack-compose-advanced-state-side-effects"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced state and side effects in Jetpack Compose — Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=TbxCz5AljQk"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — runtime permission handling",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/messages/notification-channels",
+    "title": "Notification Channels",
+    "description": "Notification channels (introduced in Android 8.0 / API 26) let users control notification behavior per category rather than per app. Each channel carries a default importance level (URGENT → LOW), sound, vibration, and lock-screen visibility setting that the user can override in system settings. Apps must create all relevant channels at startup with `NotificationManager.createNotificationChannel()` and assign every notification a channel ID; posting without a valid channel ID silently drops the notification on API 26+.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Create and manage notification channels",
+        "url": "https://developer.android.com/develop/ui/views/notifications/channels"
+      },
+      {
+        "type": "Article",
+        "title": "About notifications — importance and channels overview",
+        "url": "https://developer.android.com/develop/ui/views/notifications"
+      },
+      {
+        "type": "Video",
+        "title": "Android Developers — What's new in Android (notifications overview)",
+        "url": "https://www.youtube.com/watch?v=qXhjN66O7Bk"
+      },
+      {
+        "type": "Course",
+        "title": "Android Basics with Compose — Google official free course",
+        "url": "https://developer.android.com/courses/android-basics-compose/course"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/animation/valueanimator",
+    "title": "ValueAnimator",
+    "description": "`ValueAnimator` is the base class for property animation in the Views system. It animates a value from a start to an end over a specified duration using an interpolator, calling an `AnimatorUpdateListener` on each frame so you can apply the value wherever needed. Unlike `ObjectAnimator`, it does not target a specific object property, giving you full control over what changes. Use it when you need to animate something that has no standard setter, such as a custom canvas drawing or a computed layout value.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Property Animation Overview",
+        "url": "https://developer.android.com/develop/ui/views/animations/prop-animation"
+      },
+      {
+        "type": "Official",
+        "title": "ValueAnimator — API reference",
+        "url": "https://developer.android.com/reference/android/animation/ValueAnimator"
+      },
+      {
+        "type": "Video",
+        "title": "Thinking in Compose — declarative animation alternative",
+        "url": "https://www.youtube.com/watch?v=SMOhl9RK0BA"
+      },
+      {
+        "type": "Course",
+        "title": "Android Basics with Compose — Google official free course",
+        "url": "https://developer.android.com/courses/android-basics-compose/course"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/animation/objectanimator",
+    "title": "ObjectAnimator",
+    "description": "`ObjectAnimator` extends `ValueAnimator` and automatically updates a named property on a target object via reflection (e.g., `translationX`, `alpha`, `scaleY`). The target class must expose a matching setter; the animator calls it on every frame, making common view animations trivially concise. Use it for straightforward property tweens on standard `View` attributes; switch to `ValueAnimator` when the setter pattern does not apply or when you need to animate multiple unrelated values together with `AnimatorSet`.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Property Animation Overview — ObjectAnimator section",
+        "url": "https://developer.android.com/develop/ui/views/animations/prop-animation"
+      },
+      {
+        "type": "Official",
+        "title": "ObjectAnimator — API reference",
+        "url": "https://developer.android.com/reference/android/animation/ObjectAnimator"
+      },
+      {
+        "type": "Video",
+        "title": "More performance tips for Jetpack Compose — Android Developers",
+        "url": "https://www.youtube.com/watch?v=ahXLwg2JYpc"
+      },
+      {
+        "type": "Course",
+        "title": "Android Basics with Compose — Google official free course",
+        "url": "https://developer.android.com/courses/android-basics-compose/course"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/animation/lottie",
+    "title": "Lottie",
+    "description": "Lottie is an open-source library by Airbnb that parses Adobe After Effects animations exported as JSON via the Bodymovin plugin and renders them natively on Android (and iOS, Web, React Native). This lets designers hand off production-ready animations without any runtime drawing code, and the JSON format is tiny compared to equivalent video or GIF assets. Add the `com.airbnb.android:lottie` dependency and use `LottieAnimationView` in XML or the Compose variant `LottieAnimation` for full playback control.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Lottie for Android — Official Docs",
+        "url": "https://lottie.airbnb.tech/"
+      },
+      {
+        "type": "Repo",
+        "title": "airbnb/lottie-android — GitHub",
+        "url": "https://github.com/airbnb/lottie-android"
+      },
+      {
+        "type": "Video",
+        "title": "Lottie Animations for Android — tutorial",
+        "url": "https://www.youtube.com/watch?v=eT7dlLa-a4A"
+      },
+      {
+        "type": "Video",
+        "title": "Learn Lottie Animations in Android — Easy & Fun Tutorial",
+        "url": "https://www.youtube.com/watch?v=TBi-jwopYZM"
+      }
+    ]
+  },
+  {
+    "id": "user-interface-views-legacy/animation/material-motion",
+    "title": "Material Motion",
+    "description": "Material Motion is the MDC-Android library's set of transition patterns — **Container Transform**, **Shared Axis**, **Fade Through**, and **Fade** — that provide semantic, physics-feel animations when navigating between screens or UI elements. These patterns communicate spatial and hierarchical relationships to users, making navigation feel intuitive. Apply them via `MaterialContainerTransform`, `MaterialSharedAxis`, `MaterialFadeThrough`, and `MaterialFade` classes and wire them to activity or fragment transitions.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Transitions — Material Design 3",
+        "url": "https://m3.material.io/styles/motion/transitions/applying-transitions"
+      },
+      {
+        "type": "Official",
+        "title": "Building Beautiful Transitions with Material Motion for Android — Codelab",
+        "url": "https://developer.android.com/codelabs/material-motion-android"
+      },
+      {
+        "type": "Video",
+        "title": "More performance tips for Jetpack Compose — Android Developers",
+        "url": "https://www.youtube.com/watch?v=ahXLwg2JYpc"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples — motion and animation examples",
+        "url": "https://github.com/android/compose-samples"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/recomposition/snapshot",
+    "title": "Snapshot",
+    "description": "The Compose Snapshot system is the lower-level state observation mechanism that underpins all `State<T>` objects. A snapshot is an immutable view of the current state tree; when a `MutableState` changes inside an `apply` call, all registered observers (including the Compose runtime's recomposer) are notified. This MVCC-style design allows state to be read and written safely from multiple threads without locks visible to composable code. Understanding snapshots helps diagnose subtle state bugs and enables advanced use cases such as testing state changes in isolation.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "androidx.compose.runtime.snapshots — API reference",
+        "url": "https://developer.android.com/reference/kotlin/androidx/compose/runtime/snapshots/package-summary"
+      },
+      {
+        "type": "Article",
+        "title": "Introduction to the Compose Snapshot system — Zach Klippenstein",
+        "url": "https://blog.zachklipp.com/introduction-to-the-compose-snapshot-system/"
+      },
+      {
+        "type": "Video",
+        "title": "Compose runtime and performance — Android Developers Backstage podcast",
+        "url": "https://www.youtube.com/watch?v=Fr_e7jwTpk0"
+      },
+      {
+        "type": "Video",
+        "title": "A Compose state of mind: automatic state observation — Android Dev Summit 2021",
+        "url": "https://www.youtube.com/watch?v=rmv2ug-wW4U"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/recomposition/strong-skipping-mode",
+    "title": "Strong Skipping Mode",
+    "description": "Strong Skipping Mode is a Compose compiler optimization (enabled by default since Kotlin 2.0.20) that makes **all** restartable composable functions skippable, even those with unstable parameters. Without it, any composable with an unstable parameter always recomposes when its parent does. It also automatically memoizes lambda captures using `remember`, reducing allocations per recomposition. Use `@NonSkippableComposable` to opt individual composables out, and `@DontMemoize` to prevent lambda memoization where it would cause incorrect behavior.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Strong skipping mode",
+        "url": "https://developer.android.com/develop/ui/compose/performance/stability/strongskipping"
+      },
+      {
+        "type": "Article",
+        "title": "Jetpack Compose Performance",
+        "url": "https://developer.android.com/develop/ui/compose/performance"
+      },
+      {
+        "type": "Video",
+        "title": "Performance best practices for Jetpack Compose — Google I/O 2022",
+        "url": "https://www.youtube.com/watch?v=EOQB8PTLkpY"
+      },
+      {
+        "type": "Video",
+        "title": "How to analyze and improve performance of your Jetpack Compose app — Android Developers",
+        "url": "https://www.youtube.com/watch?v=c3gdS42TJmI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — strong skipping applied in production",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/recomposition/compose-compiler-reports",
+    "title": "Compose Compiler Reports",
+    "description": "Compose Compiler Reports are output files generated when you enable the `reportsDestination` and `metricsDestination` options in the `composeCompiler` Gradle block. They produce three files per module: a classes stability report, a composables restartability/skippability report, and a CSV version for spreadsheet analysis. Use them to identify which composables are marked as non-skippable or which parameters are inferred as unstable, then fix stability issues to reduce unnecessary recompositions. They should be consulted only when profiling reveals a real performance problem.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Diagnose stability issues — Compose Compiler Reports",
+        "url": "https://developer.android.com/develop/ui/compose/performance/stability/diagnose"
+      },
+      {
+        "type": "Article",
+        "title": "Practical performance problem solving in Jetpack Compose — Codelab",
+        "url": "https://developer.android.com/codelabs/jetpack-compose-performance"
+      },
+      {
+        "type": "Video",
+        "title": "Performance best practices for Jetpack Compose — Google I/O 2022",
+        "url": "https://www.youtube.com/watch?v=EOQB8PTLkpY"
+      },
+      {
+        "type": "Video",
+        "title": "How to analyze and improve performance of your Jetpack Compose app — Android Developers",
+        "url": "https://www.youtube.com/watch?v=c3gdS42TJmI"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/recomposition/stability-stable-immutable",
+    "title": "Stability (@Stable, @Immutable)",
+    "description": "Compose uses type stability to decide whether a composable can be skipped when its parent recomposes. A type is **stable** if Compose can tell whether its public properties have changed; a type is **immutable** if its properties never change after construction. The `@Stable` annotation promises the compiler that equality checks are reliable; `@Immutable` additionally promises that no property will ever mutate. Annotating your data classes with these markers (or switching to `kotlinx.collections.immutable`) allows the compiler to skip composables that receive them as parameters when the values are equal.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Fix stability issues — @Stable and @Immutable",
+        "url": "https://developer.android.com/develop/ui/compose/performance/stability/fix"
+      },
+      {
+        "type": "Official",
+        "title": "Stability in Compose",
+        "url": "https://developer.android.com/develop/ui/compose/performance/stability"
+      },
+      {
+        "type": "Video",
+        "title": "Performance best practices for Jetpack Compose — Google I/O 2022",
+        "url": "https://www.youtube.com/watch?v=EOQB8PTLkpY"
+      },
+      {
+        "type": "Video",
+        "title": "More performance tips for Jetpack Compose — Android Developers",
+        "url": "https://www.youtube.com/watch?v=ahXLwg2JYpc"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/recomposition/deferred-reads",
+    "title": "Deferred reads",
+    "description": "Deferred state reads are a technique where you pass a **lambda** that returns state rather than the state value itself, so Compose reads the state only inside the phase (composition, layout, or drawing) that needs it. This confines recomposition or re-layout to the smallest possible scope — for example, wrapping a frequently-changing scroll offset in a lambda-based `Modifier.offset { }` prevents the entire parent composable from recomposing on every scroll frame. It is one of the highest-impact performance patterns in Compose and costs only a small syntax change.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Follow best practices — Defer reads as long as possible",
+        "url": "https://developer.android.com/develop/ui/compose/performance/bestpractices"
+      },
+      {
+        "type": "Article",
+        "title": "Jetpack Compose Performance — overview",
+        "url": "https://developer.android.com/develop/ui/compose/performance"
+      },
+      {
+        "type": "Video",
+        "title": "More performance tips for Jetpack Compose — Android Developers",
+        "url": "https://www.youtube.com/watch?v=ahXLwg2JYpc"
+      },
+      {
+        "type": "Video",
+        "title": "Performance best practices for Jetpack Compose — Google I/O 2022",
+        "url": "https://www.youtube.com/watch?v=EOQB8PTLkpY"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/state/mutablestate",
+    "title": "MutableState",
+    "description": "`MutableState<T>` (created with `mutableStateOf()`) is the core observable state primitive in Compose. Reading a `State` value inside a composable automatically subscribes that composable to changes; when the value changes via the Snapshot system, Compose schedules the minimum set of composables for recomposition. The `by` delegate syntax (`var count by remember { mutableStateOf(0) }`) provides idiomatic read/write access. Compose also ships `mutableStateListOf` and `mutableStateMapOf` for observable collections.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "State and Jetpack Compose",
+        "url": "https://developer.android.com/develop/ui/compose/state"
+      },
+      {
+        "type": "Official",
+        "title": "MutableState — API reference",
+        "url": "https://developer.android.com/reference/kotlin/androidx/compose/runtime/MutableState"
+      },
+      {
+        "type": "Video",
+        "title": "A Compose state of mind: automatic state observation — Android Dev Summit 2021",
+        "url": "https://www.youtube.com/watch?v=rmv2ug-wW4U"
+      },
+      {
+        "type": "Video",
+        "title": "How to manage State in Jetpack Compose — Philipp Lackner 2024",
+        "url": "https://www.youtube.com/watch?v=ekB0w7tkG7k"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers — Architecture and state pathway",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-3"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/state/remember",
+    "title": "remember",
+    "description": "`remember` is a composable function that stores a value across recompositions by tying it to the composable's position in the Composition tree. Without `remember`, every recomposition would recreate the value from scratch. Pass a calculation lambda to `remember { ... }` for values that are expensive to create, and pass keys (`remember(key) { ... }`) to invalidate the stored value when inputs change. It is the foundation for all stateful composable patterns and works together with `mutableStateOf` for observable state.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "State and Jetpack Compose — remember",
+        "url": "https://developer.android.com/develop/ui/compose/state"
+      },
+      {
+        "type": "Article",
+        "title": "Lifecycle of composables",
+        "url": "https://developer.android.com/develop/ui/compose/lifecycle"
+      },
+      {
+        "type": "Video",
+        "title": "A Compose state of mind: automatic state observation — Android Dev Summit 2021",
+        "url": "https://www.youtube.com/watch?v=rmv2ug-wW4U"
+      },
+      {
+        "type": "Video",
+        "title": "How to manage State in Jetpack Compose — Philipp Lackner 2024",
+        "url": "https://www.youtube.com/watch?v=ekB0w7tkG7k"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers — Architecture and state pathway",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-3"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/state/remembersaveable",
+    "title": "rememberSaveable",
+    "description": "`rememberSaveable` works like `remember` but additionally persists the stored value across configuration changes (rotation) and process death by saving it to a `Bundle`. Types that are `Parcelable`, primitives, or annotated with `@Parcelize` are saved automatically; for custom types, supply a `Saver` (via `mapSaver` or `listSaver`). Use `rememberSaveable` whenever UI state — such as scroll position, form input, or selected tab — should survive the activity being recreated.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "State and Jetpack Compose — rememberSaveable",
+        "url": "https://developer.android.com/develop/ui/compose/state"
+      },
+      {
+        "type": "Article",
+        "title": "ViewModel and State in Compose — Codelab",
+        "url": "https://developer.android.com/codelabs/basic-android-kotlin-compose-viewmodel-and-state"
+      },
+      {
+        "type": "Video",
+        "title": "How to manage State in Jetpack Compose — Philipp Lackner 2024",
+        "url": "https://www.youtube.com/watch?v=ekB0w7tkG7k"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced state and side effects in Jetpack Compose — Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=TbxCz5AljQk"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers — Architecture and state pathway",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-3"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/state/derivedstateof",
+    "title": "derivedStateOf",
+    "description": "`derivedStateOf { }` creates a `State` whose value is computed from one or more other `State` objects and is only recalculated — and only triggers recomposition — when the **computed result** changes, even if its input states change more frequently. It is the right tool when you have a high-frequency state (e.g., scroll offset) but only care about a low-frequency derived condition (e.g., \"is the first item visible?\"). Wrapping the derivation in `remember` ensures a single instance is reused across recompositions.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Side-effects in Compose — derivedStateOf",
+        "url": "https://developer.android.com/develop/ui/compose/side-effects"
+      },
+      {
+        "type": "Article",
+        "title": "Follow best practices — Jetpack Compose",
+        "url": "https://developer.android.com/develop/ui/compose/performance/bestpractices"
+      },
+      {
+        "type": "Video",
+        "title": "Full Guide to Jetpack Compose Effect Handlers — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=gxWcfz3V2QE"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced state and side effects in Jetpack Compose — Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=TbxCz5AljQk"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/state/producestate",
+    "title": "produceState",
+    "description": "`produceState` bridges non-Compose asynchronous sources (callbacks, suspend functions, flows) into a Compose `State<T>`. It launches a coroutine scoped to the composable's lifecycle, and you push new values to the state via `value = ...` inside the producer block. It is equivalent to creating a `LaunchedEffect` that writes to a `mutableStateOf` but is more concise. Common uses include loading a resource from a repository, observing a callback-based sensor, or converting a `Flow` when `collectAsStateWithLifecycle` is not a fit.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Side-effects in Compose — produceState",
+        "url": "https://developer.android.com/develop/ui/compose/side-effects"
+      },
+      {
+        "type": "Article",
+        "title": "Advanced State and Side Effects in Jetpack Compose — Codelab",
+        "url": "https://developer.android.com/codelabs/jetpack-compose-advanced-state-side-effects"
+      },
+      {
+        "type": "Video",
+        "title": "Full Guide to Jetpack Compose Effect Handlers — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=gxWcfz3V2QE"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced state and side effects in Jetpack Compose — Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=TbxCz5AljQk"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/state/snapshotflow",
+    "title": "snapshotFlow",
+    "description": "`snapshotFlow { }` converts Compose `State` reads inside the lambda into a cold Kotlin `Flow` that emits a new value whenever any of the observed states change. It is useful for bridging Compose state into coroutine-based observation — for example, watching a `LazyListState.firstVisibleItemIndex` to trigger analytics or load more data. Unlike `derivedStateOf`, it produces a `Flow` rather than a `State`, which can be collected, combined with other flows, and cancelled independently.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Side-effects in Compose — snapshotFlow",
+        "url": "https://developer.android.com/develop/ui/compose/side-effects"
+      },
+      {
+        "type": "Article",
+        "title": "Introduction to the Compose Snapshot system",
+        "url": "https://blog.zachklipp.com/introduction-to-the-compose-snapshot-system/"
+      },
+      {
+        "type": "Video",
+        "title": "Full Guide to Jetpack Compose Effect Handlers — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=gxWcfz3V2QE"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced state and side effects in Jetpack Compose — Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=TbxCz5AljQk"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/state-hoisting/state-holder",
+    "title": "State Holder",
+    "description": "A state holder is a plain class (or `ViewModel` for business logic) that owns and encapsulates state and the logic that mutates it, keeping composables stateless and easier to test. For UI-scoped logic, create a plain class (e.g., `MyScreenState`) instantiated with `remember { MyScreenState() }` inside the composition; for business logic backed by repositories, use `ViewModel`. The rule of thumb: hoist state to the **lowest common ancestor** of all composables that read or write it, and extract it to a state holder when the logic becomes complex.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Where to hoist state",
+        "url": "https://developer.android.com/develop/ui/compose/state-hoisting"
+      },
+      {
+        "type": "Article",
+        "title": "Guide to Business and UI Logic State Holders in Jetpack Compose",
+        "url": "https://medium.com/@ahmet.cavus/guide-to-business-and-ui-logic-state-holders-in-jetpack-compose-6e8c53da0e09"
+      },
+      {
+        "type": "Video",
+        "title": "A Compose state of mind: automatic state observation — Android Dev Summit 2021",
+        "url": "https://www.youtube.com/watch?v=rmv2ug-wW4U"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced state and side effects in Jetpack Compose — Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=TbxCz5AljQk"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — state holders and ViewModels in practice",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/state-hoisting/remembercoroutinescope",
+    "title": "rememberCoroutineScope",
+    "description": "`rememberCoroutineScope()` returns a `CoroutineScope` bound to the current Composition point that is automatically cancelled when the composable leaves the Composition. Unlike `LaunchedEffect`, this scope is not tied to a key — you call it manually from event handlers, button clicks, or callbacks that fire outside the composition phase. Use it when you need to launch a coroutine imperatively in response to user actions (e.g., animating a drawer, scrolling a list to a position) rather than in response to state changes.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Side-effects in Compose — rememberCoroutineScope",
+        "url": "https://developer.android.com/develop/ui/compose/side-effects"
+      },
+      {
+        "type": "Official",
+        "title": "rememberCoroutineScope — API reference",
+        "url": "https://developer.android.com/reference/kotlin/androidx/compose/runtime/rememberCoroutineScope.composable"
+      },
+      {
+        "type": "Video",
+        "title": "Full Guide to Jetpack Compose Effect Handlers — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=gxWcfz3V2QE"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced state and side effects in Jetpack Compose — Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=TbxCz5AljQk"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/side-effects/launchedeffect",
+    "title": "LaunchedEffect",
+    "description": "`LaunchedEffect(key)` launches a coroutine that is scoped to the composable's lifetime and is automatically restarted whenever its key(s) change. It is the standard way to trigger side effects that need coroutine support — such as loading data when a screen first appears, playing an animation in response to a state change, or showing a `Snackbar` on error. The coroutine is cancelled and restarted if any key changes, and cancelled unconditionally when the composable leaves the Composition.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Side-effects in Compose — LaunchedEffect",
+        "url": "https://developer.android.com/develop/ui/compose/side-effects"
+      },
+      {
+        "type": "Article",
+        "title": "Advanced State and Side Effects in Jetpack Compose — Codelab",
+        "url": "https://developer.android.com/codelabs/jetpack-compose-advanced-state-side-effects"
+      },
+      {
+        "type": "Video",
+        "title": "Full Guide to Jetpack Compose Effect Handlers — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=gxWcfz3V2QE"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced state and side effects in Jetpack Compose — Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=TbxCz5AljQk"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — LaunchedEffect usage in production",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/side-effects/disposableeffect",
+    "title": "DisposableEffect",
+    "description": "`DisposableEffect(key)` is for side effects that need explicit **cleanup** when the composable leaves the Composition or when its key changes — such as registering a `BroadcastReceiver`, attaching a lifecycle observer, or acquiring a camera lock. The effect body runs when the composable enters (or the key changes), and the mandatory `onDispose { }` block runs before the next restart or when the composable is removed. Always pair every resource acquisition inside `DisposableEffect` with its release in `onDispose` to avoid leaks.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Side-effects in Compose — DisposableEffect",
+        "url": "https://developer.android.com/develop/ui/compose/side-effects"
+      },
+      {
+        "type": "Article",
+        "title": "Advanced State and Side Effects in Jetpack Compose — Codelab",
+        "url": "https://developer.android.com/codelabs/jetpack-compose-advanced-state-side-effects"
+      },
+      {
+        "type": "Video",
+        "title": "Full Guide to Jetpack Compose Effect Handlers — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=gxWcfz3V2QE"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced state and side effects in Jetpack Compose — Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=TbxCz5AljQk"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/side-effects/rememberupdatedstate",
+    "title": "rememberUpdatedState",
+    "description": "`rememberUpdatedState(value)` captures a **current** reference to a value inside a long-running effect (typically `LaunchedEffect`) without causing the effect to restart when that value changes. It solves the stale-closure problem: if you reference a lambda or state value directly inside a `LaunchedEffect(Unit)`, you capture the initial value forever. Wrap it with `rememberUpdatedState` to always read the latest value through a stable `State` reference. This is especially important for callbacks passed as parameters that the parent may swap out.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Side-effects in Compose — rememberUpdatedState",
+        "url": "https://developer.android.com/develop/ui/compose/side-effects"
+      },
+      {
+        "type": "Article",
+        "title": "Advanced State and Side Effects in Jetpack Compose — Codelab",
+        "url": "https://developer.android.com/codelabs/jetpack-compose-advanced-state-side-effects"
+      },
+      {
+        "type": "Video",
+        "title": "Full Guide to Jetpack Compose Effect Handlers — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=gxWcfz3V2QE"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced state and side effects in Jetpack Compose — Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=TbxCz5AljQk"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/theming-material-3/color",
+    "title": "Color",
+    "description": "Material 3's color system is built on five key tonal palettes (Primary, Secondary, Tertiary, Error, Neutral) each expanded to a 13-tone scale, giving a total of 29 named color roles (e.g., `primary`, `onPrimary`, `primaryContainer`). In Compose, these roles are accessed via `MaterialTheme.colorScheme.primary` and are applied consistently across all M3 components. You generate your palette with the [Material Theme Builder](https://m3.material.io/theme-builder) and pass a `ColorScheme` to `MaterialTheme`. Support for Dynamic Color (wallpaper-extracted palette) is built in on Android 12+.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Material Design 3 in Compose — Color",
+        "url": "https://developer.android.com/develop/ui/compose/designsystems/material3"
+      },
+      {
+        "type": "Official",
+        "title": "Color — Material Design 3",
+        "url": "https://m3.material.io/styles/color/overview"
+      },
+      {
+        "type": "Video",
+        "title": "How to Build Stunning Material 3 Apps with Jetpack Compose — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=h7K4n9C2jkI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — M3 color scheme in production",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Theming in Compose with Material 3 — official Codelab",
+        "url": "https://developer.android.com/codelabs/jetpack-compose-theming"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/theming-material-3/typography",
+    "title": "Typography",
+    "description": "Material 3 defines a 15-style type scale organized into five categories — Display, Headline, Title, Body, and Label — each in Large, Medium, and Small variants. In Compose, `MaterialTheme.typography` exposes all 15 as `TextStyle` properties (e.g., `bodyLarge`, `titleMedium`). Set your custom fonts and sizes by constructing a `Typography` object and passing it to `MaterialTheme`. M3 Expressive extends this system with variable font axes for more expressiveness while reducing the number of static font files needed.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Material Design 3 in Compose — Typography",
+        "url": "https://developer.android.com/develop/ui/compose/designsystems/material3"
+      },
+      {
+        "type": "Official",
+        "title": "Typography — Material Design 3",
+        "url": "https://m3.material.io/styles/typography/overview"
+      },
+      {
+        "type": "Video",
+        "title": "How to Build Stunning Material 3 Apps with Jetpack Compose — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=h7K4n9C2jkI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — Typography tokens in production",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Theming in Compose with Material 3 — official Codelab",
+        "url": "https://developer.android.com/codelabs/jetpack-compose-theming"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/theming-material-3/shape",
+    "title": "Shape",
+    "description": "Material 3 uses a shape system with five corner size tokens — Extra Small, Small, Medium, Large, and Extra Large — that components choose from to express hierarchy and interactivity. In Compose, `MaterialTheme.shapes` provides a `Shapes` object with these five levels as `Shape` values. You can override any level (e.g., set `medium = RoundedCornerShape(16.dp)`) to brand your app's corner style globally. Every M3 component references the appropriate shape token, so changing one level updates all components that use it.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Material Design 3 in Compose — Shapes",
+        "url": "https://developer.android.com/develop/ui/compose/designsystems/material3"
+      },
+      {
+        "type": "Official",
+        "title": "Shape — Material Design 3",
+        "url": "https://m3.material.io/styles/shape/overview"
+      },
+      {
+        "type": "Video",
+        "title": "How to Build Stunning Material 3 Apps with Jetpack Compose — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=h7K4n9C2jkI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples — Jetsnack shape system example",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      },
+      {
+        "type": "Course",
+        "title": "Theming in Compose with Material 3 — official Codelab",
+        "url": "https://developer.android.com/codelabs/jetpack-compose-theming"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/theming-material-3/dimens",
+    "title": "Dimens",
+    "description": "Dimensions in Compose are expressed as `Dp` (density-independent pixels) rather than XML `dimen` resources. Best practice is to define a central `Dimens` object (or `object Dimens { val spacingSmall = 8.dp ... }`) and reference it throughout your composables, making spacing consistent and easy to update. While Compose does not have a built-in `MaterialTheme.dimens` slot the way color and typography have, you can expose custom dimension tokens through `CompositionLocalProvider` for app-wide access. Avoid hard-coding `Dp` literals scattered across composables.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Resources in Compose — dimensionResource",
+        "url": "https://developer.android.com/develop/ui/compose/resources"
+      },
+      {
+        "type": "Article",
+        "title": "Material Theming with Jetpack Compose — Codelab",
+        "url": "https://developer.android.com/codelabs/basic-android-kotlin-compose-material-theming"
+      },
+      {
+        "type": "Video",
+        "title": "How to Build Stunning Material 3 Apps with Jetpack Compose — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=h7K4n9C2jkI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — Dimens object and spacing tokens",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/theming-material-3/motionscheme",
+    "title": "MotionScheme",
+    "description": "`MotionScheme` is a Material 3 Compose API (stable in material3 1.4+) that provides a named set of `FiniteAnimationSpec` tokens for spatial and effects animations, analogous to how `ColorScheme` provides color tokens. Access it via `MaterialTheme.motionScheme`; it exposes `defaultSpatialSpec()` for animations that change shape or bounds, and `defaultEffectsSpec()` for color/alpha animations. M3 Expressive adds `MotionScheme.expressive()` for spring-based, physics-feel motion. All M3 components now internally use these specs for consistent, themeable animation.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "MotionScheme — API reference",
+        "url": "https://developer.android.com/reference/kotlin/androidx/compose/material3/MotionScheme"
+      },
+      {
+        "type": "Article",
+        "title": "M3 Expressive: New Motion System",
+        "url": "https://m3.material.io/blog/m3-expressive-motion-theming"
+      },
+      {
+        "type": "Video",
+        "title": "Modern Android Development at Google I/O 2023 — playlist",
+        "url": "https://www.youtube.com/playlist?list=PLWz5rJ2EKKc8L8WlmqPD6zPEyVSKrL5PJ"
+      },
+      {
+        "type": "Repo",
+        "title": "meticha/material-3-expressive-catalog — MotionScheme demos",
+        "url": "https://github.com/meticha/material-3-expressive-catalog"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/theming-material-3/custom-theme",
+    "title": "Custom Theme",
+    "description": "A custom Material 3 theme in Compose is created by generating a `ColorScheme` (light and dark variants), a `Typography`, and a `Shapes` object — typically with the [Material Theme Builder](https://m3.material.io/theme-builder) — and passing them to the `MaterialTheme` composable that wraps your app's content. You can also extend the theme with your own `CompositionLocal` values (custom dimensions, brand-specific tokens) accessed anywhere in the tree. Every composable in the subtree then reads from `MaterialTheme.colorScheme`, `MaterialTheme.typography`, and `MaterialTheme.shapes` automatically.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Material Design 3 in Compose — Custom Theme",
+        "url": "https://developer.android.com/develop/ui/compose/designsystems/material3"
+      },
+      {
+        "type": "Official",
+        "title": "Theming in Compose with Material 3 — Codelab",
+        "url": "https://developer.android.com/codelabs/jetpack-compose-theming"
+      },
+      {
+        "type": "Video",
+        "title": "How to Build Stunning Material 3 Apps with Jetpack Compose — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=h7K4n9C2jkI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — full custom M3 theme implementation",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples — Jetsnack custom design system",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/modifier/modifier-order",
+    "title": "Modifier Order",
+    "description": "In Compose, modifiers are applied sequentially from left to right (or top to bottom in a chain), and order **significantly affects the visual and behavioral result**. For example, `Modifier.padding(16.dp).background(Color.Red)` pads first so the red background is drawn inside the padding, while reversing the order draws red behind the padding. Layout modifiers (size, padding) interact with drawing modifiers (background, border) based on position in the chain. Understanding order is essential for achieving the intended layout and avoiding subtle visual bugs.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Compose modifiers — Order matters",
+        "url": "https://developer.android.com/develop/ui/compose/modifiers"
+      },
+      {
+        "type": "Article",
+        "title": "Jetpack Compose Performance — best practices",
+        "url": "https://developer.android.com/develop/ui/compose/performance/bestpractices"
+      },
+      {
+        "type": "Video",
+        "title": "Compose Modifiers deep dive — Android Dev Summit 2022",
+        "url": "https://www.youtube.com/watch?v=BjGX2RftXsU"
+      },
+      {
+        "type": "Video",
+        "title": "Deep dive into Jetpack Compose layouts — Android Developers",
+        "url": "https://www.youtube.com/watch?v=zMKMwh9gZuI"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/modifier/chaining",
+    "title": "Chaining",
+    "description": "Modifier chaining is the fluent pattern of combining multiple modifier calls with `.` into a single `Modifier` value passed to a composable. Each call in the chain returns a new `Modifier` that wraps the previous ones, building an immutable linked list of modifier elements processed in order. Extracting repeated chains into extension properties (`val Modifier.cardStyle get() = this.padding(8.dp).shadow(2.dp)`) avoids duplication and improves readability. Prefer chaining over nested composables for purely decorative concerns.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Compose modifiers — Chaining",
+        "url": "https://developer.android.com/develop/ui/compose/modifiers"
+      },
+      {
+        "type": "Official",
+        "title": "List of Compose modifiers",
+        "url": "https://developer.android.com/develop/ui/compose/modifiers-list"
+      },
+      {
+        "type": "Video",
+        "title": "Compose Modifiers deep dive — Android Dev Summit 2022",
+        "url": "https://www.youtube.com/watch?v=BjGX2RftXsU"
+      },
+      {
+        "type": "Video",
+        "title": "Deep dive into Jetpack Compose layouts — Android Developers",
+        "url": "https://www.youtube.com/watch?v=zMKMwh9gZuI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples — modifier chaining examples",
+        "url": "https://github.com/android/compose-samples"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/modifier/composed-modifier",
+    "title": "Composed modifier",
+    "description": "`Modifier.composed { }` was the original API for creating stateful custom modifiers that needed access to `remember`, `SideEffect`, or composition locals. It worked by running a composable block inside the modifier factory, but this caused unnecessary recompositions and allocations on every composition pass. **It is now deprecated and no longer recommended.** The replacement is the `Modifier.Node` API, which avoids the composable-function overhead entirely and delivers up to 80% faster modifier composition in benchmarks.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Create custom modifiers — composed vs Modifier.Node",
+        "url": "https://developer.android.com/develop/ui/compose/custom-modifiers"
+      },
+      {
+        "type": "Article",
+        "title": "Compose Modifier.Node and where to find it — droidcon",
+        "url": "https://www.droidcon.com/2023/10/01/compose-modifier-node-and-where-to-find-it/"
+      },
+      {
+        "type": "Video",
+        "title": "Compose Modifiers deep dive — Android Dev Summit 2022",
+        "url": "https://www.youtube.com/watch?v=BjGX2RftXsU"
+      },
+      {
+        "type": "Article",
+        "title": "Fundamentals of Compose layouts and modifiers — Android Developers Medium",
+        "url": "https://medium.com/androiddevelopers/fundamentals-of-compose-layouts-and-modifiers-64d794664b66"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/modifier/modifier-node-api",
+    "title": "Modifier.Node API",
+    "description": "`Modifier.Node` is the current recommended low-level API for creating custom modifiers, the same API Compose uses internally for all built-in modifiers. You implement a class that extends `Modifier.Node` (and any node interfaces like `LayoutModifierNode`, `DrawModifierNode`, `SemanticsModifierNode`), a `ModifierNodeElement` to carry parameters and detect changes, and an optional factory extension function for ergonomic usage. Because `Modifier.Node` does not participate in composition, it has no recomposition cost and significantly fewer allocations than the deprecated `composed { }` approach.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Create custom modifiers — Modifier.Node",
+        "url": "https://developer.android.com/develop/ui/compose/custom-modifiers"
+      },
+      {
+        "type": "Article",
+        "title": "Exploring Modifier.Node for creating custom Modifiers in Jetpack Compose — RevenueCat",
+        "url": "https://www.revenuecat.com/blog/engineering/compose-custom-modifier/"
+      },
+      {
+        "type": "Video",
+        "title": "Compose Modifiers deep dive — Android Dev Summit 2022",
+        "url": "https://www.youtube.com/watch?v=BjGX2RftXsU"
+      },
+      {
+        "type": "Article",
+        "title": "Fundamentals of Compose layouts and modifiers — Android Developers Medium",
+        "url": "https://medium.com/androiddevelopers/fundamentals-of-compose-layouts-and-modifiers-64d794664b66"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples — Modifier.Node usage examples",
+        "url": "https://github.com/android/compose-samples"
+      }
+    ]
+  }
+]

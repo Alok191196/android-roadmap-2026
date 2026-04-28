@@ -1,0 +1,834 @@
+[
+  {
+    "id": "adaptive-ui-form-factors/adaptive/windowsizeclass",
+    "title": "WindowSizeClass",
+    "description": "**WindowSizeClass** is an opinionated set of viewport breakpoints (Compact, Medium, Expanded, Large, Extra-large) that categorise the available window space your app occupies. Use `currentWindowAdaptiveInfo().windowSizeClass` to read the current class inside a composable and react to it with different layouts. It is the recommended starting point for any adaptive-layout work because it decouples layout decisions from specific device types or orientations.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Use window size classes | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/adaptive/use-window-size-classes"
+      },
+      {
+        "type": "Article",
+        "title": "Material 3 Adaptive: Implementing Window Size Classes in Kotlin Compose",
+        "url": "https://dev.to/marlonlom/material-3-adaptive-implementing-window-size-classes-in-kotlin-compose-40po"
+      },
+      {
+        "type": "Video",
+        "title": "Building UI with the Material 3 adaptive library (Google I/O 2024)",
+        "url": "https://www.youtube.com/watch?v=xPUZENis4gc"
+      },
+      {
+        "type": "Repo",
+        "title": "android/adaptive-apps-samples — official adaptive layout samples",
+        "url": "https://github.com/android/adaptive-apps-samples"
+      },
+      {
+        "type": "Course",
+        "title": "Build adaptive apps with Jetpack Compose | Google Codelabs",
+        "url": "https://codelabs.developers.google.com/jetpack-compose-adaptability"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-ui-form-factors/adaptive/material-3-adaptive",
+    "title": "Material 3 Adaptive",
+    "description": "**Material 3 Adaptive** is a suite of Jetpack libraries (`compose-material3-adaptive`, `adaptive-layout`, `adaptive-navigation`) that provide ready-made scaffold composables for building multi-pane, responsive UIs aligned with Material You guidelines. It sits on top of WindowSizeClass and abstracts the logic of showing one or two panes based on available space. Use it whenever you want canonical adaptive layouts—list-detail, supporting pane, or feed—without reimplementing the pane-switching state machine yourself.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "About adaptive layouts | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/adaptive"
+      },
+      {
+        "type": "Official",
+        "title": "Compose Material 3 Adaptive | Jetpack | Android Developers",
+        "url": "https://developer.android.com/jetpack/androidx/releases/compose-material3-adaptive"
+      },
+      {
+        "type": "Video",
+        "title": "Building UI with the Material 3 adaptive library (Google I/O 2024)",
+        "url": "https://www.youtube.com/watch?v=xPUZENis4gc"
+      },
+      {
+        "type": "Repo",
+        "title": "android/socialite — production sample using Material 3 Adaptive",
+        "url": "https://github.com/android/socialite"
+      },
+      {
+        "type": "Course",
+        "title": "Build adaptive apps with Jetpack Compose | Google Codelabs",
+        "url": "https://codelabs.developers.google.com/jetpack-compose-adaptability"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-ui-form-factors/adaptive/navigationsuitescaffold",
+    "title": "NavigationSuiteScaffold",
+    "description": "**NavigationSuiteScaffold** automatically switches between a bottom navigation bar (compact windows) and a navigation rail or permanent drawer (larger windows) based on the current WindowSizeClass. Add it from the `material3-adaptive-navigation-suite` artifact, supply `navigationSuiteItems`, and let the scaffold handle the layout transition. It is the simplest way to implement adaptive top-level navigation in Compose without manual state management.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Build adaptive navigation | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/adaptive/build-adaptive-navigation"
+      },
+      {
+        "type": "Official",
+        "title": "androidx.compose.material3.adaptive.navigationsuite | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/kotlin/androidx/compose/material3/adaptive/navigationsuite/package-summary"
+      },
+      {
+        "type": "Video",
+        "title": "Automatically Adjust Navigation Based On Screen Size With NavigationSuiteScaffold",
+        "url": "https://www.youtube.com/watch?v=u8vQgmgf3X4"
+      },
+      {
+        "type": "Video",
+        "title": "Navigation Suite Scaffold In Jetpack Compose | Auto Adaptive UI | Material 3",
+        "url": "https://www.youtube.com/watch?v=s-iCWOG5F6g"
+      },
+      {
+        "type": "Repo",
+        "title": "android/adaptive-apps-samples — NavigationSuiteScaffold usage",
+        "url": "https://github.com/android/adaptive-apps-samples"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-ui-form-factors/adaptive/listdetailpanescaffold",
+    "title": "ListDetailPaneScaffold",
+    "description": "**ListDetailPaneScaffold** (used via `NavigableListDetailPaneScaffold`) implements the canonical list-detail pattern: on large windows both panes appear side by side; on compact windows only one is visible at a time with built-in back-navigation and predictive-back animation support. It is the right choice for master-detail flows such as email, contacts, or settings screens that must adapt across phone, tablet, and foldable form factors.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Build a list-detail layout | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/adaptive/list-detail"
+      },
+      {
+        "type": "Official",
+        "title": "Canonical layouts | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/adaptive/canonical-layouts"
+      },
+      {
+        "type": "Video",
+        "title": "Create Adaptive designs with Pane Layouts in Jetpack Compose: ListDetailPane, SupportingPaneScaffold",
+        "url": "https://www.youtube.com/watch?v=lcpRyhDyvso"
+      },
+      {
+        "type": "Video",
+        "title": "Building UI with the Material 3 adaptive library (Google I/O 2024)",
+        "url": "https://www.youtube.com/watch?v=xPUZENis4gc"
+      },
+      {
+        "type": "Repo",
+        "title": "android/socialite — list-detail adaptive layout in production",
+        "url": "https://github.com/android/socialite"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-ui-form-factors/adaptive/supportingpanescaffold",
+    "title": "SupportingPaneScaffold",
+    "description": "**SupportingPaneScaffold** (used via `NavigableSupportingPaneScaffold`) divides the window into a primary content area (roughly two-thirds) and a supporting pane that provides contextual or supplementary information. On compact screens only the main pane is shown; on expanded screens both panes appear together. It suits use cases such as a document editor with a properties panel or a map with a details sheet.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Build a supporting pane layout | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/adaptive/build-a-supporting-pane-layout"
+      },
+      {
+        "type": "Official",
+        "title": "SupportingPaneScaffoldRole | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/kotlin/androidx/compose/material3/adaptive/layout/SupportingPaneScaffoldRole"
+      },
+      {
+        "type": "Video",
+        "title": "Create Adaptive designs with Pane Layouts in Jetpack Compose: ListDetailPane, SupportingPaneScaffold",
+        "url": "https://www.youtube.com/watch?v=lcpRyhDyvso"
+      },
+      {
+        "type": "Video",
+        "title": "Building UI with the Material 3 adaptive library (Google I/O 2024)",
+        "url": "https://www.youtube.com/watch?v=xPUZENis4gc"
+      },
+      {
+        "type": "Repo",
+        "title": "android/adaptive-apps-samples — supporting pane patterns",
+        "url": "https://github.com/android/adaptive-apps-samples"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-ui-form-factors/form-factors/foldables-foldingfeature",
+    "title": "Foldables (FoldingFeature)",
+    "description": "**FoldingFeature** (from Jetpack WindowManager) exposes the state, orientation, occlusion type, and `isSeparating` flag of a foldable hinge so your app can adapt to tabletop, book, or flat postures. Query it via `WindowInfoTracker.windowLayoutInfo` and filter for `FoldingFeature` instances. Apps that react to fold state can rearrange their content around the hinge to avoid placing interactive elements on a crease.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Make your app fold aware | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/adaptive/foldables/make-your-app-fold-aware"
+      },
+      {
+        "type": "Official",
+        "title": "Learn about foldables | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/adaptive/foldables/learn-about-foldables"
+      },
+      {
+        "type": "Video",
+        "title": "Exploring Android's Jetpack WindowManager to Support Foldable Devices",
+        "url": "https://www.youtube.com/watch?v=6NHs0n8wNsA"
+      },
+      {
+        "type": "Course",
+        "title": "Support foldable and dual-screen devices with Jetpack WindowManager | Codelab",
+        "url": "https://developer.android.com/codelabs/android-window-manager-dual-screen-foldables"
+      },
+      {
+        "type": "Repo",
+        "title": "android/adaptive-apps-samples — foldable-aware layout samples",
+        "url": "https://github.com/android/adaptive-apps-samples"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-ui-form-factors/form-factors/large-screens-tablet",
+    "title": "Large Screens / Tablet",
+    "description": "Large-screen and tablet design requires apps to exploit the additional space through multi-pane layouts, increased touch targets, and edge-to-edge content rather than simply stretching a phone UI. The Android large-screen quality guidelines define three tiers of readiness that apps should meet. Starting with Android 16, the system ignores fixed orientation and resizability restrictions for windows with `smallestWidth ≥ 600dp`, so apps must handle any window size gracefully.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Build adaptive apps | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/build-adaptive-apps"
+      },
+      {
+        "type": "Official",
+        "title": "Adaptive apps | Multidevice | Android Developers",
+        "url": "https://developer.android.com/large-screens"
+      },
+      {
+        "type": "Video",
+        "title": "Building UI with the Material 3 adaptive library (Google I/O 2024)",
+        "url": "https://www.youtube.com/watch?v=xPUZENis4gc"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — production app with large-screen adaptive layouts",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Build adaptive apps with Jetpack Compose | Google Codelabs",
+        "url": "https://codelabs.developers.google.com/jetpack-compose-adaptability"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-ui-form-factors/form-factors/compose-for-wear-os",
+    "title": "Compose for Wear OS",
+    "description": "**Compose for Wear OS** brings the Jetpack Compose programming model to round watch faces, circular lists, and wrist-optimised components from the `androidx.wear.compose` libraries. It mirrors the standard Compose API but replaces components with Wear-aware equivalents (e.g. `ScalingLazyColumn`, `SwipeDismissableNavHost`). Use it for any new Wear OS app to benefit from declarative UI and Material Expressive for Wear.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Use Jetpack Compose on Wear OS | Android Developers",
+        "url": "https://developer.android.com/training/wearables/compose"
+      },
+      {
+        "type": "Official",
+        "title": "Compose for Wear OS Codelab | Android Developers",
+        "url": "https://developer.android.com/codelabs/compose-for-wear-os"
+      },
+      {
+        "type": "Video",
+        "title": "Compose for Wear OS code-along | Android Developers",
+        "url": "https://www.youtube.com/watch?v=7U3FwzuqgRE"
+      },
+      {
+        "type": "Video",
+        "title": "From mobile to Wear OS: Learn how to create a Compose app for the wrist",
+        "url": "https://www.youtube.com/watch?v=B7D3G6tC9n0"
+      },
+      {
+        "type": "Repo",
+        "title": "android/wear-os-samples — official Wear OS Compose samples",
+        "url": "https://github.com/android/wear-os-samples"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-ui-form-factors/form-factors/compose-for-tv",
+    "title": "Compose for TV",
+    "description": "**Compose for TV** (the `androidx.tv` libraries) adapts Jetpack Compose for the 10-foot TV experience: D-pad focus management, immersive browsing rows, and TV-optimised Material components like `ImmersiveList` and `Carousel`. It replaces the Leanback library and integrates natively with the Compose ecosystem. Use it for Android TV apps that require focus-driven navigation and lean-back media browsing.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Use Jetpack Compose on Android TV | Android Developers",
+        "url": "https://developer.android.com/training/tv/playback/compose"
+      },
+      {
+        "type": "Official",
+        "title": "Introduction to Compose for TV | Android Developers",
+        "url": "https://developer.android.com/codelabs/compose-for-tv-introduction"
+      },
+      {
+        "type": "Video",
+        "title": "What's new in TV and intro to Compose (Google I/O 2023)",
+        "url": "https://io.google/2023/program/24ef7b93-7823-412e-99b7-b97a615f3334/"
+      },
+      {
+        "type": "Repo",
+        "title": "android/tv-samples — JetStreamCompose and TvMaterialCatalog",
+        "url": "https://github.com/android/tv-samples"
+      },
+      {
+        "type": "Official",
+        "title": "androidx.tv | Jetpack releases | Android Developers",
+        "url": "https://developer.android.com/jetpack/androidx/releases/tv"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-ui-form-factors/form-factors/android-xr",
+    "title": "Android XR",
+    "description": "**Android XR** is Google's platform for building spatial and immersive experiences on XR headsets and glasses using the Jetpack XR SDK, OpenXR, or WebXR. Apps can present content in spatial panels, create fully immersive 3D environments, or blend AR overlays into the real world. This is an emerging form factor; the Jetpack XR SDK is currently in Developer Preview and evolving rapidly.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Build for Android XR | Android Developers",
+        "url": "https://developer.android.com/develop/xr/get-started"
+      },
+      {
+        "type": "Official",
+        "title": "Get started with the Jetpack XR SDK | Android XR | Android Developers",
+        "url": "https://developer.android.com/develop/xr/jetpack-xr-sdk/getting-started"
+      },
+      {
+        "type": "Video",
+        "title": "Android XR | I/O 2025 Keynote",
+        "url": "https://www.youtube.com/watch?v=7nv1snJRCEI"
+      },
+      {
+        "type": "Video",
+        "title": "The future is now, with Compose and AI on Android XR (Google I/O 2025)",
+        "url": "https://io.google/2025/explore/technical-session-2"
+      },
+      {
+        "type": "Repo",
+        "title": "GetStream/android-xr-video — real-world Android XR app with Compose",
+        "url": "https://github.com/GetStream/android-xr-video"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-ui-form-factors/insets/edge-to-edge",
+    "title": "Edge-to-edge",
+    "description": "**Edge-to-edge** display means your app draws behind the status bar and navigation bar so content extends to the full screen. Android 15 enforces this for all apps targeting API 35+, making adoption non-optional. Use `enableEdgeToEdge()` in your Activity and then consume `WindowInsets` in Compose to ensure interactive content is never hidden behind system bars.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Set up Edge-to-edge | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/system/setup-e2e"
+      },
+      {
+        "type": "Official",
+        "title": "Display content edge-to-edge in views | Android Developers",
+        "url": "https://developer.android.com/develop/ui/views/layout/edge-to-edge"
+      },
+      {
+        "type": "Video",
+        "title": "Android 15 Edge to Edge | Complete Guide to WindowInsets & System Bars",
+        "url": "https://www.youtube.com/watch?v=kz_r4HAHqmw"
+      },
+      {
+        "type": "Course",
+        "title": "Handle edge-to-edge enforcements in Android 15 | Codelab",
+        "url": "https://developer.android.com/codelabs/edge-to-edge"
+      },
+      {
+        "type": "Article",
+        "title": "Insets handling tips for Android 15's edge-to-edge enforcement | Android Developers",
+        "url": "https://medium.com/androiddevelopers/insets-handling-tips-for-android-15s-edge-to-edge-enforcement-872774e8839b"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-ui-form-factors/insets/windowinsets",
+    "title": "WindowInsets",
+    "description": "**WindowInsets** provide information about system UI areas—status bar, navigation bar, IME (soft keyboard), display cutouts—that your layout must avoid or respond to. In Compose, use inset-aware padding modifiers (`safeDrawing`, `safeContent`, `ime`) or `WindowInsets.*` size modifiers to shift content away from system UI automatically. Correct inset handling is a prerequisite for both edge-to-edge layouts and keyboard-aware screens.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "About window insets | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/system/insets"
+      },
+      {
+        "type": "Official",
+        "title": "Set up window insets | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/system/insets-ui"
+      },
+      {
+        "type": "Video",
+        "title": "Insets: Compose edition | Android Developers",
+        "url": "https://www.youtube.com/watch?v=mlL6H-s0nF0"
+      },
+      {
+        "type": "Video",
+        "title": "Animating your keyboard using WindowInsets | Android Developers",
+        "url": "https://www.youtube.com/watch?v=acC7SR1EXsI"
+      },
+      {
+        "type": "Video",
+        "title": "Understanding WindowInsets with Subhrajyoti Sen | Android Worldwide",
+        "url": "https://www.youtube.com/watch?v=RG8OQ9M05n0"
+      }
+    ]
+  },
+  {
+    "id": "widgets-glance/glance/glanceappwidget",
+    "title": "GlanceAppWidget",
+    "description": "**GlanceAppWidget** is the core Jetpack Glance class you subclass to define an app widget using Compose-like syntax. Override `provideGlance` to emit a `@Composable` layout built from Glance primitives (`Box`, `Row`, `Text`, `Button`, etc.). Pair it with `GlanceAppWidgetReceiver` in the manifest to register the widget with the system. Note that Glance composables are not interoperable with standard Jetpack Compose UI—they translate to `RemoteViews` at runtime.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Create an app widget with Glance | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/glance/create-app-widget"
+      },
+      {
+        "type": "Article",
+        "title": "Demystifying Jetpack Glance for app widgets | Android Developers Medium",
+        "url": "https://medium.com/androiddevelopers/demystifying-jetpack-glance-for-app-widgets-8fbc7041955c"
+      },
+      {
+        "type": "Video",
+        "title": "Build beautiful Android widgets with Jetpack Glance (Google I/O 2024)",
+        "url": "https://www.youtube.com/watch?v=jI1LKN7jBVk"
+      },
+      {
+        "type": "Course",
+        "title": "Create a widget with Glance | Codelab | Android Developers",
+        "url": "https://developer.android.com/codelabs/glance"
+      },
+      {
+        "type": "Repo",
+        "title": "android/user-interface-samples — AppWidget/glance sample",
+        "url": "https://github.com/android/user-interface-samples/tree/main/AppWidget"
+      }
+    ]
+  },
+  {
+    "id": "widgets-glance/glance/glancestatedefinition",
+    "title": "GlanceStateDefinition",
+    "description": "**GlanceStateDefinition** is the interface that tells Glance how to persist and read widget-specific state between updates. Because the Glance composition is recreated on every widget update, standard Compose `remember` does not work; you must supply a `GlanceStateDefinition` (e.g. `PreferencesGlanceStateDefinition` for DataStore Preferences) to hold transient widget state like a counter value or a selected option. Override `stateDefinition` in your `GlanceAppWidget` subclass to activate it.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Manage and update GlanceAppWidget | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/glance/glance-app-widget"
+      },
+      {
+        "type": "Official",
+        "title": "PreferencesGlanceStateDefinition | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/kotlin/androidx/glance/state/PreferencesGlanceStateDefinition"
+      },
+      {
+        "type": "Video",
+        "title": "Build beautiful Android widgets with Jetpack Glance (Google I/O 2024)",
+        "url": "https://www.youtube.com/watch?v=jI1LKN7jBVk"
+      },
+      {
+        "type": "Article",
+        "title": "Demystifying Jetpack Glance for app widgets | Android Developers Medium",
+        "url": "https://medium.com/androiddevelopers/demystifying-jetpack-glance-for-app-widgets-8fbc7041955c"
+      },
+      {
+        "type": "Repo",
+        "title": "android/user-interface-samples — AppWidget/glance state examples",
+        "url": "https://github.com/android/user-interface-samples/tree/main/AppWidget"
+      }
+    ]
+  },
+  {
+    "id": "widgets-glance/glance/glance-material-3",
+    "title": "Glance + Material 3",
+    "description": "The `androidx.glance:glance-material3` artifact adds `GlanceTheme` and `ColorProviders` so your widget can use Material You dynamic colours that adapt to the user's wallpaper on supported devices (Android 12+). Wrap your Glance composables in `GlanceTheme(colors = GlanceTheme.colors)` and reference `GlanceTheme.colors.*` tokens to automatically switch between light and dark schemes. This is the recommended approach for keeping widgets visually consistent with Material 3 app surfaces.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Implement a Glance theme | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/glance/theme"
+      },
+      {
+        "type": "Official",
+        "title": "androidx.glance.material3 | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/kotlin/androidx/glance/material3/package-summary"
+      },
+      {
+        "type": "Video",
+        "title": "Use Dynamic Colors from Wallpaper in Widget GlanceTheme using Jetpack Glance",
+        "url": "https://www.youtube.com/watch?v=AE4of56YvcU"
+      },
+      {
+        "type": "Video",
+        "title": "Build beautiful Android widgets with Jetpack Glance (Google I/O 2024)",
+        "url": "https://www.youtube.com/watch?v=jI1LKN7jBVk"
+      },
+      {
+        "type": "Repo",
+        "title": "android/user-interface-samples — GlanceTheme.kt reference implementation",
+        "url": "https://github.com/android/user-interface-samples/blob/main/AppWidget/app/src/main/java/com/example/android/appwidget/glance/GlanceTheme.kt"
+      }
+    ]
+  },
+  {
+    "id": "camera-media/camera/camerax",
+    "title": "CameraX",
+    "description": "**CameraX** is the recommended Jetpack camera library that abstracts Camera2 into four simple use cases: `Preview`, `ImageCapture`, `ImageAnalysis`, and `VideoCapture`. It handles device-specific quirks automatically, integrates with the Activity lifecycle, and supports the new `camera-compose` artifact for Compose-native viewfinders. Start with CameraX for any new camera feature; drop to Camera2 only when you need fine-grained hardware controls not exposed by CameraX.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "CameraX overview | Android media | Android Developers",
+        "url": "https://developer.android.com/media/camera/camerax"
+      },
+      {
+        "type": "Article",
+        "title": "Getting Started with CameraX in Jetpack Compose | Android Developers Medium",
+        "url": "https://medium.com/androiddevelopers/getting-started-with-camerax-in-jetpack-compose-781c722ca0c4"
+      },
+      {
+        "type": "Video",
+        "title": "Building modern Android media and camera experiences (Google I/O 2024)",
+        "url": "https://io.google/2024/explore/25ff7e80-ca0b-4b3b-aa89-aa796618b3af/"
+      },
+      {
+        "type": "Repo",
+        "title": "android/camera-samples — CameraXBasic, CameraXVideo, CameraXExtensions",
+        "url": "https://github.com/android/camera-samples"
+      },
+      {
+        "type": "Course",
+        "title": "Getting started with CameraX | Codelab | Android Developers",
+        "url": "https://developer.android.com/codelabs/camerax-getting-started"
+      }
+    ]
+  },
+  {
+    "id": "camera-media/camera/camera2",
+    "title": "Camera2",
+    "description": "**Camera2** is the low-level platform camera API (`android.hardware.camera2`) that replaced the deprecated `Camera` class. It gives direct access to per-frame capture parameters, RAW sensor output, multi-camera streams, and advanced hardware features like HDR capture. Because of its complexity, most apps should prefer CameraX; use Camera2 directly only when you need capabilities such as manual sensor control, zero-shutter-lag burst capture, or multi-camera logical streams.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Camera2 overview | Android media | Android Developers",
+        "url": "https://developer.android.com/media/camera/camera2"
+      },
+      {
+        "type": "Official",
+        "title": "android.hardware.camera2 | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/android/hardware/camera2/package-summary"
+      },
+      {
+        "type": "Video",
+        "title": "Building high quality Android camera experiences (Google I/O 2023)",
+        "url": "https://io.google/2023/program/b276c79d-2b68-4e87-93a6-44df1a24be38/"
+      },
+      {
+        "type": "Repo",
+        "title": "android/camera-samples — Camera2Basic and Camera2Video",
+        "url": "https://github.com/android/camera-samples"
+      },
+      {
+        "type": "Course",
+        "title": "Camera2Extensions API | Android media | Android Developers",
+        "url": "https://developer.android.com/media/camera/camera2/extensions-api"
+      }
+    ]
+  },
+  {
+    "id": "camera-media/media/media3-exoplayer",
+    "title": "Media3 / ExoPlayer",
+    "description": "**Jetpack Media3** is the unified media playback library consolidating ExoPlayer, MediaSession, and UI components under the `androidx.media3` namespace. `ExoPlayer` implements the `Player` interface and supports adaptive streaming (HLS, DASH, SmoothStreaming), DRM, and custom renderers out of the box. Use Media3 for all new media playback work; the standalone `com.google.android.exoplayer2` library is discontinued.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Media3 ExoPlayer | Android media | Android Developers",
+        "url": "https://developer.android.com/media/media3/exoplayer"
+      },
+      {
+        "type": "Article",
+        "title": "From AndroidView to PlayerSurface: Modernizing ExoPlayer with Media3's Compose UI | ProAndroidDev",
+        "url": "https://proandroiddev.com/from-androidview-to-playersurface-modernizing-exoplayer-with-media3s-compose-ui-74e40ce81f94"
+      },
+      {
+        "type": "Video",
+        "title": "Building modern Android media and camera experiences (Google I/O 2024)",
+        "url": "https://io.google/2024/explore/25ff7e80-ca0b-4b3b-aa89-aa796618b3af/"
+      },
+      {
+        "type": "Video",
+        "title": "How to Play Audio & Video on Android with ExoPlayer / Media3 | 2024",
+        "url": "https://www.youtube.com/watch?v=0dun8xS-Pqg"
+      },
+      {
+        "type": "Repo",
+        "title": "androidx/media — official Jetpack Media3 / ExoPlayer repository",
+        "url": "https://github.com/androidx/media"
+      }
+    ]
+  },
+  {
+    "id": "camera-media/media/photo-picker",
+    "title": "Photo Picker",
+    "description": "The **Android Photo Picker** is a privacy-safe, system-provided UI that lets users grant an app access to specific photos and videos without requiring broad `READ_EXTERNAL_STORAGE` permission. Launch it with the `PickVisualMedia` contract via Activity Result APIs. It is available back to API 19 via the Jetpack `photopicker` library (Google Play Services backport) and is the recommended approach for all new media-selection flows.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Photo picker | App data and files | Android Developers",
+        "url": "https://developer.android.com/training/data-storage/shared/photo-picker"
+      },
+      {
+        "type": "Official",
+        "title": "photopicker | Jetpack | Android Developers",
+        "url": "https://developer.android.com/jetpack/androidx/releases/photopicker"
+      },
+      {
+        "type": "Article",
+        "title": "Photo Picker Everywhere | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2023/04/photo-picker-everywhere.html"
+      },
+      {
+        "type": "Video",
+        "title": "Building modern Android media and camera experiences (Google I/O 2024)",
+        "url": "https://io.google/2024/explore/25ff7e80-ca0b-4b3b-aa89-aa796618b3af/"
+      },
+      {
+        "type": "Repo",
+        "title": "android/platform-samples — photo picker usage example",
+        "url": "https://github.com/android/platform-samples"
+      }
+    ]
+  },
+  {
+    "id": "camera-media/media/mediastore-scoped",
+    "title": "MediaStore (scoped)",
+    "description": "**MediaStore** is the system content provider for querying and writing shared media files (images, videos, audio, downloads). Under scoped storage (enforced from API 29+) each app can only see its own contributed files and well-known collections without requiring `READ_MEDIA_*` permissions. Use MediaStore for accessing media beyond the Photo Picker's selection model—for example, to enumerate music tracks, contribute a captured video to the shared gallery, or query file metadata.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Access media files from shared storage | App data and files | Android Developers",
+        "url": "https://developer.android.com/training/data-storage/shared/media"
+      },
+      {
+        "type": "Official",
+        "title": "MediaStore | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/android/provider/MediaStore"
+      },
+      {
+        "type": "Video",
+        "title": "Scoped Storage Android 11: Open and Save file with MediaStore",
+        "url": "https://www.youtube.com/watch?v=sWtKSeS86zQ"
+      },
+      {
+        "type": "Article",
+        "title": "Scoped Storage: All in One File Handling using MediaStore",
+        "url": "https://medium.com/@lakshyasukhralia/scoped-storage-all-in-one-file-handling-using-mediastore-e895a0beddac"
+      },
+      {
+        "type": "Repo",
+        "title": "android/platform-samples — shared storage and MediaStore samples",
+        "url": "https://github.com/android/platform-samples"
+      }
+    ]
+  },
+  {
+    "id": "background-work/foreground/foreground-service-types",
+    "title": "Foreground Service Types",
+    "description": "From Android 14 (API 34), every foreground service must declare one or more **service types** (e.g. `camera`, `location`, `mediaPlayback`, `health`, `dataSync`) in the manifest and supply the matching type constant to `startForeground()`. Each type also requires its own permission and, in many cases, a runtime permission. Failure to declare the correct type results in a `MissingForegroundServiceTypeException`.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Foreground service types | Background work | Android Developers",
+        "url": "https://developer.android.com/develop/background-work/services/fgs/service-types"
+      },
+      {
+        "type": "Article",
+        "title": "Guide to Foreground Services on Android 14 | Medium",
+        "url": "https://medium.com/@domen.lanisnik/guide-to-foreground-services-on-android-9d0127dc8f9a"
+      },
+      {
+        "type": "Video",
+        "title": "Foreground Service in Android 14",
+        "url": "https://www.youtube.com/watch?v=2x5FABUViMc"
+      },
+      {
+        "type": "Official",
+        "title": "Foreground service types are required | Android 14 changes",
+        "url": "https://developer.android.com/about/versions/14/changes/fgs-types-required"
+      },
+      {
+        "type": "Article",
+        "title": "Improving Consistency of Background Work on Android | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2023/05/improving-consistency-of-background-work-on-android.html"
+      }
+    ]
+  },
+  {
+    "id": "background-work/foreground/expedited-work",
+    "title": "Expedited Work",
+    "description": "**Expedited work** in WorkManager (`setExpedited()`) is designed for short, user-important tasks that must start immediately, such as sending a message or uploading a photo. The system grants it reduced power-management restrictions (Doze and Battery Saver are less likely to block it) and maps it to an expedited job or a foreground service on older OS versions. Supply an `OutOfQuotaPolicy` to control behaviour when the system quota is exhausted.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Define work requests | Background work | Android Developers",
+        "url": "https://developer.android.com/develop/background-work/background-tasks/persistent/getting-started/define-work"
+      },
+      {
+        "type": "Official",
+        "title": "Getting started with WorkManager | Background work | Android Developers",
+        "url": "https://developer.android.com/develop/background-work/background-tasks/persistent/getting-started"
+      },
+      {
+        "type": "Video",
+        "title": "Execute an important work using WorkManager — Expedited work",
+        "url": "https://www.youtube.com/watch?v=XAWzX2qYj00"
+      },
+      {
+        "type": "Video",
+        "title": "WorkManager — Android Basics 2023",
+        "url": "https://www.youtube.com/watch?v=A2JetouoNSc"
+      },
+      {
+        "type": "Course",
+        "title": "Background work with WorkManager | Codelab | Android Developers",
+        "url": "https://developer.android.com/codelabs/android-workmanager"
+      }
+    ]
+  },
+  {
+    "id": "background-work/scheduling/alarmmanager",
+    "title": "AlarmManager",
+    "description": "**AlarmManager** fires `PendingIntent`s at scheduled clock or elapsed-realtime points, even when the app is not running and the device is asleep (with a wake lock). Use it only for time-sensitive user-facing alarms such as calendar reminders or an alarm clock—not for background networking or data-sync tasks, where WorkManager is the correct tool. All repeating alarms are inexact on API 19+; exact alarms require the `SCHEDULE_EXACT_ALARM` or `USE_EXACT_ALARM` permission from Android 12+.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Schedule alarms | Background work | Android Developers",
+        "url": "https://developer.android.com/develop/background-work/services/alarms/schedule"
+      },
+      {
+        "type": "Official",
+        "title": "AlarmManager | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/android/app/AlarmManager"
+      },
+      {
+        "type": "Video",
+        "title": "THIS Is How You Schedule Alarms on Android with AlarmManager",
+        "url": "https://www.youtube.com/watch?v=mWb_hEBLIqA"
+      },
+      {
+        "type": "Video",
+        "title": "How to Schedule tasks with Alarm Manager in Android | Android Studio tutorial",
+        "url": "https://www.youtube.com/watch?v=zCCxKDWVRQo"
+      },
+      {
+        "type": "Article",
+        "title": "How Android 13's new restrictions on alarm APIs will improve battery life | Esper",
+        "url": "https://www.esper.io/blog/android-13-exact-alarm-api-restrictions"
+      }
+    ]
+  },
+  {
+    "id": "background-work/scheduling/exact-alarms-permission",
+    "title": "Exact Alarms permission",
+    "description": "Android 12 introduced `SCHEDULE_EXACT_ALARM` as a special permission for apps that require precise timing (e.g. calendar or to-do apps). From Android 14, it is **denied by default** for newly installed apps, so apps must call `canScheduleExactAlarms()` and direct users to the system settings page if needed. Apps that qualify as a clock or calendar can alternatively declare `USE_EXACT_ALARM`, which is granted at install time without user interaction.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Schedule exact alarms are denied by default | Android Developers",
+        "url": "https://developer.android.com/about/versions/14/changes/schedule-exact-alarms"
+      },
+      {
+        "type": "Official",
+        "title": "Schedule alarms | Background work | Android Developers",
+        "url": "https://developer.android.com/develop/background-work/services/alarms/schedule"
+      },
+      {
+        "type": "Article",
+        "title": "Android 14 Behavior Change: Schedule exact alarms are denied by default | Medium",
+        "url": "https://carterchen247.medium.com/android-14-behavior-change-schedule-exact-alarms-are-denied-by-default-7563a814dee4"
+      },
+      {
+        "type": "Article",
+        "title": "How Android 13's new restrictions on alarm APIs will improve battery life | Esper",
+        "url": "https://www.esper.io/blog/android-13-exact-alarm-api-restrictions"
+      },
+      {
+        "type": "Video",
+        "title": "THIS Is How You Schedule Alarms on Android with AlarmManager",
+        "url": "https://www.youtube.com/watch?v=mWb_hEBLIqA"
+      }
+    ]
+  },
+  {
+    "id": "background-work/scheduling/jobscheduler",
+    "title": "JobScheduler",
+    "description": "**JobScheduler** is the platform API for deferrable, constraint-based background work—network availability, charging state, device idle, and storage thresholds. It batches jobs across apps to minimise radio and CPU wake-ups, which the system cannot do with raw threads or services. For most use cases WorkManager (which uses JobScheduler internally on API 23+) is the better abstraction; use JobScheduler directly only when you need lower-level control or are implementing a library that cannot take a WorkManager dependency.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "JobScheduler | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/android/app/job/JobScheduler"
+      },
+      {
+        "type": "Official",
+        "title": "Background tasks overview | Background work | Android Developers",
+        "url": "https://developer.android.com/develop/background-work/background-tasks"
+      },
+      {
+        "type": "Video",
+        "title": "JobScheduler — Background Works made easy in Android",
+        "url": "https://www.youtube.com/watch?v=Lp_IbEMW5J8"
+      },
+      {
+        "type": "Video",
+        "title": "Services in Android — Part 13, Introducing JobScheduler & JobService",
+        "url": "https://www.youtube.com/watch?v=gLgtgMiDrOE"
+      },
+      {
+        "type": "Article",
+        "title": "Improving Consistency of Background Work on Android | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2023/05/improving-consistency-of-background-work-on-android.html"
+      }
+    ]
+  },
+  {
+    "id": "background-work/scheduling/doze-app-standby",
+    "title": "Doze & App Standby",
+    "description": "**Doze mode** kicks in when the device is unplugged, stationary, and screen-off; it progressively restricts network access, wakelocks, jobs, syncs, and alarms to preserve battery. **App Standby Buckets** (Active, Working Set, Frequent, Rare, Restricted) further throttle job and alarm quotas based on how recently the user interacted with your app. Understanding these constraints is essential for designing background work that completes reliably—use high-priority FCM messages to break out of Doze when immediate delivery is critical.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Optimize for Doze and App Standby | App quality | Android Developers",
+        "url": "https://developer.android.com/training/monitoring-device-state/doze-standby"
+      },
+      {
+        "type": "Official",
+        "title": "App Standby Buckets | App quality | Android Developers",
+        "url": "https://developer.android.com/topic/performance/appstandby"
+      },
+      {
+        "type": "Video",
+        "title": "WorkManager — Android Basics 2023 (covers Doze constraints)",
+        "url": "https://www.youtube.com/watch?v=A2JetouoNSc"
+      },
+      {
+        "type": "Article",
+        "title": "Android Battery Optimization for Avoiding Doze Mode and App Standby | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-battery-optimization-for-avoiding-doze-mode-and-app-standby-83cd379ee75b"
+      },
+      {
+        "type": "Article",
+        "title": "Improving Consistency of Background Work on Android | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2023/05/improving-consistency-of-background-work-on-android.html"
+      }
+    ]
+  }
+]

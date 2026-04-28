@@ -1,0 +1,1325 @@
+[
+  {
+    "id": "app-navigation/navigation-component/navigation-graph",
+    "title": "Navigation Graph",
+    "description": "The Navigation Graph is a resource file that contains all navigation-related information in one centralized location, including every destination in your app and the possible paths a user can take. It is the backbone of the Jetpack Navigation Component, linking **NavHostFragment** and **NavController** to manage back-stack and transitions declaratively. Defining your graph in XML (or via the Kotlin DSL) lets Android Studio visualize the entire flow and validate arguments at build time. Use it in any app with more than one destination that uses the Fragment-based Navigation Component.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Design your navigation graph | Android Developers",
+        "url": "https://developer.android.com/guide/navigation/design"
+      },
+      {
+        "type": "Article",
+        "title": "Navigation Component — The Complete Guide",
+        "url": "https://medium.com/@muhamed.riyas/navigation-component-the-complete-guide-c51c9911684"
+      },
+      {
+        "type": "Video",
+        "title": "How to Use Navigation Component in Android — YouTube",
+        "url": "https://www.youtube.com/watch?v=eS4bsQNqx_c"
+      },
+      {
+        "type": "Repo",
+        "title": "android/architecture-components-samples — MADSkillsNavigationSample",
+        "url": "https://github.com/android/architecture-components-samples/tree/main/MADSkillsNavigationSample"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/navigation-component/type-safe-routes",
+    "title": "Type-safe Routes",
+    "description": "Type-safe routes, introduced in Navigation 2.8, replace plain string route identifiers with `@Serializable` Kotlin classes, giving compile-time guarantees that arguments are correctly typed and present. Instead of writing `navController.navigate(\"profile/{id}\")`, you navigate with a data-class instance: `navController.navigate(Profile(id = 42))`. The back-stack entry can be reconstructed via `NavBackStackEntry.toRoute<T>()`. Adopt this API with Navigation Compose 2.8+ and the `kotlinx-serialization-json` plugin.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Type safety in Kotlin DSL and Navigation Compose | Android Developers",
+        "url": "https://developer.android.com/guide/navigation/design/type-safety"
+      },
+      {
+        "type": "Article",
+        "title": "Navigation Compose meet Type Safety | Android Developers Blog",
+        "url": "https://medium.com/androiddevelopers/navigation-compose-meet-type-safety-e081fb3cf2f8"
+      },
+      {
+        "type": "Video",
+        "title": "Type-Safe Navigation with the OFFICIAL Compose Navigation Library — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=AIC_OFQ1r3k"
+      },
+      {
+        "type": "Repo",
+        "title": "ndiritumichael/Type-safe-Compose-Navigation — GitHub",
+        "url": "https://github.com/ndiritumichael/Type-safe-Compose-Navigation"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/navigation-component/navigation-3",
+    "title": "Navigation 3",
+    "description": "Navigation 3 is a ground-up rewrite of the Jetpack navigation library specifically designed for Jetpack Compose. Unlike the original Navigation Compose, Navigation 3 puts the developer in full control of the back stack — represented as a plain `SnapshotStateList<T>` — and ships a flexible scene system that supports adaptive multi-pane layouts out of the box. Key primitives include `NavDisplay`, `NavEntry`, and pluggable `SceneStrategy` objects. As of late 2025 it reached stable; the official announcement blog and recipes repo are the best starting points.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Navigation 3 | App architecture | Android Developers",
+        "url": "https://developer.android.com/guide/navigation/navigation-3"
+      },
+      {
+        "type": "Article",
+        "title": "Migrating to Jetpack Compose Navigation 3 | ProAndroidDev",
+        "url": "https://proandroiddev.com/migrating-to-navigation-3-in-jetpack-compose-34b0389a9aea"
+      },
+      {
+        "type": "Video",
+        "title": "Navigating the future with Jetpack Navigation 3 — Core Concepts | Android Developers",
+        "url": "https://www.youtube.com/watch?v=opLYavQHBB8"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nav3-recipes — Common use cases with Jetpack Navigation 3",
+        "url": "https://github.com/android/nav3-recipes"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/navigation-component/navigation-compose",
+    "title": "Navigation Compose",
+    "description": "Navigation Compose integrates the Jetpack Navigation Component with Jetpack Compose, letting you define a `NavHost` that swaps composable destinations in and out of the composition as the user navigates. A single `NavController` (created with `rememberNavController()`) manages the back stack, handles deep links, and supports animated transitions. It is the standard navigation solution for pure-Compose apps; consider migrating to Navigation 3 for projects that need adaptive multi-pane layouts.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Navigation with Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/navigation"
+      },
+      {
+        "type": "Article",
+        "title": "Jetpack Compose Navigation | Type Safe — Full Guide | Kotlin Academy",
+        "url": "https://blog.kotlin-academy.com/mastery-navigation-in-jetpack-compose-db00b0a0ef75"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose Navigation for Beginners — Android Studio Tutorial | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=4gUeyNkGE3g"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — Navigation Compose reference implementation",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/navigation-component/destinations",
+    "title": "Destinations",
+    "description": "Compose Destinations is a KSP annotation-processing library that generates type-safe navigation boilerplate on top of official Jetpack Navigation Compose. You annotate composables with `@Destination` and the library generates strongly-typed `Direction` objects, argument classes, and a `NavGraph` — eliminating hand-written route strings entirely. It wraps, rather than replaces, the official Navigation component, so all NavController features (deep links, back-stack APIs) remain available through the generated code.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Compose Destinations — Overview",
+        "url": "https://composedestinations.rafaelcosta.xyz/"
+      },
+      {
+        "type": "Repo",
+        "title": "raamcosta/compose-destinations — GitHub",
+        "url": "https://github.com/raamcosta/compose-destinations"
+      },
+      {
+        "type": "Video",
+        "title": "Type-Safe Navigation with the OFFICIAL Compose Navigation Library — Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=AIC_OFQ1r3k"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/navigation-component/deeplink",
+    "title": "DeepLink",
+    "description": "Deep links allow external URIs, notifications, or widgets to navigate users directly to a specific destination inside your app. The Navigation Component supports both **explicit** deep links (via `PendingIntent`) and **implicit** deep links (URI patterns declared in the nav graph and matched by the Android intent system). Adding a `<nav-graph>` element in the manifest causes the build system to auto-generate the required `<intent-filter>` entries. Use `NavDeepLinkBuilder` or `NavController.createDeepLink()` to construct deep links programmatically.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Create a deep link for a destination | Android Developers",
+        "url": "https://developer.android.com/guide/navigation/design/deep-link"
+      },
+      {
+        "type": "Article",
+        "title": "Navigating with Deep Links | Android Developers Blog",
+        "url": "https://medium.com/androiddevelopers/navigating-with-deep-links-910a4a6588c"
+      },
+      {
+        "type": "Video",
+        "title": "Navigation: Deep links — MAD Skills | Android Developers",
+        "url": "https://www.youtube.com/watch?v=XJgPIeolJu8"
+      },
+      {
+        "type": "Video",
+        "title": "Deep-link Navigation tip — MAD Skills | Android Developers",
+        "url": "https://www.youtube.com/watch?v=iBjwyaeX5Ag"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/fragments-legacy/fragment-lifecycles",
+    "title": "Fragment Lifecycles",
+    "description": "Every Fragment has its own `Lifecycle` that runs in parallel with — but is distinct from — its host Activity's lifecycle. Callbacks such as `onCreate()`, `onCreateView()`, `onViewCreated()`, `onStart()`, `onResume()`, `onPause()`, `onStop()`, `onDestroyView()`, and `onDestroy()` let you perform setup and teardown at the correct moment. The fragment's **view** has a separate `viewLifecycleOwner` that is created after `onCreateView()` and destroyed before `onDestroyView()`, making it the correct owner to use when observing LiveData or Flow. Fragments remain relevant in legacy codebases, though Jetpack Compose reduces the need for new fragment usage.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Fragment lifecycle | Android Developers",
+        "url": "https://developer.android.com/guide/fragments/lifecycle"
+      },
+      {
+        "type": "Article",
+        "title": "Fragment Lifecycle in Android | Medium",
+        "url": "https://medium.com/@anna972606/fragment-lifecycle-in-android-0af867c6050b"
+      },
+      {
+        "type": "Video",
+        "title": "Fragment Lifecycle in Android — Android Studio Tutorial | Stevdza-San",
+        "url": "https://www.youtube.com/watch?v=Qf7zhQKgIlA"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/fragments-legacy/fragment-state-changes",
+    "title": "Fragment State Changes",
+    "description": "Fragment state changes describe the transitions a fragment makes through its lifecycle states — `INITIALIZED`, `CREATED`, `STARTED`, `RESUMED`, and `DESTROYED` — as driven by the `FragmentManager`. Understanding these transitions is essential for restoring UI state across configuration changes and for correctly scoping observers to the fragment's view lifetime. `onSaveInstanceState()` lets you persist small amounts of state that survives process death, while `SavedStateHandle` inside a ViewModel handles larger or more complex state. In modern Compose-first projects, state is managed by composables and ViewModels rather than fragment state bundles.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Fragment lifecycle — State Changes | Android Developers",
+        "url": "https://developer.android.com/guide/fragments/lifecycle"
+      },
+      {
+        "type": "Article",
+        "title": "Mastering Android Fragments: Managers, Transactions, and Best Practices in Kotlin | Medium",
+        "url": "https://medium.com/@Max_Sir/mastering-android-fragments-managers-transactions-and-best-practices-in-kotlin-af00cb9b44ac"
+      },
+      {
+        "type": "Video",
+        "title": "Fragment Lifecycle in Android — Android Studio Tutorial | Stevdza-San",
+        "url": "https://www.youtube.com/watch?v=Qf7zhQKgIlA"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/fragments-legacy/fragment-manager",
+    "title": "Fragment Manager",
+    "description": "The `FragmentManager` is the class responsible for performing actions on your app's fragments, such as adding, removing, replacing, and finding them. Every `Activity` and `Fragment` has its own `FragmentManager` (accessed via `supportFragmentManager` or `childFragmentManager`), and the manager maintains the back stack of fragment transactions. The Navigation Component abstracts most direct `FragmentManager` usage; in legacy code, however, understanding it is essential for correct screen management and avoiding common issues like duplicate fragments on configuration change.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Fragment manager | Android Developers",
+        "url": "https://developer.android.com/guide/fragments/fragmentmanager"
+      },
+      {
+        "type": "Article",
+        "title": "Mastering Android Fragments: Managers, Transactions, and Best Practices in Kotlin | Medium",
+        "url": "https://medium.com/@Max_Sir/mastering-android-fragments-managers-transactions-and-best-practices-in-kotlin-af00cb9b44ac"
+      },
+      {
+        "type": "Video",
+        "title": "Fragment Manager — Fragment Transition — Fragment Tutorial | YouTube",
+        "url": "https://www.youtube.com/watch?v=n-5T-Gf27gc"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/fragments-legacy/fragment-transactions",
+    "title": "Fragment Transactions",
+    "description": "A `FragmentTransaction` groups one or more fragment operations — `add()`, `replace()`, `remove()`, `show()`, `hide()` — into an atomic unit that the `FragmentManager` executes together. Calling `addToBackStack()` allows the user to reverse the transaction with the system Back button. Always set `setReorderingAllowed(true)` so the system can optimize state changes for correct animation behaviour. The Navigation Component handles transactions internally; prefer it over manual transactions in new code.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Fragment transactions | Android Developers",
+        "url": "https://developer.android.com/guide/fragments/transactions"
+      },
+      {
+        "type": "Article",
+        "title": "Mastering Android Fragments: Managers, Transactions, and Best Practices in Kotlin | Medium",
+        "url": "https://medium.com/@Max_Sir/mastering-android-fragments-managers-transactions-and-best-practices-in-kotlin-af00cb9b44ac"
+      },
+      {
+        "type": "Video",
+        "title": "Fragment Manager — Fragment Transition — Fragment Tutorial | YouTube",
+        "url": "https://www.youtube.com/watch?v=n-5T-Gf27gc"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/fragments-legacy/dialogfragment",
+    "title": "DialogFragment",
+    "description": "`DialogFragment` is a `Fragment` subclass specifically designed for hosting dialogs. By wrapping the dialog in a fragment, the `FragmentManager` automatically saves and restores dialog state across configuration changes — something a plain `AlertDialog` cannot do reliably. Override `onCreateDialog()` to return a `Dialog` (or use `onCreateView()` for fully custom layouts), and handle dismissal in `onDismiss()`. For new Compose projects, prefer Compose `Dialog` or `AlertDialog` composables; `DialogFragment` remains the recommended approach in View-based apps.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Display dialogs with DialogFragment | Android Developers",
+        "url": "https://developer.android.com/guide/fragments/dialogs"
+      },
+      {
+        "type": "Article",
+        "title": "Android BottomSheetDialogFragment with Callbacks to Parent Fragment | Medium",
+        "url": "https://medium.com/@misterandroid/android-bottomsheetdialogfragment-with-callbacks-to-parent-fragment-and-transparent-layer-8b52a13abd65"
+      },
+      {
+        "type": "Video",
+        "title": "Fragment Lifecycle in Android — Android Studio Tutorial | Stevdza-San",
+        "url": "https://www.youtube.com/watch?v=Qf7zhQKgIlA"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/fragments-legacy/bottomsheetdialogfragment",
+    "title": "BottomSheetDialogFragment",
+    "description": "`BottomSheetDialogFragment` is a `DialogFragment` subclass from the Material Components library that presents content in a **modal bottom sheet** — a panel that slides up from the bottom of the screen. It internally uses `BottomSheetDialog` and respects Material motion and peek-height theming. Use it for contextual actions, share sheets, or forms in legacy View-based apps. In Jetpack Compose, the equivalent is `ModalBottomSheet` from `androidx.compose.material3`.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "BottomSheetDialogFragment | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/com/google/android/material/bottomsheet/BottomSheetDialogFragment"
+      },
+      {
+        "type": "Article",
+        "title": "Bottom Sheet Dialog Fragment, Kotlin-Android | Medium",
+        "url": "https://medium.com/@mandvi2346verma/bottom-sheet-dialog-fragment-kotlin-android-676c8b222715"
+      },
+      {
+        "type": "Video",
+        "title": "Fragment Lifecycle in Android — Android Studio Tutorial | Stevdza-San",
+        "url": "https://www.youtube.com/watch?v=Qf7zhQKgIlA"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/app-links/tablayout",
+    "title": "TabLayout",
+    "description": "`TabLayout` is a Material Components widget that displays a horizontal row of tabs, commonly paired with `ViewPager2` via `TabLayoutMediator` to synchronise tab selection with page swipes. It supports text labels, icons, and badge indicators, and follows Material Design tab guidelines. Use it in View-based apps where you need a familiar tab-bar navigation pattern; Jetpack Compose apps should instead use the `TabRow` or `ScrollableTabRow` composables from Material 3.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Create swipe views with tabs using ViewPager2 | Android Developers",
+        "url": "https://developer.android.com/guide/navigation/navigation-swipe-view-2"
+      },
+      {
+        "type": "Article",
+        "title": "Usage of ViewPager2 with TabLayout | Medium",
+        "url": "https://medium.com/@ipek.birinci8/usage-of-viewpager2-with-tablayout-72c4a5a1ad64"
+      },
+      {
+        "type": "Video",
+        "title": "NavigationBar Jetpack Compose Tutorial — Android 2024 | YouTube",
+        "url": "https://www.youtube.com/watch?v=jcKxC6SK4Us"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/app-links/viewpager2-legacy",
+    "title": "ViewPager2 (legacy)",
+    "description": "`ViewPager2` is the successor to the original `ViewPager`, built on `RecyclerView` to support vertical paging, right-to-left layouts, and `DiffUtil` for efficient updates. It works with both `Fragment`-backed and `RecyclerView.Adapter`-backed pages, and pairs with `TabLayoutMediator` for tab navigation. While still maintained, `ViewPager2` is considered legacy for new projects: Jetpack Compose provides `HorizontalPager` and `VerticalPager` from the `accompanist-pager` or native Compose `foundation` APIs as modern replacements.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Migrate from ViewPager to ViewPager2 | Android Developers",
+        "url": "https://developer.android.com/develop/ui/views/animations/vp2-migration"
+      },
+      {
+        "type": "Article",
+        "title": "How to Create Custom Tabs in Android Using ViewPager2 and TabLayout | Medium",
+        "url": "https://medium.com/@myofficework000/how-to-create-custom-tabs-in-android-using-viewpager2-and-tablayout-e26476d146c2"
+      },
+      {
+        "type": "Video",
+        "title": "NavigationBar Jetpack Compose Tutorial — Android 2024 | YouTube",
+        "url": "https://www.youtube.com/watch?v=jcKxC6SK4Us"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/app-links/custom-back-navigation",
+    "title": "Custom Back Navigation",
+    "description": "Custom back navigation lets you intercept the system Back gesture or button press and run your own logic — for example, collapsing a search bar, dismissing a selection mode, or confirming an exit. Register an `OnBackPressedCallback` with the Activity's `OnBackPressedDispatcher` and enable/disable it based on state. Android 13+ introduced the **predictive back gesture** API that provides an animated preview of where the Back action leads; supporting it requires opting in via the manifest and implementing `BackHandler` (Compose) or the new `OnBackPressedCallback` APIs.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Provide custom back navigation | Android Developers",
+        "url": "https://developer.android.com/guide/navigation/custom-back"
+      },
+      {
+        "type": "Article",
+        "title": "Goodbye to onBackPressed(): A Guide to Modern Back Press Handling in Android | Medium",
+        "url": "https://medium.com/@manishkumar_75473/goodbye-to-onbackpressed-a-modern-back-handling-in-android-690c8941e9fd"
+      },
+      {
+        "type": "Official",
+        "title": "Add support for the predictive back gesture | Android Developers",
+        "url": "https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/app-links/app-links-verification",
+    "title": "App Links verification",
+    "description": "Android App Links are a type of deep link that opens your app directly — without a disambiguation dialog — when the user taps a matching HTTPS URL. This requires the OS to **verify** that you own the domain by fetching a Digital Asset Links JSON file from `https://yourdomain/.well-known/assetlinks.json`. On Android 12 and higher, the system automatically verifies App Links at install time; apps that pass verification own all matched URLs unconditionally. Testing uses `adb shell pm get-app-links` and the Digital Asset Links API.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Verify App Links | Android Developers",
+        "url": "https://developer.android.com/training/app-links/verify-applinks"
+      },
+      {
+        "type": "Article",
+        "title": "Verify App Links on Android 12 and Higher | Medium",
+        "url": "https://medium.com/@lanltn/about-verify-app-links-on-android-12-and-higher-e53e9bb2f7bb"
+      },
+      {
+        "type": "Official",
+        "title": "Configure, implement, and verify Android App Links | Codelab",
+        "url": "https://developer.android.com/codelabs/android-app-links-introduction"
+      }
+    ]
+  },
+  {
+    "id": "app-navigation/app-links/digital-asset-links",
+    "title": "Digital Asset Links",
+    "description": "Digital Asset Links (DAL) is a Google-hosted protocol that lets a website declare a trusted relationship with an Android app (or another website) by publishing a JSON file at `/.well-known/assetlinks.json`. The file lists the app's package name and SHA-256 certificate fingerprint; Android reads this file during App Links verification to confirm ownership. The DAL API (`digitalassetlinks.googleapis.com`) can be used to programmatically test whether a statement is valid before shipping. Correct DAL configuration is required for App Links, Google Sign-In without browser redirects, and Credential Manager integrations.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Getting Started | Google Digital Asset Links",
+        "url": "https://developers.google.com/digital-asset-links/v1/getting-started"
+      },
+      {
+        "type": "Official",
+        "title": "Add Android App Links | Android Studio | Android Developers",
+        "url": "https://developer.android.com/studio/write/app-link-indexing"
+      },
+      {
+        "type": "Video",
+        "title": "Implement Deep Linking in Android — YouTube",
+        "url": "https://www.youtube.com/watch?v=f4E1S7M3e3o"
+      }
+    ]
+  },
+  {
+    "id": "app-startup-performance/startup/jetpack-app-startup",
+    "title": "Jetpack App Startup",
+    "description": "The Jetpack App Startup library provides a single `ContentProvider` that initializes multiple components in a declared dependency order, replacing the anti-pattern of shipping one `ContentProvider` per library. Implement the `Initializer<T>` interface — with `create()` for initialization logic and `dependencies()` for ordering — then register your initializer in the manifest under `InitializationProvider`. Libraries can lazy-initialize by removing their entry from the manifest and calling `AppInitializer.getInstance(context).initializeComponent(MyInitializer::class.java)` on demand.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "App Startup | Android Developers",
+        "url": "https://developer.android.com/topic/libraries/app-startup"
+      },
+      {
+        "type": "Article",
+        "title": "App Startup in Android: Simplify the Startup of Your Android Application | Medium",
+        "url": "https://medium.com/@santimattius/app-startup-in-android-simplify-the-startup-of-your-android-application-c84e18618b58"
+      },
+      {
+        "type": "Video",
+        "title": "How to decrease your Android app startup time with the Jetpack Startup library — YouTube",
+        "url": "https://www.youtube.com/watch?v=1x5oqddZYKM"
+      }
+    ]
+  },
+  {
+    "id": "app-startup-performance/startup/cold-warm-hot-start",
+    "title": "Cold / Warm / Hot Start",
+    "description": "Android defines three startup states based on what the OS must recreate: **Cold start** — the app process does not exist; the system creates a new process, loads classes, and launches the first Activity. **Warm start** — the process exists but the Activity was destroyed (e.g. back-pressed); the system re-creates the Activity using saved state. **Hot start** — the process and Activity both exist in memory; the system simply brings them to the foreground. Android Vitals flags cold starts ≥ 5 s, warm starts ≥ 2 s, and hot starts ≥ 1.5 s as poor. Always optimise for cold start — improvements there carry over to the other states.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "App startup time | Android Developers",
+        "url": "https://developer.android.com/topic/performance/vitals/launch-time"
+      },
+      {
+        "type": "Article",
+        "title": "Android Cold Start, Warm Start and Hot Start in simple words | Medium",
+        "url": "https://medium.com/@tharindu.damintha/android-cold-start-warm-start-and-hot-start-states-in-simple-words-8dc7031a9f2b"
+      },
+      {
+        "type": "Video",
+        "title": "Making apps blazing fast with Baseline Profiles | Android Developers",
+        "url": "https://www.youtube.com/watch?v=yJm5On5Gp4c"
+      }
+    ]
+  },
+  {
+    "id": "app-startup-performance/performance/baseline-profiles",
+    "title": "Baseline Profiles",
+    "description": "Baseline Profiles are human-readable lists of class and method patterns that tell the Android Runtime (ART) which code to compile ahead-of-time (AOT) at install time, instead of waiting for JIT compilation during the first run. Google Play packages the compiled profile alongside the APK, so users benefit immediately. Typical gains are **30% faster cold startup** and reduced jank during the first interaction. Generate profiles with `BaselineProfileRule` from the Macrobenchmark library and include them in your release build via the `baselineProfile` Gradle plugin.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Baseline Profiles overview | Android Developers",
+        "url": "https://developer.android.com/topic/performance/baselineprofiles/overview"
+      },
+      {
+        "type": "Article",
+        "title": "Improving App Performance with Baseline Profiles | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2022/01/improving-app-performance-with-baseline.html"
+      },
+      {
+        "type": "Video",
+        "title": "Making apps blazing fast with Baseline Profiles | Android Developers",
+        "url": "https://www.youtube.com/watch?v=yJm5On5Gp4c"
+      },
+      {
+        "type": "Repo",
+        "title": "android/performance-samples — MacrobenchmarkSample with Baseline Profiles",
+        "url": "https://github.com/android/performance-samples"
+      }
+    ]
+  },
+  {
+    "id": "app-startup-performance/performance/macrobenchmark",
+    "title": "Macrobenchmark",
+    "description": "The Jetpack Macrobenchmark library measures large-scale, end-user-visible performance metrics — startup time, frame rendering, scroll smoothness, and traced code sections — by driving your actual app in a separate test module. It provides precise control over compilation mode (`None`, `Partial`, `Full`) to simulate real-world first-launch conditions. Metrics include `StartupTimingMetric`, `FrameTimingMetric`, and `TraceSectionMetric`. Tests must run on a **physical device**, not an emulator. Macrobenchmark is also the standard tool for generating Baseline Profiles.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Write a Macrobenchmark | Android Developers",
+        "url": "https://developer.android.com/topic/performance/benchmarking/macrobenchmark-overview"
+      },
+      {
+        "type": "Article",
+        "title": "Measure and Improve Performance with Macrobenchmark | Android Developers Blog",
+        "url": "https://medium.com/androiddevelopers/measure-and-improve-performance-with-macrobenchmark-560abd0aa5bb"
+      },
+      {
+        "type": "Video",
+        "title": "Making apps blazing fast with Baseline Profiles | Android Developers",
+        "url": "https://www.youtube.com/watch?v=yJm5On5Gp4c"
+      },
+      {
+        "type": "Repo",
+        "title": "android/performance-samples — MacrobenchmarkSample",
+        "url": "https://github.com/android/performance-samples/tree/main/MacrobenchmarkSample"
+      }
+    ]
+  },
+  {
+    "id": "app-startup-performance/performance/startup-tracing-perfetto",
+    "title": "Startup Tracing (Perfetto)",
+    "description": "Perfetto is Android's platform-wide, open-source tracing system (available since Android 10) that replaces the older Systrace tool. For startup analysis, it captures detailed timelines of process creation, class loading, `bindApplication`, `activityStart`, and the first rendered frame. The **Perfetto UI** (ui.perfetto.dev) and **Android Studio Profiler** can both open `.perfetto-trace` files. The `StartupTimingMetric` in Macrobenchmark automatically records a Perfetto trace, and the `Android App Startups` derived metric provides a ready-made summary row. Use startup tracing to identify bottlenecks in `Application.onCreate()`, content providers, and early UI composition.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "App startup analysis and optimization | Android Developers",
+        "url": "https://developer.android.com/topic/performance/appstartup/analysis-optimization"
+      },
+      {
+        "type": "Official",
+        "title": "Perfetto — Android tracing quickstart",
+        "url": "https://perfetto.dev/docs/quickstart/android-tracing"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced System Profiling, Tracing and Trace Analysis with Perfetto — YouTube",
+        "url": "https://www.youtube.com/watch?v=Ca2a-3H8PWI"
+      },
+      {
+        "type": "Repo",
+        "title": "google/perfetto — Production-grade tracing and analysis",
+        "url": "https://github.com/google/perfetto"
+      }
+    ]
+  },
+  {
+    "id": "architecture-components/ui-layer/viewbinding",
+    "title": "ViewBinding",
+    "description": "View Binding generates a strongly-typed binding class for each XML layout file, replacing `findViewById` calls with direct, null-safe property references to every view that has an `android:id`. Enable it per-module with `viewBinding = true` in `build.gradle` and inflate with `ActivityMainBinding.inflate(layoutInflater)` (or the Fragment equivalent with `onDestroyView` cleanup). Unlike Data Binding, it requires no XML layout tags or annotation processing, so it is faster to compile and simpler to adopt. Prefer it over Kotlin synthetic accessors (which are removed from recent Kotlin releases) in any View-based codebase.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "View binding | Android Developers",
+        "url": "https://developer.android.com/topic/libraries/view-binding"
+      },
+      {
+        "type": "Article",
+        "title": "Use View Binding to Replace findViewById | Android Developers Blog",
+        "url": "https://medium.com/androiddevelopers/use-view-binding-to-replace-findviewbyid-c83942471fc"
+      },
+      {
+        "type": "Video",
+        "title": "ViewBinding in Android Kotlin: Efficient View Access Made Simple — YouTube",
+        "url": "https://www.youtube.com/watch?v=hYh4ICjsz1Q"
+      }
+    ]
+  },
+  {
+    "id": "architecture-components/ui-layer/databinding-legacy",
+    "title": "DataBinding (legacy)",
+    "description": "The Data Binding Library lets you bind UI components directly to data sources in XML using `@{}` and `@={}` expressions, and supports two-way binding for editable fields. It also integrates with `ViewModel` and `LiveData` to auto-update the UI when data changes, eliminating some boilerplate. However, it requires annotation processing, increases build time, and makes XML layouts harder to read and test. Google now recommends **View Binding** for simple `findViewById` replacement and **Jetpack Compose** for reactive UI; Data Binding is considered legacy for new projects.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Data Binding Library | Android Developers",
+        "url": "https://developer.android.com/topic/libraries/data-binding"
+      },
+      {
+        "type": "Article",
+        "title": "Bind layout views to Architecture Components | Android Developers",
+        "url": "https://developer.android.com/topic/libraries/data-binding/architecture"
+      },
+      {
+        "type": "Video",
+        "title": "How to do View Binding & Data Binding in Android — YouTube",
+        "url": "https://www.youtube.com/watch?v=W0ID4Y_QKUU"
+      }
+    ]
+  },
+  {
+    "id": "architecture-components/ui-layer/lifecycle",
+    "title": "Lifecycle",
+    "description": "The `androidx.lifecycle` library provides a set of classes and interfaces — `Lifecycle`, `LifecycleOwner`, `LifecycleObserver`, `DefaultLifecycleObserver` — that let components observe and react to Activity and Fragment lifecycle changes without coupling directly to those classes. Any class implementing `LifecycleOwner` (Activities, Fragments, custom owners) exposes its lifecycle, and observers can subscribe to receive `ON_CREATE`, `ON_START`, `ON_RESUME`, `ON_PAUSE`, `ON_STOP`, and `ON_DESTROY` events. This is the foundation on which `LiveData`, `ViewModel`, `repeatOnLifecycle`, and Compose's `LocalLifecycleOwner` are built.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Lifecycle in Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/topic/libraries/architecture/lifecycle"
+      },
+      {
+        "type": "Article",
+        "title": "Android Architecture Components: LifeCycle | Medium",
+        "url": "https://medium.com/@MinaSamy/android-architecture-components-lifecycle-433ace1ec05d"
+      },
+      {
+        "type": "Video",
+        "title": "Android Developer Essential Skills — Lifecycle | Android Developers",
+        "url": "https://www.youtube.com/watch?v=zwhmLCfIkq0"
+      }
+    ]
+  },
+  {
+    "id": "architecture-components/ui-layer/viewmodel",
+    "title": "ViewModel",
+    "description": "`ViewModel` is an architecture component that stores and manages UI-related data in a lifecycle-conscious way, surviving configuration changes such as screen rotations. It lives until its `ViewModelStoreOwner` (Activity, Fragment, or Navigation destination) is permanently destroyed, making it the right place to hold UI state, trigger data operations, and expose state to the UI via `StateFlow` or `LiveData`. ViewModels should not hold references to Views or the Activity context to avoid memory leaks. Inject dependencies using `ViewModelProvider.Factory` or Hilt's `@HiltViewModel`.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "ViewModel overview | Android Developers",
+        "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+      },
+      {
+        "type": "Article",
+        "title": "ViewModels: A Simple Example | Android Developers Blog",
+        "url": "https://medium.com/androiddevelopers/viewmodels-a-simple-example-ed5ac416317e"
+      },
+      {
+        "type": "Video",
+        "title": "ViewModel Explained — Android Architecture Component | Tutorial",
+        "url": "https://www.youtube.com/watch?v=orH4K6qBzvE"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — ViewModel + UiState reference implementation",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "architecture-components/ui-layer/livedata-legacy",
+    "title": "LiveData (legacy)",
+    "description": "`LiveData` is a lifecycle-aware observable data holder that automatically stops delivering updates to observers that are in the `STOPPED` or `DESTROYED` state, preventing common null-pointer crashes and memory leaks. It is straightforward to use and integrates tightly with `ViewModel` and Data Binding. However, it is Kotlin-unaware, does not support operators or transformations as richly as Kotlin Flow, and can deliver stale events on re-subscription. For new code, Google recommends replacing `LiveData` with **`StateFlow`** (for state) and **`SharedFlow`** (for events), using `repeatOnLifecycle` to safely collect from the UI.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "LiveData overview | Android Developers",
+        "url": "https://developer.android.com/topic/libraries/architecture/livedata"
+      },
+      {
+        "type": "Article",
+        "title": "Migrating from LiveData to Kotlin's Flow | Android Developers Blog",
+        "url": "https://medium.com/androiddevelopers/migrating-from-livedata-to-kotlins-flow-379292f419fb"
+      },
+      {
+        "type": "Video",
+        "title": "StateFlow vs. Flow vs. SharedFlow vs. LiveData — When to Use What?! | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=6Jc6-INantQ"
+      }
+    ]
+  },
+  {
+    "id": "architecture-components/ui-layer/paging-3",
+    "title": "Paging 3",
+    "description": "The Paging 3 library helps you load and display large datasets from a network or database in pages, improving memory usage and reducing unnecessary network requests. The core components are `PagingSource` (loads one page of data), `Pager` (coordinates loading), and `PagingData` (a stream of paginated data consumed by `PagingDataAdapter` in RecyclerView, or `collectAsLazyPagingItems()` in Compose). It has first-class support for Kotlin coroutines and Flow, handles retry/refresh, and includes a `RemoteMediator` for the network-plus-database paging pattern.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Paging library overview | Android Developers",
+        "url": "https://developer.android.com/topic/libraries/architecture/paging/v3-overview"
+      },
+      {
+        "type": "Article",
+        "title": "Paging 3 — Easier Way to Pagination | ProAndroidDev",
+        "url": "https://proandroiddev.com/paging-3-easier-way-to-pagination-part-1-584cad1f4f61"
+      },
+      {
+        "type": "Video",
+        "title": "Introduction to Paging — MAD Skills | Android Developers",
+        "url": "https://www.youtube.com/watch?v=WfRe87SfcUc"
+      }
+    ]
+  },
+  {
+    "id": "architecture-components/ui-layer/savedstatehandle",
+    "title": "SavedStateHandle",
+    "description": "`SavedStateHandle` is a key-value map injected into a `ViewModel` that persists data not just through configuration changes (which ViewModel already handles), but also across **process recreation** caused by the system killing the app in the background. Access it via constructor injection (Hilt automatically provides it to `@HiltViewModel` classes) and read/write values with `get<T>(key)` / `set(key, value)`. It also exposes keys as `StateFlow<T>` via `getStateFlow()`, and can read Navigation arguments directly when using Navigation Compose.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Saved State module for ViewModel | Android Developers",
+        "url": "https://developer.android.com/topic/libraries/architecture/viewmodel/viewmodel-savedstate"
+      },
+      {
+        "type": "Article",
+        "title": "What is SavedStateHandle in Android? | Medium",
+        "url": "https://medium.com/@sandeepkella23/what-is-savedstatehandle-in-android-306861b5c348"
+      },
+      {
+        "type": "Video",
+        "title": "ViewModels & Configuration Changes — Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=9sqvBydNJSg"
+      }
+    ]
+  },
+  {
+    "id": "architecture-components/ui-layer/repeatonlifecycle",
+    "title": "repeatOnLifecycle",
+    "description": "`repeatOnLifecycle` is a suspend extension function on `Lifecycle` that **relaunches** a given suspend block every time the lifecycle reaches or exceeds a target state (typically `STARTED`), and **cancels** it when the lifecycle falls below that state. This makes it the correct and safe way to collect `StateFlow` or `SharedFlow` from an Activity or Fragment: the collection automatically stops when the app goes to the background and resumes when it returns to the foreground, preventing wasted work and UI crashes. Always call it from `lifecycleScope.launch { }` and prefer it over the deprecated `launchWhenStarted` APIs.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Use Kotlin coroutines with lifecycle-aware components | Android Developers",
+        "url": "https://developer.android.com/topic/libraries/architecture/coroutines"
+      },
+      {
+        "type": "Article",
+        "title": "repeatOnLifecycle API design story | Android Developers Blog",
+        "url": "https://medium.com/androiddevelopers/repeatonlifecycle-api-design-story-8670d1a7d333"
+      },
+      {
+        "type": "Video",
+        "title": "StateFlow vs. Flow vs. SharedFlow vs. LiveData — When to Use What?! | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=6Jc6-INantQ"
+      }
+    ]
+  },
+  {
+    "id": "architecture-components/data-layer/datastore",
+    "title": "DataStore",
+    "description": "Jetpack DataStore is the modern replacement for `SharedPreferences`, providing a fully asynchronous, coroutine- and Flow-based API with built-in data-consistency guarantees. It comes in two flavours: **Preferences DataStore** (key-value pairs, no schema needed, similar API to SharedPreferences but without its thread-safety issues) and **Proto DataStore** (typed objects defined by Protocol Buffers, with schema enforcement and better performance). DataStore handles data migration, corruption recovery, and safe concurrent access — making it the recommended choice for persisting small amounts of app data on disk.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "DataStore | Android Developers",
+        "url": "https://developer.android.com/topic/libraries/architecture/datastore"
+      },
+      {
+        "type": "Article",
+        "title": "Prefer Storing Data with Jetpack DataStore | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2020/09/prefer-storing-data-with-jetpack.html"
+      },
+      {
+        "type": "Video",
+        "title": "Introduction to DataStore — MAD Skills | Android Developers",
+        "url": "https://www.youtube.com/watch?v=mdQjuZbLv9Y"
+      }
+    ]
+  },
+  {
+    "id": "architecture-components/data-layer/workmanager",
+    "title": "WorkManager",
+    "description": "WorkManager is the recommended Jetpack library for **deferrable, persistent background work** that must complete even if the app exits or the device restarts. Define work by subclassing `Worker` (or `CoroutineWorker` for suspend functions), set constraints (network, charging, storage), and enqueue with `WorkManager.getInstance(context).enqueue()`. It supports one-time and periodic tasks, chained work graphs, retry policies, and progress observation via `LiveData<WorkInfo>`. WorkManager chooses the appropriate underlying mechanism (JobScheduler, AlarmManager) based on API level automatically.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Getting started with WorkManager | Android Developers",
+        "url": "https://developer.android.com/develop/background-work/background-tasks/persistent/getting-started"
+      },
+      {
+        "type": "Article",
+        "title": "Working with WorkManager in Android: Implementing with Jetpack Compose and Kotlin Coroutines Flow | Medium",
+        "url": "https://medium.com/@YodgorbekKomilo/working-with-workmanager-in-android-implementing-with-jetpack-compose-and-kotlin-coroutines-flow-7e8de4a20a30"
+      },
+      {
+        "type": "Video",
+        "title": "WorkManager: Basics — MAD Skills | Android Developers",
+        "url": "https://www.youtube.com/watch?v=_SQM-10TB4k"
+      }
+    ]
+  },
+  {
+    "id": "architecture-components/data-layer/repository-pattern",
+    "title": "Repository Pattern",
+    "description": "The Repository pattern is the recommended way to structure the data layer in Android apps: a repository class abstracts the origin of data (network, database, cache) behind a clean API that the rest of the app consumes. ViewModels and use cases call the repository without knowing whether data comes from Room, Retrofit, DataStore, or an in-memory cache — the repository decides which source to use and how to merge them. This separation makes data-fetching logic independently testable by swapping real data sources for fakes. Create one repository per data domain (e.g. `UserRepository`, `OrderRepository`).",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Data layer | Android Developers",
+        "url": "https://developer.android.com/topic/architecture/data-layer"
+      },
+      {
+        "type": "Article",
+        "title": "The Real Repository Pattern in Android | ProAndroidDev",
+        "url": "https://proandroiddev.com/the-real-repository-pattern-in-android-efba8662b754"
+      },
+      {
+        "type": "Video",
+        "title": "Full guide to Android App Architecture — MVVM + Clean Architecture + Jetpack Compose | YouTube",
+        "url": "https://www.youtube.com/watch?v=TosPS55y_IY"
+      },
+      {
+        "type": "Repo",
+        "title": "android/architecture-samples — Repository pattern reference (TODO app)",
+        "url": "https://github.com/android/architecture-samples"
+      }
+    ]
+  },
+  {
+    "id": "architecture-components/data-layer/domain-usecase",
+    "title": "Domain / UseCase",
+    "description": "Use cases (also called interactors) live in the optional **domain layer** and encapsulate a single, reusable piece of business logic that would otherwise be duplicated across multiple ViewModels. By convention they are named with a verb + noun + `UseCase` suffix (e.g. `GetLatestNewsUseCase`). They sit between the UI layer (ViewModel) and the data layer (Repository), must be **main-safe**, and are scoped to their caller's lifetime rather than maintaining their own lifecycle. Use the domain layer when business logic is complex, shared across multiple ViewModels, or needs to be independently unit-tested.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Domain layer | Android Developers",
+        "url": "https://developer.android.com/topic/architecture/domain-layer"
+      },
+      {
+        "type": "Article",
+        "title": "Adding a domain layer | Android Developers Blog",
+        "url": "https://medium.com/androiddevelopers/adding-a-domain-layer-bc5a708a96da"
+      },
+      {
+        "type": "Video",
+        "title": "Full guide to Android App Architecture — MVVM + Clean Architecture + Jetpack Compose | YouTube",
+        "url": "https://www.youtube.com/watch?v=TosPS55y_IY"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — Domain layer with UseCases reference",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "design-patterns/creational/builder-pattern",
+    "title": "Builder Pattern",
+    "description": "The Builder pattern is a creational design pattern that constructs complex objects step by step, separating construction from representation. In Android, it appears prominently in `AlertDialog.Builder`, `Notification.Builder`, `OkHttpClient.Builder`, and `Retrofit.Builder`. In Kotlin, **named parameters and default values** often make a formal Builder class unnecessary for your own types, but the pattern remains essential when consuming Java APIs or configuring objects that have many optional parameters and must be immutable once built.",
+    "resources": [
+      {
+        "type": "Article",
+        "title": "Creational Design Patterns in Kotlin: Builder | Baeldung",
+        "url": "https://www.baeldung.com/kotlin/builder-pattern"
+      },
+      {
+        "type": "Article",
+        "title": "Builder Design Pattern in Kotlin | ProAndroidDev",
+        "url": "https://proandroiddev.com/builder-design-pattern-in-kotlin-c52e41bd6020"
+      },
+      {
+        "type": "Video",
+        "title": "Full guide to Android App Architecture — MVVM + Clean Architecture + Jetpack Compose | YouTube",
+        "url": "https://www.youtube.com/watch?v=TosPS55y_IY"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Android Developer Roadmap — roadmap.sh",
+        "url": "https://roadmap.sh/android"
+      }
+    ]
+  },
+  {
+    "id": "design-patterns/creational/factory-pattern",
+    "title": "Factory Pattern",
+    "description": "The Factory pattern is a creational design pattern that delegates object creation to a factory method or class, allowing the exact type to be determined at runtime without the caller knowing which concrete class is instantiated. In Android, `ViewModelProvider.Factory`, Room's `RoomDatabase.create()`, and Retrofit instance builders all use this pattern. It improves testability (swap real factories for test factories) and extensibility (add new product types without changing client code). Kotlin's `companion object` functions and `sealed class` hierarchies are idiomatic ways to implement factories.",
+    "resources": [
+      {
+        "type": "Article",
+        "title": "Factory Pattern in Kotlin | DZone",
+        "url": "https://dzone.com/articles/factory-pattern-in-kotlin"
+      },
+      {
+        "type": "Article",
+        "title": "Zero to Hero in Android Kotlin Creational Design Patterns | ProAndroidDev",
+        "url": "https://proandroiddev.com/zero-to-hero-in-android-kotlin-creational-design-patterns-a972375c352a"
+      },
+      {
+        "type": "Video",
+        "title": "Full guide to Android App Architecture — MVVM + Clean Architecture + Jetpack Compose | YouTube",
+        "url": "https://www.youtube.com/watch?v=TosPS55y_IY"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Android Developer Roadmap — roadmap.sh",
+        "url": "https://roadmap.sh/android"
+      }
+    ]
+  },
+  {
+    "id": "design-patterns/observer-pattern/flow",
+    "title": "Flow",
+    "description": "Kotlin `Flow` is a cold, asynchronous stream that emits multiple values sequentially using coroutines. Unlike `suspend` functions (which return one value), a Flow can emit zero or more values over time — making it ideal for database change streams, sensor data, paginated loads, and UI state. Being **cold** means each collector triggers an independent execution of the producer. Operators such as `map`, `filter`, `flatMapLatest`, `combine`, and `debounce` let you transform and compose streams. Collect in a lifecycle-safe way using `repeatOnLifecycle` or `flowWithLifecycle` on Android.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Kotlin flows on Android | Android Developers",
+        "url": "https://developer.android.com/kotlin/flow"
+      },
+      {
+        "type": "Article",
+        "title": "Kotlin Flows — Fundamentals | ProAndroidDev",
+        "url": "https://proandroiddev.com/kotlin-flows-fundamentals-7d9b984f12bb"
+      },
+      {
+        "type": "Video",
+        "title": "StateFlow vs. Flow vs. SharedFlow vs. LiveData — When to Use What?! | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=6Jc6-INantQ"
+      },
+      {
+        "type": "Course",
+        "title": "Kotlin Coroutines and Flow for Android Development | Udemy",
+        "url": "https://www.udemy.com/course/coroutines-on-android/"
+      }
+    ]
+  },
+  {
+    "id": "design-patterns/observer-pattern/stateflow-sharedflow",
+    "title": "StateFlow / SharedFlow",
+    "description": "`StateFlow` and `SharedFlow` are **hot** Flow implementations that exist independently of collectors. `StateFlow` always holds a current value (equivalent to RxJava's `BehaviorSubject`) and is the recommended way to expose UI state from a ViewModel; it replaces `LiveData` in Kotlin codebases. `SharedFlow` emits to all active collectors simultaneously and supports configurable replay and buffering (equivalent to `PublishSubject`); it is used for one-shot events like navigation commands or snackbars. Expose as the read-only interface (`StateFlow`/`SharedFlow`) and hold a private `MutableStateFlow`/`MutableSharedFlow` internally.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "StateFlow and SharedFlow | Android Developers",
+        "url": "https://developer.android.com/kotlin/flow/stateflow-and-sharedflow"
+      },
+      {
+        "type": "Article",
+        "title": "Kotlin Flow, StateFlow and SharedFlow Android | ProAndroidDev",
+        "url": "https://proandroiddev.com/kotlin-flow-stateflow-and-sharedflow-android-6737bd79bbd2"
+      },
+      {
+        "type": "Video",
+        "title": "StateFlow vs. Flow vs. SharedFlow vs. LiveData — When to Use What?! | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=6Jc6-INantQ"
+      },
+      {
+        "type": "Course",
+        "title": "Kotlin Coroutines and Flow for Android Development | Udemy",
+        "url": "https://www.udemy.com/course/coroutines-on-android/"
+      }
+    ]
+  },
+  {
+    "id": "design-patterns/observer-pattern/channels",
+    "title": "Channels",
+    "description": "Kotlin `Channel` is a coroutine primitive for **point-to-point** communication between coroutines: one or more senders write to the channel, one or more receivers consume from it, and each value is delivered to exactly one receiver. Conceptually it is a non-blocking replacement for `java.util.concurrent.BlockingQueue`. Channels support different capacity modes: `RENDEZVOUS` (no buffer), `BUFFERED`, `CONFLATED` (keeps only the latest), and `UNLIMITED`. In Android, prefer `SharedFlow` for UI event streams; channels are more appropriate for producer-consumer pipelines or when exactly-once delivery semantics are needed.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Channels | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/channels.html"
+      },
+      {
+        "type": "Article",
+        "title": "Kotlin Coroutines in Android — Channel | Medium",
+        "url": "https://medium.com/swlh/kotlin-coroutines-in-android-channel-fb9b3b65e0b"
+      },
+      {
+        "type": "Video",
+        "title": "Complete Guide on Kotlin Channels (Coroutines) — Android Studio Tutorial | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=unkgAYV9SpI"
+      }
+    ]
+  },
+  {
+    "id": "design-patterns/observer-pattern/rxjava-legacy",
+    "title": "RxJava (legacy)",
+    "description": "RxJava brought Reactive Extensions (ReactiveX) to the JVM and was the dominant asynchronous programming library for Android for several years. It introduced composable stream types (`Observable`, `Flowable`, `Single`, `Maybe`, `Completable`), a rich operator set, and schedulers for threading. It remains in large legacy codebases and some third-party libraries. **Kotlin Coroutines and Flow** are now the recommended modern replacement, offering simpler semantics, structured concurrency, and first-class Kotlin support. The `kotlinx-coroutines-rx3` interop library eases incremental migration from RxJava to Flow.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "RxJava — GitHub",
+        "url": "https://github.com/ReactiveX/RxJava"
+      },
+      {
+        "type": "Article",
+        "title": "The Real Kotlin Flow Benefits over RxJava | ProAndroidDev",
+        "url": "https://proandroiddev.com/the-real-kotlin-flow-benefits-over-rxjava-c19b99ba6eb9"
+      },
+      {
+        "type": "Video",
+        "title": "KotlinConf 2019: Migrating a Library from RxJava to Coroutines | YouTube",
+        "url": "https://www.youtube.com/watch?v=raWdIwsDe-g"
+      }
+    ]
+  },
+  {
+    "id": "design-patterns/observer-pattern/livedata-legacy",
+    "title": "LiveData (legacy)",
+    "description": "`LiveData` is a lifecycle-aware observable that automatically manages subscriptions, stopping emission to observers in the background and resuming when they return to the foreground. While it was ground-breaking when introduced as part of Android Architecture Components, it is now considered legacy: it lacks coroutine integration, does not support operators well, and its event-delivery semantics can be surprising on re-subscription. **`StateFlow`** and **`SharedFlow`** collected with `repeatOnLifecycle` are the recommended replacements in modern Kotlin-first codebases. `LiveData` is still usable in Java projects or where Kotlin coroutines cannot be adopted.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "LiveData overview | Android Developers",
+        "url": "https://developer.android.com/topic/libraries/architecture/livedata"
+      },
+      {
+        "type": "Article",
+        "title": "Migrating from LiveData to Kotlin's Flow | Android Developers Blog",
+        "url": "https://medium.com/androiddevelopers/migrating-from-livedata-to-kotlins-flow-379292f419fb"
+      },
+      {
+        "type": "Video",
+        "title": "StateFlow vs. Flow vs. SharedFlow vs. LiveData — When to Use What?! | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=6Jc6-INantQ"
+      }
+    ]
+  },
+  {
+    "id": "design-patterns/dependency-injection/hilt",
+    "title": "Hilt",
+    "description": "Hilt is Google's recommended dependency injection library for Android, built on top of Dagger 2. It dramatically reduces DI boilerplate by providing pre-built components scoped to standard Android classes (`@HiltAndroidApp`, `@AndroidEntryPoint`, `@HiltViewModel`). Hilt uses compile-time code generation to validate the dependency graph, catching missing bindings as build errors rather than runtime crashes. It integrates with Jetpack Navigation, WorkManager, and Compose, and provides first-class support for testing via `@HiltAndroidTest` and `TestInstallIn`. Hilt is the successor to the older `dagger.android` extension.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Dependency injection with Hilt | Android Developers",
+        "url": "https://developer.android.com/training/dependency-injection/hilt-android"
+      },
+      {
+        "type": "Article",
+        "title": "Dependency injection with Hilt in Android development | Medium",
+        "url": "https://tomas-repcik.medium.com/dependency-injection-with-hilt-in-android-development-e23fc636d65c"
+      },
+      {
+        "type": "Video",
+        "title": "Introduction to Hilt — MAD Skills | Android Developers",
+        "url": "https://www.youtube.com/watch?v=mnMCgjuMJPA"
+      },
+      {
+        "type": "Video",
+        "title": "The Ultimate Dagger-Hilt Guide (Dependency Injection) | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=bbMsuI2p1DQ"
+      }
+    ]
+  },
+  {
+    "id": "design-patterns/dependency-injection/dagger-legacy",
+    "title": "Dagger (legacy)",
+    "description": "Dagger 2 is a compile-time, annotation-based dependency injection framework for Java and Kotlin that generates fully-traced, type-safe injection code with no reflection. It introduced concepts such as `@Component`, `@Module`, `@Provides`, `@Inject`, and `@Scope` that remain the foundation of Hilt. The `dagger.android` extension that simplified Activity/Fragment injection is now in **maintenance mode** — no new features will be added. For new Android projects, use **Hilt** (which wraps Dagger) instead. Understanding Dagger is still valuable for large projects that predate Hilt or that require custom component hierarchies Hilt does not expose.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Dagger basics | Android Developers",
+        "url": "https://developer.android.com/training/dependency-injection/dagger-basics"
+      },
+      {
+        "type": "Official",
+        "title": "Using Dagger in Android apps | Android Developers",
+        "url": "https://developer.android.com/training/dependency-injection/dagger-android"
+      },
+      {
+        "type": "Video",
+        "title": "The Ultimate Dagger-Hilt Guide (Dependency Injection) | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=bbMsuI2p1DQ"
+      }
+    ]
+  },
+  {
+    "id": "design-patterns/dependency-injection/koin",
+    "title": "Koin",
+    "description": "Koin is a lightweight, pure-Kotlin DI framework that resolves dependencies at **runtime** using a DSL rather than compile-time code generation. This means zero annotation processing, faster incremental builds, and a gentle learning curve. You declare modules with `module { single { } factory { } viewModel { } }` and retrieve dependencies with `by inject()` or `by viewModel()`. Koin 3+ supports Kotlin Multiplatform and provides Compose integration. The trade-off versus Hilt/Dagger is that graph errors surface at runtime rather than build time, requiring thorough test coverage to catch missing bindings.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Koin — The Kotlin Dependency Injection Framework",
+        "url": "https://insert-koin.io/"
+      },
+      {
+        "type": "Article",
+        "title": "Dependency Injection with Kotlin and Koin | Auth0 Blog",
+        "url": "https://auth0.com/blog/dependency-injection-with-kotlin-and-koin/"
+      },
+      {
+        "type": "Video",
+        "title": "Dependency Injection with Koin — Android Tutorial | YouTube",
+        "url": "https://www.youtube.com/watch?v=RA3zWRjodHY"
+      },
+      {
+        "type": "Repo",
+        "title": "InsertKoinIO/koin — GitHub",
+        "url": "https://github.com/InsertKoinIO/koin"
+      }
+    ]
+  },
+  {
+    "id": "design-patterns/dependency-injection/kotlin-inject",
+    "title": "kotlin-inject",
+    "description": "`kotlin-inject` is a **compile-time** dependency injection library for Kotlin that uses KSP (Kotlin Symbol Processing) for code generation, offering fast build performance compared to KAPT-based frameworks. It supports constructor injection via `@Inject`, abstract components, scopes, and Kotlin Multiplatform (JVM, Android, Native, JS). The API is inspired by Dagger but is idiomatic Kotlin — components are defined as abstract classes or interfaces and created through generated implementations. The KAPT backend has been removed; KSP is now required.",
+    "resources": [
+      {
+        "type": "Repo",
+        "title": "evant/kotlin-inject — GitHub",
+        "url": "https://github.com/evant/kotlin-inject"
+      },
+      {
+        "type": "Article",
+        "title": "Introduction to Channels in Kotlin (Baeldung kotlin-inject overview)",
+        "url": "https://www.baeldung.com/kotlin/channels"
+      },
+      {
+        "type": "Video",
+        "title": "Koin Annotations Tutorial: Dependency Injection in Kotlin for Android | YouTube",
+        "url": "https://www.youtube.com/watch?v=3OfHnhTHpG0"
+      }
+    ]
+  },
+  {
+    "id": "design-patterns/dependency-injection/metro",
+    "title": "Metro",
+    "description": "Metro is a compile-time, multiplatform DI framework implemented as a **Kotlin compiler plugin**, combining ideas from Dagger, Anvil, and kotlin-inject into one cohesive solution. It validates the dependency graph at compile time like Dagger, supports aggregation/contribution patterns similar to Anvil, and provides a familiar `@Inject` / `@Provides` API. Because it is a compiler plugin rather than an annotation processor, it adds minimal build-time overhead. Metro reached 1.0.0 in April 2026 and is already used in production by the Cash App Android team, reporting a 60% improvement in incremental build speeds after migrating from Dagger.",
+    "resources": [
+      {
+        "type": "Repo",
+        "title": "ZacSweers/metro — GitHub",
+        "url": "https://github.com/ZacSweers/metro"
+      },
+      {
+        "type": "Article",
+        "title": "Cash Android Moves to Metro | Cash App Code Blog",
+        "url": "https://code.cash.app/cash-android-moves-to-metro"
+      },
+      {
+        "type": "Video",
+        "title": "The Ultimate Dagger-Hilt Guide (Dependency Injection) | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=bbMsuI2p1DQ"
+      }
+    ]
+  },
+  {
+    "id": "architecture/patterns/mvvm",
+    "title": "MVVM",
+    "description": "Model-View-ViewModel (MVVM) separates concerns into three roles: **Model** (data and business logic), **View** (Activity/Fragment or Composable that renders UI), and **ViewModel** (exposes observable UI state and handles user events, surviving configuration changes). The View observes state exposed by the ViewModel as `StateFlow` or `LiveData` and sends user interactions back as events. MVVM is the architecture pattern that Google's official Jetpack guidance is built around, and it pairs naturally with the Repository pattern for the data layer and Clean Architecture layers for the domain layer.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Guide to app architecture | Android Developers",
+        "url": "https://developer.android.com/topic/architecture"
+      },
+      {
+        "type": "Article",
+        "title": "MVVM (Model View ViewModel) Architecture Pattern in Android | GeeksforGeeks",
+        "url": "https://www.geeksforgeeks.org/android/mvvm-model-view-viewmodel-architecture-pattern-in-android/"
+      },
+      {
+        "type": "Video",
+        "title": "Full guide to Android App Architecture — MVVM + Clean Architecture + Jetpack Compose | YouTube",
+        "url": "https://www.youtube.com/watch?v=TosPS55y_IY"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Android Developer Roadmap — roadmap.sh",
+        "url": "https://roadmap.sh/android"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — Production MVVM + Clean Architecture reference",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "architecture/patterns/mvi",
+    "title": "MVI",
+    "description": "Model-View-Intent (MVI) is an architecture pattern that enforces **strict unidirectional data flow** and immutable state. The **Intent** captures user actions or external events, a **Reducer** processes them to produce a new immutable **State** (the Model), and the **View** renders that state. Because state transitions are pure functions, the entire UI behaviour is deterministic and easy to test and reproduce. In Android, MVI is typically implemented with `ViewModel` + `StateFlow` (state) + `Channel`/`SharedFlow` (side effects) + a sealed class hierarchy for intents and states. It excels for screens with complex, multi-step interaction flows.",
+    "resources": [
+      {
+        "type": "Article",
+        "title": "MVI Architecture Pattern in Android | Medium",
+        "url": "https://medium.com/@mohammedkhudair57/mvi-architecture-pattern-in-android-0046bf9b8a2e"
+      },
+      {
+        "type": "Article",
+        "title": "Mastering Android MVI: A Comprehensive Guide with Best Practices | Medium",
+        "url": "https://medium.com/@sharmapraveen91/mastering-android-mvi-a-comprehensive-guide-with-best-practices-and-common-pitfalls-2f6d78ce3266"
+      },
+      {
+        "type": "Video",
+        "title": "The Ultimate guide to MVI in Android | YouTube",
+        "url": "https://www.youtube.com/watch?v=T4NGT9DL3qw"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Android Developer Roadmap — roadmap.sh",
+        "url": "https://roadmap.sh/android"
+      }
+    ]
+  },
+  {
+    "id": "architecture/patterns/clean-architecture",
+    "title": "Clean Architecture",
+    "description": "Clean Architecture, popularised by Robert C. Martin (Uncle Bob), organises code into concentric layers where dependencies always point **inward** toward the domain. For Android this typically maps to: **Presentation layer** (ViewModel, UI/Compose), **Domain layer** (use cases, domain models — pure Kotlin, no Android dependencies), and **Data layer** (repositories, data sources, Room, Retrofit). This strict separation makes the domain independently unit-testable, allows swapping data sources without touching the UI, and keeps each class focused on a single responsibility. It is often combined with MVVM or MVI at the presentation layer.",
+    "resources": [
+      {
+        "type": "Article",
+        "title": "The Clean Architecture | Clean Code Blog (Uncle Bob)",
+        "url": "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
+      },
+      {
+        "type": "Article",
+        "title": "Clean Architecture in Android Kotlin: A Complete Guide | Medium",
+        "url": "https://medium.com/@hussein0115300/clean-architecture-in-android-kotlin-a-complete-guide-13de3f51ab9b"
+      },
+      {
+        "type": "Video",
+        "title": "How to Make a Clean Architecture Note App (MVVM / CRUD / Jetpack Compose) | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=8YPXv7xKh2w"
+      },
+      {
+        "type": "Course",
+        "title": "Android Developer = Compose + MVVM + Clean Architecture | Udemy",
+        "url": "https://www.udemy.com/course/android-developer-compose-mvvm-clean-architecture/"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — Clean Architecture reference app",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "architecture/patterns/unidirectional-data-flow-udf",
+    "title": "Unidirectional Data Flow (UDF)",
+    "description": "Unidirectional Data Flow (UDF) is a design principle where **state flows down** the component tree and **events flow up**. In Android: the ViewModel holds and transforms state into a `UiState` object, the UI observes that state and renders it, and user interactions are forwarded back to the ViewModel as events — completing the loop. This pattern eliminates two-way binding bugs, makes state changes predictable and auditable, and simplifies testing by reducing coupling. UDF is the core design principle behind Jetpack Compose's state model (`remember`, `State<T>`, hoisting) and is central to both MVVM and MVI implementations.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "UI layer | Android Developers",
+        "url": "https://developer.android.com/topic/architecture/ui-layer"
+      },
+      {
+        "type": "Article",
+        "title": "Unidirectional data flow in Jetpack Compose | Medium",
+        "url": "https://medium.com/@mahmoud.alkateb22/unidirectional-data-flow-in-jetpack-compose-android-jetpack-compose-a47024f9a8f1"
+      },
+      {
+        "type": "Video",
+        "title": "Full guide to Android App Architecture — MVVM + Clean Architecture + Jetpack Compose | YouTube",
+        "url": "https://www.youtube.com/watch?v=TosPS55y_IY"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — UDF + UiState reference implementation",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "architecture/modern-app-architecture/ui-layer",
+    "title": "UI Layer",
+    "description": "The UI layer (presentation layer) is responsible for displaying application data on screen and handling user interactions. It consists of **UI elements** (composables or Views) that render state, and **state holders** (typically `ViewModel`) that produce `UiState` and process events. The ViewModel fetches data from the domain or data layer, transforms it for display, and exposes it as a `StateFlow<UiState>`. Following UDF in this layer ensures the UI is always a pure function of state — making it predictable, testable, and compatible with Android's Compose UI model.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "UI layer | Android Developers",
+        "url": "https://developer.android.com/topic/architecture/ui-layer"
+      },
+      {
+        "type": "Article",
+        "title": "A flexible, modern Android app architecture: complete step-by-step | ProAndroidDev",
+        "url": "https://proandroiddev.com/a-flexible-modern-android-app-architecture-complete-step-by-step-d76901e29993"
+      },
+      {
+        "type": "Video",
+        "title": "Full guide to Android App Architecture — MVVM + Clean Architecture + Jetpack Compose | YouTube",
+        "url": "https://www.youtube.com/watch?v=TosPS55y_IY"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — UI layer with Compose + ViewModel + StateFlow",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "architecture/modern-app-architecture/domain-layer",
+    "title": "Domain Layer",
+    "description": "The domain layer is an **optional** middle layer that sits between the UI layer and the data layer, housing reusable business logic that would otherwise be duplicated across multiple ViewModels. It contains **use case** classes (one use case per operation), pure domain model classes, and repository interfaces. Because it has no Android framework dependencies, it is the easiest layer to unit-test. Add a domain layer when you find yourself copying logic between ViewModels, when business rules are complex enough to warrant their own tests, or when you want to decouple the presentation from data-fetching concerns.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Domain layer | Android Developers",
+        "url": "https://developer.android.com/topic/architecture/domain-layer"
+      },
+      {
+        "type": "Article",
+        "title": "Adding a domain layer | Android Developers Blog",
+        "url": "https://medium.com/androiddevelopers/adding-a-domain-layer-bc5a708a96da"
+      },
+      {
+        "type": "Video",
+        "title": "Full guide to Android App Architecture — MVVM + Clean Architecture + Jetpack Compose | YouTube",
+        "url": "https://www.youtube.com/watch?v=TosPS55y_IY"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — Domain layer with UseCases reference",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "architecture/modern-app-architecture/data-layer",
+    "title": "Data Layer",
+    "description": "The data layer contains the **business data and data-access logic** of the app, made up of repositories and data sources. Repositories expose a unified data API to the rest of the app, arbitrating between remote (Retrofit), local (Room, DataStore), and in-memory sources. Each repository follows the **single source of truth** principle: it decides which source is authoritative and exposes a single observable stream (typically a `Flow`) for the UI to consume. The data layer should be the only place that knows about data origins, network protocols, or database schemas.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Data layer | Android Developers",
+        "url": "https://developer.android.com/topic/architecture/data-layer"
+      },
+      {
+        "type": "Article",
+        "title": "Android Clean Architecture: Understanding the Data Layer | ASOS Tech Blog",
+        "url": "https://medium.com/asos-techblog/android-clean-architecture-understanding-the-data-layer-a8df03b508c2"
+      },
+      {
+        "type": "Video",
+        "title": "Full guide to Android App Architecture — MVVM + Clean Architecture + Jetpack Compose | YouTube",
+        "url": "https://www.youtube.com/watch?v=TosPS55y_IY"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — Data layer with Repository + Room + DataStore",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "architecture/modern-app-architecture/state-holders-uistate",
+    "title": "State Holders / UiState",
+    "description": "A **state holder** is any class responsible for owning, producing, and exposing UI state. At screen level, `ViewModel` is the canonical state holder — it survives configuration changes and exposes state as `StateFlow<UiState>`. For simpler, scoped UI logic (a form, a custom component) a plain class or Compose `rememberSaveable`-backed holder may suffice. **`UiState`** is typically a data class or sealed interface that bundles all data a screen needs to render, following UDF: one source of truth, immutable snapshots, and unidirectional updates. Distinguishing screen state from UI-element state keeps the architecture clean and testable.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "State holders and UI state | Android Developers",
+        "url": "https://developer.android.com/topic/architecture/ui-layer/stateholders"
+      },
+      {
+        "type": "Article",
+        "title": "Crash Course on the Android UI Layer | Part 1 | Manuel Vivo",
+        "url": "https://manuelvivo.dev/crash-course-ui-layer-part-1"
+      },
+      {
+        "type": "Video",
+        "title": "Full guide to Android App Architecture — MVVM + Clean Architecture + Jetpack Compose | YouTube",
+        "url": "https://www.youtube.com/watch?v=TosPS55y_IY"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid — UiState with sealed interfaces reference",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  }
+]

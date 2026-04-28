@@ -1,0 +1,242 @@
+[
+  {
+    "id": "application-fundamentals/android-package/apk",
+    "title": "APK",
+    "sectionTitle": "Application Fundamentals",
+    "groupLabel": "Android Package"
+  },
+  {
+    "id": "application-fundamentals/android-package/aab",
+    "title": "AAB",
+    "sectionTitle": "Application Fundamentals",
+    "groupLabel": "Android Package"
+  },
+  {
+    "id": "application-fundamentals/languages/kotlin",
+    "title": "Kotlin",
+    "sectionTitle": "Application Fundamentals",
+    "groupLabel": "Languages"
+  },
+  {
+    "id": "application-fundamentals/languages/k2-compiler",
+    "title": "K2 Compiler",
+    "sectionTitle": "Application Fundamentals",
+    "groupLabel": "Languages"
+  },
+  {
+    "id": "application-fundamentals/languages/java-legacy",
+    "title": "Java (legacy)",
+    "sectionTitle": "Application Fundamentals",
+    "groupLabel": "Languages"
+  },
+  {
+    "id": "application-fundamentals/languages/c-jni",
+    "title": "C++ (JNI)",
+    "sectionTitle": "Application Fundamentals",
+    "groupLabel": "Languages"
+  },
+  {
+    "id": "android-operating-system/foundations/multi-user-linux",
+    "title": "Multi-User Linux",
+    "sectionTitle": "Android Operating System",
+    "groupLabel": "Foundations"
+  },
+  {
+    "id": "android-operating-system/foundations/file-permissions",
+    "title": "File Permissions",
+    "sectionTitle": "Android Operating System",
+    "groupLabel": "Foundations"
+  },
+  {
+    "id": "android-operating-system/foundations/resource-isolations",
+    "title": "Resource Isolations",
+    "sectionTitle": "Android Operating System",
+    "groupLabel": "Foundations"
+  },
+  {
+    "id": "android-operating-system/foundations/process-management",
+    "title": "Process Management",
+    "sectionTitle": "Android Operating System",
+    "groupLabel": "Foundations"
+  },
+  {
+    "id": "android-operating-system/foundations/sandboxing-selinux",
+    "title": "Sandboxing & SELinux",
+    "sectionTitle": "Android Operating System",
+    "groupLabel": "Foundations"
+  },
+  {
+    "id": "android-operating-system/foundations/scoped-storage",
+    "title": "Scoped Storage",
+    "sectionTitle": "Android Operating System",
+    "groupLabel": "Foundations"
+  },
+  {
+    "id": "android-platform-architecture/layers/the-linux-kernel",
+    "title": "The Linux Kernel",
+    "sectionTitle": "Android Platform Architecture",
+    "groupLabel": "Layers"
+  },
+  {
+    "id": "android-platform-architecture/layers/hardware-abstraction-layer",
+    "title": "Hardware Abstraction Layer",
+    "sectionTitle": "Android Platform Architecture",
+    "groupLabel": "Layers"
+  },
+  {
+    "id": "android-platform-architecture/layers/android-runtime-art",
+    "title": "Android Runtime (ART)",
+    "sectionTitle": "Android Platform Architecture",
+    "groupLabel": "Layers"
+  },
+  {
+    "id": "android-platform-architecture/layers/native-libraries",
+    "title": "Native Libraries",
+    "sectionTitle": "Android Platform Architecture",
+    "groupLabel": "Layers"
+  },
+  {
+    "id": "android-platform-architecture/layers/java-api-framework",
+    "title": "Java API Framework",
+    "sectionTitle": "Android Platform Architecture",
+    "groupLabel": "Layers"
+  },
+  {
+    "id": "android-platform-architecture/layers/system-apps",
+    "title": "System Apps",
+    "sectionTitle": "Android Platform Architecture",
+    "groupLabel": "Layers"
+  },
+  {
+    "id": "android-platform-architecture/layers/aicore",
+    "title": "AICore",
+    "sectionTitle": "Android Platform Architecture",
+    "groupLabel": "Layers"
+  },
+  {
+    "id": "app-manifest/core/package",
+    "title": "Package",
+    "sectionTitle": "App Manifest",
+    "groupLabel": "Core"
+  },
+  {
+    "id": "app-manifest/core/application-id",
+    "title": "Application ID",
+    "sectionTitle": "App Manifest",
+    "groupLabel": "Core"
+  },
+  {
+    "id": "app-manifest/core/permissions-declaration",
+    "title": "Permissions Declaration",
+    "sectionTitle": "App Manifest",
+    "groupLabel": "Core"
+  },
+  {
+    "id": "app-manifest/core/foreground-service-types",
+    "title": "Foreground Service Types",
+    "sectionTitle": "App Manifest",
+    "groupLabel": "Core"
+  },
+  {
+    "id": "app-manifest/core/queries-package-visibility",
+    "title": "Queries / Package Visibility",
+    "sectionTitle": "App Manifest",
+    "groupLabel": "Core"
+  },
+  {
+    "id": "app-components/components/activity",
+    "title": "Activity",
+    "sectionTitle": "App Components",
+    "groupLabel": "Components"
+  },
+  {
+    "id": "app-components/components/service",
+    "title": "Service",
+    "sectionTitle": "App Components",
+    "groupLabel": "Components"
+  },
+  {
+    "id": "app-components/components/broadcast-receiver",
+    "title": "Broadcast Receiver",
+    "sectionTitle": "App Components",
+    "groupLabel": "Components"
+  },
+  {
+    "id": "app-components/components/content-provider",
+    "title": "Content Provider",
+    "sectionTitle": "App Components",
+    "groupLabel": "Components"
+  },
+  {
+    "id": "app-components/intent/intent-filters",
+    "title": "Intent Filters",
+    "sectionTitle": "App Components",
+    "groupLabel": "Intent"
+  },
+  {
+    "id": "app-components/intent/explicit-intents",
+    "title": "Explicit Intents",
+    "sectionTitle": "App Components",
+    "groupLabel": "Intent"
+  },
+  {
+    "id": "app-components/intent/implicit-intents",
+    "title": "Implicit Intents",
+    "sectionTitle": "App Components",
+    "groupLabel": "Intent"
+  },
+  {
+    "id": "app-components/intent/pendingintent-mutability",
+    "title": "PendingIntent (mutability)",
+    "sectionTitle": "App Components",
+    "groupLabel": "Intent"
+  },
+  {
+    "id": "app-entry-points/activities/activity-lifecycles",
+    "title": "Activity Lifecycles",
+    "sectionTitle": "App Entry Points",
+    "groupLabel": "Activities"
+  },
+  {
+    "id": "app-entry-points/activities/activity-state-changes",
+    "title": "Activity State Changes",
+    "sectionTitle": "App Entry Points",
+    "groupLabel": "Activities"
+  },
+  {
+    "id": "app-entry-points/activities/task-and-back-stack",
+    "title": "Task and Back Stack",
+    "sectionTitle": "App Entry Points",
+    "groupLabel": "Activities"
+  },
+  {
+    "id": "app-entry-points/activities/parcelables-and-bundles",
+    "title": "Parcelables and Bundles",
+    "sectionTitle": "App Entry Points",
+    "groupLabel": "Activities"
+  },
+  {
+    "id": "app-entry-points/modern-entry-apis/app-shortcuts",
+    "title": "App Shortcuts",
+    "sectionTitle": "App Entry Points",
+    "groupLabel": "Modern Entry APIs"
+  },
+  {
+    "id": "app-entry-points/modern-entry-apis/splash-screen-api",
+    "title": "Splash Screen API",
+    "sectionTitle": "App Entry Points",
+    "groupLabel": "Modern Entry APIs"
+  },
+  {
+    "id": "app-entry-points/modern-entry-apis/activity-result-api",
+    "title": "Activity Result API",
+    "sectionTitle": "App Entry Points",
+    "groupLabel": "Modern Entry APIs"
+  },
+  {
+    "id": "app-entry-points/modern-entry-apis/predictive-back-gesture",
+    "title": "Predictive Back Gesture",
+    "sectionTitle": "App Entry Points",
+    "groupLabel": "Modern Entry APIs"
+  }
+]

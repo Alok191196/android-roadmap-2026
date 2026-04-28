@@ -1,0 +1,1222 @@
+[
+  {
+    "id": "modularization-build-logic/build/gradle-kotlin-dsl",
+    "title": "Gradle Kotlin DSL",
+    "description": "Gradle Kotlin DSL lets you write `build.gradle.kts` files in Kotlin instead of Groovy, giving you **compile-time type safety**, IDE autocompletion, and refactoring support. It became the default for new Android projects in Android Studio Giraffe (2023). Use it for all new projects; existing Groovy builds can be migrated file by file since both DSLs coexist within a single project.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Gradle Kotlin DSL Primer",
+        "url": "https://docs.gradle.org/current/userguide/kotlin_dsl.html"
+      },
+      {
+        "type": "Official",
+        "title": "Migrate your build configuration from Groovy to Kotlin | Android Developers",
+        "url": "https://developer.android.com/build/migrate-to-kotlin-dsl"
+      },
+      {
+        "type": "Article",
+        "title": "Kotlin DSL Is Now the Default for New Gradle Builds | The Kotlin Blog",
+        "url": "https://blog.jetbrains.com/kotlin/2023/04/kotlin-dsl-is-the-default-for-new-gradle-builds/"
+      },
+      {
+        "type": "Video",
+        "title": "The Ultimate Gradle Kotlin Beginner's Crash Course For 2025 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=RCRQlz78wCg"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Android Developer Roadmap | roadmap.sh",
+        "url": "https://roadmap.sh/android"
+      }
+    ]
+  },
+  {
+    "id": "modularization-build-logic/build/version-catalogs",
+    "title": "Version Catalogs",
+    "description": "Version Catalogs centralize all dependency coordinates and versions in a single `libs.versions.toml` file at the root of the project. Gradle generates **type-safe accessors** (e.g., `libs.retrofit`) that are shared across all subprojects and visible in IDE autocompletion. This eliminates duplicated version strings and makes upgrading a dependency a one-line change. They became the default for new Android projects starting with Android Studio Hedgehog.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Version Catalogs | Gradle Documentation",
+        "url": "https://docs.gradle.org/current/userguide/version_catalogs.html"
+      },
+      {
+        "type": "Official",
+        "title": "Migrate your build to version catalogs | Android Developers",
+        "url": "https://developer.android.com/build/migrate-to-catalogs"
+      },
+      {
+        "type": "Article",
+        "title": "Gradle Version Catalog | Ryan W – Medium",
+        "url": "https://callmeryan.medium.com/gradle-version-catalog-728111fa210f"
+      },
+      {
+        "type": "Video",
+        "title": "Modern Dependency Management With Version Catalogs - Android Studio Tutorial | YouTube",
+        "url": "https://www.youtube.com/watch?v=MWw1jcwPK3Q"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Android Developer Roadmap | roadmap.sh",
+        "url": "https://roadmap.sh/android"
+      }
+    ]
+  },
+  {
+    "id": "modularization-build-logic/build/convention-plugins-build-logic",
+    "title": "Convention Plugins (build-logic)",
+    "description": "Convention plugins are precompiled script plugins that capture organization-wide Gradle configuration once and apply it consistently across all submodules. They live in an included build called `build-logic` (or `buildSrc`) under `src/main/kotlin/`, and their filename becomes the plugin ID. This pattern eliminates copy-pasting plugin blocks across feature modules and is the approach used by the official **Now in Android** sample.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Convention Plugins | Gradle Documentation",
+        "url": "https://docs.gradle.org/current/userguide/implementing_gradle_plugins_convention.html"
+      },
+      {
+        "type": "Official",
+        "title": "Sharing build logic between subprojects Sample | Gradle",
+        "url": "https://docs.gradle.org/current/samples/sample_convention_plugins.html"
+      },
+      {
+        "type": "Article",
+        "title": "Simplify Your Android Builds: A Guide to Convention Plugins | Medium",
+        "url": "https://medium.com/@sridhar-sp/simplify-your-android-builds-a-guide-to-convention-plugins-b9fea8c5e117"
+      },
+      {
+        "type": "Video",
+        "title": "Composable Build Logic - Adopting Convention Plugins For Android | MDL Meetup",
+        "url": "https://www.youtube.com/watch?v=2oYjAD1xxvo"
+      },
+      {
+        "type": "Repo",
+        "title": "Now in Android – Convention Plugins (build-logic) | GitHub",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "modularization-build-logic/build/ksp",
+    "title": "KSP",
+    "description": "Kotlin Symbol Processing (KSP) is a lightweight compiler-plugin API for writing **annotation processors** in Kotlin. It is up to 2× faster than the older KAPT (which wraps Java APT) because it works directly on Kotlin's representation of source code without generating Java stubs. Libraries such as Room, Hilt, Moshi, and Ktorfit all provide KSP processors. KSP2, the default since KSP 2.0.0, is even faster and simpler to use.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Kotlin Symbol Processing API | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/ksp-overview.html"
+      },
+      {
+        "type": "Official",
+        "title": "Getting started with KSP | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/ksp-quickstart.html"
+      },
+      {
+        "type": "Article",
+        "title": "Kotlin Symbol Processing (KSP): A Comprehensive Guide | Medium",
+        "url": "https://medium.com/@SrimanthChowdary/kotlin-symbol-processing-ksp-a-comprehensive-guide-to-modern-annotation-processing-in-kotlin-0200d4ac53e4"
+      },
+      {
+        "type": "Video",
+        "title": "Kotlin Symbol Processing (KSP) for Android Developers - Introduction | YouTube",
+        "url": "https://www.youtube.com/watch?v=j6bRayP2L7M"
+      },
+      {
+        "type": "Repo",
+        "title": "KSP – Kotlin Symbol Processing API | GitHub (google/ksp)",
+        "url": "https://github.com/google/ksp"
+      }
+    ]
+  },
+  {
+    "id": "modularization-build-logic/build/dependency-analysis-plugin",
+    "title": "Dependency Analysis Plugin",
+    "description": "The **Dependency Analysis Gradle Plugin** (`com.autonomousapps.dependency-analysis`) statically analyzes your project and reports which declared dependencies are unused, which transitive dependencies you use directly but have not declared, and which applied Gradle plugins contribute nothing. Running `./gradlew buildHealth` across the whole project helps keep module dependency graphs lean and build times fast.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "dependency-analysis-gradle-plugin | GitHub (autonomousapps)",
+        "url": "https://github.com/autonomousapps/dependency-analysis-gradle-plugin"
+      },
+      {
+        "type": "Official",
+        "title": "com.autonomousapps.dependency-analysis | Gradle Plugin Portal",
+        "url": "https://plugins.gradle.org/plugin/com.autonomousapps.dependency-analysis"
+      },
+      {
+        "type": "Article",
+        "title": "Dependency Analysis Plugin Wiki | GitHub",
+        "url": "https://github.com/autonomousapps/dependency-analysis-android-gradle-plugin/wiki"
+      },
+      {
+        "type": "Video",
+        "title": "Speeding up your Android Gradle Builds (Google I/O '17) | Android Developers (YouTube)",
+        "url": "https://www.youtube.com/watch?v=7ll-rkLCtyk"
+      }
+    ]
+  },
+  {
+    "id": "modularization-build-logic/module-structure/app",
+    "title": ":app",
+    "description": "The `:app` module is the **entry point** of the application—it produces the installable APK or AAB. Its only job is to wire together feature and core modules through root navigation and dependency injection setup; it should contain as little business logic as possible. Because everything depends on `:app`, it is the most expensive module to compile, so keeping it thin directly improves incremental build times.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Guide to Android app modularization | Android Developers",
+        "url": "https://developer.android.com/topic/modularization"
+      },
+      {
+        "type": "Official",
+        "title": "Common modularization patterns | Android Developers",
+        "url": "https://developer.android.com/topic/modularization/patterns"
+      },
+      {
+        "type": "Article",
+        "title": "Now in Android – Modularization Learning Journey | GitHub",
+        "url": "https://github.com/android/nowinandroid/blob/main/docs/ModularizationLearningJourney.md"
+      },
+      {
+        "type": "Video",
+        "title": "Leveraging Gradle Convention Plugins to Enhance Your Build Configuration | YouTube",
+        "url": "https://www.youtube.com/watch?v=Fx46ttEfZk8"
+      },
+      {
+        "type": "Repo",
+        "title": "Now in Android – Fully Modularized Android Sample | GitHub",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "modularization-build-logic/module-structure/feature",
+    "title": ":feature:*",
+    "description": "Feature modules (`:feature:home`, `:feature:settings`, etc.) each own **a single user-facing screen or flow**—its UI, ViewModel, and navigation routes. Feature modules depend on `:core:*` modules for shared infrastructure but **never depend on other feature modules**, which prevents circular dependencies and enables parallel compilation. Splitting features into separate modules also enables Jetpack Navigation's Dynamic Feature support for on-demand delivery.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Common modularization patterns | Android Developers",
+        "url": "https://developer.android.com/topic/modularization/patterns"
+      },
+      {
+        "type": "Official",
+        "title": "Overview of Play Feature Delivery | Android Developers",
+        "url": "https://developer.android.com/guide/playcore/feature-delivery"
+      },
+      {
+        "type": "Article",
+        "title": "Now in Android – Modularization Learning Journey | GitHub",
+        "url": "https://github.com/android/nowinandroid/blob/main/docs/ModularizationLearningJourney.md"
+      },
+      {
+        "type": "Video",
+        "title": "Migrate to Gradle Version Catalog and Convention Plugins | Android Makers (YouTube)",
+        "url": "https://www.youtube.com/watch?v=2oYjAD1xxvo"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Android Developer Roadmap | roadmap.sh",
+        "url": "https://roadmap.sh/android"
+      }
+    ]
+  },
+  {
+    "id": "modularization-build-logic/module-structure/core",
+    "title": ":core:*",
+    "description": "Core modules (`:core:ui`, `:core:network`, `:core:testing`, etc.) hold **cross-cutting infrastructure** that is shared across many feature and data modules. They do not represent any specific screen or business domain. Core modules may depend on each other (e.g., `:core:network` depends on `:core:model`) but should never depend on feature modules, maintaining a strict acyclic dependency graph.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Guide to Android app modularization | Android Developers",
+        "url": "https://developer.android.com/topic/modularization"
+      },
+      {
+        "type": "Official",
+        "title": "Common modularization patterns | Android Developers",
+        "url": "https://developer.android.com/topic/modularization/patterns"
+      },
+      {
+        "type": "Article",
+        "title": "Now in Android – Modularization Learning Journey | GitHub",
+        "url": "https://github.com/android/nowinandroid/blob/main/docs/ModularizationLearningJourney.md"
+      },
+      {
+        "type": "Repo",
+        "title": "Now in Android – Fully Modularized Android Sample | GitHub",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Video",
+        "title": "Composable Build Logic - Adopting Convention Plugins For Android | MDL Meetup (YouTube)",
+        "url": "https://www.youtube.com/watch?v=2oYjAD1xxvo"
+      }
+    ]
+  },
+  {
+    "id": "modularization-build-logic/module-structure/data",
+    "title": ":data:*",
+    "description": "Data modules (`:data:user`, `:data:news`, etc.) encapsulate the **repository layer**: they expose repository interfaces to feature modules while hiding data sources (network, database, cache). A data module typically depends on `:core:network` and `:core:database` core modules; feature modules depend on data modules to fetch domain objects. This separation keeps features testable by swapping repository implementations with fakes.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Common modularization patterns | Android Developers",
+        "url": "https://developer.android.com/topic/modularization/patterns"
+      },
+      {
+        "type": "Official",
+        "title": "Data layer | App architecture | Android Developers",
+        "url": "https://developer.android.com/topic/architecture/data-layer"
+      },
+      {
+        "type": "Article",
+        "title": "Now in Android – Modularization Learning Journey | GitHub",
+        "url": "https://github.com/android/nowinandroid/blob/main/docs/ModularizationLearningJourney.md"
+      },
+      {
+        "type": "Repo",
+        "title": "Now in Android – Fully Modularized Android Sample | GitHub",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Video",
+        "title": "Composable Build Logic - Adopting Convention Plugins For Android | MDL Meetup (YouTube)",
+        "url": "https://www.youtube.com/watch?v=2oYjAD1xxvo"
+      }
+    ]
+  },
+  {
+    "id": "modularization-build-logic/module-structure/domain",
+    "title": ":domain:*",
+    "description": "Domain modules (`:domain:user`, `:domain:search`, etc.) are an **optional** layer that sits between data and feature modules, holding use-case classes and pure business-logic models. They are plain Kotlin/Java modules with no Android dependencies, making them trivially unit-testable. Use domain modules when multiple feature modules share the same non-trivial business logic, and skip them for simple CRUD screens where a repository call suffices.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Domain layer | App architecture | Android Developers",
+        "url": "https://developer.android.com/topic/architecture/domain-layer"
+      },
+      {
+        "type": "Official",
+        "title": "Common modularization patterns | Android Developers",
+        "url": "https://developer.android.com/topic/modularization/patterns"
+      },
+      {
+        "type": "Article",
+        "title": "Now in Android – Modularization Learning Journey | GitHub",
+        "url": "https://github.com/android/nowinandroid/blob/main/docs/ModularizationLearningJourney.md"
+      },
+      {
+        "type": "Repo",
+        "title": "Now in Android – Fully Modularized Android Sample | GitHub",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Video",
+        "title": "Composable Build Logic - Adopting Convention Plugins For Android | MDL Meetup (YouTube)",
+        "url": "https://www.youtube.com/watch?v=2oYjAD1xxvo"
+      }
+    ]
+  },
+  {
+    "id": "network/clients-i-o/okhttp",
+    "title": "OkHttp",
+    "description": "OkHttp is Square's meticulous HTTP client for Android, JVM, and GraalVM. It defaults to HTTP/2 (sharing a single socket per host), connection pooling, transparent GZIP, and response caching. OkHttp handles network problems automatically with silent recovery, and supports modern TLS including TLS 1.3. It is the networking engine that powers Retrofit and is required by Coil for network image loading.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "OkHttp Overview | square.github.io",
+        "url": "https://square.github.io/okhttp/"
+      },
+      {
+        "type": "Official",
+        "title": "OkHttp Recipes | square.github.io",
+        "url": "https://square.github.io/okhttp/recipes/"
+      },
+      {
+        "type": "Article",
+        "title": "OkHttp Tutorial | Vogella",
+        "url": "https://www.vogella.com/tutorials/JavaLibrary-OkHttp/article.html"
+      },
+      {
+        "type": "Video",
+        "title": "How to use the OkHttp library in Android Studio | YouTube",
+        "url": "https://www.youtube.com/watch?v=uSY2RqdBL04"
+      },
+      {
+        "type": "Repo",
+        "title": "OkHttp GitHub Repository | square/okhttp",
+        "url": "https://github.com/square/okhttp"
+      }
+    ]
+  },
+  {
+    "id": "network/clients-i-o/interceptor",
+    "title": "Interceptor",
+    "description": "OkHttp Interceptors are middleware components that can **monitor, rewrite, and retry** HTTP calls. **Application interceptors** fire once per logical call (even when the response is cached) and are ideal for adding auth headers or logging high-level requests. **Network interceptors** sit closer to the wire and can observe redirects and retries. The built-in `HttpLoggingInterceptor` artifact is the standard way to log request/response bodies during development.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Interceptors | OkHttp Documentation",
+        "url": "https://square.github.io/okhttp/features/interceptors/"
+      },
+      {
+        "type": "Article",
+        "title": "OkHttp Interceptor in Android | Medium",
+        "url": "https://medium.com/@anna972606/okhttp-interceptor-in-android-cf63675482af"
+      },
+      {
+        "type": "Video",
+        "title": "Building Secure APIs with JWT and Token Refresh using OkHttp Interceptors | YouTube",
+        "url": "https://www.youtube.com/watch?v=zx9GUaKH2Ew"
+      },
+      {
+        "type": "Video",
+        "title": "Retrofit Tutorial — Manage Request Headers in OkHttp Interceptor | YouTube",
+        "url": "https://www.youtube.com/watch?v=dh86zr4C2zg"
+      }
+    ]
+  },
+  {
+    "id": "network/clients-i-o/retrofit",
+    "title": "Retrofit",
+    "description": "Retrofit turns a Java/Kotlin interface annotated with HTTP annotations (`@GET`, `@POST`, `@Path`, etc.) into a fully functional, **type-safe HTTP client**. It delegates I/O to OkHttp and delegates serialization to a pluggable converter (Gson, Moshi, kotlinx.serialization). Retrofit supports suspend functions natively, making it the de-facto standard REST client for Android. Version 3.x requires Java 8+ / Android API 21+.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Retrofit Introduction | square.github.io",
+        "url": "https://square.github.io/retrofit/"
+      },
+      {
+        "type": "Official",
+        "title": "Retrofit Configuration | square.github.io",
+        "url": "https://square.github.io/retrofit/configuration/"
+      },
+      {
+        "type": "Article",
+        "title": "Retrofit in Android | Medium",
+        "url": "https://medium.com/@KaushalVasava/retrofit-in-android-5a28c8e988ce"
+      },
+      {
+        "type": "Video",
+        "title": "The Ultimate Retrofit Crash Course | Philipp Lackner (YouTube)",
+        "url": "https://www.youtube.com/watch?v=t6Sql3WMAnk"
+      },
+      {
+        "type": "Repo",
+        "title": "Retrofit GitHub Repository | square/retrofit",
+        "url": "https://github.com/square/retrofit"
+      }
+    ]
+  },
+  {
+    "id": "network/clients-i-o/okio",
+    "title": "Okio",
+    "description": "Okio is Square's I/O library that complements `java.io` and `java.nio` with simpler, more powerful abstractions. Its two core types—**`ByteString`** (immutable byte sequence) and **`Buffer`** (mutable, auto-sizing byte sequence)—form the foundation OkHttp builds on. `Source` and `Sink` replace `InputStream`/`OutputStream` and include built-in timeout support. Okio also supports Kotlin Multiplatform, making it useful beyond Android.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Okio Overview | square.github.io",
+        "url": "https://square.github.io/okio/"
+      },
+      {
+        "type": "Official",
+        "title": "Okio Recipes | square.github.io",
+        "url": "https://square.github.io/okio/recipes/"
+      },
+      {
+        "type": "Article",
+        "title": "Okio Multiplatform | square.github.io",
+        "url": "https://square.github.io/okio/multiplatform/"
+      },
+      {
+        "type": "Repo",
+        "title": "Okio GitHub Repository | square/okio",
+        "url": "https://github.com/square/okio"
+      },
+      {
+        "type": "Video",
+        "title": "The Ultimate Retrofit Crash Course (covers OkHttp/Okio pipeline) | Philipp Lackner (YouTube)",
+        "url": "https://www.youtube.com/watch?v=t6Sql3WMAnk"
+      }
+    ]
+  },
+  {
+    "id": "network/clients-i-o/ktor",
+    "title": "Ktor",
+    "description": "Ktor Client is JetBrains' **Kotlin Multiplatform HTTP client** that runs on Android (via OkHttp engine), iOS (Darwin), JVM (CIO), and JS. It is plugin-based: you opt in to content negotiation, auth, logging, and WebSocket support. For KMP projects targeting Android and iOS, Ktor is the recommended network client because it shares the same code across platforms using a common `HttpClient` configuration.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Create a Ktor client application | Ktor Documentation",
+        "url": "https://ktor.io/docs/client-create-new-application.html"
+      },
+      {
+        "type": "Official",
+        "title": "Client engines | Ktor Documentation",
+        "url": "https://ktor.io/docs/client-engines.html"
+      },
+      {
+        "type": "Article",
+        "title": "Making an HTTP request using Ktor Client | Medium",
+        "url": "https://mubaraknative.medium.com/making-an-http-request-using-ktor-client-a87c2593ed25"
+      },
+      {
+        "type": "Video",
+        "title": "Ktor Tutorial for Android & Kotlin Multiplatform - Make HTTP Calls | YouTube",
+        "url": "https://www.youtube.com/watch?v=NILH5pIehbM"
+      },
+      {
+        "type": "Video",
+        "title": "How to Build a Simple REST API With Ktor and Android App | Philipp Lackner (YouTube)",
+        "url": "https://www.youtube.com/watch?v=Z4W4aqXpE1w"
+      }
+    ]
+  },
+  {
+    "id": "network/clients-i-o/ktorfit",
+    "title": "Ktorfit",
+    "description": "Ktorfit is a **Retrofit-inspired HTTP client generator for Kotlin Multiplatform**, built on top of Ktor Client and KSP. You define an interface with annotations like `@GET` and `@POST`, and Ktorfit's KSP plugin generates the implementation at compile time. It targets Android, iOS, JVM, JS, and WasmJs, making it the KMP equivalent of Retrofit for projects that cannot use Retrofit's JVM-only reflection approach.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Ktorfit Documentation | foso.github.io",
+        "url": "https://foso.github.io/Ktorfit/"
+      },
+      {
+        "type": "Official",
+        "title": "Ktorfit GitHub Repository | Foso",
+        "url": "https://github.com/Foso/Ktorfit"
+      },
+      {
+        "type": "Article",
+        "title": "Ktorfit Requests | foso.github.io",
+        "url": "https://foso.github.io/Ktorfit/requests/"
+      },
+      {
+        "type": "Repo",
+        "title": "Ktorfit GitHub Repository | Foso/Ktorfit",
+        "url": "https://github.com/Foso/Ktorfit"
+      },
+      {
+        "type": "Video",
+        "title": "Ktor Tutorial for Android & Kotlin Multiplatform - Make HTTP Calls (YouTube)",
+        "url": "https://www.youtube.com/watch?v=NILH5pIehbM"
+      }
+    ]
+  },
+  {
+    "id": "network/data-formats/kotlinx-serialization",
+    "title": "kotlinx.serialization",
+    "description": "kotlinx.serialization is JetBrains' official **Kotlin Multiplatform serialization library** supporting JSON, CBOR, Protocol Buffers, and more. Adding the `@Serializable` annotation to a class is all that's needed; the Gradle plugin generates serializers at compile time without reflection. It is the preferred serialization approach in KMP projects because Gson and Moshi rely on JVM reflection unavailable on Kotlin/Native.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Serialization | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/serialization.html"
+      },
+      {
+        "type": "Official",
+        "title": "kotlinx.serialization GitHub Repository",
+        "url": "https://github.com/Kotlin/kotlinx.serialization"
+      },
+      {
+        "type": "Article",
+        "title": "Kotlinx.Serialization Part 1 | Medium",
+        "url": "https://medium.com/swlh/kotlinx-serialization-part1-4407893132c2"
+      },
+      {
+        "type": "Course",
+        "title": "Get data from the internet (uses kotlinx.serialization) | Android Developers Codelab",
+        "url": "https://developer.android.com/codelabs/basic-android-kotlin-compose-getting-data-internet"
+      },
+      {
+        "type": "Video",
+        "title": "How to Deserialize Inconsistent JSON Data With a Custom Kotlinx Serializer | Philipp Lackner (YouTube)",
+        "url": "https://www.youtube.com/watch?v=_KQBp5pwUO0"
+      }
+    ]
+  },
+  {
+    "id": "network/data-formats/moshi",
+    "title": "Moshi",
+    "description": "Moshi is Square's modern JSON library for Kotlin and Java. Its Kotlin codegen support (via KSP) generates small, fast adapters at compile time, avoiding reflection. Moshi integrates naturally with OkHttp through Okio's `BufferedSource`/`BufferedSink` APIs. For new Android-only projects Moshi remains a solid alternative to kotlinx.serialization; for KMP projects, kotlinx.serialization is generally preferred.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Moshi GitHub Repository | Square",
+        "url": "https://github.com/square/moshi"
+      },
+      {
+        "type": "Article",
+        "title": "Moshi API Reference | square.github.io",
+        "url": "https://square.github.io/moshi/1.x/moshi/"
+      },
+      {
+        "type": "Repo",
+        "title": "Moshi GitHub Repository | square/moshi",
+        "url": "https://github.com/square/moshi"
+      },
+      {
+        "type": "Video",
+        "title": "Android Bootcamp - JSON Parsing Using Moshi Library (YouTube)",
+        "url": "https://www.youtube.com/watch?v=H3DQgZqjkGo"
+      }
+    ]
+  },
+  {
+    "id": "network/data-formats/apollo-kotlin-graphql",
+    "title": "Apollo Kotlin (GraphQL)",
+    "description": "Apollo Kotlin is a **strongly-typed, caching GraphQL client** for Android and Kotlin Multiplatform. It generates Kotlin types for every GraphQL operation you write, eliminating JSON parsing boilerplate and type casting. It supports normalized caching (memory + SQLite), subscriptions over WebSocket, and integrates with Android Studio via a dedicated plugin. Version 4.x is the current stable release targeting KMP.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Introduction to Apollo Kotlin | Apollo GraphQL Docs",
+        "url": "https://www.apollographql.com/docs/kotlin"
+      },
+      {
+        "type": "Official",
+        "title": "Apollo Kotlin GitHub Repository",
+        "url": "https://github.com/apollographql/apollo-kotlin"
+      },
+      {
+        "type": "Article",
+        "title": "GraphQL in Android: A Step-by-Step Guide Using Kotlin and Apollo | Medium",
+        "url": "https://medium.com/@pranav.patel2001/graphql-in-android-a-step-by-step-guide-using-kotlin-and-apollo-ba3dc1ef4b79"
+      },
+      {
+        "type": "Course",
+        "title": "Apollo Kotlin Android Tutorial – Odyssey Learning Platform | Apollo GraphQL",
+        "url": "https://www.apollographql.com/tutorials/apollo-kotlin-android-part1"
+      },
+      {
+        "type": "Video",
+        "title": "GraphQL in Android with Apollo Kotlin | pl_coding (YouTube)",
+        "url": "https://www.youtube.com/watch?v=ME3LH2bib3g"
+      }
+    ]
+  },
+  {
+    "id": "image-loading/libraries/coil-3-kmp",
+    "title": "Coil 3 (KMP)",
+    "description": "Coil 3 is a **Kotlin Multiplatform image loading library** supporting Android, JVM, iOS, macOS, JS, and WASM. It is written entirely in Kotlin and uses coroutines for async image loading. Coil 3 uses Ktor (not OkHttp) as its network engine on non-Android targets, enabling true KMP code sharing. The `coil-compose` artifact provides the `AsyncImage` composable for Jetpack Compose and Compose Multiplatform.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Coil Documentation | coil-kt.github.io",
+        "url": "https://coil-kt.github.io/coil/"
+      },
+      {
+        "type": "Official",
+        "title": "Getting Started – Coil | coil-kt.github.io",
+        "url": "https://coil-kt.github.io/coil/getting_started/"
+      },
+      {
+        "type": "Article",
+        "title": "Loading Images with Coil in Compose Multiplatform | Medium",
+        "url": "https://medium.com/@domen.lanisnik/loading-images-with-coil-in-compose-multiplatform-4c94e16a06d7"
+      },
+      {
+        "type": "Video",
+        "title": "Coil - Modern Image Loading Library | Android Studio Tutorial (YouTube)",
+        "url": "https://www.youtube.com/watch?v=Ciab3R641YM"
+      },
+      {
+        "type": "Repo",
+        "title": "Coil GitHub Repository | coil-kt/coil",
+        "url": "https://github.com/coil-kt/coil"
+      }
+    ]
+  },
+  {
+    "id": "image-loading/libraries/glide",
+    "title": "Glide",
+    "description": "Glide is Bumptech's battle-tested image loading and caching library for Android, optimized for **smooth scrolling** in lists. It supports GIFs, video thumbnails, and animated WebP in addition to static images, and manages an internal bitmap pool to minimize GC pressure. Glide is Android-only (no KMP support), so for new KMP or Compose Multiplatform projects Coil 3 is typically preferred.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Glide v4: Fast and Efficient Image Loading for Android | bumptech.github.io",
+        "url": "https://bumptech.github.io/glide/"
+      },
+      {
+        "type": "Official",
+        "title": "Glide Getting Started | bumptech.github.io",
+        "url": "https://bumptech.github.io/glide/doc/getting-started.html"
+      },
+      {
+        "type": "Article",
+        "title": "How to Use Glide Image Loader Library in Android Apps | GeeksforGeeks",
+        "url": "https://www.geeksforgeeks.org/android/image-loading-caching-library-android-set-2/"
+      },
+      {
+        "type": "Video",
+        "title": "Glide Tutorial – Working with Images in your Android App | YouTube",
+        "url": "https://www.youtube.com/watch?v=_huNIBQ_jLQ"
+      },
+      {
+        "type": "Repo",
+        "title": "Glide GitHub Repository | bumptech/glide",
+        "url": "https://github.com/bumptech/glide"
+      }
+    ]
+  },
+  {
+    "id": "image-loading/libraries/coil-compose",
+    "title": "coil-compose",
+    "description": "The `coil-compose` artifact provides first-class Jetpack Compose integration for Coil. Its primary API is **`AsyncImage`**, a composable that infers the correct image size from layout constraints and `ContentScale`, loads the image asynchronously, and supports `placeholder`, `error`, and `fallback` painters. For cases needing a `Painter` directly, `rememberAsyncImagePainter` is available, and `SubcomposeAsyncImage` enables slot-based loading state UI.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Compose – Coil | coil-kt.github.io",
+        "url": "https://coil-kt.github.io/coil/compose/"
+      },
+      {
+        "type": "Official",
+        "title": "Loading Images | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/graphics/images/loading"
+      },
+      {
+        "type": "Article",
+        "title": "Loading Images with Coil in Android: XML and Jetpack Compose | Medium",
+        "url": "https://medium.com/@rajputmukesh748/loading-images-with-coil-in-android-xml-and-jetpack-compose-7a004f7738b1"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose + Coil Image Loading Tutorial | YouTube",
+        "url": "https://www.youtube.com/watch?v=jdoJVM5xJBI"
+      }
+    ]
+  },
+  {
+    "id": "image-loading/libraries/landscapist",
+    "title": "Landscapist",
+    "description": "Landscapist is a **pluggable Jetpack Compose and Kotlin Multiplatform image loading library** by skydoves that wraps Glide, Coil, and Fresco with a consistent composable API. It adds capabilities like crossfade animation, blur transformation, circular reveal, and palette extraction on top of the underlying loader. Every composable is marked `@Skippable` and `@Restartable`, minimizing unnecessary recomposition in lazy lists.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Landscapist Documentation | skydoves.github.io",
+        "url": "https://skydoves.github.io/landscapist/"
+      },
+      {
+        "type": "Official",
+        "title": "Landscapist GitHub Repository | skydoves",
+        "url": "https://github.com/skydoves/landscapist"
+      },
+      {
+        "type": "Article",
+        "title": "Image Component and Plugin – Landscapist | skydoves.github.io",
+        "url": "https://skydoves.github.io/landscapist/image-component-and-plugin/"
+      },
+      {
+        "type": "Repo",
+        "title": "Landscapist GitHub Repository | skydoves/landscapist",
+        "url": "https://github.com/skydoves/landscapist"
+      },
+      {
+        "type": "Video",
+        "title": "Coil - Modern Image Loading Library | Android Studio Tutorial (YouTube)",
+        "url": "https://www.youtube.com/watch?v=Ciab3R641YM"
+      }
+    ]
+  },
+  {
+    "id": "local-storage/databases/room-kmp",
+    "title": "Room (KMP)",
+    "description": "Room is Google's official SQLite ORM for Android and, from version 2.7.0, **Kotlin Multiplatform**. It validates SQL at compile time, generates boilerplate DAO implementations, and integrates natively with Kotlin coroutines and Flow for reactive queries. In KMP projects all DAO functions must be `suspend` functions; reactive return types (LiveData, RxJava Flowable) are not supported on non-Android targets—use `Flow` instead.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Set up Room Database for KMP | Android Developers",
+        "url": "https://developer.android.com/kotlin/multiplatform/room"
+      },
+      {
+        "type": "Official",
+        "title": "Save data in a local database using Room | Android Developers",
+        "url": "https://developer.android.com/training/data-storage/room"
+      },
+      {
+        "type": "Article",
+        "title": "Room Database for Kotlin Multiplatform | ProAndroidDev",
+        "url": "https://proandroiddev.com/room-in-kotlin-multiplatform-kmp-with-koin-d7716bdd8783"
+      },
+      {
+        "type": "Video",
+        "title": "The Complete Beginner Guide for Room in Android 2024 | Philipp Lackner (YouTube)",
+        "url": "https://www.youtube.com/watch?v=r_UfOz3yaLg"
+      },
+      {
+        "type": "Video",
+        "title": "How to Setup a Room DB for Kotlin Multiplatform Compose | Philipp Lackner (YouTube)",
+        "url": "https://www.youtube.com/watch?v=IHs0yPa2Nv4"
+      }
+    ]
+  },
+  {
+    "id": "local-storage/databases/sqlite",
+    "title": "SQLite",
+    "description": "SQLite is the relational database built into every Android device, accessible via the `android.database.sqlite` package. The raw API (`SQLiteDatabase`, `SQLiteOpenHelper`) gives full control but requires writing boilerplate cursor management code. Google recommends using **Room** as an abstraction layer over raw SQLite in almost all cases. The AndroidX SQLite library (`androidx.sqlite`) provides KMP-compatible low-level APIs (`SQLiteDriver`, `SQLiteConnection`).",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Save data using SQLite | Android Developers",
+        "url": "https://developer.android.com/training/data-storage/sqlite"
+      },
+      {
+        "type": "Official",
+        "title": "SQLiteDatabase API Reference | Android Developers",
+        "url": "https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase"
+      },
+      {
+        "type": "Article",
+        "title": "Set up SQLite for KMP | Android Developers",
+        "url": "https://developer.android.com/kotlin/multiplatform/sqlite"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Android Developer Roadmap | roadmap.sh",
+        "url": "https://roadmap.sh/android"
+      },
+      {
+        "type": "Video",
+        "title": "SQLite Database for Android - Full Course | freeCodeCamp (YouTube)",
+        "url": "https://www.youtube.com/watch?v=312RhjfetP8"
+      }
+    ]
+  },
+  {
+    "id": "local-storage/databases/sqldelight",
+    "title": "SQLDelight",
+    "description": "SQLDelight generates **type-safe Kotlin APIs from `.sq` SQL files**, verifying your schema, statements, and migrations at compile time. Unlike Room (which generates SQL from annotations), SQLDelight treats SQL as the source of truth. It supports Kotlin Multiplatform (Android, iOS, JVM, JS) and provides IDE integration with autocomplete and refactoring for `.sq` files. It is a popular Room alternative in pure KMP projects.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "SQLDelight Overview | sqldelight.github.io",
+        "url": "https://sqldelight.github.io/sqldelight/2.3.2/"
+      },
+      {
+        "type": "Official",
+        "title": "SQLDelight GitHub Repository | sqldelight/sqldelight",
+        "url": "https://github.com/sqldelight/sqldelight"
+      },
+      {
+        "type": "Article",
+        "title": "SQLDelight for KMP (Kotlin Multiplatform) Explained | Medium",
+        "url": "https://medium.com/@michalankiersztajn/sqldelight-kmp-kotlin-multiplatform-tutorial-e39ab460a348"
+      },
+      {
+        "type": "Video",
+        "title": "Caching the Data in a KMP App Using SQLDelight & Ktor | YouTube",
+        "url": "https://www.youtube.com/watch?v=nmKyP-uEUXs"
+      },
+      {
+        "type": "Video",
+        "title": "How To Use SQLDelight Database in Compose Multiplatform | YouTube",
+        "url": "https://www.youtube.com/watch?v=iRlfJcnLFF8"
+      }
+    ]
+  },
+  {
+    "id": "local-storage/databases/realm-kotlin-atlas-device-sdk",
+    "title": "Realm Kotlin / Atlas Device SDK",
+    "description": "Realm Kotlin (now Atlas Device SDK for Kotlin) is an **offline-first object database** for Android and KMP that stores data as live objects rather than rows, enabling reactive UI updates without manual queries. It optionally syncs with MongoDB Atlas via Device Sync for multi-device and collaborative scenarios. **Note:** As of September 2024, Atlas Device SDKs are deprecated with end-of-life on September 30, 2025; new projects should evaluate Room or SQLDelight instead.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Atlas Device SDK for Kotlin | MongoDB Docs",
+        "url": "https://www.mongodb.com/docs/atlas/device-sdks/sdk/kotlin/"
+      },
+      {
+        "type": "Official",
+        "title": "realm-kotlin GitHub Repository | realm",
+        "url": "https://github.com/realm/realm-kotlin"
+      },
+      {
+        "type": "Article",
+        "title": "Introduction to Atlas Device Sync for Android | MongoDB Developer",
+        "url": "https://www.mongodb.com/developer/products/realm/introduction-realm-sync-android/"
+      },
+      {
+        "type": "Repo",
+        "title": "realm-kotlin GitHub Repository | realm/realm-kotlin",
+        "url": "https://github.com/realm/realm-kotlin"
+      },
+      {
+        "type": "Video",
+        "title": "Mastering Realm Database in Android: Step-by-Step Tutorial with Kotlin | CRUD Operations (YouTube)",
+        "url": "https://www.youtube.com/watch?v=6ACqngKglZA"
+      }
+    ]
+  },
+  {
+    "id": "local-storage/key-value/datastore",
+    "title": "DataStore",
+    "description": "Jetpack DataStore is Google's **modern replacement for SharedPreferences**, offering a fully asynchronous API via Kotlin coroutines and Flow with data-consistency guarantees. It comes in two flavors: **Preferences DataStore** (key-value, no schema) and **Proto DataStore** (typed objects backed by Protocol Buffers). DataStore guarantees that reads and writes happen off the main thread and handles data corruption with a catch-all error handler.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "DataStore | Android Developers",
+        "url": "https://developer.android.com/topic/libraries/architecture/datastore"
+      },
+      {
+        "type": "Official",
+        "title": "Working with Preferences DataStore Codelab | Android Developers",
+        "url": "https://developer.android.com/codelabs/android-preferences-datastore"
+      },
+      {
+        "type": "Article",
+        "title": "All about Proto DataStore | Android Developers – Medium",
+        "url": "https://medium.com/androiddevelopers/all-about-proto-datastore-1b1af6cd2879"
+      },
+      {
+        "type": "Video",
+        "title": "How To Use Android's Preferences DataStore | Android Jetpack Tutorial (YouTube)",
+        "url": "https://www.youtube.com/watch?v=W7ua0qCmH1g"
+      },
+      {
+        "type": "Video",
+        "title": "Local Preferences in Kotlin Multiplatform With DataStore | Philipp Lackner (YouTube)",
+        "url": "https://www.youtube.com/watch?v=cQ64RkdPZBw"
+      }
+    ]
+  },
+  {
+    "id": "local-storage/key-value/encrypted-datastore",
+    "title": "Encrypted DataStore",
+    "description": "DataStore has no built-in encryption, but sensitive data can be protected by combining DataStore with **Google Tink** (via the `androidx.datastore:datastore-tink` artifact). The `AeadSerializer` wraps a standard `Serializer<T>` with Authenticated Encryption with Associated Data (AEAD) before writing to disk. The encryption key is stored in the Android Keystore. This supersedes the deprecated `EncryptedSharedPreferences` (deprecated in security-crypto 1.1.0-alpha07).",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "DataStore | Jetpack Releases | Android Developers",
+        "url": "https://developer.android.com/jetpack/androidx/releases/datastore"
+      },
+      {
+        "type": "Official",
+        "title": "Security | Jetpack Releases | Android Developers",
+        "url": "https://developer.android.com/jetpack/androidx/releases/security"
+      },
+      {
+        "type": "Article",
+        "title": "Goodbye EncryptedSharedPreferences: A 2026 Migration Guide | ProAndroidDev",
+        "url": "https://proandroiddev.com/goodbye-encryptedsharedpreferences-a-2026-migration-guide-4b819b4a537a"
+      },
+      {
+        "type": "Video",
+        "title": "How to Encrypt DataStore On Android - Full Guide | Philipp Lackner (YouTube)",
+        "url": "https://www.youtube.com/watch?v=XMaQNN9YpKk"
+      }
+    ]
+  },
+  {
+    "id": "local-storage/key-value/sharedpreferences-legacy",
+    "title": "SharedPreferences (legacy)",
+    "description": "SharedPreferences is Android's original key-value storage API backed by an XML file. It uses a **synchronous commit/apply API** with no coroutine or Flow support, and can cause `StrictMode` violations when read on the main thread. Google now recommends **DataStore** for all new development. SharedPreferences remains functional for maintaining existing code, but should not be chosen for new features.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Save simple data with SharedPreferences | Android Developers",
+        "url": "https://developer.android.com/training/data-storage/shared-preferences"
+      },
+      {
+        "type": "Official",
+        "title": "SharedPreferences API Reference | Android Developers",
+        "url": "https://developer.android.com/reference/android/content/SharedPreferences"
+      },
+      {
+        "type": "Article",
+        "title": "SharedPreferences → DataStore migration | Medium",
+        "url": "https://medium.com/geekculture/preferences-4d7119ffae3e"
+      },
+      {
+        "type": "Video",
+        "title": "Preferences DataStore in 10min (SharedPreferences deprecated) | YouTube",
+        "url": "https://www.youtube.com/watch?v=McnVx7l5awk"
+      }
+    ]
+  },
+  {
+    "id": "asynchronous-concurrency/coroutines/flow",
+    "title": "Flow",
+    "description": "Kotlin Flow is a **cold, asynchronous stream** built on coroutines that emits multiple values sequentially. \"Cold\" means the producer code inside `flow { }` only runs when a coroutine actively calls `collect`. Flow supports a rich set of operators (`map`, `filter`, `flatMapLatest`, `combine`, `flowOn`) and is the standard way to model streams in Android's data and domain layers—replacing RxJava's Observable in new Kotlin codebases.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Asynchronous Flow | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/flow.html"
+      },
+      {
+        "type": "Official",
+        "title": "Kotlin flows on Android | Android Developers",
+        "url": "https://developer.android.com/kotlin/flow"
+      },
+      {
+        "type": "Article",
+        "title": "Flow API Reference | kotlinx.coroutines",
+        "url": "https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/"
+      },
+      {
+        "type": "Video",
+        "title": "Flow Basics – The Ultimate Guide to Kotlin Flows (Part 1) | Philipp Lackner (YouTube)",
+        "url": "https://www.youtube.com/watch?v=ZX8VsqNO_Ss"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Android Developer Roadmap | roadmap.sh",
+        "url": "https://roadmap.sh/android"
+      }
+    ]
+  },
+  {
+    "id": "asynchronous-concurrency/coroutines/stateflow",
+    "title": "StateFlow",
+    "description": "StateFlow is a **hot, state-holder flow** that always has a current value readable synchronously via `.value`. It conflates updates using equality (like `distinctUntilChanged`), so collectors only receive distinct state changes. In Android, `ViewModel` exposes `StateFlow` to the UI layer as observable state that survives configuration changes. Use `MutableStateFlow` inside the ViewModel and expose the read-only `StateFlow` interface to the UI.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "StateFlow API Reference | kotlinx.coroutines",
+        "url": "https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-state-flow/"
+      },
+      {
+        "type": "Official",
+        "title": "StateFlow and SharedFlow | Android Developers",
+        "url": "https://developer.android.com/kotlin/flow/stateflow-and-sharedflow"
+      },
+      {
+        "type": "Article",
+        "title": "SharedFlow and StateFlow | kt.academy",
+        "url": "https://kt.academy/article/cc-sharedflow-stateflow"
+      },
+      {
+        "type": "Video",
+        "title": "StateFlow vs. Flow vs. SharedFlow vs. LiveData – When to Use What | Philipp Lackner (YouTube)",
+        "url": "https://www.youtube.com/watch?v=6Jc6-INantQ"
+      },
+      {
+        "type": "Video",
+        "title": "Android Jetpack Compose Flow | StateFlow | SharedFlow | Beginner Tutorial (YouTube)",
+        "url": "https://www.youtube.com/watch?v=M61MgpzS2U0"
+      }
+    ]
+  },
+  {
+    "id": "asynchronous-concurrency/coroutines/sharedflow",
+    "title": "SharedFlow",
+    "description": "SharedFlow is a **hot, broadcast flow** that shares emitted values among all active collectors simultaneously. Unlike StateFlow it has no mandatory initial value and is configurable with a replay cache (values replayed to new subscribers) and buffer overflow strategies (`DROP_OLDEST`, `SUSPEND`). SharedFlow is the right tool for **one-time events** such as navigation commands, snackbars, and analytics triggers that should not be re-delivered on collection.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "SharedFlow API Reference | kotlinx.coroutines",
+        "url": "https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-shared-flow/"
+      },
+      {
+        "type": "Official",
+        "title": "StateFlow and SharedFlow | Android Developers",
+        "url": "https://developer.android.com/kotlin/flow/stateflow-and-sharedflow"
+      },
+      {
+        "type": "Article",
+        "title": "SharedFlow and StateFlow | kt.academy",
+        "url": "https://kt.academy/article/cc-sharedflow-stateflow"
+      },
+      {
+        "type": "Video",
+        "title": "SharedFlow in KOTLIN Android | Replay, Buffer & Overflow Strategies (YouTube)",
+        "url": "https://www.youtube.com/watch?v=R9IiBlYB7Mo"
+      },
+      {
+        "type": "Video",
+        "title": "StateFlow vs. Flow vs. SharedFlow vs. LiveData – When to Use What | Philipp Lackner (YouTube)",
+        "url": "https://www.youtube.com/watch?v=6Jc6-INantQ"
+      }
+    ]
+  },
+  {
+    "id": "asynchronous-concurrency/coroutines/channels",
+    "title": "Channels",
+    "description": "Channels are coroutine primitives for **point-to-point communication** of a stream of values between coroutines, conceptually similar to `BlockingQueue` but non-blocking. Each value sent is delivered to exactly **one** receiver (unlike SharedFlow's broadcast). Channel variants include Rendezvous (no buffer), Buffered, Conflated, and Unlimited. For most UI/architecture use cases, Flow (or SharedFlow/StateFlow) is preferred; Channels are most useful for producer-consumer pipeline internals.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Channels | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/channels.html"
+      },
+      {
+        "type": "Official",
+        "title": "Channel API Reference | kotlinx.coroutines",
+        "url": "https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.channels/-channel/"
+      },
+      {
+        "type": "Article",
+        "title": "Channel in Kotlin Coroutines | kt.academy",
+        "url": "https://kt.academy/article/cc-channel"
+      },
+      {
+        "type": "Video",
+        "title": "Complete Guide on Kotlin Channels (Coroutines) - Android Studio Tutorial (YouTube)",
+        "url": "https://www.youtube.com/watch?v=unkgAYV9SpI"
+      }
+    ]
+  },
+  {
+    "id": "asynchronous-concurrency/coroutines/structured-concurrency",
+    "title": "Structured Concurrency",
+    "description": "Structured Concurrency is the principle that every coroutine must belong to a **`CoroutineScope`** which bounds its lifetime. Parent coroutines wait for all their children to complete before finishing, and cancellation propagates down the hierarchy automatically. This eliminates coroutine leaks: when a `viewModelScope` is cancelled (on ViewModel `onCleared()`), every in-flight coroutine it launched is cancelled too—no manual cleanup needed.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Coroutines Basics – Structured Concurrency | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/coroutines-basics.html"
+      },
+      {
+        "type": "Official",
+        "title": "Kotlin coroutines on Android | Android Developers",
+        "url": "https://developer.android.com/kotlin/coroutines"
+      },
+      {
+        "type": "Article",
+        "title": "Structured Concurrency | Roman Elizarov – Medium",
+        "url": "https://elizarov.medium.com/structured-concurrency-722d765aa952"
+      },
+      {
+        "type": "Video",
+        "title": "Understand Kotlin Coroutines on Android (Google I/O 2019) | Android Developers (YouTube)",
+        "url": "https://www.youtube.com/watch?v=BOHK_w09pVA"
+      },
+      {
+        "type": "Course",
+        "title": "Introduction to Coroutines in Kotlin Playground | Android Developers Codelab",
+        "url": "https://developer.android.com/codelabs/basic-android-kotlin-compose-coroutines-kotlin-playground"
+      }
+    ]
+  },
+  {
+    "id": "asynchronous-concurrency/coroutines/dispatchers",
+    "title": "Dispatchers",
+    "description": "Coroutine Dispatchers determine which **thread pool** a coroutine runs on. `Dispatchers.Main` runs on the Android main/UI thread; `Dispatchers.IO` uses an elastic pool sized for blocking I/O (network, file, database); `Dispatchers.Default` uses a CPU-bounded pool for compute-heavy work (sorting, parsing); `Dispatchers.Unconfined` runs in the calling thread until the first suspension. Use `withContext(Dispatchers.IO)` to switch dispatchers within a coroutine rather than launching a new one.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Coroutine Context and Dispatchers | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/coroutine-context-and-dispatchers.html"
+      },
+      {
+        "type": "Official",
+        "title": "Dispatchers API Reference | kotlinx.coroutines",
+        "url": "https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-dispatchers/"
+      },
+      {
+        "type": "Article",
+        "title": "Kotlin Coroutines Dispatchers | kt.academy",
+        "url": "https://kt.academy/article/cc-dispatchers"
+      },
+      {
+        "type": "Video",
+        "title": "Coroutine Scopes & Dispatchers in Android: Lifecycle, ViewModel, Global & Coroutine Scope | Philipp Lackner (YouTube)",
+        "url": "https://www.youtube.com/watch?v=pd8E7Wp1hZY"
+      }
+    ]
+  },
+  {
+    "id": "asynchronous-concurrency/other/thread",
+    "title": "Thread",
+    "description": "Android's main thread (UI thread) handles all UI drawing and user events; performing long-running work on it causes **ANR** (Application Not Responding) errors. The platform exposes Java's `Thread`, `Runnable`, `Executor`, and `HandlerThread` for background work. In modern Kotlin Android code, coroutines are strongly preferred over raw threads; however, understanding threads is foundational because the JVM threading model underlies coroutine dispatchers.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Processes and threads overview | Android Developers",
+        "url": "https://developer.android.com/guide/components/processes-and-threads"
+      },
+      {
+        "type": "Official",
+        "title": "Asynchronous work with Java threads | Android Developers",
+        "url": "https://developer.android.com/develop/background-work/background-tasks/asynchronous/java-threads"
+      },
+      {
+        "type": "Article",
+        "title": "Better performance through threading | Android Developers",
+        "url": "https://developer.android.com/topic/performance/threads"
+      },
+      {
+        "type": "Video",
+        "title": "Kotlin Coroutines 101 – Android Conference Talks | Android Developers (YouTube)",
+        "url": "https://www.youtube.com/watch?v=ZTDXo0-SKuU"
+      }
+    ]
+  },
+  {
+    "id": "asynchronous-concurrency/other/workmanager",
+    "title": "WorkManager",
+    "description": "WorkManager is the Jetpack library for **deferrable, guaranteed background work** that must complete even if the app exits or the device restarts. It selects the best underlying mechanism (JobScheduler, AlarmManager) based on API level. You define work as `Worker`/`CoroutineWorker` subclasses, attach constraints (network, charging, storage), and enqueue `OneTimeWorkRequest` or `PeriodicWorkRequest`. Ideal for uploading logs, syncing data, or processing images in the background.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Getting started with WorkManager | Android Developers",
+        "url": "https://developer.android.com/develop/background-work/background-tasks/persistent/getting-started"
+      },
+      {
+        "type": "Official",
+        "title": "WorkManager API Reference | Android Developers",
+        "url": "https://developer.android.com/reference/androidx/work/WorkManager"
+      },
+      {
+        "type": "Article",
+        "title": "Background Work with WorkManager Codelab | Android Developers",
+        "url": "https://developer.android.com/codelabs/basic-android-kotlin-compose-workmanager"
+      },
+      {
+        "type": "Video",
+        "title": "The Ultimate Guide to WorkManager (with Jetpack Compose) | Philipp Lackner (YouTube)",
+        "url": "https://www.youtube.com/watch?v=Psc2xyutE2U"
+      }
+    ]
+  },
+  {
+    "id": "asynchronous-concurrency/other/expedited-jobs",
+    "title": "Expedited Jobs",
+    "description": "Expedited Jobs (introduced in WorkManager 2.7 / Android 12) are WorkManager requests marked with `setExpedited()` that the system tries to **start immediately**, subject to a quota of foreground execution time based on App Standby Buckets. They are less affected by Battery Saver and Doze than regular background work. On Android 11 and below, WorkManager transparently falls back to a foreground service, so you must also implement `getForegroundInfo()` in your worker.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Define work requests – Expedited Work | Android Developers",
+        "url": "https://developer.android.com/develop/background-work/background-tasks/persistent/getting-started/define-work"
+      },
+      {
+        "type": "Official",
+        "title": "WorkManager | Jetpack Releases | Android Developers",
+        "url": "https://developer.android.com/jetpack/androidx/releases/work"
+      },
+      {
+        "type": "Article",
+        "title": "Using WorkManager on Android 12 | Android Developers – Medium",
+        "url": "https://medium.com/androiddevelopers/using-workmanager-on-android-12-f7d483ca0ecb"
+      },
+      {
+        "type": "Video",
+        "title": "WorkManager - Android Basics 2023 | YouTube",
+        "url": "https://www.youtube.com/watch?v=A2JetouoNSc"
+      }
+    ]
+  },
+  {
+    "id": "asynchronous-concurrency/other/rxjava-legacy",
+    "title": "RxJava (legacy)",
+    "description": "RxJava is a JVM implementation of ReactiveX that was the dominant async/reactive library for Android before Kotlin coroutines. It models asynchronous sequences as `Observable`/`Flowable` streams with a rich operator set (`flatMap`, `switchMap`, `zip`, `debounce`). **For new Android projects, Kotlin coroutines + Flow are the recommended replacement.** RxJava remains relevant when maintaining large existing codebases or when integrating with third-party Java libraries that emit RxJava types.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "RxJava GitHub Repository | ReactiveX",
+        "url": "https://github.com/ReactiveX/RxJava"
+      },
+      {
+        "type": "Official",
+        "title": "RxAndroid GitHub Repository | ReactiveX",
+        "url": "https://github.com/ReactiveX/RxAndroid"
+      },
+      {
+        "type": "Article",
+        "title": "ReactiveX Documentation | reactivex.io",
+        "url": "https://reactivex.io/documentation"
+      },
+      {
+        "type": "Video",
+        "title": "Reactive Programming on Android Part 3: RxJava | Android Developers (YouTube)",
+        "url": "https://www.youtube.com/watch?v=AgGE7fAMrdA"
+      }
+    ]
+  }
+]

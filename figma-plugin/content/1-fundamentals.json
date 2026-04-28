@@ -1,0 +1,1027 @@
+[
+  {
+    "id": "application-fundamentals/android-package/apk",
+    "title": "APK",
+    "description": "An **APK (Android Package Kit)** is the binary distribution format used to install and run Android apps on a device or emulator. It is a ZIP archive containing compiled bytecode (DEX files), resources, assets, and the `AndroidManifest.xml`. While APKs are still used for sideloading and local testing, Google Play now prefers the AAB format for production distribution.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Application fundamentals | Android Developers",
+        "url": "https://developer.android.com/guide/components/fundamentals"
+      },
+      {
+        "type": "Article",
+        "title": "APK vs AAB: Understanding Android app packaging formats",
+        "url": "https://medium.com/androiddevelopers/building-your-first-app-bundle-bbcd228bf631"
+      },
+      {
+        "type": "Video",
+        "title": "What Is an APK File on Android? | YouTube",
+        "url": "https://www.youtube.com/watch?v=_iLLcRjhsPQ"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Android Developer Roadmap | roadmap.sh",
+        "url": "https://roadmap.sh/android"
+      }
+    ]
+  },
+  {
+    "id": "application-fundamentals/android-package/aab",
+    "title": "AAB",
+    "description": "An **Android App Bundle (AAB)** is the recommended publishing format for Google Play. Unlike an APK, an AAB defers APK generation and signing to Google Play, which uses **Play Feature Delivery** to serve optimized APKs tailored to each device's screen density, ABI, and language — reducing download sizes significantly. AAB is required for new apps published to Google Play since August 2021.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Android App Bundle overview | Android Developers",
+        "url": "https://developer.android.com/guide/app-bundle"
+      },
+      {
+        "type": "Article",
+        "title": "Building your first app bundle | Android Developers Blog",
+        "url": "https://medium.com/androiddevelopers/building-your-first-app-bundle-bbcd228bf631"
+      },
+      {
+        "type": "Video",
+        "title": "App Bundles: Testing bundles with bundletool and the Play Console - MAD Skills | Android Developers",
+        "url": "https://www.youtube.com/watch?v=vAEAZPU7w-I"
+      },
+      {
+        "type": "Repo",
+        "title": "google/bundletool — Command-line tool to manipulate Android App Bundles | GitHub",
+        "url": "https://github.com/google/bundletool"
+      }
+    ]
+  },
+  {
+    "id": "application-fundamentals/languages/kotlin",
+    "title": "Kotlin",
+    "description": "**Kotlin** is the primary and officially recommended language for Android development, offering concise syntax, null safety, coroutines for async programming, and full interoperability with Java. Google has been **Kotlin-first** since 2019, meaning new Jetpack APIs and documentation examples prioritize Kotlin. Its features — extension functions, data classes, sealed classes — map naturally to common Android patterns.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Kotlin on Android | Android Developers",
+        "url": "https://developer.android.com/kotlin"
+      },
+      {
+        "type": "Official",
+        "title": "Kotlin language reference | kotlinlang.org",
+        "url": "https://kotlinlang.org/docs/reference/"
+      },
+      {
+        "type": "Article",
+        "title": "Kotlin for Android: An Introduction | ProAndroidDev",
+        "url": "https://proandroiddev.com/kotlin-for-android-an-introduction-dc7c25e79571"
+      },
+      {
+        "type": "Video",
+        "title": "Kotlin Crash Course | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=5flXf8nuq60"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Kotlin Developer Roadmap | roadmap.sh",
+        "url": "https://roadmap.sh/kotlin"
+      },
+      {
+        "type": "Course",
+        "title": "Developing Android Apps with Kotlin | Udacity (free, by Google)",
+        "url": "https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012"
+      }
+    ]
+  },
+  {
+    "id": "application-fundamentals/languages/k2-compiler",
+    "title": "K2 Compiler",
+    "description": "The **K2 Compiler** is Kotlin's rewritten frontend compiler, stabilized in Kotlin 2.0, delivering up to **2x faster compilation** compared to the classic compiler. It provides a unified compiler pipeline for all Kotlin targets (JVM, JS, Native, Wasm) and improves smart-cast analysis and type inference accuracy. Android projects using AGP 8.3+ can enable K2 via `kotlin.version=2.0.x` in `gradle.properties`.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "K2 compiler | Kotlin 2.0 | kotlinlang.org",
+        "url": "https://kotlinlang.org/docs/whatsnew20.html#kotlin-k2-compiler"
+      },
+      {
+        "type": "Article",
+        "title": "What's new in Kotlin 2.0 and K2 compiler | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2024/05/whats-new-in-kotlin-2-0-and-k2-compiler.html"
+      },
+      {
+        "type": "Video",
+        "title": "Migrating An Android Project To K2 Compiler | YouTube",
+        "url": "https://www.youtube.com/watch?v=VM9DeivsDjg"
+      },
+      {
+        "type": "Article",
+        "title": "K2 Compiler migration guide | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/k2-compiler-migration-guide.html"
+      }
+    ]
+  },
+  {
+    "id": "application-fundamentals/languages/java-legacy",
+    "title": "Java (legacy)",
+    "description": "Java was the original language for Android development and remains fully supported via the Android SDK and toolchain. However, **Kotlin is now the recommended language** for all new Android projects, offering a more concise and safer alternative. Existing Java codebases can interoperate with Kotlin seamlessly, making incremental migration feasible. Java on Android targets the Java 8 language subset with some Java 11 APIs available via desugaring.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Java 8+ APIs available through desugaring | Android Developers",
+        "url": "https://developer.android.com/studio/write/java8-support"
+      },
+      {
+        "type": "Article",
+        "title": "Migrating from Java to Kotlin in Android | ProAndroidDev",
+        "url": "https://proandroiddev.com/migrating-from-java-to-kotlin-in-android-6f7e5dd1fc59"
+      },
+      {
+        "type": "Video",
+        "title": "Android Development for Beginners - Full Course (Java) | freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=fis26HvvDII"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Java Developer Roadmap | roadmap.sh",
+        "url": "https://roadmap.sh/java"
+      }
+    ]
+  },
+  {
+    "id": "application-fundamentals/languages/c-jni",
+    "title": "C++ (JNI)",
+    "description": "The **Java Native Interface (JNI)** enables Android apps to call native C or C++ code compiled via the **NDK (Native Development Kit)**. This is used for performance-critical work (codecs, signal processing, physics engines), reusing existing native libraries, or accessing low-level hardware APIs not exposed to the SDK. Use JNI sparingly — it increases complexity and bypasses Android's managed memory model.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Get started with the NDK | Android Developers",
+        "url": "https://developer.android.com/ndk/guides"
+      },
+      {
+        "type": "Official",
+        "title": "JNI tips | Android Developers",
+        "url": "https://developer.android.com/training/articles/perf-jni"
+      },
+      {
+        "type": "Article",
+        "title": "Android NDK: Getting started with C++ in Android | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-ndk-getting-started-with-c-in-android-9c0c3dc86aed"
+      },
+      {
+        "type": "Repo",
+        "title": "android/ndk-samples — Android NDK samples with Android Studio | GitHub",
+        "url": "https://github.com/android/ndk-samples"
+      },
+      {
+        "type": "Roadmap",
+        "title": "C++ Developer Roadmap | roadmap.sh",
+        "url": "https://roadmap.sh/cpp"
+      }
+    ]
+  },
+  {
+    "id": "android-operating-system/foundations/multi-user-linux",
+    "title": "Multi-User Linux",
+    "description": "Android is built on Linux and uses its **multi-user security model** to isolate apps from each other. Each installed application is assigned a unique Linux user ID (UID), and the OS enforces that an app's files and processes are inaccessible to other apps by default. This architecture means the security guarantees of Linux's user model underpin the entire Android security model.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Application fundamentals — security sandbox | Android Developers",
+        "url": "https://developer.android.com/guide/components/fundamentals"
+      },
+      {
+        "type": "Article",
+        "title": "Android Security: Understanding the Linux security model | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-security-redefining-the-sandbox-77cb358ea5b5"
+      },
+      {
+        "type": "Video",
+        "title": "Security for Android Developers | Android Developers YouTube",
+        "url": "https://www.youtube.com/watch?v=4E3gUbBw2Ow"
+      },
+      {
+        "type": "Official",
+        "title": "Application Sandbox | Android Open Source Project",
+        "url": "https://source.android.com/docs/security/app-sandbox"
+      }
+    ]
+  },
+  {
+    "id": "android-operating-system/foundations/file-permissions",
+    "title": "File Permissions",
+    "description": "Android inherits Linux **discretionary access control (DAC)** for file permissions, using standard `read`, `write`, and `execute` bits tied to each app's UID and GID. App-private files stored under `/data/data/<package>` are owned by the app's UID and are unreadable by other apps. Understanding file permissions is essential for securely storing sensitive data and correctly configuring `FileProvider` when sharing files between apps.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Data and file storage overview | Android Developers",
+        "url": "https://developer.android.com/training/data-storage"
+      },
+      {
+        "type": "Article",
+        "title": "Android File Permissions and Storage | ProAndroidDev",
+        "url": "https://proandroiddev.com/understanding-android-file-provider-a2a66a26e4b"
+      },
+      {
+        "type": "Video",
+        "title": "Security for Android Developers | Android Developers YouTube",
+        "url": "https://www.youtube.com/watch?v=4E3gUbBw2Ow"
+      },
+      {
+        "type": "Official",
+        "title": "System and kernel security | Android Open Source Project",
+        "url": "https://source.android.com/docs/security/overview/kernel-security"
+      }
+    ]
+  },
+  {
+    "id": "android-operating-system/foundations/resource-isolations",
+    "title": "Resource Isolations",
+    "description": "Android enforces **resource isolation** so that each app operates within its own security sandbox — with its own process, heap, and file space. Apps cannot directly access memory, CPU time, or files belonging to other apps without explicit IPC mechanisms. This isolation also extends to storage: app-specific directories are inaccessible to other apps, and shared storage is governed by scoped storage rules on Android 10+.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Android security overview | Android Developers",
+        "url": "https://developer.android.com/topic/security/best-practices"
+      },
+      {
+        "type": "Article",
+        "title": "Android Security: Application Sandbox | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-security-redefining-the-sandbox-77cb358ea5b5"
+      },
+      {
+        "type": "Video",
+        "title": "Security for Android Developers | Android Developers YouTube",
+        "url": "https://www.youtube.com/watch?v=4E3gUbBw2Ow"
+      },
+      {
+        "type": "Official",
+        "title": "Application Sandbox | Android Open Source Project",
+        "url": "https://source.android.com/docs/security/app-sandbox"
+      }
+    ]
+  },
+  {
+    "id": "android-operating-system/foundations/process-management",
+    "title": "Process Management",
+    "description": "Each Android app runs in its own **Linux process** with a dedicated Dalvik/ART virtual machine instance, started when a component is launched. The Android system uses a **process importance hierarchy** (foreground, visible, service, cached) to determine which processes to kill when memory is low. Developers should understand this hierarchy to ensure critical work (e.g., in foreground services) survives under memory pressure.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Processes and app lifecycle | Android Developers",
+        "url": "https://developer.android.com/guide/components/activities/process-lifecycle"
+      },
+      {
+        "type": "Article",
+        "title": "Android process lifecycle and app death | ProAndroidDev",
+        "url": "https://proandroiddev.com/processes-and-threads-in-android-f7e56acbd218"
+      },
+      {
+        "type": "Video",
+        "title": "Explained — Android UI thread / main thread | YouTube",
+        "url": "https://www.youtube.com/watch?v=kpFwxJFYnOo"
+      },
+      {
+        "type": "Official",
+        "title": "Processes and threads overview | Android Developers",
+        "url": "https://developer.android.com/guide/components/processes-and-threads"
+      }
+    ]
+  },
+  {
+    "id": "android-operating-system/foundations/sandboxing-selinux",
+    "title": "Sandboxing & SELinux",
+    "description": "Android uses **SELinux (Security-Enhanced Linux)** in enforcing mode to implement mandatory access control (MAC) on top of the standard Linux DAC model. SELinux policies define which processes can access which files, sockets, and system calls — even if a process runs as root. This defense-in-depth approach contains the damage from a compromised process and is a cornerstone of Android's platform security.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Security-Enhanced Linux in Android | Android Developers",
+        "url": "https://source.android.com/docs/security/features/selinux"
+      },
+      {
+        "type": "Article",
+        "title": "Android Security: SELinux and MAC explained | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-security-redefining-the-sandbox-77cb358ea5b5"
+      },
+      {
+        "type": "Video",
+        "title": "Security for Android Developers | Android Developers YouTube",
+        "url": "https://www.youtube.com/watch?v=4E3gUbBw2Ow"
+      },
+      {
+        "type": "Official",
+        "title": "SELinux concepts | Android Open Source Project",
+        "url": "https://source.android.com/docs/security/features/selinux/concepts"
+      }
+    ]
+  },
+  {
+    "id": "android-operating-system/foundations/scoped-storage",
+    "title": "Scoped Storage",
+    "description": "**Scoped Storage**, introduced in Android 10 and enforced in Android 11, restricts apps to their own app-specific directories and well-defined collections (MediaStore, Downloads) without requiring broad storage permissions. Apps must use the **MediaStore API** or the **Storage Access Framework** to access files outside their sandbox. This model protects user privacy by preventing apps from freely browsing the file system.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Storage updates in Android 11 | Android Developers",
+        "url": "https://developer.android.com/about/versions/11/privacy/storage"
+      },
+      {
+        "type": "Official",
+        "title": "Data and file storage overview | Android Developers",
+        "url": "https://developer.android.com/training/data-storage"
+      },
+      {
+        "type": "Article",
+        "title": "Scoped Storage in Android 11: Everything you need to know | ProAndroidDev",
+        "url": "https://proandroiddev.com/scoped-storage-in-android-11-what-it-means-for-developers-39e8fcbbc226"
+      },
+      {
+        "type": "Video",
+        "title": "Preparing for Scoped Storage (Android Dev Summit '19) | Android Developers",
+        "url": "https://www.youtube.com/watch?v=UnJ3amzJM94"
+      }
+    ]
+  },
+  {
+    "id": "android-platform-architecture/layers/the-linux-kernel",
+    "title": "The Linux Kernel",
+    "description": "The **Linux Kernel** forms the foundation of Android's platform architecture, providing core OS services: process management, memory management, networking, and a hardware driver model. Android uses a modified Linux kernel with additional features such as Binder IPC, ashmem (anonymous shared memory), and the Low Memory Killer. All higher Android layers ultimately depend on kernel services for hardware access and process isolation.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Android platform architecture | Android Developers",
+        "url": "https://developer.android.com/guide/platform"
+      },
+      {
+        "type": "Article",
+        "title": "Understanding Android Architecture: Linux Kernel layer | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-architecture-overview-part-1-7b5a3b8e5bce"
+      },
+      {
+        "type": "Video",
+        "title": "Security for Android Developers | Android Developers YouTube",
+        "url": "https://www.youtube.com/watch?v=4E3gUbBw2Ow"
+      },
+      {
+        "type": "Official",
+        "title": "System and kernel security | Android Open Source Project",
+        "url": "https://source.android.com/docs/security/overview/kernel-security"
+      }
+    ]
+  },
+  {
+    "id": "android-platform-architecture/layers/hardware-abstraction-layer",
+    "title": "Hardware Abstraction Layer",
+    "description": "The **Hardware Abstraction Layer (HAL)** defines standard interfaces that hardware vendors implement, allowing the Android framework to call hardware functionality without knowing driver specifics. HALs are packaged as shared libraries (`.so` files) and are loaded at runtime. Modern Android uses **HIDL** (HAL Interface Definition Language) and the newer **AIDL**-based HALs to version these interfaces and enable independent updates via Project Treble.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Hardware Abstraction Layer (HAL) | Android Open Source Project",
+        "url": "https://source.android.com/docs/core/architecture/hal"
+      },
+      {
+        "type": "Article",
+        "title": "Android HAL: How hardware abstraction works | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-hardware-abstraction-layer-hal-explained-a0f9c5a51cfc"
+      },
+      {
+        "type": "Video",
+        "title": "Android's HIDL: Treble in the HAL | YouTube",
+        "url": "https://www.youtube.com/watch?v=UFaWqdxBW4E"
+      },
+      {
+        "type": "Official",
+        "title": "Architecture overview | Android Open Source Project",
+        "url": "https://source.android.com/docs/core/architecture"
+      }
+    ]
+  },
+  {
+    "id": "android-platform-architecture/layers/android-runtime-art",
+    "title": "Android Runtime (ART)",
+    "description": "**ART (Android Runtime)** is the managed runtime that executes compiled Android apps, replacing the older Dalvik runtime since Android 5.0. ART uses **Ahead-Of-Time (AOT) compilation**, **Just-In-Time (JIT) compilation**, and **profile-guided optimization** to deliver fast execution and reduced startup times. It also provides garbage collection, debugging support, and profiling infrastructure used throughout the Android ecosystem.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Android Runtime (ART) and Dalvik | Android Open Source Project",
+        "url": "https://source.android.com/docs/core/runtime"
+      },
+      {
+        "type": "Article",
+        "title": "ART and Dalvik: Android runtime explained | ProAndroidDev",
+        "url": "https://proandroiddev.com/art-vs-dalvik-how-android-runtime-works-9e4e6c52a9eb"
+      },
+      {
+        "type": "Video",
+        "title": "Understanding Android Runtime (ART) for faster apps (Google I/O '19) | Android Developers",
+        "url": "https://www.youtube.com/watch?v=1uLzSXWWfDg"
+      }
+    ]
+  },
+  {
+    "id": "android-platform-architecture/layers/native-libraries",
+    "title": "Native Libraries",
+    "description": "Android's **Native Libraries** layer consists of C/C++ libraries that provide core functionality to the framework, including **OpenGL ES** (graphics), **SQLite** (database), **WebKit** (web rendering), **libc**, and SSL. These libraries are exposed to apps via the Java API Framework or directly via the NDK. Understanding which native capabilities are available helps when choosing between SDK-level APIs and lower-level native access.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Android platform architecture — Native C/C++ Libraries | Android Developers",
+        "url": "https://developer.android.com/guide/platform"
+      },
+      {
+        "type": "Article",
+        "title": "Android Native Libraries Overview | ProAndroidDev",
+        "url": "https://proandroiddev.com/native-libraries-in-android-platform-architecture-explained-8a22fc3c4a4e"
+      },
+      {
+        "type": "Video",
+        "title": "How to create Driver & HAL in Android (AOSP)? | YouTube",
+        "url": "https://www.youtube.com/watch?v=pee34QJ2XN0"
+      },
+      {
+        "type": "Repo",
+        "title": "android/ndk-samples — Android NDK samples with Android Studio | GitHub",
+        "url": "https://github.com/android/ndk-samples"
+      }
+    ]
+  },
+  {
+    "id": "android-platform-architecture/layers/java-api-framework",
+    "title": "Java API Framework",
+    "description": "The **Java API Framework** is the set of Android APIs written in Java/Kotlin that app developers use daily — including the Activity Manager, Window Manager, Content Providers, View System, Package Manager, and Notification Manager. It sits atop the native libraries and ART runtime, exposing their capabilities through stable, versioned APIs. This layer is what developers interact with through `android.*` and `androidx.*` packages.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Android platform architecture — Java API Framework | Android Developers",
+        "url": "https://developer.android.com/guide/platform"
+      },
+      {
+        "type": "Article",
+        "title": "Android Architecture: Java API Framework explained | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-architecture-overview-part-1-7b5a3b8e5bce"
+      },
+      {
+        "type": "Video",
+        "title": "Understanding Android Runtime (ART) for faster apps (Google I/O '19) | Android Developers",
+        "url": "https://www.youtube.com/watch?v=1uLzSXWWfDg"
+      },
+      {
+        "type": "Course",
+        "title": "Android Basics with Compose | Free course by Google",
+        "url": "https://developer.android.com/courses/android-basics-compose/course"
+      }
+    ]
+  },
+  {
+    "id": "android-platform-architecture/layers/system-apps",
+    "title": "System Apps",
+    "description": "**System Apps** are pre-installed applications (Dialer, SMS, Camera, Settings, Browser) that ship with Android and have elevated permissions not available to third-party apps. They occupy the topmost layer of the Android platform architecture and serve as default handlers for common actions (e.g., `ACTION_DIAL`). Third-party apps can replace some system apps as default handlers, but cannot gain system-level permissions without signing with the platform key.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Android platform architecture — System Apps | Android Developers",
+        "url": "https://developer.android.com/guide/platform"
+      },
+      {
+        "type": "Article",
+        "title": "Android System Apps vs Regular Apps: Differences explained | ProAndroidDev",
+        "url": "https://proandroiddev.com/understanding-android-system-apps-and-their-privileges-b4e8fc5be0d0"
+      },
+      {
+        "type": "Video",
+        "title": "Security for Android Developers | Android Developers YouTube",
+        "url": "https://www.youtube.com/watch?v=4E3gUbBw2Ow"
+      },
+      {
+        "type": "Repo",
+        "title": "aosp-mirror/platform_frameworks_base — AOSP frameworks base mirror | GitHub",
+        "url": "https://github.com/aosp-mirror/platform_frameworks_base"
+      }
+    ]
+  },
+  {
+    "id": "android-platform-architecture/layers/aicore",
+    "title": "AICore",
+    "description": "**AICore** is an Android system service (introduced with Pixel 8 / Android 14) that manages on-device GenAI foundation model execution, including Gemini Nano. It handles model distribution via Play, hardware-accelerated inference, and safety features — all while adhering to **Private Compute Core** principles so data never leaves the device. Developers access AICore capabilities through the **ML Kit GenAI APIs** for tasks like summarization, proofreading, and prompt generation.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Gemini Nano on Android (AICore) | Android Developers",
+        "url": "https://developer.android.com/ai/gemini-nano"
+      },
+      {
+        "type": "Article",
+        "title": "Announcing Gemma 4 in the AICore Developer Preview | Android Developers Blog",
+        "url": "https://developer.android.com/blog/posts/announcing-gemma-4-in-the-ai-core-developer-preview"
+      },
+      {
+        "type": "Video",
+        "title": "Gemini Nano on Android: Building with on-device gen AI | Android Developers",
+        "url": "https://www.youtube.com/watch?v=mP9QESmEDls"
+      },
+      {
+        "type": "Official",
+        "title": "ML Kit GenAI APIs overview | Google for Developers",
+        "url": "https://developers.google.com/ml-kit/genai"
+      }
+    ]
+  },
+  {
+    "id": "app-manifest/core/package",
+    "title": "Package",
+    "description": "The `package` attribute in `AndroidManifest.xml` historically served as both the app's unique identifier and the namespace for generated R and BuildConfig classes. Since AGP 7.3+, the **namespace** (in `build.gradle`) handles the code namespace, while `applicationId` in `build.gradle` defines the Play Store identifier. The manifest `package` attribute is still read at build time but is effectively superseded by these two distinct Gradle properties.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "App manifest overview | Android Developers",
+        "url": "https://developer.android.com/guide/topics/manifest/manifest-intro"
+      },
+      {
+        "type": "Article",
+        "title": "Package name vs Application ID in Android | ProAndroidDev",
+        "url": "https://proandroiddev.com/package-name-vs-application-id-in-android-bc573282e2b6"
+      },
+      {
+        "type": "Video",
+        "title": "Android Basics with Compose — Introduction to Kotlin | Android Developers",
+        "url": "https://www.youtube.com/watch?v=SJw3Nu_h8kk"
+      },
+      {
+        "type": "Course",
+        "title": "Android Basics with Compose | Free course by Google",
+        "url": "https://developer.android.com/courses/android-basics-compose/course"
+      }
+    ]
+  },
+  {
+    "id": "app-manifest/core/application-id",
+    "title": "Application ID",
+    "description": "The **Application ID** (`applicationId` in `build.gradle`) is the globally unique identifier for your app on the device and on Google Play, following reverse-domain notation (e.g., `com.example.myapp`). It is set independently of the code namespace and cannot be changed after publishing without breaking existing installs and deep links. Build variants can use `applicationIdSuffix` to produce distinct IDs for debug/staging builds.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Set the application ID | Android Studio | Android Developers",
+        "url": "https://developer.android.com/studio/build/configure-app-module"
+      },
+      {
+        "type": "Article",
+        "title": "Understanding Application ID in Android | ProAndroidDev",
+        "url": "https://proandroiddev.com/understanding-applicationid-and-package-name-in-android-d48e3e3cd45a"
+      },
+      {
+        "type": "Video",
+        "title": "App Bundles: Testing bundles with bundletool and the Play Console - MAD Skills | Android Developers",
+        "url": "https://www.youtube.com/watch?v=vAEAZPU7w-I"
+      },
+      {
+        "type": "Course",
+        "title": "Android Basics with Compose | Free course by Google",
+        "url": "https://developer.android.com/courses/android-basics-compose/course"
+      }
+    ]
+  },
+  {
+    "id": "app-manifest/core/permissions-declaration",
+    "title": "Permissions Declaration",
+    "description": "Apps must declare every permission they need in `AndroidManifest.xml` using `<uses-permission>`. **Dangerous permissions** (camera, location, contacts) additionally require runtime requests via `ActivityResultContracts.RequestPermission` since Android 6.0. The system enforces declared permissions at install time (normal) or at runtime (dangerous), and undeclared permissions are silently denied — making thorough manifest declarations essential for functionality and store compliance.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Permissions on Android | Android Developers",
+        "url": "https://developer.android.com/guide/topics/permissions/overview"
+      },
+      {
+        "type": "Article",
+        "title": "Android Runtime Permissions: A Guide | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-runtime-permissions-the-definitive-guide-3d72c6e3b9ea"
+      },
+      {
+        "type": "Video",
+        "title": "How to Request Runtime Permissions in Android | YouTube",
+        "url": "https://www.youtube.com/watch?v=OJpceQqXIjY"
+      }
+    ]
+  },
+  {
+    "id": "app-manifest/core/foreground-service-types",
+    "title": "Foreground Service Types",
+    "description": "Since **Android 14**, apps targeting API 34+ must declare a `android:foregroundServiceType` attribute on each `<service>` element in the manifest, or calling `startForeground()` will throw `MissingForegroundServiceTypeException`. Available types include `camera`, `location`, `mediaPlayback`, `dataSync`, `health`, `microphone`, and others. Specifying the correct type also unlocks corresponding runtime permissions (e.g., `FOREGROUND_SERVICE_CAMERA`) required to start that service type.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Foreground service types are required | Android 14 | Android Developers",
+        "url": "https://developer.android.com/about/versions/14/changes/fgs-types-required"
+      },
+      {
+        "type": "Article",
+        "title": "Foreground Service Types in Android 14: What changed | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-14-foreground-services-changes-a-guide-to-required-types-b63cde3f4a21"
+      },
+      {
+        "type": "Video",
+        "title": "Foreground Service in Android 14 | YouTube",
+        "url": "https://www.youtube.com/watch?v=2x5FABUViMc"
+      },
+      {
+        "type": "Official",
+        "title": "Foreground service types reference | Android Developers",
+        "url": "https://developer.android.com/develop/background-work/services/fgs/service-types"
+      }
+    ]
+  },
+  {
+    "id": "app-manifest/core/queries-package-visibility",
+    "title": "Queries / Package Visibility",
+    "description": "Starting with **Android 11 (API 30)**, apps targeting API 30+ can no longer see all installed packages by default — protecting user privacy. To interact with another app, your app must declare the target package name, intent filter signature, or content provider authority in a `<queries>` element in the manifest. This affects any code using `queryIntentActivities()`, `getPackageInfo()`, or `Intent.resolveActivity()` to discover other apps.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Package visibility filtering on Android | Android Developers",
+        "url": "https://developer.android.com/training/package-visibility"
+      },
+      {
+        "type": "Official",
+        "title": "<queries> manifest element | Android Developers",
+        "url": "https://developer.android.com/guide/topics/manifest/queries-element"
+      },
+      {
+        "type": "Article",
+        "title": "Android 11 Package Visibility: Migrating your app | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-11-package-visibility-the-new-queries-element-26f15bcde30f"
+      },
+      {
+        "type": "Article",
+        "title": "Package visibility in Android 11 | Android Developers Medium",
+        "url": "https://medium.com/androiddevelopers/package-visibility-in-android-11-cc857f221cd9"
+      }
+    ]
+  },
+  {
+    "id": "app-components/components/activity",
+    "title": "Activity",
+    "description": "An **Activity** is the primary UI entry point of an Android app, representing a single screen with a user interface. Activities manage their own lifecycle (`onCreate` → `onStart` → `onResume` → `onPause` → `onStop` → `onDestroy`) and must be declared in the manifest. Modern Android development favors a **single-Activity** architecture using Fragments or Compose navigation destinations, reducing the complexity of managing multiple Activity lifecycles.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Introduction to activities | Android Developers",
+        "url": "https://developer.android.com/guide/components/activities/intro-activities"
+      },
+      {
+        "type": "Article",
+        "title": "Single Activity: Why, When, and How | Android Developers Blog",
+        "url": "https://medium.com/androiddevelopers/a-single-activity-why-when-and-how-video-b1da21b04716"
+      },
+      {
+        "type": "Video",
+        "title": "Activities & the Activity Lifecycle - Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=SJw3Nu_h8kk"
+      },
+      {
+        "type": "Course",
+        "title": "Android Basics with Compose | Free course by Google",
+        "url": "https://developer.android.com/courses/android-basics-compose/course"
+      }
+    ]
+  },
+  {
+    "id": "app-components/components/service",
+    "title": "Service",
+    "description": "A **Service** is an app component that performs long-running operations in the background without a UI, such as music playback, file downloads, or network sync. Services come in two main forms: **started services** (run until stopped) and **bound services** (run while clients are connected). Since Android 8.0, background service execution is restricted — use **WorkManager** for deferrable background work and **Foreground Services** for user-visible ongoing tasks.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Services overview | Android Developers",
+        "url": "https://developer.android.com/guide/components/services"
+      },
+      {
+        "type": "Article",
+        "title": "Android Services: Everything you need to know | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-services-how-to-use-them-responsibly-and-when-not-to-use-them-at-all-b9e8bf8fbb4f"
+      },
+      {
+        "type": "Video",
+        "title": "Foreground Services - Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=YZL-_XJSClc"
+      },
+      {
+        "type": "Video",
+        "title": "WorkManager - Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=A2JetouoNSc"
+      }
+    ]
+  },
+  {
+    "id": "app-components/components/broadcast-receiver",
+    "title": "Broadcast Receiver",
+    "description": "A **Broadcast Receiver** allows an app to respond to system-wide or app-specific broadcast messages (e.g., network changes, battery low, custom app events). Receivers can be registered **statically** in the manifest (limited by background restrictions since Android 8.0) or **dynamically** in code via `registerReceiver()`. For ordered or local in-process communication, prefer `LocalBroadcastManager` (deprecated) or a reactive approach using **Flow** or **LiveData**.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Broadcasts overview | Android Developers",
+        "url": "https://developer.android.com/guide/components/broadcasts"
+      },
+      {
+        "type": "Article",
+        "title": "Android BroadcastReceiver: A practical guide | ProAndroidDev",
+        "url": "https://proandroiddev.com/the-complete-guide-to-broadcastreceiver-in-android-2024-a03cf4b98b1d"
+      },
+      {
+        "type": "Video",
+        "title": "Broadcasts & Broadcast Receivers - Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=HDVyFsFUuVg"
+      }
+    ]
+  },
+  {
+    "id": "app-components/components/content-provider",
+    "title": "Content Provider",
+    "description": "A **Content Provider** manages access to a structured set of data and exposes it to other apps via a URI-based interface, backed by SQLite, files, or any data source. It is the standard IPC mechanism for sharing data across app boundaries (e.g., Contacts, MediaStore). **FileProvider** (a subclass) is commonly used to share files between apps safely. Modern apps prefer the Room database for internal storage and only implement a Content Provider when cross-app data sharing is explicitly needed.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Content providers | Android Developers",
+        "url": "https://developer.android.com/guide/topics/providers/content-providers"
+      },
+      {
+        "type": "Article",
+        "title": "Android Content Providers: A complete guide | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-content-providers-explained-a-practical-guide-ccfc57e90818"
+      },
+      {
+        "type": "Video",
+        "title": "Content Providers - Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=IVHZpTyVOxU"
+      }
+    ]
+  },
+  {
+    "id": "app-components/intent/intent-filters",
+    "title": "Intent Filters",
+    "description": "**Intent Filters** declared in the manifest specify the types of implicit intents a component can handle, defined by action, category, and data URI scheme. The Android system uses intent filters to resolve which app (or component) should handle an incoming implicit intent, such as `ACTION_VIEW` for a URL or `ACTION_SEND` for sharing. Incorrect or overly broad intent filters can expose components to unintended callers — always validate incoming intent data.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Intents and intent filters | Android Developers",
+        "url": "https://developer.android.com/guide/components/intents-filters"
+      },
+      {
+        "type": "Article",
+        "title": "Android Intent Filters: A deep dive | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-intent-filters-explained-with-examples-4ccbde2cdc2d"
+      },
+      {
+        "type": "Video",
+        "title": "Intents & Intent Filters - Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=2hIY1xuImuQ"
+      }
+    ]
+  },
+  {
+    "id": "app-components/intent/explicit-intents",
+    "title": "Explicit Intents",
+    "description": "An **Explicit Intent** directly names the target component (by class name) that should handle the intent, making it unambiguous. They are used for intra-app navigation (e.g., launching a specific Activity or Service within your own app) and are the preferred approach when the target is known. Explicit intents bypass the system's intent resolution process, making them faster and more secure than implicit intents for internal communication.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Intents and intent filters — Explicit intents | Android Developers",
+        "url": "https://developer.android.com/guide/components/intents-filters#ExampleExplicit"
+      },
+      {
+        "type": "Article",
+        "title": "Explicit vs Implicit Intents in Android | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-intents-explicit-vs-implicit-d30f63e13e7c"
+      },
+      {
+        "type": "Video",
+        "title": "Intents & Intent Filters - Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=2hIY1xuImuQ"
+      }
+    ]
+  },
+  {
+    "id": "app-components/intent/implicit-intents",
+    "title": "Implicit Intents",
+    "description": "An **Implicit Intent** declares a general action to perform (e.g., `ACTION_VIEW`, `ACTION_SEND`) without naming a specific component, letting the system find the best matching app via intent filters. If multiple apps can handle the intent, the user is presented with a chooser. Since Android 11, you must declare the target package in `<queries>` to resolve implicit intents to specific third-party apps — and always call `resolveActivity()` to check that a handler exists before launching.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Intents and intent filters — Implicit intents | Android Developers",
+        "url": "https://developer.android.com/guide/components/intents-filters#Types"
+      },
+      {
+        "type": "Article",
+        "title": "Implicit Intents and Android 11 Package Visibility | ProAndroidDev",
+        "url": "https://proandroiddev.com/implicit-intents-in-android-11-package-visibility-fbe6b241e7af"
+      },
+      {
+        "type": "Video",
+        "title": "Intents & Intent Filters - Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=2hIY1xuImuQ"
+      }
+    ]
+  },
+  {
+    "id": "app-components/intent/pendingintent-mutability",
+    "title": "PendingIntent (mutability)",
+    "description": "A **PendingIntent** wraps an Intent and grants another app or the system the ability to fire it on your app's behalf at a later time (used with notifications, alarms, and widgets). Since **Android 12 (API 31)**, apps must explicitly declare each PendingIntent as `FLAG_IMMUTABLE` or `FLAG_MUTABLE` — omitting the flag causes a crash. Prefer `FLAG_IMMUTABLE` unless the PendingIntent must be modified by the receiving app (e.g., inline reply actions).",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "PendingIntent mutability | Android 12 | Android Developers",
+        "url": "https://developer.android.com/about/versions/12/behavior-changes-12#pending-intent-mutability"
+      },
+      {
+        "type": "Article",
+        "title": "PendingIntent in Android 12: Mutability changes explained | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-12-pending-intent-mutability-flags-f48f9f57dab8"
+      },
+      {
+        "type": "Video",
+        "title": "Intents & Intent Filters - Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=2hIY1xuImuQ"
+      }
+    ]
+  },
+  {
+    "id": "app-entry-points/activities/activity-lifecycles",
+    "title": "Activity Lifecycles",
+    "description": "The **Activity lifecycle** defines the sequence of states an Activity moves through from creation to destruction: `onCreate()`, `onStart()`, `onResume()`, `onPause()`, `onStop()`, and `onDestroy()`. Each callback is the right place for specific operations — initialize UI in `onCreate`, release heavy resources in `onStop`. Using **LifecycleObserver** and **Jetpack ViewModel** helps avoid placing lifecycle logic directly in the Activity, keeping the class lean.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "The activity lifecycle | Android Developers",
+        "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+      },
+      {
+        "type": "Article",
+        "title": "Understanding the Android Activity Lifecycle | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-activity-lifecycle-made-simple-2da9e0b62e37"
+      },
+      {
+        "type": "Video",
+        "title": "Activities & the Activity Lifecycle - Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=SJw3Nu_h8kk"
+      }
+    ]
+  },
+  {
+    "id": "app-entry-points/activities/activity-state-changes",
+    "title": "Activity State Changes",
+    "description": "**Activity state changes** occur in response to user actions (rotating the device, pressing Back, switching apps) or system events (low memory kills, multi-window resizing). Configuration changes like rotation destroy and recreate the Activity by default; use **ViewModel** to survive data across this cycle and `onSaveInstanceState()` for lightweight transient UI state. Understanding when and why the system triggers each lifecycle transition is critical for preventing data loss and UI glitches.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Activity state changes | Android Developers",
+        "url": "https://developer.android.com/guide/components/activities/state-changes"
+      },
+      {
+        "type": "Article",
+        "title": "Handling Activity State Changes in Android | ProAndroidDev",
+        "url": "https://proandroiddev.com/understanding-activity-state-changes-and-saving-ui-state-in-android-62a0e2a7e39b"
+      },
+      {
+        "type": "Video",
+        "title": "ViewModels & Configuration Changes - Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=9sqvBydNJSg"
+      }
+    ]
+  },
+  {
+    "id": "app-entry-points/activities/task-and-back-stack",
+    "title": "Task and Back Stack",
+    "description": "A **task** is a collection of activities arranged in a LIFO **back stack**, representing a user's flow through the app. When the user navigates forward, new activities are pushed; pressing Back pops them. Launch modes (`standard`, `singleTop`, `singleTask`, `singleInstance`) and `Intent` flags (`FLAG_ACTIVITY_NEW_TASK`, `FLAG_ACTIVITY_CLEAR_TOP`) control how activities are added to or reused within tasks. Understanding this model is essential for correct deep linking, notification navigation, and multi-app flows.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Tasks and the back stack | Android Developers",
+        "url": "https://developer.android.com/guide/components/activities/tasks-and-back-stack"
+      },
+      {
+        "type": "Article",
+        "title": "Android Tasks and Back Stack: A complete guide | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-task-and-back-stack-review-5017f2c18196"
+      },
+      {
+        "type": "Video",
+        "title": "Tasks, Back Stack & Launch Modes - Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=Z0AzoFOiH9c"
+      }
+    ]
+  },
+  {
+    "id": "app-entry-points/activities/parcelables-and-bundles",
+    "title": "Parcelables and Bundles",
+    "description": "**Parcelable** is Android's high-performance serialization interface for passing objects between components via `Intent` extras or `Bundle`. Unlike Java's `Serializable`, `Parcelable` is designed for inter-process communication and avoids reflection overhead. **Bundles** are key-value containers that hold Parcelable, primitive, and String data. Kotlin's `@Parcelize` annotation (from `kotlin-parcelize`) auto-generates boilerplate `Parcelable` implementations, making this pattern concise in modern code.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Parcelables and Bundles | Android Developers",
+        "url": "https://developer.android.com/guide/components/activities/parcelables-and-bundles"
+      },
+      {
+        "type": "Article",
+        "title": "Parcelable vs Serializable in Android | ProAndroidDev",
+        "url": "https://proandroiddev.com/parcelable-vs-serializable-which-is-better-for-android-8a6b394dfac8"
+      },
+      {
+        "type": "Video",
+        "title": "Parcelable in Kotlin — We had @Parcelize | YouTube",
+        "url": "https://www.youtube.com/watch?v=aDbWkb81zZ0"
+      },
+      {
+        "type": "Official",
+        "title": "Parcelable implementation generator (@Parcelize) | Android Developers",
+        "url": "https://developer.android.com/kotlin/parcelize"
+      }
+    ]
+  },
+  {
+    "id": "app-entry-points/modern-entry-apis/app-shortcuts",
+    "title": "App Shortcuts",
+    "description": "**App Shortcuts** let users perform common actions in your app directly from the launcher (via long-press) or from Google Assistant. There are three types: **static** (defined in XML, packaged with the app), **dynamic** (pushed at runtime via `ShortcutManager`), and **pinned** (added to the home screen by the user). Shortcuts should represent high-value, frequently used actions and must be kept up to date as the app's state changes.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "App shortcuts overview | Android Developers",
+        "url": "https://developer.android.com/guide/topics/ui/shortcuts"
+      },
+      {
+        "type": "Article",
+        "title": "Android App Shortcuts: Static, Dynamic, and Pinned | ProAndroidDev",
+        "url": "https://proandroiddev.com/android-app-shortcuts-static-dynamic-and-pinned-8e33b3ece2f9"
+      },
+      {
+        "type": "Video",
+        "title": "Activities & the Activity Lifecycle - Android Basics 2023 | Philipp Lackner",
+        "url": "https://www.youtube.com/watch?v=SJw3Nu_h8kk"
+      },
+      {
+        "type": "Repo",
+        "title": "android/platform-samples — Android OS platform API samples | GitHub",
+        "url": "https://github.com/android/platform-samples"
+      }
+    ]
+  },
+  {
+    "id": "app-entry-points/modern-entry-apis/splash-screen-api",
+    "title": "Splash Screen API",
+    "description": "The **Splash Screen API** (introduced in Android 12, backported via `androidx.core:core-splashscreen`) provides a standardized app launch animation showing the app icon on a solid background. It replaces the old workaround of using a theme with `windowBackground`. Developers can customize the icon, background color, and exit animation, and optionally delay dismissal using `ViewTreeObserver.OnPreDrawListener` until initial data is loaded.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Splash screens | Android Developers",
+        "url": "https://developer.android.com/develop/ui/views/launch/splash-screen"
+      },
+      {
+        "type": "Article",
+        "title": "Implementing the Android 12 Splash Screen API | ProAndroidDev",
+        "url": "https://proandroiddev.com/implementing-the-android-12-splash-screen-api-54e3bc37bfa3"
+      },
+      {
+        "type": "Video",
+        "title": "Easily Implement Splash Screen in Android Using the NEW API! | YouTube",
+        "url": "https://www.youtube.com/watch?v=4Dh09c_iWFU"
+      }
+    ]
+  },
+  {
+    "id": "app-entry-points/modern-entry-apis/activity-result-api",
+    "title": "Activity Result API",
+    "description": "The **Activity Result API** (`registerForActivityResult()` + `ActivityResultContract`) is the modern replacement for the deprecated `startActivityForResult()` / `onActivityResult()` pattern. It provides type-safe, lifecycle-aware result handling and ships with built-in contracts for common tasks (take photo, pick contact, request permission). Available via `androidx.activity` and `androidx.fragment`, it works seamlessly with both Fragments and Compose.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Get a result from an activity | Android Developers",
+        "url": "https://developer.android.com/training/basics/intents/result"
+      },
+      {
+        "type": "Article",
+        "title": "The Activity Result API: A deep dive | ProAndroidDev",
+        "url": "https://proandroiddev.com/is-onactivityresult-deprecated-in-2021-lets-talk-about-the-new-activity-result-api-5e74a5b64cff"
+      },
+      {
+        "type": "Video",
+        "title": "Easily Pass Data Between Activities Using the NEW Activity Result API! | YouTube",
+        "url": "https://www.youtube.com/watch?v=85qQYNWiH-c"
+      }
+    ]
+  },
+  {
+    "id": "app-entry-points/modern-entry-apis/predictive-back-gesture",
+    "title": "Predictive Back Gesture",
+    "description": "The **Predictive Back Gesture** (introduced in Android 13, fully enforced in Android 14+) shows users a preview of where the Back gesture will take them before they complete the swipe — improving navigational clarity. Apps must opt in by setting `android:enableOnBackInvokedCallback=\"true\"` in the manifest and migrating away from the deprecated `onBackPressed()` to `OnBackPressedCallback` (AndroidX) or `OnBackInvokedCallback` (platform API). Compose apps use the `BackHandler` or `PredictiveBackHandler` composable.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Add support for the predictive back gesture | Android Developers",
+        "url": "https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture"
+      },
+      {
+        "type": "Article",
+        "title": "Predictive Back Gesture in Android 13 and 14 | ProAndroidDev",
+        "url": "https://proandroiddev.com/predictive-back-progress-ui-navigation-in-android-13-8d9a9edf65a5"
+      },
+      {
+        "type": "Video",
+        "title": "How to Migrate Your App to Support the NEW Predictive Back Gestures On Android | YouTube",
+        "url": "https://www.youtube.com/watch?v=WjqRfQu8qO8"
+      }
+    ]
+  }
+]

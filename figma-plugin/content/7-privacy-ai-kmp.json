@@ -1,0 +1,1090 @@
+[
+  {
+    "id": "privacy-security/privacy/privacy-sandbox-on-android",
+    "title": "Privacy Sandbox on Android",
+    "description": "Privacy Sandbox on Android is Google's multi-year initiative to build privacy-preserving advertising technologies that replace cross-app identifiers. It introduces two key pillars: an **SDK Runtime** that isolates third-party SDKs in a sandboxed environment, and a set of privacy-preserving APIs (Topics, Protected Audience, Attribution Reporting) for ad relevance and measurement. Use it when building or integrating ad SDKs that must comply with evolving platform privacy requirements on Android 13+.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Privacy Sandbox on Android | Android Developers",
+        "url": "https://developer.android.com/design-for-safety/privacy-sandbox"
+      },
+      {
+        "type": "Article",
+        "title": "Introduction to the Privacy Sandbox on Android | Android Developers",
+        "url": "https://developer.android.com/design-for-safety/ads/introduction"
+      },
+      {
+        "type": "Repo",
+        "title": "android/privacy-sandbox-samples | GitHub",
+        "url": "https://github.com/android/privacy-sandbox-samples"
+      },
+      {
+        "type": "Article",
+        "title": "Privacy highlights from Google I/O 2024 | Privacy Sandbox Blog",
+        "url": "https://privacysandbox.google.com/blog/io-2025"
+      },
+      {
+        "type": "Video",
+        "title": "Privacy Sandbox at Google I/O 2024 | Google Developers",
+        "url": "https://developers.google.com/privacy-sandbox/blog/google-io-2024"
+      }
+    ]
+  },
+  {
+    "id": "privacy-security/privacy/photo-picker",
+    "title": "Photo Picker",
+    "description": "The Photo Picker is a system-provided UI that lets users share only the specific images or videos they select with your app, rather than granting broad access to their entire media library. It is available on Android 11 (API 30)+ via Google Play system updates and can be backported to Android 4.4 through Play Services. **Always prefer Photo Picker over broad storage permissions** for any feature that requires user-selected media, as it requires no permission declaration at all.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Photo picker | App data and files | Android Developers",
+        "url": "https://developer.android.com/training/data-storage/shared/photopicker"
+      },
+      {
+        "type": "Article",
+        "title": "Permissionless is the future of Storage on Android | Android Developers Blog",
+        "url": "https://medium.com/androiddevelopers/permissionless-is-the-future-of-storage-on-android-3fbceeb3d70a"
+      },
+      {
+        "type": "Article",
+        "title": "Photo Picker Everywhere | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2023/04/photo-picker-everywhere.html"
+      },
+      {
+        "type": "Article",
+        "title": "Cloud photos now available in the Android photo picker | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2024/02/cloud-photos-now-available-in-android-photo-picker.html"
+      },
+      {
+        "type": "Video",
+        "title": "Now in Android #76 – Webkit, Compose Compiler, Photo Picker | Android Developers",
+        "url": "https://medium.com/androiddevelopers/now-in-android-76-d2f182c4003c"
+      }
+    ]
+  },
+  {
+    "id": "privacy-security/privacy/granular-media-permissions",
+    "title": "Granular Media Permissions",
+    "description": "Android 13 (API 33) replaced the broad `READ_EXTERNAL_STORAGE` permission with three granular permissions: `READ_MEDIA_IMAGES`, `READ_MEDIA_VIDEO`, and `READ_MEDIA_AUDIO`. Apps declare only the media types they actually access, reducing unnecessary data exposure to users. Android 14 adds `READ_MEDIA_VISUAL_USER_SELECTED` for partial photo/video access. Adopt these when your app genuinely needs programmatic access to media files created by other apps and Photo Picker is not suitable.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Access media files from shared storage | Android Developers",
+        "url": "https://developer.android.com/training/data-storage/shared/media"
+      },
+      {
+        "type": "Official",
+        "title": "Behavior changes: Apps targeting Android 13 or higher | Android Developers",
+        "url": "https://developer.android.com/about/versions/13/behavior-changes-13"
+      },
+      {
+        "type": "Video",
+        "title": "What's new in Android privacy and security | Google I/O 2023",
+        "url": "https://io.google/2023/program/277c56db-9c85-4298-b2d5-7428869ac1e1/"
+      },
+      {
+        "type": "Article",
+        "title": "I/O 2023: What's new in Android security and privacy | Google Security Blog",
+        "url": "https://security.googleblog.com/2023/05/io-2023-android-security-and-privacy.html"
+      },
+      {
+        "type": "Article",
+        "title": "I/O 2024: What's new in Android security and privacy | Google Security Blog",
+        "url": "https://security.googleblog.com/2024/05/io-2024-whats-new-in-android-security.html"
+      }
+    ]
+  },
+  {
+    "id": "privacy-security/privacy/notification-permission",
+    "title": "Notification Permission",
+    "description": "Android 13 (API 33) introduced `POST_NOTIFICATIONS`, a runtime permission that apps must request before they can display non-exempt notifications. New installs on Android 13+ start with notifications off; existing app updates may receive an automatic grant for eligible apps. Request the permission in context—tied to a feature the user is actively enabling—rather than at cold launch, to maximise grant rates and respect user intent.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Notification runtime permission | Android Developers",
+        "url": "https://developer.android.com/develop/ui/views/notifications/notification-permission"
+      },
+      {
+        "type": "Article",
+        "title": "Behavior changes: Apps targeting Android 13 or higher | Android Developers",
+        "url": "https://developer.android.com/about/versions/13/behavior-changes-13"
+      },
+      {
+        "type": "Video",
+        "title": "What's new in Android privacy and security | Google I/O 2023",
+        "url": "https://io.google/2023/program/277c56db-9c85-4298-b2d5-7428869ac1e1/"
+      },
+      {
+        "type": "Article",
+        "title": "I/O 2023: What's new in Android security and privacy | Google Security Blog",
+        "url": "https://security.googleblog.com/2023/05/io-2023-android-security-and-privacy.html"
+      },
+      {
+        "type": "Article",
+        "title": "I/O 2024: What's new in Android security and privacy | Google Security Blog",
+        "url": "https://security.googleblog.com/2024/05/io-2024-whats-new-in-android-security.html"
+      }
+    ]
+  },
+  {
+    "id": "privacy-security/privacy/scoped-storage",
+    "title": "Scoped Storage",
+    "description": "Scoped Storage, enforced from Android 11 (API 30) for apps targeting API 30+, restricts direct filesystem access to external storage. Apps can freely read and write their own app-specific directories (via `getExternalFilesDir()`) and contribute to shared media collections through MediaStore, but they cannot browse arbitrary paths on the device. This model protects user data from background file exfiltration and is the storage foundation all modern Android apps must be built on.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Storage updates in Android 11 | Android Developers",
+        "url": "https://developer.android.com/about/versions/11/privacy/storage"
+      },
+      {
+        "type": "Official",
+        "title": "Data and file storage overview | Android Developers",
+        "url": "https://developer.android.com/training/data-storage"
+      },
+      {
+        "type": "Video",
+        "title": "Preparing for scoped storage (Android Dev Summit '19) | Android Developers",
+        "url": "https://www.youtube.com/watch?v=UnJ3amzJM94"
+      },
+      {
+        "type": "Video",
+        "title": "Storage access with Android 11 | Android Developers",
+        "url": "https://www.youtube.com/watch?v=RjyYCUW-9tY"
+      },
+      {
+        "type": "Video",
+        "title": "What's new in shared storage (Google I/O '19) | Android Developers",
+        "url": "https://www.youtube.com/watch?v=3EtBw5s9iRY"
+      }
+    ]
+  },
+  {
+    "id": "privacy-security/privacy/app-set-id",
+    "title": "App Set ID",
+    "description": "App Set ID is a privacy-friendly, resettable identifier provided by Google Play Services for correlating usage across apps owned by the same developer, without relying on persistent device identifiers like the Advertising ID. It is scoped either per-app or per-developer and is never shared across different developer accounts. Use it for analytics, fraud detection, and frequency capping scenarios where you need cross-app correlation within your own portfolio but must respect user privacy.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Identify developer-owned apps | Identity | Android Developers",
+        "url": "https://developer.android.com/identity/app-set-id"
+      },
+      {
+        "type": "Official",
+        "title": "Best practices for unique identifiers | Identity | Android Developers",
+        "url": "https://developer.android.com/identity/user-data-ids"
+      },
+      {
+        "type": "Article",
+        "title": "I/O 2023: What's new in Android security and privacy | Google Security Blog",
+        "url": "https://security.googleblog.com/2023/05/io-2023-android-security-and-privacy.html"
+      },
+      {
+        "type": "Video",
+        "title": "What's new in Android privacy and security | Google I/O 2023",
+        "url": "https://io.google/2023/program/277c56db-9c85-4298-b2d5-7428869ac1e1/"
+      },
+      {
+        "type": "Official",
+        "title": "Privacy Sandbox on Android overview | Privacy Sandbox",
+        "url": "https://privacysandbox.google.com/overview/android"
+      }
+    ]
+  },
+  {
+    "id": "privacy-security/security/credential-manager-passkeys",
+    "title": "Credential Manager / Passkeys",
+    "description": "Credential Manager is the unified Jetpack API for authenticating users on Android, supporting **passkeys** (FIDO2/WebAuthn), Sign-in with Google, and traditional passwords through a single, consistent UI surface. Passkeys replace passwords with public-key cryptography bound to the device, making phishing attacks impossible. Use Credential Manager for any new authentication flow on Android 9+ as it replaces the deprecated Google Sign-In, One Tap, Smart Lock, and FIDO2 APIs.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "About Credential Manager | Identity | Android Developers",
+        "url": "https://developer.android.com/identity/sign-in/credential-manager"
+      },
+      {
+        "type": "Article",
+        "title": "Passkeys – Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2023/02/bringing-passkeys-to-android-and-chrome.html"
+      },
+      {
+        "type": "Video",
+        "title": "How to reduce reliance on passwords in Android apps with passkey support | Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=36peNZUlgzU"
+      },
+      {
+        "type": "Video",
+        "title": "Learn passkeys for simpler and safer sign-in | Android Developers",
+        "url": "https://www.youtube.com/watch?v=SF8ueIn2Nlc"
+      },
+      {
+        "type": "Official",
+        "title": "Passkeys | Google for Developers",
+        "url": "https://developers.google.com/identity/passkeys"
+      }
+    ]
+  },
+  {
+    "id": "privacy-security/security/biometric-api",
+    "title": "Biometric API",
+    "description": "The Jetpack Biometric library (`androidx.biometric`) provides a single API to authenticate users with fingerprint, face, or device credential (PIN/pattern/password) across all Android versions. It presents the platform-standard `BiometricPrompt` dialog and handles fallbacks automatically. Use it to gate access to sensitive in-app features or to unlock cryptographic keys stored in the Android Keystore, ensuring users are protected even if the device lacks specific biometric hardware.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Show a biometric authentication dialog | Identity | Android Developers",
+        "url": "https://developer.android.com/identity/sign-in/biometric-auth"
+      },
+      {
+        "type": "Official",
+        "title": "Biometric | Jetpack | Android Developers",
+        "url": "https://developer.android.com/jetpack/androidx/releases/biometric"
+      },
+      {
+        "type": "Article",
+        "title": "One Biometric API Over all Android | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2019/10/one-biometric-api-over-all-android.html"
+      },
+      {
+        "type": "Article",
+        "title": "Biometric Authentication on Android — Part 1 | Android Developers Medium",
+        "url": "https://medium.com/androiddevelopers/biometric-authentication-on-android-part-1-264523bce85d"
+      },
+      {
+        "type": "Video",
+        "title": "What's new in Android privacy and security | Google I/O 2023",
+        "url": "https://io.google/2023/program/277c56db-9c85-4298-b2d5-7428869ac1e1/"
+      }
+    ]
+  },
+  {
+    "id": "privacy-security/security/network-security-config",
+    "title": "Network Security Config",
+    "description": "Network Security Config is an XML-based configuration file that lets you customise your app's TLS/SSL behaviour without writing code: pin certificates, trust custom CAs, restrict cleartext traffic, and configure debug-only overrides. From Android 9 (API 28) cleartext HTTP is blocked by default; this config is the recommended way to declare any necessary exceptions. Apply it to all apps that make network requests to ensure traffic is encrypted and certificate validation is strict.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Network security configuration | Security | Android Developers",
+        "url": "https://developer.android.com/privacy-and-security/security-config"
+      },
+      {
+        "type": "Official",
+        "title": "Improve your app's security | Security | Android Developers",
+        "url": "https://developer.android.com/privacy-and-security/security-best-practices"
+      },
+      {
+        "type": "Video",
+        "title": "Network Security Config - Android | YouTube",
+        "url": "https://www.youtube.com/watch?v=oJbw7e79qLk"
+      },
+      {
+        "type": "Video",
+        "title": "Network Security Config - Google Codelab - Android | YouTube",
+        "url": "https://www.youtube.com/watch?v=M5x2jFgKYxg"
+      },
+      {
+        "type": "Article",
+        "title": "I/O 2024: What's new in Android security and privacy | Google Security Blog",
+        "url": "https://security.googleblog.com/2024/05/io-2024-whats-new-in-android-security.html"
+      }
+    ]
+  },
+  {
+    "id": "privacy-security/security/data-safety-play-console",
+    "title": "Data Safety (Play Console)",
+    "description": "The Data Safety section in Play Console is the mandatory disclosure form where developers declare what user data their app collects or shares, whether data is encrypted in transit, and whether users can request deletion. Google displays this information on your Play Store listing, and discrepancies between declared and actual behaviour can result in policy enforcement. Complete it accurately for every app before publishing and update it whenever your data-handling practices change.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Declare your app's data use | Privacy | Android Developers",
+        "url": "https://developer.android.com/privacy-and-security/declare-data-use"
+      },
+      {
+        "type": "Official",
+        "title": "Provide information for Google Play's Data safety section – Play Console Help",
+        "url": "https://support.google.com/googleplay/android-developer/answer/10787469"
+      },
+      {
+        "type": "Video",
+        "title": "Introducing the new Data safety section in Play Console | Android Developers",
+        "url": "https://www.youtube.com/watch?v=pNAS_0IcHtM"
+      },
+      {
+        "type": "Video",
+        "title": "What's new in Android privacy and security | Google I/O 2023",
+        "url": "https://io.google/2023/program/277c56db-9c85-4298-b2d5-7428869ac1e1/"
+      },
+      {
+        "type": "Article",
+        "title": "I/O 2024: What's new in Android security and privacy | Google Security Blog",
+        "url": "https://security.googleblog.com/2024/05/io-2024-whats-new-in-android-security.html"
+      }
+    ]
+  },
+  {
+    "id": "on-device-ai-genai/on-device/aicore",
+    "title": "AICore",
+    "description": "AICore is the Android system service introduced in Android 14 that manages the lifecycle of on-device AI foundation models, including downloading, updating, and serving Gemini Nano. It handles model weights, hardware acceleration selection (Google, MediaTek, Qualcomm NPUs), and input/output safety—so your app does not need to bundle large model files. Access AICore through the ML Kit GenAI APIs or the lower-level AICore developer preview APIs on supported Pixel and partner devices.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Gemini Nano | AI | Android Developers",
+        "url": "https://developer.android.com/ai/gemini-nano"
+      },
+      {
+        "type": "Official",
+        "title": "AICore Developer Preview program | ML Kit | Google for Developers",
+        "url": "https://developers.google.com/ml-kit/genai/aicore-dev-preview"
+      },
+      {
+        "type": "Video",
+        "title": "A walkthrough for Android's on-device GenAI solutions | Spotlight Week | Android Developers",
+        "url": "https://www.youtube.com/watch?v=EpKghZYqVW4"
+      },
+      {
+        "type": "Video",
+        "title": "Gemini Nano on Android: Building with on-device gen AI | Android Developers",
+        "url": "https://www.youtube.com/watch?v=mP9QESmEDls"
+      },
+      {
+        "type": "Article",
+        "title": "Gemini Nano is now available on Android via experimental access | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2024/10/gemini-nano-experimental-access-available-on-android.html"
+      }
+    ]
+  },
+  {
+    "id": "on-device-ai-genai/on-device/gemini-nano",
+    "title": "Gemini Nano",
+    "description": "Gemini Nano is Google's smallest Gemini model, optimised to run entirely on-device on supported Android smartphones. It executes locally with no network round-trip, providing privacy (prompts never leave the device), offline capability, and low latency. AICore manages the model and future updates transparently. Use Gemini Nano via ML Kit GenAI APIs for summarisation, proofreading, smart replies, and other NLU tasks on Pixel 9 series and newer Gemini-capable devices.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Gemini Nano | AI | Android Developers",
+        "url": "https://developer.android.com/ai/gemini-nano"
+      },
+      {
+        "type": "Article",
+        "title": "On-device GenAI APIs as part of ML Kit help you easily build with Gemini Nano | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2025/05/on-device-gen-ai-apis-ml-kit-gemini-nano.html"
+      },
+      {
+        "type": "Video",
+        "title": "Gemini Nano on Android: Building with on-device gen AI | Android Developers",
+        "url": "https://www.youtube.com/watch?v=mP9QESmEDls"
+      },
+      {
+        "type": "Video",
+        "title": "A walkthrough for Android's on-device GenAI solutions | Spotlight Week | Android Developers",
+        "url": "https://www.youtube.com/watch?v=EpKghZYqVW4"
+      },
+      {
+        "type": "Article",
+        "title": "An introduction to privacy and safety for Gemini Nano | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2024/10/introduction-to-privacy-and-safety-gemini-nano.html"
+      }
+    ]
+  },
+  {
+    "id": "on-device-ai-genai/on-device/ml-kit-genai-apis",
+    "title": "ML Kit GenAI APIs",
+    "description": "ML Kit GenAI APIs are high-level, task-oriented interfaces built on top of Gemini Nano via AICore, offering ready-made on-device AI tasks: **Summarization**, **Proofreading**, **Rewriting**, and **Image Description**. They abstract the complexity of prompt engineering and model management, and support both streaming and non-streaming response modes. Use them when you need on-device generative AI without the overhead of managing models directly, on Pixel 9 series and other AICore-enabled devices.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "ML Kit GenAI APIs | Android Developers",
+        "url": "https://developer.android.com/ai/gemini-nano/ml-kit-genai"
+      },
+      {
+        "type": "Official",
+        "title": "Overview of the ML Kit GenAI APIs | Google for Developers",
+        "url": "https://developers.google.com/ml-kit/genai"
+      },
+      {
+        "type": "Video",
+        "title": "A walkthrough for Android's on-device GenAI solutions | Spotlight Week | Android Developers",
+        "url": "https://www.youtube.com/watch?v=EpKghZYqVW4"
+      },
+      {
+        "type": "Video",
+        "title": "Gemini Nano on Android: Building with on-device gen AI | Android Developers",
+        "url": "https://www.youtube.com/watch?v=mP9QESmEDls"
+      },
+      {
+        "type": "Article",
+        "title": "On-device GenAI APIs as part of ML Kit help you easily build with Gemini Nano | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2025/05/on-device-gen-ai-apis-ml-kit-gemini-nano.html"
+      }
+    ]
+  },
+  {
+    "id": "on-device-ai-genai/on-device/ml-kit-vision-text-translate",
+    "title": "ML Kit (Vision/Text/Translate)",
+    "description": "ML Kit provides a suite of production-ready, on-device machine learning APIs for common mobile tasks: **Vision** (text recognition, barcode scanning, face detection, object detection, pose estimation), **Natural Language** (language identification, translation across 50+ languages, smart reply). Models run fully on-device, requiring no internet connection after optional model download. Integrate specific ML Kit APIs when your app needs reliable, privacy-safe ML inference without managing TFLite models manually.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "ML Kit | Google for Developers",
+        "url": "https://developers.google.com/ml-kit/guides"
+      },
+      {
+        "type": "Official",
+        "title": "Translate text with ML Kit on Android | Google for Developers",
+        "url": "https://developers.google.com/ml-kit/language/translation/android"
+      },
+      {
+        "type": "Video",
+        "title": "Easy on-device Machine Learning with MediaPipe | Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=yOP_FY2KTm8"
+      },
+      {
+        "type": "Repo",
+        "title": "googlesamples/mlkit | GitHub",
+        "url": "https://github.com/googlesamples/mlkit"
+      },
+      {
+        "type": "Article",
+        "title": "Welcome to AI on Android Spotlight Week | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2024/09/welcome-to-ai-on-android-spotlight-week.html"
+      }
+    ]
+  },
+  {
+    "id": "on-device-ai-genai/on-device/litert-tflite",
+    "title": "LiteRT (TFLite)",
+    "description": "LiteRT (formerly TensorFlow Lite) is Google's cross-platform runtime for deploying custom ML models on-device across Android, iOS, desktop, and embedded systems. It supports models from TensorFlow, PyTorch, JAX, and Keras converted to the `.tflite` flatbuffer format, and accelerates inference via GPU, DSP, and NPU delegates. Use LiteRT when you need to run a custom-trained model (e.g., a fine-tuned image classifier or domain-specific NLP model) with maximum hardware acceleration on Android.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "LiteRT: High-Performance On-Device ML Framework | Google AI Edge",
+        "url": "https://ai.google.dev/edge/litert"
+      },
+      {
+        "type": "Official",
+        "title": "LiteRT for Android | Google AI Edge",
+        "url": "https://ai.google.dev/edge/litert/android"
+      },
+      {
+        "type": "Repo",
+        "title": "google-ai-edge/LiteRT | GitHub",
+        "url": "https://github.com/google-ai-edge/LiteRT"
+      },
+      {
+        "type": "Video",
+        "title": "A walkthrough for Android's on-device GenAI solutions | Spotlight Week | Android Developers",
+        "url": "https://www.youtube.com/watch?v=EpKghZYqVW4"
+      },
+      {
+        "type": "Article",
+        "title": "LiteRT: The Universal Framework for On-Device AI | Google Developers Blog",
+        "url": "https://developers.googleblog.com/litert-the-universal-framework-for-on-device-ai/"
+      }
+    ]
+  },
+  {
+    "id": "on-device-ai-genai/on-device/mediapipe-tasks",
+    "title": "MediaPipe Tasks",
+    "description": "MediaPipe Tasks is the high-level API layer of the MediaPipe Solutions suite, providing pre-built, cross-platform task libraries for vision (object detection, image segmentation, hand/face/pose landmark detection), text (text classification, language detection), and audio (audio classification). Each task bundles a curated model with a clean API, handling pre/post-processing internally. Use MediaPipe Tasks when you need streaming, real-time ML on live camera or audio feeds without assembling a custom LiteRT pipeline.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "MediaPipe Tasks | Google AI Edge",
+        "url": "https://ai.google.dev/edge/mediapipe/solutions/tasks"
+      },
+      {
+        "type": "Official",
+        "title": "Setup guide for Android | MediaPipe | Google AI Edge",
+        "url": "https://ai.google.dev/edge/mediapipe/solutions/setup_android"
+      },
+      {
+        "type": "Video",
+        "title": "Easy on-device Machine Learning with MediaPipe | Google I/O 2023",
+        "url": "https://www.youtube.com/watch?v=yOP_FY2KTm8"
+      },
+      {
+        "type": "Repo",
+        "title": "google-ai-edge/mediapipe | GitHub",
+        "url": "https://github.com/google-ai-edge/mediapipe"
+      },
+      {
+        "type": "Article",
+        "title": "Introducing MediaPipe Solutions for On-Device Machine Learning | Google Developers Blog",
+        "url": "https://developers.googleblog.com/introducing-mediapipe-solutions-for-on-device-machine-learning/"
+      }
+    ]
+  },
+  {
+    "id": "on-device-ai-genai/cloud/firebase-ai-logic",
+    "title": "Firebase AI Logic",
+    "description": "Firebase AI Logic is Firebase's client SDK and proxy layer for calling Google's Gemini API (both Gemini Developer API and Vertex AI Gemini API) directly from Android, iOS, Flutter, and web apps without a backend server. It integrates with **Firebase App Check** to protect your API keys from abuse, and supports hybrid inference that seamlessly falls back from on-device to cloud. Use it when you want fast, secure access to Gemini cloud models with Firebase's mobile-first security and configuration tooling.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Gemini API using Firebase AI Logic | Firebase",
+        "url": "https://firebase.google.com/docs/ai-logic"
+      },
+      {
+        "type": "Official",
+        "title": "Get started with the Gemini API using the Firebase AI Logic SDKs | Firebase",
+        "url": "https://firebase.google.com/docs/ai-logic/get-started"
+      },
+      {
+        "type": "Video",
+        "title": "Gemini Nano on Android: Building with on-device gen AI | Android Developers",
+        "url": "https://www.youtube.com/watch?v=mP9QESmEDls"
+      },
+      {
+        "type": "Article",
+        "title": "Google I/O 2024 recap: Making AI accessible and helpful for every developer | Google Developers Blog",
+        "url": "https://developers.googleblog.com/google-io-2024-recap-making-ai-accessible-and-helpful-for-every-developer/"
+      },
+      {
+        "type": "Official",
+        "title": "Firebase AI Logic sessions | Google I/O 2024",
+        "url": "https://io.google/2024/explore/?q=firebase"
+      }
+    ]
+  },
+  {
+    "id": "on-device-ai-genai/cloud/vertex-ai-in-firebase",
+    "title": "Vertex AI in Firebase",
+    "description": "Vertex AI in Firebase exposes Google Cloud's Vertex AI Gemini API through the Firebase mobile SDK (`firebase-vertexai`), bringing enterprise-grade scalability, data-privacy guarantees (prompts are never used for model training), and Vertex AI's model lineup directly into Android and other client apps. It is generally available and production-ready, backed by Google Cloud SLAs. Choose it over Firebase AI Logic when you need Vertex AI's advanced models, regions, and compliance guarantees for production workloads.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Gemini API using Vertex AI in Firebase | Firebase",
+        "url": "https://firebase.google.com/docs/vertex-ai"
+      },
+      {
+        "type": "Official",
+        "title": "Vertex AI Gemini API | Android Developers",
+        "url": "https://developer.android.com/ai/vertex-ai-firebase"
+      },
+      {
+        "type": "Video",
+        "title": "A walkthrough for Android's on-device GenAI solutions | Spotlight Week | Android Developers",
+        "url": "https://www.youtube.com/watch?v=EpKghZYqVW4"
+      },
+      {
+        "type": "Article",
+        "title": "Google I/O 2024 recap: Making AI accessible and helpful for every developer | Google Developers Blog",
+        "url": "https://developers.googleblog.com/google-io-2024-recap-making-ai-accessible-and-helpful-for-every-developer/"
+      },
+      {
+        "type": "Official",
+        "title": "Firebase AI Logic sessions | Google I/O 2024",
+        "url": "https://io.google/2024/explore/?q=firebase"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp/expect-actual",
+    "title": "expect / actual",
+    "description": "The `expect`/`actual` mechanism is Kotlin Multiplatform's compiler-enforced way to declare a platform-agnostic API in `commonMain` and supply platform-specific implementations in each target source set. An `expect` declaration (function, class, object, etc.) carries no implementation body; each platform provides its matching `actual` declaration. The compiler enforces that every `expect` has a corresponding `actual` for every configured target, making it the primary tool for wrapping platform-native APIs cleanly.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Expected and actual declarations | Kotlin Multiplatform Documentation",
+        "url": "https://kotlinlang.org/docs/multiplatform-expect-actual.html"
+      },
+      {
+        "type": "Article",
+        "title": "\"Expect Actual\" Mechanism in Kotlin Multiplatform Explained | ProAndroidDev",
+        "url": "https://proandroiddev.com/expect-actual-mechanism-in-kotlin-multiplatform-explained-a91e7d85af4e"
+      },
+      {
+        "type": "Video",
+        "title": "KotlinConf 2024 full playlist | Kotlin by JetBrains",
+        "url": "https://www.youtube.com/playlist?list=PLlFc5cFwUnmyXbBGEiwv-CanF2bJyRFiT"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Kotlin Multiplatform Developer Roadmap | skydoves/kmp-developer-roadmap",
+        "url": "https://github.com/skydoves/kmp-developer-roadmap"
+      },
+      {
+        "type": "Course",
+        "title": "Level Up with Kotlin Multiplatform | JetBrains Learning Journey",
+        "url": "https://lp.jetbrains.com/kmp-level-up/"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp/commonmain",
+    "title": "commonMain",
+    "description": "`commonMain` is the default shared source set in a KMP project where all code that compiles to every configured target lives. Business logic, data models, use cases, and any multiplatform library calls go here. The Kotlin compiler merges `commonMain` with each platform source set during compilation, so declarations in `commonMain` are available everywhere. Keeping as much logic as possible in `commonMain` is the central goal of a KMP architecture—it maximises code reuse across Android, iOS, desktop, and web.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "The basics of Kotlin Multiplatform project structure | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/multiplatform-discover-project.html"
+      },
+      {
+        "type": "Official",
+        "title": "Create your Kotlin Multiplatform app | Kotlin Multiplatform Documentation",
+        "url": "https://kotlinlang.org/docs/multiplatform/multiplatform-create-first-app.html"
+      },
+      {
+        "type": "Video",
+        "title": "KotlinConf 2024 full playlist | Kotlin by JetBrains",
+        "url": "https://www.youtube.com/playlist?list=PLlFc5cFwUnmyXbBGEiwv-CanF2bJyRFiT"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Kotlin Multiplatform Developer Roadmap | skydoves/kmp-developer-roadmap",
+        "url": "https://github.com/skydoves/kmp-developer-roadmap"
+      },
+      {
+        "type": "Course",
+        "title": "Level Up with Kotlin Multiplatform | JetBrains Learning Journey",
+        "url": "https://lp.jetbrains.com/kmp-level-up/"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp/androidmain",
+    "title": "androidMain",
+    "description": "`androidMain` is the Android-specific source set in a KMP project where you provide `actual` implementations of `expect` declarations and write any code that depends on the Android SDK. Android Jetpack libraries, Context-dependent APIs, and Android-only dependencies all belong here. Code in `androidMain` is compiled only for the Android target, keeping the shared module free of Android-specific imports while still letting you access the full Android platform when needed.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "The basics of Kotlin Multiplatform project structure | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/multiplatform-discover-project.html"
+      },
+      {
+        "type": "Official",
+        "title": "Use platform-specific APIs | Kotlin Multiplatform Documentation",
+        "url": "https://kotlinlang.org/docs/multiplatform/multiplatform-connect-to-apis.html"
+      },
+      {
+        "type": "Video",
+        "title": "KotlinConf 2024 full playlist | Kotlin by JetBrains",
+        "url": "https://www.youtube.com/playlist?list=PLlFc5cFwUnmyXbBGEiwv-CanF2bJyRFiT"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Kotlin Multiplatform Developer Roadmap | skydoves/kmp-developer-roadmap",
+        "url": "https://github.com/skydoves/kmp-developer-roadmap"
+      },
+      {
+        "type": "Article",
+        "title": "Google @ KotlinConf 2024: A Look Inside Multiplatform Development with KMP | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2024/05/google-kotlinconf-2024-look-inside.html"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp/iosmain",
+    "title": "iosMain",
+    "description": "`iosMain` is the iOS-specific source set that supplies `actual` implementations of `expect` declarations using Kotlin/Native's Swift/Objective-C interop layer. It compiles to a native iOS framework and has access to Apple's SDK through `kotlinx.cinterop` and the generated Objective-C bindings. Anything that must call CoreLocation, UIKit, or another Apple framework lives here. A properly structured `iosMain` is what enables your shared KMP library to produce a first-class native iOS binary.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Adding iOS dependencies | Kotlin Multiplatform Documentation",
+        "url": "https://kotlinlang.org/docs/multiplatform/multiplatform-ios-dependencies.html"
+      },
+      {
+        "type": "Official",
+        "title": "Interoperability with Swift/Objective-C | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/native-objc-interop.html"
+      },
+      {
+        "type": "Video",
+        "title": "Evolving Compose Multiplatform on iOS and Beyond | KotlinConf 2024",
+        "url": "https://www.youtube.com/watch?v=iIk755YpQlI"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Kotlin Multiplatform Developer Roadmap | skydoves/kmp-developer-roadmap",
+        "url": "https://github.com/skydoves/kmp-developer-roadmap"
+      },
+      {
+        "type": "Article",
+        "title": "Google @ KotlinConf 2024: A Look Inside Multiplatform Development with KMP | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2024/05/google-kotlinconf-2024-look-inside.html"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp/compose-multiplatform",
+    "title": "Compose Multiplatform",
+    "description": "Compose Multiplatform is JetBrains' framework for sharing **Jetpack Compose UI** across Android, iOS (stable since 1.8.0), desktop (Windows/macOS/Linux), and web (Wasm/Beta). It reuses the same composable functions, state management, and animations across platforms, dramatically reducing UI duplication in KMP projects. Use it when you want a single Compose codebase for your UI layer; for pure Android projects, standard Jetpack Compose remains the recommendation.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Get started with Compose Multiplatform | Kotlin Multiplatform Documentation",
+        "url": "https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform.html"
+      },
+      {
+        "type": "Repo",
+        "title": "JetBrains/compose-multiplatform | GitHub",
+        "url": "https://github.com/JetBrains/compose-multiplatform"
+      },
+      {
+        "type": "Video",
+        "title": "Evolving Compose Multiplatform on iOS and Beyond | KotlinConf 2024",
+        "url": "https://www.youtube.com/watch?v=iIk755YpQlI"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Kotlin Multiplatform Developer Roadmap | skydoves/kmp-developer-roadmap",
+        "url": "https://github.com/skydoves/kmp-developer-roadmap"
+      },
+      {
+        "type": "Course",
+        "title": "Level Up with Kotlin Multiplatform | JetBrains Learning Journey",
+        "url": "https://lp.jetbrains.com/kmp-level-up/"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/ktor",
+    "title": "Ktor",
+    "description": "Ktor is JetBrains' asynchronous HTTP client (and server) framework written in Kotlin, designed from the ground up for KMP. It runs on JVM, Android, iOS (Kotlin/Native), JS, and WASM using platform-appropriate engines (OkHttp on Android, Darwin on iOS, etc.) while sharing request configuration, serialisation, and plugin setup in `commonMain`. Use Ktor as the standard KMP networking layer whenever your shared module needs to make HTTP calls across platforms.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Creating a cross-platform mobile application | Ktor Documentation",
+        "url": "https://ktor.io/docs/client-create-multiplatform-application.html"
+      },
+      {
+        "type": "Official",
+        "title": "Ktor: Build Asynchronous Servers and Clients in Kotlin",
+        "url": "https://ktor.io/"
+      },
+      {
+        "type": "Video",
+        "title": "Ktor for Networking in Kotlin Multiplatform Mobile projects | YouTube",
+        "url": "https://www.youtube.com/watch?v=_Q62iJoNOfg"
+      },
+      {
+        "type": "Repo",
+        "title": "ktorio/ktor | GitHub",
+        "url": "https://github.com/ktorio/ktor"
+      },
+      {
+        "type": "Course",
+        "title": "Level Up with Kotlin Multiplatform | JetBrains Learning Journey",
+        "url": "https://lp.jetbrains.com/kmp-level-up/"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/sqldelight",
+    "title": "SQLDelight",
+    "description": "SQLDelight generates fully type-safe Kotlin APIs from plain `.sq` SQL files, verified at compile time. It supports SQLite on Android, iOS, JVM, and JS through platform-specific driver implementations, making it the go-to SQL persistence library for KMP. SQL statements are written once in shared code and exposed as suspend-friendly Kotlin functions with full IDE support. Use SQLDelight when you need relational persistence in a KMP project and want compile-time SQL correctness guarantees.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Overview - SQLDelight",
+        "url": "https://sqldelight.github.io/sqldelight/2.0.2/multiplatform_sqlite/"
+      },
+      {
+        "type": "Repo",
+        "title": "sqldelight/sqldelight | GitHub",
+        "url": "https://github.com/sqldelight/sqldelight"
+      },
+      {
+        "type": "Video",
+        "title": "KotlinConf 2018 – A Multiplatform Delight by Jake Wharton and Alec Strong | Kotlin",
+        "url": "https://www.youtube.com/watch?v=WkIry790PHI"
+      },
+      {
+        "type": "Video",
+        "title": "SQLite/SQLDelight + Kotlin Multiplatform | YouTube",
+        "url": "https://www.youtube.com/watch?v=_oujlTE0LiY"
+      },
+      {
+        "type": "Course",
+        "title": "Level Up with Kotlin Multiplatform | JetBrains Learning Journey",
+        "url": "https://lp.jetbrains.com/kmp-level-up/"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/kotlinx-coroutines",
+    "title": "kotlinx.coroutines",
+    "description": "`kotlinx.coroutines` is the official Kotlin library for structured concurrency, providing `Flow`, `Channel`, coroutine scopes, dispatchers, and synchronisation primitives. It is fully multiplatform—supporting JVM, Android, iOS/Native, JS, and WASM—and is the standard async runtime for all KMP projects. In `commonMain` you use platform-agnostic dispatchers (`Dispatchers.Default`, `Dispatchers.IO` on JVM/Android) and `Flow` for reactive streams; platform modules provide native integration where needed.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Concurrency and coroutines | Kotlin Multiplatform Documentation",
+        "url": "https://kotlinlang.org/docs/multiplatform-mobile-concurrency-and-coroutines.html"
+      },
+      {
+        "type": "Repo",
+        "title": "Kotlin/kotlinx.coroutines | GitHub",
+        "url": "https://github.com/Kotlin/kotlinx.coroutines"
+      },
+      {
+        "type": "Video",
+        "title": "KotlinConf 2024 full playlist | Kotlin by JetBrains",
+        "url": "https://www.youtube.com/playlist?list=PLlFc5cFwUnmyXbBGEiwv-CanF2bJyRFiT"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Kotlin Multiplatform Developer Roadmap | skydoves/kmp-developer-roadmap",
+        "url": "https://github.com/skydoves/kmp-developer-roadmap"
+      },
+      {
+        "type": "Course",
+        "title": "Level Up with Kotlin Multiplatform | JetBrains Learning Journey",
+        "url": "https://lp.jetbrains.com/kmp-level-up/"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/kotlinx-serialization",
+    "title": "kotlinx.serialization",
+    "description": "`kotlinx.serialization` is Kotlin's official multiplatform serialisation framework. It is a **compiler plugin + runtime library** combination: you annotate classes with `@Serializable` and the compiler generates efficient serialisers at compile time with no reflection. It supports JSON, CBOR, ProtoBuf, and other formats, and runs on every KMP target. Use it in `commonMain` for parsing API responses (especially with Ktor), persisting data, or any format conversion across platforms.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Serialization | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/serialization.html"
+      },
+      {
+        "type": "Repo",
+        "title": "Kotlin/kotlinx.serialization | GitHub",
+        "url": "https://github.com/Kotlin/kotlinx.serialization"
+      },
+      {
+        "type": "Video",
+        "title": "KotlinConf 2024 full playlist | Kotlin by JetBrains",
+        "url": "https://www.youtube.com/playlist?list=PLlFc5cFwUnmyXbBGEiwv-CanF2bJyRFiT"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Kotlin Multiplatform Developer Roadmap | skydoves/kmp-developer-roadmap",
+        "url": "https://github.com/skydoves/kmp-developer-roadmap"
+      },
+      {
+        "type": "Course",
+        "title": "Level Up with Kotlin Multiplatform | JetBrains Learning Journey",
+        "url": "https://lp.jetbrains.com/kmp-level-up/"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/koin",
+    "title": "Koin",
+    "description": "Koin is a lightweight, pragmatic dependency injection framework for Kotlin and KMP that requires no code generation or reflection—modules are declared in a DSL and verified at compile time via the Koin Compiler Plugin. It supports Android, iOS, desktop, and Compose Multiplatform targets with platform-specific integration (e.g., `KoinAndroidContext`, `koinViewModel`). Use Koin when you need DI in a KMP project without the annotation-processing overhead of Dagger/Hilt, which do not run in `commonMain`.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Kotlin Multiplatform Dependency Injection | Koin",
+        "url": "https://insert-koin.io/docs/4.0/reference/koin-mp/kmp/"
+      },
+      {
+        "type": "Official",
+        "title": "Koin - The Kotlin Dependency Injection Framework",
+        "url": "https://insert-koin.io/"
+      },
+      {
+        "type": "Video",
+        "title": "Android, Compose, Multiplatform & Server – Inject them all with Koin | KotlinConf 2024",
+        "url": "https://www.youtube.com/watch?v=ih_ChWaCFcU"
+      },
+      {
+        "type": "Repo",
+        "title": "InsertKoinIO/koin | GitHub",
+        "url": "https://github.com/InsertKoinIO/koin"
+      },
+      {
+        "type": "Course",
+        "title": "Level Up with Kotlin Multiplatform | JetBrains Learning Journey",
+        "url": "https://lp.jetbrains.com/kmp-level-up/"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/decompose",
+    "title": "Decompose",
+    "description": "Decompose is a KMP library for component-based architecture with built-in navigation and lifecycle management. It organises UI into a tree of `ComponentContext`-aware components, each with its own lifecycle, back-press handling, and state retention—all in shared Kotlin code. It supports pluggable UI renderers: Jetpack Compose, Compose Multiplatform, SwiftUI, and JS React. Use Decompose when you want to share not just business logic but also navigation logic and component lifecycle across all KMP targets.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Overview - Decompose",
+        "url": "https://arkivanov.github.io/Decompose/"
+      },
+      {
+        "type": "Repo",
+        "title": "arkivanov/Decompose | GitHub",
+        "url": "https://github.com/arkivanov/Decompose"
+      },
+      {
+        "type": "Video",
+        "title": "Shared Navigation on Kotlin Multiplatform with Decompose (KMP) | YouTube",
+        "url": "https://www.youtube.com/watch?v=g4XSWQ7QT8g"
+      },
+      {
+        "type": "Video",
+        "title": "Talking Kotlin #95 – MVIKotlin and Decompose with Arkadii Ivanov | Kotlin by JetBrains",
+        "url": "https://www.youtube.com/watch?v=pjcUBQwcdfo"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Kotlin Multiplatform Developer Roadmap | skydoves/kmp-developer-roadmap",
+        "url": "https://github.com/skydoves/kmp-developer-roadmap"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/voyager",
+    "title": "Voyager",
+    "description": "Voyager is a pragmatic navigation library purpose-built for Compose Multiplatform. It uses a `Screen` abstraction with a stack-based `Navigator`, and supports linear, tab, bottom-sheet, and nested navigation patterns out of the box. `ScreenModel`—its equivalent of ViewModel—integrates with Koin, Kodein, and Hilt for DI. Use Voyager when you want a straightforward, Compose-idiomatic navigation solution that works identically on Android, iOS, desktop, and web without platform-specific wiring.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Voyager – A pragmatic navigation library for Compose Multiplatform",
+        "url": "https://voyager.adriel.cafe/"
+      },
+      {
+        "type": "Repo",
+        "title": "adrielcafe/voyager | GitHub",
+        "url": "https://github.com/adrielcafe/voyager"
+      },
+      {
+        "type": "Video",
+        "title": "Meet Voyager: A Kotlin Compose Multiplatform Navigation Solution | YouTube",
+        "url": "https://www.youtube.com/watch?v=Aww-h7ygo2k"
+      },
+      {
+        "type": "Video",
+        "title": "Voyager: Navigation Solution for Compose Multiplatform – iOS and Android | YouTube",
+        "url": "https://www.youtube.com/watch?v=7Xv38k4cCMc"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Kotlin Multiplatform Developer Roadmap | skydoves/kmp-developer-roadmap",
+        "url": "https://github.com/skydoves/kmp-developer-roadmap"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/coil-3",
+    "title": "Coil 3",
+    "description": "Coil 3 is a Kotlin-first image loading library that is now a full **Compose Multiplatform library**, supporting Android, iOS, JVM, JS, and WASM. It provides the familiar `AsyncImage` composable and handles memory/disk caching, request cancellation, and image downsampling across all targets. On KMP it uses Ktor instead of OkHttp for network fetching. Upgrade from Coil 2 (Maven group `io.coil-kt.coil3`) when adding iOS or desktop targets to your Compose Multiplatform project.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Coil – Image loading for Android and Compose Multiplatform",
+        "url": "https://coil-kt.github.io/coil/"
+      },
+      {
+        "type": "Video",
+        "title": "Upgrading to Coil 3 for Compose Multiplatform | YouTube",
+        "url": "https://www.youtube.com/watch?v=iRlfJcnLFF8"
+      },
+      {
+        "type": "Repo",
+        "title": "coil-kt/coil | GitHub",
+        "url": "https://github.com/coil-kt/coil"
+      },
+      {
+        "type": "Article",
+        "title": "Coil 3.0: Image loading for Compose Multiplatform | Colin White's Blog",
+        "url": "https://colinwhite.me/post/coil_3_release"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Kotlin Multiplatform Developer Roadmap | skydoves/kmp-developer-roadmap",
+        "url": "https://github.com/skydoves/kmp-developer-roadmap"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/room-kmp",
+    "title": "Room KMP",
+    "description": "Room 2.7+ brings the full Room database API—entities, DAOs, migrations, and `Flow`-based reactive queries—to Kotlin Multiplatform, adding iOS and JVM targets alongside Android. The KMP version uses the `androidx.sqlite` driver APIs (also KMP-compatible) and enforces `suspend` functions for DAO methods on non-Android targets. Room 3.0 (in development) further expands KMP support to JS and WASM. Use Room KMP when you want the familiar Room API with compile-time SQL verification in a shared KMP module.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Set up Room Database for KMP | Android Developers",
+        "url": "https://developer.android.com/kotlin/multiplatform/room"
+      },
+      {
+        "type": "Official",
+        "title": "Migrate existing apps to Room KMP | Android Developers",
+        "url": "https://developer.android.com/codelabs/kmp-migrate-room"
+      },
+      {
+        "type": "Video",
+        "title": "KotlinConf 2024 full playlist | Kotlin by JetBrains",
+        "url": "https://www.youtube.com/playlist?list=PLlFc5cFwUnmyXbBGEiwv-CanF2bJyRFiT"
+      },
+      {
+        "type": "Article",
+        "title": "Google @ KotlinConf 2024: A Look Inside Multiplatform Development with KMP | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2024/05/google-kotlinconf-2024-look-inside.html"
+      },
+      {
+        "type": "Article",
+        "title": "Android Support for Kotlin Multiplatform (KMP) | Android Developers Blog",
+        "url": "https://android-developers.googleblog.com/2024/05/android-support-for-kotlin-multiplatform-to-share-business-logic-across-mobile-web-server-desktop.html"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/ios-interop/cinterop",
+    "title": "cinterop",
+    "description": "`cinterop` is the Kotlin/Native tool that generates Kotlin bindings for C and Objective-C libraries, enabling `iosMain` (and other Native source sets) to call Apple platform APIs and third-party native libraries. You provide a `.def` file describing the headers and library, and `cinterop` produces a Kotlin API you can call naturally. It underpins all Kotlin-to-Apple-SDK communication in KMP—every iOS framework call you make from Kotlin ultimately goes through cinterop-generated bindings.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Interoperability with C | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/native-c-interop.html"
+      },
+      {
+        "type": "Official",
+        "title": "Adding iOS dependencies | Kotlin Multiplatform Documentation",
+        "url": "https://kotlinlang.org/docs/multiplatform/multiplatform-ios-dependencies.html"
+      },
+      {
+        "type": "Video",
+        "title": "From Swift to Kotlin: A Complete Guide to Cinterop in a KMP Project | YouTube",
+        "url": "https://www.youtube.com/watch?v=yVOrbjrfC7M"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Kotlin Multiplatform Developer Roadmap | skydoves/kmp-developer-roadmap",
+        "url": "https://github.com/skydoves/kmp-developer-roadmap"
+      },
+      {
+        "type": "Course",
+        "title": "Level Up with Kotlin Multiplatform | JetBrains Learning Journey",
+        "url": "https://lp.jetbrains.com/kmp-level-up/"
+      }
+    ]
+  },
+  {
+    "id": "kotlin-multiplatform/ios-interop/swift-export",
+    "title": "Swift Export",
+    "description": "Swift Export is an experimental Kotlin/Native feature (available by default from Kotlin 2.2.20) that generates idiomatic Swift APIs from Kotlin Multiplatform code, replacing the Objective-C header bridge with native Swift types, generics, and async/await. Each Kotlin module is exported as a separate Swift module, preserving package structure. It is not yet production-ready (stable release targeted for 2026), but use it in early adoption projects that need first-class Swift interoperability without the impedance mismatch of Objective-C headers.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Interoperability with Swift using Swift export | Kotlin Documentation",
+        "url": "https://kotlinlang.org/docs/native-swift-export.html"
+      },
+      {
+        "type": "Article",
+        "title": "Kotlin Multiplatform Development Roadmap for 2025 | The Kotlin Blog",
+        "url": "https://blog.jetbrains.com/kotlin/2024/10/kotlin-multiplatform-development-roadmap-for-2025/"
+      },
+      {
+        "type": "Video",
+        "title": "KotlinConf 2024 full playlist | Kotlin by JetBrains",
+        "url": "https://www.youtube.com/playlist?list=PLlFc5cFwUnmyXbBGEiwv-CanF2bJyRFiT"
+      },
+      {
+        "type": "Article",
+        "title": "What's Next for Kotlin Multiplatform and Compose Multiplatform – August 2025 Update | The Kotlin Blog",
+        "url": "https://blog.jetbrains.com/kotlin/2025/08/kmp-roadmap-aug-2025/"
+      },
+      {
+        "type": "Roadmap",
+        "title": "Kotlin Multiplatform Developer Roadmap | skydoves/kmp-developer-roadmap",
+        "url": "https://github.com/skydoves/kmp-developer-roadmap"
+      }
+    ]
+  }
+]

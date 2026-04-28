@@ -1,0 +1,206 @@
+[
+  {
+    "id": "privacy-security/privacy/privacy-sandbox-on-android",
+    "title": "Privacy Sandbox on Android",
+    "sectionTitle": "Privacy & Security",
+    "groupLabel": "Privacy"
+  },
+  {
+    "id": "privacy-security/privacy/photo-picker",
+    "title": "Photo Picker",
+    "sectionTitle": "Privacy & Security",
+    "groupLabel": "Privacy"
+  },
+  {
+    "id": "privacy-security/privacy/granular-media-permissions",
+    "title": "Granular Media Permissions",
+    "sectionTitle": "Privacy & Security",
+    "groupLabel": "Privacy"
+  },
+  {
+    "id": "privacy-security/privacy/notification-permission",
+    "title": "Notification Permission",
+    "sectionTitle": "Privacy & Security",
+    "groupLabel": "Privacy"
+  },
+  {
+    "id": "privacy-security/privacy/scoped-storage",
+    "title": "Scoped Storage",
+    "sectionTitle": "Privacy & Security",
+    "groupLabel": "Privacy"
+  },
+  {
+    "id": "privacy-security/privacy/app-set-id",
+    "title": "App Set ID",
+    "sectionTitle": "Privacy & Security",
+    "groupLabel": "Privacy"
+  },
+  {
+    "id": "privacy-security/security/credential-manager-passkeys",
+    "title": "Credential Manager / Passkeys",
+    "sectionTitle": "Privacy & Security",
+    "groupLabel": "Security"
+  },
+  {
+    "id": "privacy-security/security/biometric-api",
+    "title": "Biometric API",
+    "sectionTitle": "Privacy & Security",
+    "groupLabel": "Security"
+  },
+  {
+    "id": "privacy-security/security/network-security-config",
+    "title": "Network Security Config",
+    "sectionTitle": "Privacy & Security",
+    "groupLabel": "Security"
+  },
+  {
+    "id": "privacy-security/security/data-safety-play-console",
+    "title": "Data Safety (Play Console)",
+    "sectionTitle": "Privacy & Security",
+    "groupLabel": "Security"
+  },
+  {
+    "id": "on-device-ai-genai/on-device/aicore",
+    "title": "AICore",
+    "sectionTitle": "On-Device AI / GenAI",
+    "groupLabel": "On-device"
+  },
+  {
+    "id": "on-device-ai-genai/on-device/gemini-nano",
+    "title": "Gemini Nano",
+    "sectionTitle": "On-Device AI / GenAI",
+    "groupLabel": "On-device"
+  },
+  {
+    "id": "on-device-ai-genai/on-device/ml-kit-genai-apis",
+    "title": "ML Kit GenAI APIs",
+    "sectionTitle": "On-Device AI / GenAI",
+    "groupLabel": "On-device"
+  },
+  {
+    "id": "on-device-ai-genai/on-device/ml-kit-vision-text-translate",
+    "title": "ML Kit (Vision/Text/Translate)",
+    "sectionTitle": "On-Device AI / GenAI",
+    "groupLabel": "On-device"
+  },
+  {
+    "id": "on-device-ai-genai/on-device/litert-tflite",
+    "title": "LiteRT (TFLite)",
+    "sectionTitle": "On-Device AI / GenAI",
+    "groupLabel": "On-device"
+  },
+  {
+    "id": "on-device-ai-genai/on-device/mediapipe-tasks",
+    "title": "MediaPipe Tasks",
+    "sectionTitle": "On-Device AI / GenAI",
+    "groupLabel": "On-device"
+  },
+  {
+    "id": "on-device-ai-genai/cloud/firebase-ai-logic",
+    "title": "Firebase AI Logic",
+    "sectionTitle": "On-Device AI / GenAI",
+    "groupLabel": "Cloud"
+  },
+  {
+    "id": "on-device-ai-genai/cloud/vertex-ai-in-firebase",
+    "title": "Vertex AI in Firebase",
+    "sectionTitle": "On-Device AI / GenAI",
+    "groupLabel": "Cloud"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp/expect-actual",
+    "title": "expect / actual",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp/commonmain",
+    "title": "commonMain",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp/androidmain",
+    "title": "androidMain",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp/iosmain",
+    "title": "iosMain",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp/compose-multiplatform",
+    "title": "Compose Multiplatform",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/ktor",
+    "title": "Ktor",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP Libraries"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/sqldelight",
+    "title": "SQLDelight",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP Libraries"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/kotlinx-coroutines",
+    "title": "kotlinx.coroutines",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP Libraries"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/kotlinx-serialization",
+    "title": "kotlinx.serialization",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP Libraries"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/koin",
+    "title": "Koin",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP Libraries"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/decompose",
+    "title": "Decompose",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP Libraries"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/voyager",
+    "title": "Voyager",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP Libraries"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/coil-3",
+    "title": "Coil 3",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP Libraries"
+  },
+  {
+    "id": "kotlin-multiplatform/kmp-libraries/room-kmp",
+    "title": "Room KMP",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "KMP Libraries"
+  },
+  {
+    "id": "kotlin-multiplatform/ios-interop/cinterop",
+    "title": "cinterop",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "iOS Interop"
+  },
+  {
+    "id": "kotlin-multiplatform/ios-interop/swift-export",
+    "title": "Swift Export",
+    "sectionTitle": "Kotlin Multiplatform",
+    "groupLabel": "iOS Interop"
+  }
+]

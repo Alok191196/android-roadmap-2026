@@ -1,0 +1,374 @@
+[
+  {
+    "id": "compose-ui/layout/column",
+    "title": "Column",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Layout"
+  },
+  {
+    "id": "compose-ui/layout/row",
+    "title": "Row",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Layout"
+  },
+  {
+    "id": "compose-ui/layout/box",
+    "title": "Box",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Layout"
+  },
+  {
+    "id": "compose-ui/layout/constraintlayout",
+    "title": "ConstraintLayout",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Layout"
+  },
+  {
+    "id": "compose-ui/layout/flowrow-flowcolumn",
+    "title": "FlowRow / FlowColumn",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Layout"
+  },
+  {
+    "id": "compose-ui/layout/subcomposelayout",
+    "title": "SubcomposeLayout",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Layout"
+  },
+  {
+    "id": "compose-ui/layout/lookaheadlayout",
+    "title": "LookaheadLayout",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Layout"
+  },
+  {
+    "id": "compose-ui/layout/custom-layout",
+    "title": "Custom Layout",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Layout"
+  },
+  {
+    "id": "compose-ui/lists/lazycolumn",
+    "title": "LazyColumn",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Lists"
+  },
+  {
+    "id": "compose-ui/lists/lazyrow",
+    "title": "LazyRow",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Lists"
+  },
+  {
+    "id": "compose-ui/lists/lazyverticalgrid",
+    "title": "LazyVerticalGrid",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Lists"
+  },
+  {
+    "id": "compose-ui/lists/lazyhorizontalgrid",
+    "title": "LazyHorizontalGrid",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Lists"
+  },
+  {
+    "id": "compose-ui/lists/lazyverticalstaggeredgrid",
+    "title": "LazyVerticalStaggeredGrid",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Lists"
+  },
+  {
+    "id": "compose-ui/lists/lazypagingitems",
+    "title": "LazyPagingItems",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Lists"
+  },
+  {
+    "id": "compose-ui/lists/horizontalpager",
+    "title": "HorizontalPager",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Lists"
+  },
+  {
+    "id": "compose-ui/lists/verticalpager",
+    "title": "VerticalPager",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Lists"
+  },
+  {
+    "id": "compose-ui/image/icon",
+    "title": "Icon",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Image"
+  },
+  {
+    "id": "compose-ui/image/image",
+    "title": "Image",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Image"
+  },
+  {
+    "id": "compose-ui/image/asyncimage-coil-3",
+    "title": "AsyncImage (Coil 3)",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Image"
+  },
+  {
+    "id": "compose-ui/image/coil-compose",
+    "title": "coil-compose",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Image"
+  },
+  {
+    "id": "compose-ui/image/landscapist",
+    "title": "Landscapist",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Image"
+  },
+  {
+    "id": "compose-ui/text/text",
+    "title": "Text",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Text"
+  },
+  {
+    "id": "compose-ui/text/textfield",
+    "title": "TextField",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Text"
+  },
+  {
+    "id": "compose-ui/text/outlinedtextfield",
+    "title": "OutlinedTextField",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Text"
+  },
+  {
+    "id": "compose-ui/text/basictextfield2",
+    "title": "BasicTextField2",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Text"
+  },
+  {
+    "id": "compose-ui/text/clickabletext",
+    "title": "ClickableText",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Text"
+  },
+  {
+    "id": "compose-ui/text/annotatedstring",
+    "title": "AnnotatedString",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Text"
+  },
+  {
+    "id": "compose-ui/graphics/surface",
+    "title": "Surface",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Graphics"
+  },
+  {
+    "id": "compose-ui/graphics/canvas",
+    "title": "Canvas",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Graphics"
+  },
+  {
+    "id": "compose-ui/graphics/brush",
+    "title": "Brush",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Graphics"
+  },
+  {
+    "id": "compose-ui/graphics/graphicslayer",
+    "title": "GraphicsLayer",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Graphics"
+  },
+  {
+    "id": "compose-ui/graphics/agsl-shaders",
+    "title": "AGSL Shaders",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Graphics"
+  },
+  {
+    "id": "compose-ui/animation/animatedvisibility",
+    "title": "AnimatedVisibility",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Animation"
+  },
+  {
+    "id": "compose-ui/animation/animatedcontent",
+    "title": "AnimatedContent",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Animation"
+  },
+  {
+    "id": "compose-ui/animation/crossfade",
+    "title": "Crossfade",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Animation"
+  },
+  {
+    "id": "compose-ui/animation/animatable",
+    "title": "Animatable",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Animation"
+  },
+  {
+    "id": "compose-ui/animation/animate-asstate",
+    "title": "animate*AsState",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Animation"
+  },
+  {
+    "id": "compose-ui/animation/infinitetransition",
+    "title": "InfiniteTransition",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Animation"
+  },
+  {
+    "id": "compose-ui/animation/shared-element-transitions",
+    "title": "Shared Element Transitions",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Animation"
+  },
+  {
+    "id": "compose-ui/gestures/scrolling",
+    "title": "Scrolling",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Gestures"
+  },
+  {
+    "id": "compose-ui/gestures/dragging",
+    "title": "Dragging",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Gestures"
+  },
+  {
+    "id": "compose-ui/gestures/swiping",
+    "title": "Swiping",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Gestures"
+  },
+  {
+    "id": "compose-ui/gestures/zooming",
+    "title": "Zooming",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Gestures"
+  },
+  {
+    "id": "compose-ui/gestures/anchored-draggable",
+    "title": "Anchored Draggable",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Gestures"
+  },
+  {
+    "id": "compose-ui/gestures/predictive-back",
+    "title": "Predictive Back",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Gestures"
+  },
+  {
+    "id": "compose-ui/compositionlocal/compositionlocalprovider",
+    "title": "CompositionLocalProvider",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "CompositionLocal"
+  },
+  {
+    "id": "compose-ui/compositionlocal/compositionlocalof",
+    "title": "compositionLocalOf",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "CompositionLocal"
+  },
+  {
+    "id": "compose-ui/compositionlocal/staticcompositionlocalof",
+    "title": "staticCompositionLocalOf",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "CompositionLocal"
+  },
+  {
+    "id": "compose-ui/navigation/navhost",
+    "title": "NavHost",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Navigation"
+  },
+  {
+    "id": "compose-ui/navigation/composable-destinations",
+    "title": "composable destinations",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Navigation"
+  },
+  {
+    "id": "compose-ui/navigation/type-safe-routes",
+    "title": "Type-safe routes",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Navigation"
+  },
+  {
+    "id": "compose-ui/components/modalbottomsheet",
+    "title": "ModalBottomSheet",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Components"
+  },
+  {
+    "id": "compose-ui/components/pulltorefresh",
+    "title": "PullToRefresh",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Components"
+  },
+  {
+    "id": "compose-ui/components/scaffold",
+    "title": "Scaffold",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Components"
+  },
+  {
+    "id": "compose-ui/performance/stable-params",
+    "title": "Stable params",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Performance"
+  },
+  {
+    "id": "compose-ui/performance/movablecontentof",
+    "title": "movableContentOf",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Performance"
+  },
+  {
+    "id": "compose-ui/performance/baseline-profiles",
+    "title": "Baseline Profiles",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Performance"
+  },
+  {
+    "id": "compose-ui/testing-preview/createcomposerule",
+    "title": "createComposeRule",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Testing & Preview"
+  },
+  {
+    "id": "compose-ui/testing-preview/semantics",
+    "title": "Semantics",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Testing & Preview"
+  },
+  {
+    "id": "compose-ui/testing-preview/preview",
+    "title": "@Preview",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Testing & Preview"
+  },
+  {
+    "id": "compose-ui/testing-preview/previewparameter",
+    "title": "@PreviewParameter",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Testing & Preview"
+  },
+  {
+    "id": "compose-ui/testing-preview/multipreview",
+    "title": "Multipreview",
+    "sectionTitle": "Compose UI",
+    "groupLabel": "Testing & Preview"
+  }
+]

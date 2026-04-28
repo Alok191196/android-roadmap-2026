@@ -1,0 +1,8 @@
+{
+  "name": "Android Roadmap 2026 Generator",
+  "id": "android-roadmap-2026-generator",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page"
+}

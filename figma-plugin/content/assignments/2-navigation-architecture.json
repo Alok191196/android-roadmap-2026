@@ -1,0 +1,326 @@
+[
+  {
+    "id": "app-navigation/navigation-component/navigation-graph",
+    "title": "Navigation Graph",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "Navigation Component"
+  },
+  {
+    "id": "app-navigation/navigation-component/type-safe-routes",
+    "title": "Type-safe Routes",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "Navigation Component"
+  },
+  {
+    "id": "app-navigation/navigation-component/navigation-3",
+    "title": "Navigation 3",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "Navigation Component"
+  },
+  {
+    "id": "app-navigation/navigation-component/navigation-compose",
+    "title": "Navigation Compose",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "Navigation Component"
+  },
+  {
+    "id": "app-navigation/navigation-component/destinations",
+    "title": "Destinations",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "Navigation Component"
+  },
+  {
+    "id": "app-navigation/navigation-component/deeplink",
+    "title": "DeepLink",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "Navigation Component"
+  },
+  {
+    "id": "app-navigation/fragments-legacy/fragment-lifecycles",
+    "title": "Fragment Lifecycles",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "Fragments (legacy)"
+  },
+  {
+    "id": "app-navigation/fragments-legacy/fragment-state-changes",
+    "title": "Fragment State Changes",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "Fragments (legacy)"
+  },
+  {
+    "id": "app-navigation/fragments-legacy/fragment-manager",
+    "title": "Fragment Manager",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "Fragments (legacy)"
+  },
+  {
+    "id": "app-navigation/fragments-legacy/fragment-transactions",
+    "title": "Fragment Transactions",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "Fragments (legacy)"
+  },
+  {
+    "id": "app-navigation/fragments-legacy/dialogfragment",
+    "title": "DialogFragment",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "Fragments (legacy)"
+  },
+  {
+    "id": "app-navigation/fragments-legacy/bottomsheetdialogfragment",
+    "title": "BottomSheetDialogFragment",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "Fragments (legacy)"
+  },
+  {
+    "id": "app-navigation/app-links/tablayout",
+    "title": "TabLayout",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "App Links"
+  },
+  {
+    "id": "app-navigation/app-links/viewpager2-legacy",
+    "title": "ViewPager2 (legacy)",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "App Links"
+  },
+  {
+    "id": "app-navigation/app-links/custom-back-navigation",
+    "title": "Custom Back Navigation",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "App Links"
+  },
+  {
+    "id": "app-navigation/app-links/app-links-verification",
+    "title": "App Links verification",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "App Links"
+  },
+  {
+    "id": "app-navigation/app-links/digital-asset-links",
+    "title": "Digital Asset Links",
+    "sectionTitle": "App Navigation",
+    "groupLabel": "App Links"
+  },
+  {
+    "id": "app-startup-performance/startup/jetpack-app-startup",
+    "title": "Jetpack App Startup",
+    "sectionTitle": "App Startup & Performance",
+    "groupLabel": "Startup"
+  },
+  {
+    "id": "app-startup-performance/startup/cold-warm-hot-start",
+    "title": "Cold / Warm / Hot Start",
+    "sectionTitle": "App Startup & Performance",
+    "groupLabel": "Startup"
+  },
+  {
+    "id": "app-startup-performance/performance/baseline-profiles",
+    "title": "Baseline Profiles",
+    "sectionTitle": "App Startup & Performance",
+    "groupLabel": "Performance"
+  },
+  {
+    "id": "app-startup-performance/performance/macrobenchmark",
+    "title": "Macrobenchmark",
+    "sectionTitle": "App Startup & Performance",
+    "groupLabel": "Performance"
+  },
+  {
+    "id": "app-startup-performance/performance/startup-tracing-perfetto",
+    "title": "Startup Tracing (Perfetto)",
+    "sectionTitle": "App Startup & Performance",
+    "groupLabel": "Performance"
+  },
+  {
+    "id": "architecture-components/ui-layer/viewbinding",
+    "title": "ViewBinding",
+    "sectionTitle": "Architecture Components",
+    "groupLabel": "UI Layer"
+  },
+  {
+    "id": "architecture-components/ui-layer/databinding-legacy",
+    "title": "DataBinding (legacy)",
+    "sectionTitle": "Architecture Components",
+    "groupLabel": "UI Layer"
+  },
+  {
+    "id": "architecture-components/ui-layer/lifecycle",
+    "title": "Lifecycle",
+    "sectionTitle": "Architecture Components",
+    "groupLabel": "UI Layer"
+  },
+  {
+    "id": "architecture-components/ui-layer/viewmodel",
+    "title": "ViewModel",
+    "sectionTitle": "Architecture Components",
+    "groupLabel": "UI Layer"
+  },
+  {
+    "id": "architecture-components/ui-layer/livedata-legacy",
+    "title": "LiveData (legacy)",
+    "sectionTitle": "Architecture Components",
+    "groupLabel": "UI Layer"
+  },
+  {
+    "id": "architecture-components/ui-layer/paging-3",
+    "title": "Paging 3",
+    "sectionTitle": "Architecture Components",
+    "groupLabel": "UI Layer"
+  },
+  {
+    "id": "architecture-components/ui-layer/savedstatehandle",
+    "title": "SavedStateHandle",
+    "sectionTitle": "Architecture Components",
+    "groupLabel": "UI Layer"
+  },
+  {
+    "id": "architecture-components/ui-layer/repeatonlifecycle",
+    "title": "repeatOnLifecycle",
+    "sectionTitle": "Architecture Components",
+    "groupLabel": "UI Layer"
+  },
+  {
+    "id": "architecture-components/data-layer/datastore",
+    "title": "DataStore",
+    "sectionTitle": "Architecture Components",
+    "groupLabel": "Data Layer"
+  },
+  {
+    "id": "architecture-components/data-layer/workmanager",
+    "title": "WorkManager",
+    "sectionTitle": "Architecture Components",
+    "groupLabel": "Data Layer"
+  },
+  {
+    "id": "architecture-components/data-layer/repository-pattern",
+    "title": "Repository Pattern",
+    "sectionTitle": "Architecture Components",
+    "groupLabel": "Data Layer"
+  },
+  {
+    "id": "architecture-components/data-layer/domain-usecase",
+    "title": "Domain / UseCase",
+    "sectionTitle": "Architecture Components",
+    "groupLabel": "Data Layer"
+  },
+  {
+    "id": "design-patterns/creational/builder-pattern",
+    "title": "Builder Pattern",
+    "sectionTitle": "Design Patterns",
+    "groupLabel": "Creational"
+  },
+  {
+    "id": "design-patterns/creational/factory-pattern",
+    "title": "Factory Pattern",
+    "sectionTitle": "Design Patterns",
+    "groupLabel": "Creational"
+  },
+  {
+    "id": "design-patterns/observer-pattern/flow",
+    "title": "Flow",
+    "sectionTitle": "Design Patterns",
+    "groupLabel": "Observer Pattern"
+  },
+  {
+    "id": "design-patterns/observer-pattern/stateflow-sharedflow",
+    "title": "StateFlow / SharedFlow",
+    "sectionTitle": "Design Patterns",
+    "groupLabel": "Observer Pattern"
+  },
+  {
+    "id": "design-patterns/observer-pattern/channels",
+    "title": "Channels",
+    "sectionTitle": "Design Patterns",
+    "groupLabel": "Observer Pattern"
+  },
+  {
+    "id": "design-patterns/observer-pattern/rxjava-legacy",
+    "title": "RxJava (legacy)",
+    "sectionTitle": "Design Patterns",
+    "groupLabel": "Observer Pattern"
+  },
+  {
+    "id": "design-patterns/observer-pattern/livedata-legacy",
+    "title": "LiveData (legacy)",
+    "sectionTitle": "Design Patterns",
+    "groupLabel": "Observer Pattern"
+  },
+  {
+    "id": "design-patterns/dependency-injection/hilt",
+    "title": "Hilt",
+    "sectionTitle": "Design Patterns",
+    "groupLabel": "Dependency Injection"
+  },
+  {
+    "id": "design-patterns/dependency-injection/dagger-legacy",
+    "title": "Dagger (legacy)",
+    "sectionTitle": "Design Patterns",
+    "groupLabel": "Dependency Injection"
+  },
+  {
+    "id": "design-patterns/dependency-injection/koin",
+    "title": "Koin",
+    "sectionTitle": "Design Patterns",
+    "groupLabel": "Dependency Injection"
+  },
+  {
+    "id": "design-patterns/dependency-injection/kotlin-inject",
+    "title": "kotlin-inject",
+    "sectionTitle": "Design Patterns",
+    "groupLabel": "Dependency Injection"
+  },
+  {
+    "id": "design-patterns/dependency-injection/metro",
+    "title": "Metro",
+    "sectionTitle": "Design Patterns",
+    "groupLabel": "Dependency Injection"
+  },
+  {
+    "id": "architecture/patterns/mvvm",
+    "title": "MVVM",
+    "sectionTitle": "Architecture",
+    "groupLabel": "Patterns"
+  },
+  {
+    "id": "architecture/patterns/mvi",
+    "title": "MVI",
+    "sectionTitle": "Architecture",
+    "groupLabel": "Patterns"
+  },
+  {
+    "id": "architecture/patterns/clean-architecture",
+    "title": "Clean Architecture",
+    "sectionTitle": "Architecture",
+    "groupLabel": "Patterns"
+  },
+  {
+    "id": "architecture/patterns/unidirectional-data-flow-udf",
+    "title": "Unidirectional Data Flow (UDF)",
+    "sectionTitle": "Architecture",
+    "groupLabel": "Patterns"
+  },
+  {
+    "id": "architecture/modern-app-architecture/ui-layer",
+    "title": "UI Layer",
+    "sectionTitle": "Architecture",
+    "groupLabel": "Modern App Architecture"
+  },
+  {
+    "id": "architecture/modern-app-architecture/domain-layer",
+    "title": "Domain Layer",
+    "sectionTitle": "Architecture",
+    "groupLabel": "Modern App Architecture"
+  },
+  {
+    "id": "architecture/modern-app-architecture/data-layer",
+    "title": "Data Layer",
+    "sectionTitle": "Architecture",
+    "groupLabel": "Modern App Architecture"
+  },
+  {
+    "id": "architecture/modern-app-architecture/state-holders-uistate",
+    "title": "State Holders / UiState",
+    "sectionTitle": "Architecture",
+    "groupLabel": "Modern App Architecture"
+  }
+]

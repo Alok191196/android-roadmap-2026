@@ -1,0 +1,1986 @@
+[
+  {
+    "id": "compose-ui/layout/column",
+    "title": "Column",
+    "description": "**Column** arranges its children vertically in sequence, similar to a vertical `LinearLayout`. Use it whenever you need a top-to-bottom stack of composables with optional vertical arrangement and horizontal alignment control. It is the go-to building block for any vertically oriented UI section and composes efficiently with other standard layouts.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Compose layout basics | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/basics"
+      },
+      {
+        "type": "Article",
+        "title": "Jetpack Compose Basics – ProAndroidDev",
+        "url": "https://proandroiddev.com/jetpack-compose-basics-26b62999ea9d"
+      },
+      {
+        "type": "Video",
+        "title": "Deep dive into Jetpack Compose layouts – Android Developers",
+        "url": "https://www.youtube.com/watch?v=zMKMwh9gZuI"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 1: Compose essentials",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – JetNews (official sample using Column/Row layouts)",
+        "url": "https://github.com/android/compose-samples/tree/main/JetNews"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/layout/row",
+    "title": "Row",
+    "description": "**Row** places its children horizontally side by side, equivalent to a horizontal `LinearLayout`. It supports `horizontalArrangement` (e.g. `SpaceBetween`, `SpaceAround`) and `verticalAlignment` parameters so you can precisely control how children are spaced and aligned. Use `Row` for toolbars, icon+label pairs, and any horizontal group of elements.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Compose layout basics | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/basics"
+      },
+      {
+        "type": "Article",
+        "title": "Jetpack Compose Basics – ProAndroidDev",
+        "url": "https://proandroiddev.com/jetpack-compose-basics-26b62999ea9d"
+      },
+      {
+        "type": "Video",
+        "title": "Deep dive into Jetpack Compose layouts – Android Developers",
+        "url": "https://www.youtube.com/watch?v=zMKMwh9gZuI"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 1: Compose essentials",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (Row-based custom design system)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/layout/box",
+    "title": "Box",
+    "description": "**Box** stacks its children on top of each other, making it the Compose equivalent of `FrameLayout`. It supports `contentAlignment` to position all children by default and `Modifier.align` per child for individual overrides. Use `Box` for overlays, badges, floating buttons on top of content, or any scenario requiring Z-axis layering.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Compose layout basics | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/basics"
+      },
+      {
+        "type": "Article",
+        "title": "Jetpack Compose Basics – ProAndroidDev",
+        "url": "https://proandroiddev.com/jetpack-compose-basics-26b62999ea9d"
+      },
+      {
+        "type": "Video",
+        "title": "Deep dive into Jetpack Compose layouts – Android Developers",
+        "url": "https://www.youtube.com/watch?v=zMKMwh9gZuI"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (Box used for overlays and custom layouts)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/layout/constraintlayout",
+    "title": "ConstraintLayout",
+    "description": "**ConstraintLayout** in Compose lets you position composables relative to each other or to the parent container using a DSL of references and `linkTo` calls. It supports guidelines, barriers, and chains for complex arrangements that would otherwise require deeply nested `Row`/`Column` hierarchies. Prefer it for intricate UIs where relative positioning is essential, though Compose handles moderate nesting efficiently without it.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "ConstraintLayout in Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/constraintlayout"
+      },
+      {
+        "type": "Article",
+        "title": "Mastering ConstraintLayout in Jetpack Compose: From Basics to Advanced – ProAndroidDev",
+        "url": "https://proandroiddev.com/mastering-constraintlayout-in-jetpack-compose-from-basics-to-advanced-cbe1cb1a4b2b"
+      },
+      {
+        "type": "Video",
+        "title": "Advanced layouts in Compose (video guide) – Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/quick-guides/content/video/advanced-layouts-compose"
+      },
+      {
+        "type": "Video",
+        "title": "Deep dive into Jetpack Compose layouts – Android Developers",
+        "url": "https://www.youtube.com/watch?v=zMKMwh9gZuI"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/layout/flowrow-flowcolumn",
+    "title": "FlowRow / FlowColumn",
+    "description": "**FlowRow** and **FlowColumn** automatically wrap their children to the next row or column when available space runs out, making them ideal for tag clouds, chip groups, and responsive filter bars. They support `maxItemsInEachRow`/`maxItemsInEachColumn`, `Modifier.weight` for proportional sizing, and cross-axis arrangement options. Use them any time content must reflow gracefully across different screen widths.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Flow layouts in Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/flow"
+      },
+      {
+        "type": "Article",
+        "title": "FlowRow & FlowColumn in Jetpack Compose: Dynamic Flexible Layouts – Medium",
+        "url": "https://medium.com/@ramadan123sayed/flowrow-flowcolumn-in-jetpack-compose-dynamic-flexible-layouts-3355eff3a96c"
+      },
+      {
+        "type": "Video",
+        "title": "Flow layouts | Jetpack Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=QaMjBZCXHiI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Reply (adaptive layout with FlowRow patterns)",
+        "url": "https://github.com/android/compose-samples/tree/main/Reply"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/layout/subcomposelayout",
+    "title": "SubcomposeLayout",
+    "description": "**SubcomposeLayout** delays the composition of some children until the measure phase, enabling layouts whose child set or constraints depend on the measured sizes of other children. It powers composables like `BoxWithConstraints` and is used for advanced adaptive layouts. Reserve it for cases where you genuinely need measurement-driven conditional composition; it carries a higher runtime cost than standard `Layout`.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Custom layouts | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/custom"
+      },
+      {
+        "type": "Article",
+        "title": "Advanced Layout concepts in Jetpack Compose – Android Developers / Medium",
+        "url": "https://medium.com/androiddevelopers/advanced-layout-concepts-eb08cf2a3c8"
+      },
+      {
+        "type": "Video",
+        "title": "Deep dive into Jetpack Compose layouts – Android Developers",
+        "url": "https://www.youtube.com/watch?v=zMKMwh9gZuI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – JetLagged (SubcomposeLayout-based custom TimeGraph)",
+        "url": "https://github.com/android/compose-samples/tree/main/JetLagged"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/layout/lookaheadlayout",
+    "title": "LookaheadLayout",
+    "description": "**LookaheadScope** (formerly LookaheadLayout) performs a speculative \"lookahead\" measurement pass before the real layout pass, pre-calculating the future size and position of composables. This enables smooth, physics-based animations that animate *toward* a known target layout rather than interpolating blindly. It is an experimental API primarily useful for coordinating size/position animations across subtree boundaries.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "LookaheadScope | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/kotlin/androidx/compose/ui/layout/LookaheadScope"
+      },
+      {
+        "type": "Article",
+        "title": "Animations with Lookahead in Jetpack Compose – ProAndroidDev",
+        "url": "https://proandroiddev.com/animations-with-lookahead-in-jetpack-compose-60423fe0d1a7"
+      },
+      {
+        "type": "Video",
+        "title": "Deep dive into Jetpack Compose layouts – Android Developers",
+        "url": "https://www.youtube.com/watch?v=zMKMwh9gZuI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – JetLagged (custom layout and animation patterns)",
+        "url": "https://github.com/android/compose-samples/tree/main/JetLagged"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/layout/custom-layout",
+    "title": "Custom Layout",
+    "description": "The **`Layout`** composable and **`layout`** modifier let you implement fully custom measurement and placement logic for a group of children or a single element. You measure children with `Measurable.measure()`, decide the composable's own size, then place each child with `Placeable.placeRelative()`. Use custom layouts when the standard `Column`, `Row`, or `Box` variants cannot express the geometric relationship you need.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Custom layouts | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/custom"
+      },
+      {
+        "type": "Article",
+        "title": "Advanced Layout concepts in Jetpack Compose – Android Developers / Medium",
+        "url": "https://medium.com/androiddevelopers/advanced-layout-concepts-eb08cf2a3c8"
+      },
+      {
+        "type": "Video",
+        "title": "Deep dive into Jetpack Compose layouts – Android Developers",
+        "url": "https://www.youtube.com/watch?v=zMKMwh9gZuI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – JetLagged (custom TimeGraph Layout composable)",
+        "url": "https://github.com/android/compose-samples/tree/main/JetLagged"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/lists/lazycolumn",
+    "title": "LazyColumn",
+    "description": "**LazyColumn** renders a vertically scrolling list that only composes and lays out the items currently visible on screen, making it suitable for large or unbounded datasets. It uses a `LazyListScope` DSL with `item {}` and `items()` helpers, and supports sticky headers, item keys for stable identity, and animated item placement. Prefer it over a `Column` with `verticalScroll` whenever the item count can be large.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Lists and grids | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/lists"
+      },
+      {
+        "type": "Article",
+        "title": "LazyColumn Performance: 7 Proven Android Optimization Techniques – Medium",
+        "url": "https://medium.com/@hiren6997/why-your-lazycolumn-is-slower-than-it-should-be-and-7-proven-ways-to-fix-it-155aa6670027"
+      },
+      {
+        "type": "Video",
+        "title": "Lazy layouts in Compose – Android Developers",
+        "url": "https://www.youtube.com/watch?v=1ANt65eoNhQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (LazyColumn for news feed with real-world architecture)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/lists/lazyrow",
+    "title": "LazyRow",
+    "description": "**LazyRow** is the horizontal counterpart of `LazyColumn`, composing only the items visible in the horizontal viewport. It shares the same `LazyListScope` DSL and supports content padding, spacing between items, and scroll state hoisting via `rememberLazyListState()`. Use it for carousels, horizontal chip lists, or any horizontally scrollable collection that may contain many items.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Lists and grids | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/lists"
+      },
+      {
+        "type": "Article",
+        "title": "Android Interview Question — Row, Column, LazyRow, LazyColumn – Medium",
+        "url": "https://medium.com/@anhndt/android-interview-question-row-column-lazyrow-lazycolumn-56ad6d6fac28"
+      },
+      {
+        "type": "Video",
+        "title": "Lazy layouts in Compose – Android Developers",
+        "url": "https://www.youtube.com/watch?v=1ANt65eoNhQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetcaster (LazyRow for horizontal episode lists)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetcaster"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/lists/lazyverticalgrid",
+    "title": "LazyVerticalGrid",
+    "description": "**LazyVerticalGrid** displays items in a vertically scrolling multi-column grid, composing only visible cells. Column count is configured with `GridCells.Fixed(n)` for a constant number of columns or `GridCells.Adaptive(minSize)` for a responsive grid that fits as many columns as possible. It supports `span {}` to let items occupy multiple columns and matches the lazy composition model of `LazyColumn`.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Lists and grids | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/lists"
+      },
+      {
+        "type": "Article",
+        "title": "10 Jetpack Compose UI Tricks You Probably Don't Know – ProAndroidDev",
+        "url": "https://proandroiddev.com/10-jetpack-compose-ui-tricks-you-probably-dont-know-d3dd63b617c9"
+      },
+      {
+        "type": "Video",
+        "title": "Lazy grids | Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=qP-ieASbqMY"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (LazyVerticalGrid for news topic grid)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/lists/lazyhorizontalgrid",
+    "title": "LazyHorizontalGrid",
+    "description": "**LazyHorizontalGrid** is the horizontal-scrolling variant of the lazy grid, arranging items in multiple rows while scrolling left and right. Row count is configured with `GridCells.Fixed` or `GridCells.Adaptive`, and items can span multiple rows using the `span` DSL. Use it for horizontally browsable grids such as image galleries or media carousels with a fixed row height.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Lists and grids | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/lists"
+      },
+      {
+        "type": "Article",
+        "title": "Lazy Loading in Jetpack Compose: Master LazyColumn Performance with Large Data Sets – Medium",
+        "url": "https://medium.com/@androidlab/lazy-loading-in-jetpack-compose-master-lazycolumn-performance-with-large-data-sets-05fae52d5be4"
+      },
+      {
+        "type": "Video",
+        "title": "Lazy grids | Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=qP-ieASbqMY"
+      },
+      {
+        "type": "Video",
+        "title": "Lazy layouts in Compose – Android Developers",
+        "url": "https://www.youtube.com/watch?v=1ANt65eoNhQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetcaster (horizontal grid patterns)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetcaster"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/lists/lazyverticalstaggeredgrid",
+    "title": "LazyVerticalStaggeredGrid",
+    "description": "**LazyVerticalStaggeredGrid** displays items of varying heights in a staggered waterfall pattern across multiple columns, similar to the Pinterest layout. Items are placed in whichever column currently has the least content, producing an organic, space-efficient appearance. Use it for image feeds or card collections where item heights differ and a regular grid would leave awkward gaps.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Lists and grids | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/lists"
+      },
+      {
+        "type": "Article",
+        "title": "10 Jetpack Compose UI Tricks You Probably Don't Know – ProAndroidDev",
+        "url": "https://proandroiddev.com/10-jetpack-compose-ui-tricks-you-probably-dont-know-d3dd63b617c9"
+      },
+      {
+        "type": "Video",
+        "title": "Lazy grids | Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=qP-ieASbqMY"
+      },
+      {
+        "type": "Video",
+        "title": "Lazy layouts in Compose – Android Developers",
+        "url": "https://www.youtube.com/watch?v=1ANt65eoNhQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – official Jetpack Compose samples repository",
+        "url": "https://github.com/android/compose-samples"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/lists/lazypagingitems",
+    "title": "LazyPagingItems",
+    "description": "**LazyPagingItems** is the Compose integration for Paging 3, obtained by calling `collectAsLazyPagingItems()` on a `Flow<PagingData<T>>`. It plugs directly into `LazyColumn` or `LazyRow` via the `items(lazyPagingItems)` extension, automatically triggering page loads as the user scrolls near the end. It also exposes `loadState` so you can show headers, footers, and error states inline.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "LazyPagingItems | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/kotlin/androidx/paging/compose/LazyPagingItems"
+      },
+      {
+        "type": "Article",
+        "title": "Paging in Android Jetpack Compose: From Caching with Room to LazyColumn – ProAndroidDev",
+        "url": "https://proandroiddev.com/paging-in-android-jetpack-compose-from-caching-data-with-room-to-displaying-in-lazycolumn-a018f0b6cb2"
+      },
+      {
+        "type": "Video",
+        "title": "Lazy layouts in Compose – Android Developers",
+        "url": "https://www.youtube.com/watch?v=1ANt65eoNhQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (Paging 3 + LazyPagingItems in production app)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 3: Architecture and state",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-3"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/lists/horizontalpager",
+    "title": "HorizontalPager",
+    "description": "**HorizontalPager** provides a horizontally swipeable container where each page is a full composable, functioning like the classic `ViewPager`. State is managed through `rememberPagerState(pageCount)`, which exposes `currentPage`, `settledPage`, and programmatic scroll methods. Use it for onboarding flows, full-screen image galleries, or tab-like navigation with swipe gestures.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Pager in Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/pager"
+      },
+      {
+        "type": "Article",
+        "title": "Mastering Pagers in Android Jetpack Compose – ProAndroidDev",
+        "url": "https://proandroiddev.com/mastering-pagers-in-android-jetpack-compose-3595214ee6dc"
+      },
+      {
+        "type": "Video",
+        "title": "Pager | Jetpack Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=V2Ke-JJDnrU"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetcaster (HorizontalPager for episode browsing)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetcaster"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/lists/verticalpager",
+    "title": "VerticalPager",
+    "description": "**VerticalPager** works identically to `HorizontalPager` but scrolls vertically, enabling TikTok-style full-screen swipe-up feeds or vertically paginated content. It shares the same `PagerState` API and `pageContent` slot, and supports snap behaviour, page size customisation, and scroll offset callbacks for parallax effects. Use it whenever you need discrete vertical paging rather than a continuous scroll.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Pager in Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/pager"
+      },
+      {
+        "type": "Article",
+        "title": "Exploring the Official Pager Composable in Jetpack Compose – Medium",
+        "url": "https://medium.com/@domen.lanisnik/exploring-the-official-pager-in-compose-8c2698c49a98"
+      },
+      {
+        "type": "Video",
+        "title": "Pager | Jetpack Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=V2Ke-JJDnrU"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – official Jetpack Compose samples",
+        "url": "https://github.com/android/compose-samples"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/image/icon",
+    "title": "Icon",
+    "description": "**Icon** renders a single-colour icon following Material Design guidelines and is tinted with `LocalContentColor` by default at 24 dp. It accepts a `painter`, `imageVector`, or `bitmap` source and an optional `tint` parameter. Use `Icon` for small decorative or interactive glyphs; for larger or more complex image needs, use `Image` instead. Google recommends Material Symbols over the legacy `material-icons` extended library.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Icons | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/graphics/images/material"
+      },
+      {
+        "type": "Article",
+        "title": "Working with images in Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/graphics/images"
+      },
+      {
+        "type": "Video",
+        "title": "Deep dive into Jetpack Compose layouts – Android Developers",
+        "url": "https://www.youtube.com/watch?v=zMKMwh9gZuI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetchat (Icon used throughout Material 3 UI)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetchat"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 1: Compose essentials",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/image/image",
+    "title": "Image",
+    "description": "**Image** displays a bitmap, vector drawable, or painter resource with configurable `ContentScale` (Crop, Fit, FillBounds, etc.), clipping, border, aspect ratio, and colour-filter options. Always supply a meaningful `contentDescription` for accessibility, or pass `null` for purely decorative images. It is the standard composable for displaying local or pre-loaded assets that do not require asynchronous network fetching.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Loading images | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/graphics/images/loading"
+      },
+      {
+        "type": "Article",
+        "title": "Customize an image | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/graphics/images/customize"
+      },
+      {
+        "type": "Video",
+        "title": "Deep dive into Jetpack Compose layouts – Android Developers",
+        "url": "https://www.youtube.com/watch?v=zMKMwh9gZuI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (Image with ContentScale and custom shapes)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 1: Compose essentials",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/image/asyncimage-coil-3",
+    "title": "AsyncImage (Coil 3)",
+    "description": "**AsyncImage** from Coil 3 (`io.coil-kt.coil3:coil-compose`) executes image requests asynchronously via Kotlin coroutines and renders the result, automatically sizing the request to match the composable's constraints and `ContentScale`. It supports `placeholder`, `error`, and `fallback` painters plus `onLoading`/`onSuccess`/`onError` callbacks. Coil 3 adds Compose Multiplatform support for Android, iOS, JVM, JS, and WASM targets.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Compose – Coil",
+        "url": "https://coil-kt.github.io/coil/compose/"
+      },
+      {
+        "type": "Article",
+        "title": "Loading Images With Coil In Jetpack Compose – Medium",
+        "url": "https://medium.com/@atharvapajgade/loading-images-with-coil-in-jetpack-compose-0b5b086c57d4"
+      },
+      {
+        "type": "Video",
+        "title": "Lazy layouts in Compose – Android Developers",
+        "url": "https://www.youtube.com/watch?v=1ANt65eoNhQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetcaster (AsyncImage / Coil for podcast artwork)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetcaster"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (Coil AsyncImage in production news-feed app)",
+        "url": "https://github.com/android/nowinandroid"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/image/coil-compose",
+    "title": "coil-compose",
+    "description": "**coil-compose** is the Compose extension module of the Coil image-loading library that provides `AsyncImage`, `SubcomposeAsyncImage`, and `rememberAsyncImagePainter`. It integrates Coil's coroutine-based pipeline with the Compose lifecycle, enabling crossfade transitions, circle cropping, and custom `ImageRequest` builders. Add it alongside an appropriate network fetcher (`coil-network-okhttp`) to load images from URLs.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Compose – Coil",
+        "url": "https://coil-kt.github.io/coil/compose/"
+      },
+      {
+        "type": "Article",
+        "title": "From rememberImagePainter to AsyncImage: Simplifying Image Loading in Jetpack Compose – Medium",
+        "url": "https://medium.com/@shivagniofficial/from-rememberimagepainter-to-asyncimage-simplifying-image-loading-in-jetpack-compose-027a89df86c9"
+      },
+      {
+        "type": "Video",
+        "title": "Lazy layouts in Compose – Android Developers",
+        "url": "https://www.youtube.com/watch?v=1ANt65eoNhQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (coil-compose for author and topic images)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetcaster (coil-compose integration)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetcaster"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/image/landscapist",
+    "title": "Landscapist",
+    "description": "**Landscapist** is a pluggable, highly optimised Compose image loading library that supports Coil, Glide, and Fresco backends through a unified API. It exposes loading-state slots (`success`, `failure`, `loading`) for full compositional control, built-in animations like crossfade and circular reveal, blur transformations, palette extraction, and Baseline Profiles for startup performance. Use it when you need a richer feature set or want to swap backends without changing call sites.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Landscapist – Jetpack Compose Image Loading",
+        "url": "https://skydoves.github.io/landscapist/"
+      },
+      {
+        "type": "Article",
+        "title": "Landscapist on GitHub – skydoves",
+        "url": "https://github.com/skydoves/landscapist"
+      },
+      {
+        "type": "Video",
+        "title": "Lazy layouts in Compose – Android Developers",
+        "url": "https://www.youtube.com/watch?v=1ANt65eoNhQ"
+      },
+      {
+        "type": "Repo",
+        "title": "skydoves/landscapist – source code and integration samples",
+        "url": "https://github.com/skydoves/landscapist"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 1: Compose essentials",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/text/text",
+    "title": "Text",
+    "description": "**Text** is the primary composable for displaying strings and styled text in Compose. It accepts a plain `String` or an `AnnotatedString` and supports typography, colour, font size, line height, overflow, max lines, and text alignment. Use `stringResource()` rather than hard-coded strings to facilitate internationalisation and to share string resources with View-based code.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Display text | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/text/display-text"
+      },
+      {
+        "type": "Article",
+        "title": "Jetpack Compose & best practices you must always remember – ProAndroidDev",
+        "url": "https://proandroiddev.com/jetpack-compose-best-practices-you-must-always-remember-98382b132d44"
+      },
+      {
+        "type": "Video",
+        "title": "Mastering text input in Compose – Google I/O 2025 / Android Developers",
+        "url": "https://www.youtube.com/watch?v=07Y9CPuxgvQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – JetNews (Text with AnnotatedString and typography)",
+        "url": "https://github.com/android/compose-samples/tree/main/JetNews"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 1: Compose essentials",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/text/textfield",
+    "title": "TextField",
+    "description": "**TextField** is the Material Design filled text-input composable. The recommended state-based API uses `rememberTextFieldState()` and `TextFieldState`, which cleanly separates editing state from the component. It supports input and output transformations, keyboard options, label, placeholder, leading/trailing icons, and a `Brush` API for custom text styling. Use `TextField` for most user-input needs in a Material-themed app.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Configure text fields | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/text/user-input"
+      },
+      {
+        "type": "Article",
+        "title": "Effective state management for TextField in Compose – Android Developers / Medium",
+        "url": "https://medium.com/androiddevelopers/effective-state-management-for-textfield-in-compose-d6e5b070fbe5"
+      },
+      {
+        "type": "Video",
+        "title": "Mastering text input in Compose – Google I/O 2025 / Android Developers",
+        "url": "https://www.youtube.com/watch?v=07Y9CPuxgvQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetchat (TextField for chat message input)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetchat"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 1: Compose essentials",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/text/outlinedtextfield",
+    "title": "OutlinedTextField",
+    "description": "**OutlinedTextField** follows the Material Design outlined input style, drawing a visible border around the field instead of a filled background. It shares the same API surface as `TextField`, including the state-based `TextFieldState`, label, error, and keyboard options. Prefer it when the filled variant clashes with a light or card-based layout, or when Material guidelines call for the outlined style.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Configure text fields | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/text/user-input"
+      },
+      {
+        "type": "Article",
+        "title": "Effective state management for TextField in Compose – Android Developers / Medium",
+        "url": "https://medium.com/androiddevelopers/effective-state-management-for-textfield-in-compose-d6e5b070fbe5"
+      },
+      {
+        "type": "Video",
+        "title": "Mastering text input in Compose – Google I/O 2025 / Android Developers",
+        "url": "https://www.youtube.com/watch?v=07Y9CPuxgvQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetchat (OutlinedTextField for search patterns)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetchat"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 1: Compose essentials",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/text/basictextfield2",
+    "title": "BasicTextField2",
+    "description": "**BasicTextField2** (now stable and renamed `BasicTextField` as of Compose 1.7) is the next-generation low-level text input with a redesigned state model built around `TextFieldState`. It supports `InputTransformation` for filtering keystrokes, `OutputTransformation` for formatting displayed text, and direct access to the internal scroll state. Use it as the foundation for fully custom text inputs not bound to Material theming.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Configure text fields | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/text/user-input"
+      },
+      {
+        "type": "Article",
+        "title": "BasicTextField2: A TextField of Dreams [1/2] – ProAndroidDev",
+        "url": "https://proandroiddev.com/basictextfield2-a-textfield-of-dreams-1-2-0103fd7cc0ec"
+      },
+      {
+        "type": "Video",
+        "title": "Mastering text input in Compose – Google I/O 2025 / Android Developers",
+        "url": "https://www.youtube.com/watch?v=07Y9CPuxgvQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetchat (custom text input patterns)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetchat"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 1: Compose essentials",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/text/clickabletext",
+    "title": "ClickableText",
+    "description": "**ClickableText** (now deprecated in favour of `Text` + `AnnotatedString` with `LinkAnnotation`) was a composable that delivered character-position click events on a styled string. The modern replacement uses `withLink(LinkAnnotation.Url(...))` inside `buildAnnotatedString` to embed tappable links with hover, focused, and pressed states directly in a standard `Text`. Use the new API to support accessibility and avoid deprecated APIs.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Enable user interactions | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/text/user-interactions"
+      },
+      {
+        "type": "Article",
+        "title": "Mastering LinkAnnotation: The Modern Approach to Text Links – ProAndroidDev",
+        "url": "https://proandroiddev.com/mastering-linkannotation-the-modern-approach-to-text-links-26fbde09b158"
+      },
+      {
+        "type": "Video",
+        "title": "Mastering text input in Compose – Google I/O 2025 / Android Developers",
+        "url": "https://www.youtube.com/watch?v=07Y9CPuxgvQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – JetNews (AnnotatedString for article links)",
+        "url": "https://github.com/android/compose-samples/tree/main/JetNews"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 1: Compose essentials",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/text/annotatedstring",
+    "title": "AnnotatedString",
+    "description": "**AnnotatedString** is a rich string type that carries a list of `SpanStyle` ranges for character-level styling (colour, weight, font) and `ParagraphStyle` ranges for block-level formatting (alignment, indent). Build one with the `buildAnnotatedString` DSL and pass it directly to `Text`. It also supports `AnnotatedString.fromHtml()` for converting HTML-formatted strings, and serves as the foundation for clickable link annotations.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Style text | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/text/style-text"
+      },
+      {
+        "type": "Article",
+        "title": "Composing AnnotatedString — Poetry, Music, Code, Blogs, Expandables and Beyond – ProAndroidDev",
+        "url": "https://proandroiddev.com/composing-annotatedstring-poetry-music-code-blogs-expandables-and-beyond-b5f7ec35a49b"
+      },
+      {
+        "type": "Video",
+        "title": "Mastering text input in Compose – Google I/O 2025 / Android Developers",
+        "url": "https://www.youtube.com/watch?v=07Y9CPuxgvQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – JetNews (AnnotatedString for rich article text)",
+        "url": "https://github.com/android/compose-samples/tree/main/JetNews"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 1: Compose essentials",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/graphics/surface",
+    "title": "Surface",
+    "description": "**Surface** is a Material Design building block that provides elevation shadow, clipping to a shape, a background colour derived from the theme's `colorScheme`, and click ripple support. It establishes a visual container that communicates elevation and grouping to users. Use it to wrap cards, dialogs, bottom sheets, and any region that should have a distinct, elevated appearance.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Material Design 3 in Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/designsystems/material3"
+      },
+      {
+        "type": "Article",
+        "title": "Jetpack Compose & best practices you must always remember – ProAndroidDev",
+        "url": "https://proandroiddev.com/jetpack-compose-best-practices-you-must-always-remember-98382b132d44"
+      },
+      {
+        "type": "Video",
+        "title": "Deep dive into Jetpack Compose layouts – Android Developers",
+        "url": "https://www.youtube.com/watch?v=zMKMwh9gZuI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (Surface for card and snack detail UI)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 1: Compose essentials",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/graphics/canvas",
+    "title": "Canvas",
+    "description": "**Canvas** is a Compose composable that wraps `Modifier.drawBehind` and exposes a `DrawScope` where you can issue drawing commands: shapes, paths, text, images, arcs, gradients, and transformations. The coordinate system places the origin at the top-left corner. Use `Canvas` for fully custom visualisations — charts, dials, custom progress indicators — where standard composables cannot express the required output.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Graphics in Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/graphics/draw/overview"
+      },
+      {
+        "type": "Article",
+        "title": "Exploring Jetpack Compose Canvas: the power of drawing – Medium / Google Developer Experts",
+        "url": "https://medium.com/google-developer-experts/exploring-jetpack-compose-canvas-the-power-of-drawing-8cc60815babe"
+      },
+      {
+        "type": "Video",
+        "title": "Drawing on Jetpack Compose Canvas — Android",
+        "url": "https://www.youtube.com/watch?v=xdebBD47wTY"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – JetLagged (Canvas for custom sleep graph drawing)",
+        "url": "https://github.com/android/compose-samples/tree/main/JetLagged"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/graphics/brush",
+    "title": "Brush",
+    "description": "**Brush** describes how colour is applied to a drawing area and supports linear, radial, horizontal, vertical, and sweep gradients, as well as solid colours and image-based `ImageShader` brushes. You can use a `Brush` with `Modifier.background()`, `TextStyle`, and any `DrawScope` draw call. Advanced usage with `ShaderBrush` and AGSL `RuntimeShader` enables GPU-accelerated custom effects on Android 13+.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Brush: gradients and shaders | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/graphics/draw/brush"
+      },
+      {
+        "type": "Article",
+        "title": "Elevating Your Jetpack Compose UI with GraphicsLayer – ProAndroidDev",
+        "url": "https://proandroiddev.com/elevating-your-jetpack-compose-ui-with-graphicslayer-2565bb90fef8"
+      },
+      {
+        "type": "Video",
+        "title": "Brush | Jetpack Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=qh72KAX6TSI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – JetLagged (Brush gradients in custom graphics)",
+        "url": "https://github.com/android/compose-samples/tree/main/JetLagged"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/graphics/graphicslayer",
+    "title": "GraphicsLayer",
+    "description": "**`Modifier.graphicsLayer`** draws its content into an isolated render layer, allowing transformations — scale, translate, rotate, alpha, shape clipping — to be applied without recomposing or re-drawing sibling nodes. Layers can specify `CompositingStrategy` for blend mode and `renderEffect` for GPU blur or colour-filter effects. It is the primary tool for performant visual transformations in animations and scroll-driven parallax effects.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Graphics modifiers | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/graphics/draw/modifiers"
+      },
+      {
+        "type": "Article",
+        "title": "Elevating Your Jetpack Compose UI with GraphicsLayer – ProAndroidDev",
+        "url": "https://proandroiddev.com/elevating-your-jetpack-compose-ui-with-graphicslayer-2565bb90fef8"
+      },
+      {
+        "type": "Video",
+        "title": "Graphics layers | Jetpack Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=KawI7srRvOM"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – JetLagged (graphicsLayer for animation effects)",
+        "url": "https://github.com/android/compose-samples/tree/main/JetLagged"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/graphics/agsl-shaders",
+    "title": "AGSL Shaders",
+    "description": "**Android Graphics Shading Language (AGSL)** lets you write GLSL-like fragment shaders that run on the GPU via `RuntimeShader` (Android 13+). In Compose you wrap a `RuntimeShader` in a `ShaderBrush` and apply it to any drawing call, or attach it via `graphicsLayer { renderEffect }` to filter entire composable subtrees. Use AGSL shaders for high-performance visual effects — noise textures, colour grading, distortion — that are impractical to achieve with standard Compose APIs.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Android Graphics Shading Language (AGSL) | Android Developers",
+        "url": "https://developer.android.com/develop/ui/views/graphics/agsl"
+      },
+      {
+        "type": "Article",
+        "title": "Tutorial Android AGSL — Enhance your Compose Component with shaders – Medium",
+        "url": "https://medium.com/@spparks_/tutorial-android-agsl-enhance-your-compose-component-with-shaders-0fcdd6f552b2"
+      },
+      {
+        "type": "Video",
+        "title": "Shaders | Jetpack Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=wJx7EhGaDow"
+      },
+      {
+        "type": "Video",
+        "title": "Having fun with AGSL Shaders in Jetpack Compose",
+        "url": "https://www.youtube.com/watch?v=aHzFRPSo2s0"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – JetLagged (AGSL shaders for visual effects)",
+        "url": "https://github.com/android/compose-samples/tree/main/JetLagged"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/animation/animatedvisibility",
+    "title": "AnimatedVisibility",
+    "description": "**AnimatedVisibility** animates the entrance and exit of its content using enter/exit transition combinations such as `fadeIn + slideInVertically`. When the `visible` flag flips to `false`, it runs the exit transition and then removes the content from the composition. Transitions can be combined with `+` and customised with `spring`, `tween`, or `keyframes` specs.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Animation modifiers and composables | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/animation/composables-modifiers"
+      },
+      {
+        "type": "Article",
+        "title": "Leveling Up Your Compose Skills: The Intricacies of AnimatedVisibility – Medium",
+        "url": "https://medium.com/@Syex/leveling-up-your-compose-skills-the-intricacies-of-animatedvisibility-55ecf30eae92"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose: Animation – Android Developers",
+        "url": "https://www.youtube.com/watch?v=7yY2OocGiQU"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (AnimatedVisibility for cart overlay)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/animation/animatedcontent",
+    "title": "AnimatedContent",
+    "description": "**AnimatedContent** smoothly animates between different composable contents as a `targetState` value changes, supporting `EnterTransition`/`ExitTransition` pairs and `SizeTransform` for simultaneous size changes. It is more flexible than `AnimatedVisibility` when the content itself changes (e.g., counter digits, screen states). The `contentKey` parameter helps disambiguate states that should not cross-animate.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Animation modifiers and composables | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/animation/composables-modifiers"
+      },
+      {
+        "type": "Article",
+        "title": "Quick guide to Animations in Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/animation/quick-guide"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose: Animation – Android Developers",
+        "url": "https://www.youtube.com/watch?v=7yY2OocGiQU"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (AnimatedContent for quantity/state transitions)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/animation/crossfade",
+    "title": "Crossfade",
+    "description": "**Crossfade** is a simplified `AnimatedContent` that fades out the old composable and fades in the new one as `targetState` changes. It is the easiest way to swap between two UI states with a cross-dissolve effect and requires no custom transition definition. Use `Crossfade` for simple screen or content swaps; reach for `AnimatedContent` when you need slide, scale, or size animations.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Animation modifiers and composables | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/animation/composables-modifiers"
+      },
+      {
+        "type": "Article",
+        "title": "Quick guide to Animations in Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/animation/quick-guide"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose: Animation – Android Developers",
+        "url": "https://www.youtube.com/watch?v=7yY2OocGiQU"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetchat (Crossfade for conversation switching)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetchat"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/animation/animatable",
+    "title": "Animatable",
+    "description": "**Animatable** is a low-level coroutine-based animation primitive that holds a single value and provides `animateTo()`, `snapTo()`, and `stop()` suspending functions for precise imperative control. It supports any value type via a `TwoWayConverter` and allows fine-grained coordination with other coroutines — for example, cancelling a running animation and starting a new one from the current velocity. Use it when `animate*AsState` is too high-level for your needs.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Value-based animations | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/animation/value-based"
+      },
+      {
+        "type": "Article",
+        "title": "Animations in Compose introduction | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/animation/introduction"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose: Animation – Android Developers",
+        "url": "https://www.youtube.com/watch?v=7yY2OocGiQU"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (Animatable for custom gesture-driven animations)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/animation/animate-asstate",
+    "title": "animate*AsState",
+    "description": "**`animate*AsState`** functions (`animateFloatAsState`, `animateDpAsState`, `animateColorAsState`, etc.) are the simplest animation API — they return a `State<T>` that automatically animates to a new `targetValue` whenever it changes. The animation runs in the background and drives recomposition until it settles, with an optional `animationSpec` and `finishedListener`. Use them for straightforward single-value transitions triggered by state changes.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Value-based animations | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/animation/value-based"
+      },
+      {
+        "type": "Article",
+        "title": "Quick guide to Animations in Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/animation/quick-guide"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose: Animation – Android Developers",
+        "url": "https://www.youtube.com/watch?v=7yY2OocGiQU"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (animateColorAsState for theme-aware UI)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/animation/infinitetransition",
+    "title": "InfiniteTransition",
+    "description": "**`rememberInfiniteTransition()`** creates a transition that loops indefinitely, producing animated values via `animateFloat`, `animateColor`, and `animateValue` extensions. Each child animation specifies an `infiniteRepeatable` spec with `repeatMode` (Restart or Reverse) and an `AnimationSpec`. Use it for pulsing indicators, shimmer loading effects, rotating progress spinners, and any continuously repeating visual feedback.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Value-based animations | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/animation/value-based"
+      },
+      {
+        "type": "Article",
+        "title": "Quick guide to Animations in Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/animation/quick-guide"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose: Animation – Android Developers",
+        "url": "https://www.youtube.com/watch?v=7yY2OocGiQU"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetcaster (InfiniteTransition for loading shimmer)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetcaster"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/animation/shared-element-transitions",
+    "title": "Shared Element Transitions",
+    "description": "**Shared element transitions** animate a composable seamlessly between two screens or states using `SharedTransitionLayout`, `Modifier.sharedElement()` (for exact matches), and `Modifier.sharedBounds()` (for container morphs). The API integrates with both `AnimatedContent` and Navigation Compose so that a matched pair of composables smoothly interpolates position, size, and shape during navigation. It is the Compose equivalent of the Activity/Fragment shared element transition API.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Shared element transitions in Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/animation/shared-elements"
+      },
+      {
+        "type": "Article",
+        "title": "Shared Element Transition In Jetpack Compose: Provide Enriched User Experiences – ProAndroidDev",
+        "url": "https://proandroiddev.com/shared-element-transition-in-jetpack-compose-provide-enriched-user-experiences-163d4e435869"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose: Animation – Android Developers",
+        "url": "https://www.youtube.com/watch?v=7yY2OocGiQU"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (SharedTransitionLayout with Navigation Compose)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/gestures/scrolling",
+    "title": "Scrolling",
+    "description": "Compose provides **`verticalScroll`** and **`horizontalScroll`** modifiers backed by `ScrollState` for simple scrollable containers, and the lower-level **`scrollable`** modifier for detecting scroll deltas without automatically offsetting content. For performance-critical or item-based lists, prefer `LazyColumn` / `LazyRow` over scroll modifiers. `scrollableArea` (Compose 1.7+) offers an intermediate API for custom scrollable containers with overscroll support.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Scroll modifiers | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/touch-input/pointer-input/scroll"
+      },
+      {
+        "type": "Article",
+        "title": "Overcoming Common Performance Pitfalls in Jetpack Compose – ProAndroidDev",
+        "url": "https://proandroiddev.com/overcoming-common-performance-pitfalls-in-jetpack-compose-98e6b155fbb4"
+      },
+      {
+        "type": "Video",
+        "title": "Nested scrolling | Jetpack Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=JfYBCKRjFA0"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – JetNews (verticalScroll for article body)",
+        "url": "https://github.com/android/compose-samples/tree/main/JetNews"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/gestures/dragging",
+    "title": "Dragging",
+    "description": "The **`draggable`** modifier is the high-level entry point for detecting drag gestures in a single axis (horizontal or vertical), reporting delta distances in pixels via a `DraggableState`. For free-direction dragging, use `pointerInput` with `detectDragGestures`. Combine with `Modifier.offset` to visually move the composable and with `Animatable` to add spring-back behaviour on release.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Drag, swipe, and fling | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/touch-input/pointer-input/drag-swipe-fling"
+      },
+      {
+        "type": "Article",
+        "title": "Conscious Compose optimization – ProAndroidDev",
+        "url": "https://proandroiddev.com/conscious-compose-optimization-e16144b80eef"
+      },
+      {
+        "type": "Video",
+        "title": "Gestures in Jetpack Compose – Android Developers",
+        "url": "https://www.youtube.com/watch?v=1tkVjBxdGrk"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (drag gesture for cart sheet)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/gestures/swiping",
+    "title": "Swiping",
+    "description": "Swipe-to-dismiss and swipe-to-reveal patterns are implemented with the **`anchoredDraggable`** modifier (stable since Compose Foundation 1.6), which constrains dragging to predefined anchor positions and animates to the nearest anchor on release. The older `swipeable` modifier is deprecated. Define anchor points using the `DraggableAnchors` builder, set velocity and positional thresholds, and react to `AnchoredDraggableState.currentValue` for state-driven logic.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Drag, swipe, and fling | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/touch-input/pointer-input/drag-swipe-fling"
+      },
+      {
+        "type": "Article",
+        "title": "How to master Swipeable and NestedScroll modifiers in Jetpack Compose – ProAndroidDev",
+        "url": "https://proandroiddev.com/how-to-master-swipeable-and-nestedscroll-modifiers-in-compose-bb0635d6a760"
+      },
+      {
+        "type": "Video",
+        "title": "AnchoredDraggable | Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=JYtLy4V2x-A"
+      },
+      {
+        "type": "Video",
+        "title": "Gestures in Jetpack Compose – Android Developers",
+        "url": "https://www.youtube.com/watch?v=1tkVjBxdGrk"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (swipe-to-dismiss patterns)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/gestures/zooming",
+    "title": "Zooming",
+    "description": "Pinch-to-zoom and multi-touch transformations are detected with the **`transformable`** modifier, which reports scale, offset (pan), and rotation deltas simultaneously via `rememberTransformableState`. For more granular control, use `pointerInput { detectTransformGestures(...) }`. Combine detected scale and offset values with `graphicsLayer` to apply the transformation efficiently without recomposition on every frame.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Multitouch: Panning, zooming, rotating | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/touch-input/pointer-input/multi-touch"
+      },
+      {
+        "type": "Article",
+        "title": "Understand gestures | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/touch-input/pointer-input/understand-gestures"
+      },
+      {
+        "type": "Video",
+        "title": "Gestures in Jetpack Compose – Android Developers",
+        "url": "https://www.youtube.com/watch?v=1tkVjBxdGrk"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – official samples (transformable / zoom patterns)",
+        "url": "https://github.com/android/compose-samples"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/gestures/anchored-draggable",
+    "title": "Anchored Draggable",
+    "description": "**`AnchoredDraggable`** (Foundation API, stable since 1.6) is the successor to the deprecated `Swipeable`. It lets you build components like bottom sheets, drawers, and swipe-to-dismiss by declaring a set of snap-to anchors, velocity thresholds, and positional thresholds. State is held in `AnchoredDraggableState` and the `Modifier.anchoredDraggable()` modifier connects gestures to the state machine. Material components (bottom sheets, navigation drawers) already use it internally.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Migrate from Swipeable to AnchoredDraggable | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/touch-input/pointer-input/migrate-swipeable"
+      },
+      {
+        "type": "Article",
+        "title": "SwipeTo explore different implementations in Jetpack Compose – ProAndroidDev",
+        "url": "https://proandroiddev.com/swipeto-explore-different-implementations-in-jetpack-compose-8c6cd59bbc3c"
+      },
+      {
+        "type": "Video",
+        "title": "AnchoredDraggable | Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=JYtLy4V2x-A"
+      },
+      {
+        "type": "Video",
+        "title": "Gestures in Jetpack Compose – Android Developers",
+        "url": "https://www.youtube.com/watch?v=1tkVjBxdGrk"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (AnchoredDraggable for bottom cart sheet)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/gestures/predictive-back",
+    "title": "Predictive Back",
+    "description": "**Predictive Back** is an Android 14+ gesture feature that lets users preview their destination (home screen, previous screen) before completing the back swipe. Compose supports it through `PredictiveBackHandler` for custom animations and automatically in Material 3 components such as `ModalBottomSheet` and `NavigationDrawer`. Enable it by setting `android:enableOnBackInvokedCallback=\"true\"` in the manifest and integrating with Navigation Compose.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "About Predictive back | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/system/predictive-back"
+      },
+      {
+        "type": "Article",
+        "title": "Add support for the predictive back gesture | Android Developers",
+        "url": "https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture"
+      },
+      {
+        "type": "Video",
+        "title": "How to Migrate Your App to Support the NEW Predictive Back Gestures On Android",
+        "url": "https://www.youtube.com/watch?v=WjqRfQu8qO8"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (Predictive back with Navigation Compose)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 3: Architecture and state",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-3"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/compositionlocal/compositionlocalprovider",
+    "title": "CompositionLocalProvider",
+    "description": "**`CompositionLocalProvider`** binds values to one or more `CompositionLocal` keys for the duration of its `content` block, using the `provides` infix function (`LocalFoo provides myValue`). Any descendant composable that reads `LocalFoo.current` within that block receives the provided value rather than the default. It is the standard mechanism for threading theme data, locale, or shared context implicitly through the composition tree.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Locally scoped data with CompositionLocal | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/compositionlocal"
+      },
+      {
+        "type": "Article",
+        "title": "Composition Locals in Jetpack Compose: A Beginner-to-Advanced Guide – ProAndroidDev",
+        "url": "https://proandroiddev.com/composition-locals-in-jetpack-compose-a-beginner-to-advanced-guide-e6a812ca7620"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose | Composition local provider – community deep-dive",
+        "url": "https://www.youtube.com/watch?v=DJf2-ePF9i4"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (CompositionLocalProvider for custom design system)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/compositionlocal/compositionlocalof",
+    "title": "compositionLocalOf",
+    "description": "**`compositionLocalOf<T>(defaultFactory)`** creates a `CompositionLocal` whose reads are tracked by the Compose snapshot system, so that when the provided value changes, only the composables that actually read `LocalFoo.current` are invalidated and recomposed. Use it for values that are expected to change at runtime (e.g., a theme accent colour that users can toggle). Prefer `staticCompositionLocalOf` for immutable values to avoid the tracking overhead.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Locally scoped data with CompositionLocal | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/compositionlocal"
+      },
+      {
+        "type": "Article",
+        "title": "Compose Basics: Understanding CompositionLocals – ProAndroidDev",
+        "url": "https://proandroiddev.com/compose-basics-understanding-compositionlocals-67c05641786e"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose | Composition local provider – community deep-dive",
+        "url": "https://www.youtube.com/watch?v=DJf2-ePF9i4"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (compositionLocalOf for custom theme tokens)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/compositionlocal/staticcompositionlocalof",
+    "title": "staticCompositionLocalOf",
+    "description": "**`staticCompositionLocalOf<T>(defaultFactory)`** creates a `CompositionLocal` whose reads are **not** tracked by the composition. When its value changes, the entire `content` lambda of the `CompositionLocalProvider` is recomposed rather than only the individual read sites. This makes it more performant than `compositionLocalOf` for values that are set once and never change, such as a `Context`, `Density`, or a dependency-injection container.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Locally scoped data with CompositionLocal | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/compositionlocal"
+      },
+      {
+        "type": "Article",
+        "title": "Composition Locals in Jetpack Compose: A Beginner-to-Advanced Guide – ProAndroidDev",
+        "url": "https://proandroiddev.com/composition-locals-in-jetpack-compose-a-beginner-to-advanced-guide-e6a812ca7620"
+      },
+      {
+        "type": "Video",
+        "title": "Jetpack Compose | Composition local provider – community deep-dive",
+        "url": "https://www.youtube.com/watch?v=DJf2-ePF9i4"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (staticCompositionLocalOf for immutable theme)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/navigation/navhost",
+    "title": "NavHost",
+    "description": "**`NavHost`** is the container that links a `NavController` to a navigation graph defined in the `NavGraphBuilder` DSL. It renders whichever destination matches the controller's current back-stack entry and manages the back-stack lifecycle. Pass a `startDestination` of any serializable type and define transitions per-destination or globally. `NavHost` is the entry point for all Navigation Compose navigation graphs.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Navigation with Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/navigation"
+      },
+      {
+        "type": "Article",
+        "title": "Jetpack Compose Screen Navigation With Type Safety – ProAndroidDev",
+        "url": "https://proandroiddev.com/jetpack-compose-screen-navigation-with-type-safety-337ec177026e"
+      },
+      {
+        "type": "Video",
+        "title": "Navigation Compose meet Type Safety – Android Developers",
+        "url": "https://www.youtube.com/watch?v=8m1W4PyYMYQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (NavHost with multi-module type-safe navigation)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 3: Architecture and state",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-3"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/navigation/composable-destinations",
+    "title": "composable destinations",
+    "description": "The **`composable<T>()`** builder (type-safe, Navigation 2.8+) or `composable(route)` (string-based) registers a composable as a destination in a `NavGraphBuilder`. Each destination receives a `NavBackStackEntry` from which route arguments are extracted via `toRoute<T>()`. Deep links and custom transitions are also configured here. Composable destinations replace the `<fragment>` tags of XML navigation graphs.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Navigation with Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/navigation"
+      },
+      {
+        "type": "Article",
+        "title": "Navigating with Type Safety in Jetpack Compose – ProAndroidDev",
+        "url": "https://proandroiddev.com/navigating-with-type-safety-in-jetpack-compose-3ff6b565d5cb"
+      },
+      {
+        "type": "Video",
+        "title": "Navigation Compose meet Type Safety – Android Developers",
+        "url": "https://www.youtube.com/watch?v=8m1W4PyYMYQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (composable destinations in modularized graph)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 3: Architecture and state",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-3"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/navigation/type-safe-routes",
+    "title": "Type-safe routes",
+    "description": "**Type-safe routes** (Navigation 2.8+, stable) replace string-based route strings with `@Serializable` Kotlin classes and objects. Objects represent argument-free destinations; data classes carry typed navigation arguments. You navigate with `navController.navigate(Profile(id = 42))` and extract arguments with `backStackEntry.toRoute<Profile>()`. This approach is compile-time safe, eliminates string typos, and is equivalent to Safe Args for XML navigation.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Type safety in Kotlin DSL and Navigation Compose | Android Developers",
+        "url": "https://developer.android.com/guide/navigation/design/type-safety"
+      },
+      {
+        "type": "Article",
+        "title": "Type safe navigation for Compose – Android Developers / Medium",
+        "url": "https://medium.com/androiddevelopers/type-safe-navigation-for-compose-105325a97657"
+      },
+      {
+        "type": "Video",
+        "title": "Navigation Compose meet Type Safety – Android Developers",
+        "url": "https://www.youtube.com/watch?v=8m1W4PyYMYQ"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (type-safe routes with @Serializable destinations)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 3: Architecture and state",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-3"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/components/modalbottomsheet",
+    "title": "ModalBottomSheet",
+    "description": "**ModalBottomSheet** (Material 3) displays a sheet that slides up from the bottom and sits above a scrim, blocking interaction with the content behind it. State is controlled via `rememberModalBottomSheetState()` and coroutine calls to `show()` / `hide()`. It supports partial expansion (`skipPartiallyExpanded = false`), custom shapes, and predictive back gesture out of the box. Use it for contextual actions, share sheets, or form overlays.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Bottom sheets | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/components/bottom-sheets"
+      },
+      {
+        "type": "Article",
+        "title": "Implement Bottom Sheet in Jetpack Compose – ProAndroidDev",
+        "url": "https://proandroiddev.com/bottom-sheet-in-jetpack-compose-d7e106422606"
+      },
+      {
+        "type": "Video",
+        "title": "AnchoredDraggable | Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=JYtLy4V2x-A"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Jetsnack (bottom sheet for cart details)",
+        "url": "https://github.com/android/compose-samples/tree/main/Jetsnack"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/components/pulltorefresh",
+    "title": "PullToRefresh",
+    "description": "**`PullToRefreshBox`** (Material 3, experimental) wraps scrollable content and shows a spinner indicator when the user pulls down past a threshold. Key parameters are `isRefreshing` (a boolean that drives the spinner) and `onRefresh` (a lambda that triggers your data reload). A `Modifier.pullToRefresh()` extension is also available for attaching the gesture to custom containers with fully custom indicators.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Pull to refresh | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/components/pull-to-refresh"
+      },
+      {
+        "type": "Article",
+        "title": "androidx.compose.material3.pulltorefresh | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/kotlin/androidx/compose/material3/pulltorefresh/package-summary"
+      },
+      {
+        "type": "Video",
+        "title": "Gestures in Jetpack Compose – Android Developers",
+        "url": "https://www.youtube.com/watch?v=1tkVjBxdGrk"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (PullToRefresh on news feed)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/components/scaffold",
+    "title": "Scaffold",
+    "description": "**Scaffold** provides the top-level layout structure recommended by Material Design, with named slots for `topBar`, `bottomBar`, `floatingActionButton`, `snackbarHost`, and a `content` area that receives `PaddingValues` to avoid overlap with bars. It handles window-insets consumption so nested content is not obscured by system bars. Use `Scaffold` as the root composable of every full-screen destination in a Material app.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Scaffold | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/components/scaffold"
+      },
+      {
+        "type": "Article",
+        "title": "Bottom Navigation and Navigation Drawer Using Scaffold from Jetpack Compose – ProAndroidDev",
+        "url": "https://proandroiddev.com/bottom-navigation-and-navigation-drawer-using-scaffold-from-jetpack-compose-e2167440e7a9"
+      },
+      {
+        "type": "Video",
+        "title": "Edge-to-edge and insets | Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=QRzepC9gHj4"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (Scaffold with NavigationBar and TopAppBar)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 2: Layouts, theming, and animation",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/performance/stable-params",
+    "title": "Stable params",
+    "description": "**Stability** determines whether Compose can safely skip recomposing a composable when its inputs have not changed. A composable is *skippable* only when all its parameters are stable — primitives, `String`, lambdas, and value classes with all-val fields qualify automatically. Unstable types (mutable classes, `List`, `Map`) force recomposition on every parent recompose. Annotate with `@Stable` or `@Immutable`, or use Kotlinx immutable collections, to make custom types stable.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Stability in Compose | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/performance/stability"
+      },
+      {
+        "type": "Article",
+        "title": "Improve your Android App Performance by 10X with Compose Stability – ProAndroidDev",
+        "url": "https://proandroiddev.com/improve-your-android-app-performance-by-10x-with-compose-stability-jetpack-compose-vikas-soni-dcde62b177d0"
+      },
+      {
+        "type": "Video",
+        "title": "How to analyze and improve performance of your Jetpack Compose app – Google I/O 2024",
+        "url": "https://www.youtube.com/watch?v=c3gdS42TJmI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (@Stable / @Immutable annotations throughout UI layer)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 4: Accessibility and performance",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-4"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/performance/movablecontentof",
+    "title": "movableContentOf",
+    "description": "**`movableContentOf`** wraps a composable lambda so that its remembered state and internal composition are preserved when the lambda is moved to a different location in the composition tree, rather than being destroyed and recreated. This is valuable for adaptive layouts (e.g., rearranging cards between a list and a grid on orientation change) where expensive composables — video players, camera previews — would otherwise reset on relocation.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "MovableContent | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/kotlin/androidx/compose/runtime/MovableContent"
+      },
+      {
+        "type": "Article",
+        "title": "Exploring MovableContentOf in Jetpack Compose – Medium / Better Programming",
+        "url": "https://medium.com/better-programming/exploring-movablecontentof-in-jetpack-compose-6807a43047cd"
+      },
+      {
+        "type": "Video",
+        "title": "How to analyze and improve performance of your Jetpack Compose app – Google I/O 2024",
+        "url": "https://www.youtube.com/watch?v=c3gdS42TJmI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/compose-samples – Reply (adaptive layout with movable content patterns)",
+        "url": "https://github.com/android/compose-samples/tree/main/Reply"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 4: Accessibility and performance",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-4"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/performance/baseline-profiles",
+    "title": "Baseline Profiles",
+    "description": "**Baseline Profiles** ship with a binary rule file that instructs Android Runtime to AOT-compile critical code paths before the user first launches the app, avoiding JIT interpretation overhead. Because Compose is distributed as a library (not part of the platform), it benefits greatly from profiles — Google reports ~30% faster execution from first launch. Generate an app-specific profile with Macrobenchmark to cover your key user journeys in addition to the Compose library's bundled profile.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Use a baseline profile | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/performance/baseline-profiles"
+      },
+      {
+        "type": "Article",
+        "title": "Baseline Profiles overview | App quality | Android Developers",
+        "url": "https://developer.android.com/topic/performance/baselineprofiles/overview"
+      },
+      {
+        "type": "Video",
+        "title": "How to analyze and improve performance of your Jetpack Compose app – Google I/O 2024",
+        "url": "https://www.youtube.com/watch?v=c3gdS42TJmI"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (Baseline Profile generation with Macrobenchmark)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 4: Accessibility and performance",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-4"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/testing-preview/createcomposerule",
+    "title": "createComposeRule",
+    "description": "**`createComposeRule()`** creates a JUnit 4 `TestRule` that hosts an isolated Compose UI environment without requiring a real Activity. Use `composeTestRule.setContent { ... }` to inject composables, then drive the UI with `onNode`, `performClick`, and `assert*` APIs. When you need Activity context (e.g., to test resources or intents), use `createAndroidComposeRule<YourActivity>()` instead.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Test your Compose layout | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/testing"
+      },
+      {
+        "type": "Article",
+        "title": "Exploring Compose Test Rules – Joe Birch",
+        "url": "https://joebirch.co/android/exploring-compose-test-rules/"
+      },
+      {
+        "type": "Video",
+        "title": "Testing | Jetpack Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=Y9GWnwi9D0I"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (createComposeRule across UI tests)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 5: Testing",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-5"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/testing-preview/semantics",
+    "title": "Semantics",
+    "description": "**Semantics** attach machine-readable meaning to composables, powering both the Compose testing framework and Accessibility Services. The semantics tree is generated alongside the layout tree; composables like `Text` and `Button` populate it automatically. Use `Modifier.semantics { contentDescription = \"...\" }` to add or override properties, and `Modifier.clearAndSetSemantics {}` to take full control. Tests find nodes via semantic matchers such as `hasText()`, `hasContentDescription()`, and `isEnabled()`.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Semantics | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/testing/semantics"
+      },
+      {
+        "type": "Article",
+        "title": "How to test Jetpack Compose – ProAndroidDev",
+        "url": "https://proandroiddev.com/how-to-test-jetpack-compose-f62ce23694b2"
+      },
+      {
+        "type": "Video",
+        "title": "Testing | Jetpack Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=Y9GWnwi9D0I"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (comprehensive semantics usage in tests)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 5: Testing",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-5"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/testing-preview/preview",
+    "title": "@Preview",
+    "description": "**`@Preview`** annotates a `@Composable` function so Android Studio renders a live visual preview in the IDE without building or running an app. Preview parameters control the `widthDp`, `heightDp`, `fontScale`, `uiMode` (dark/light), `locale`, `device`, and whether to show the system UI chrome. Multiple `@Preview` annotations can be stacked on one composable to see it in several configurations simultaneously.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Preview your UI with composable previews | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/tooling/previews"
+      },
+      {
+        "type": "Article",
+        "title": "Jetpack Compose Basics – ProAndroidDev",
+        "url": "https://proandroiddev.com/jetpack-compose-basics-26b62999ea9d"
+      },
+      {
+        "type": "Video",
+        "title": "Testing | Jetpack Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=Y9GWnwi9D0I"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (@Preview annotations throughout UI components)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 1: Compose essentials",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/testing-preview/previewparameter",
+    "title": "@PreviewParameter",
+    "description": "**`@PreviewParameter`** populates a `@Preview` composable with sample data from a `PreviewParameterProvider<T>` implementation that returns a `Sequence<T>`. Each value in the sequence generates a separate preview panel in Android Studio, making it easy to visually verify the same composable with multiple data states (loading, empty, error, populated) without writing separate preview functions.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Preview your UI with composable previews | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/tooling/previews"
+      },
+      {
+        "type": "Article",
+        "title": "PreviewParameter | API reference | Android Developers",
+        "url": "https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/PreviewParameter"
+      },
+      {
+        "type": "Video",
+        "title": "Testing | Jetpack Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=Y9GWnwi9D0I"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (@PreviewParameter for multi-state composable previews)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 5: Testing",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-5"
+      }
+    ]
+  },
+  {
+    "id": "compose-ui/testing-preview/multipreview",
+    "title": "Multipreview",
+    "description": "**Multipreview** lets you define a custom annotation that is itself annotated with multiple `@Preview` annotations, so that a single `@MyPreviewAnnotation` on a composable generates previews for all the bundled configurations at once. Built-in templates (`@PreviewScreenSizes`, `@PreviewFontScales`, `@PreviewLightDark`, `@PreviewDynamicColors`) are available from `ui-tooling-preview` 1.6+. Use multipreview to enforce consistent visual coverage across devices, font scales, and themes without boilerplate.",
+    "resources": [
+      {
+        "type": "Official",
+        "title": "Preview your UI with composable previews | Jetpack Compose | Android Developers",
+        "url": "https://developer.android.com/develop/ui/compose/tooling/previews"
+      },
+      {
+        "type": "Article",
+        "title": "Jetpack Compose & best practices you must always remember – ProAndroidDev",
+        "url": "https://proandroiddev.com/jetpack-compose-best-practices-you-must-always-remember-98382b132d44"
+      },
+      {
+        "type": "Video",
+        "title": "Testing | Jetpack Compose Tips – Android Developers",
+        "url": "https://www.youtube.com/watch?v=Y9GWnwi9D0I"
+      },
+      {
+        "type": "Repo",
+        "title": "android/nowinandroid (Multipreview annotations for dark/light and size variants)",
+        "url": "https://github.com/android/nowinandroid"
+      },
+      {
+        "type": "Course",
+        "title": "Jetpack Compose for Android Developers – Pathway 5: Testing",
+        "url": "https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-5"
+      }
+    ]
+  }
+]
