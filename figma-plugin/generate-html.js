@@ -315,9 +315,7 @@ const html = `<!doctype html>
     <span class="spacer"></span>
     <input type="search" id="search" placeholder="Search topics…" autocomplete="off">
     <span class="progress-text" style="font-size:13px;color:var(--muted)"><span id="progress-done">0</span>/<span id="progress-total">0</span> done</span>
-    <button class="btn" id="backup-btn" title="Download progress as a file">Backup</button>
-    <button class="btn" id="restore-btn" title="Load progress from a file">Restore</button>
-    <input type="file" id="restore-input" accept="application/json,.json" style="display:none">
+    <button class="btn" id="share-btn" title="Copy a link that contains your progress">Copy link</button>
     <button class="btn" id="reset" title="Reset all progress">Reset</button>
   </div>
   <div class="stages" id="stages">
@@ -398,32 +396,70 @@ ${svg}
 
   function save() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(status)); } catch (e) {} }
 
-  function backup() {
-    const blob = new Blob([JSON.stringify({ status, updatedAt: Date.now() }, null, 2)], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "android-roadmap-progress.json";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+  // Build an ordered list of topic IDs once so we can encode/decode progress
+  // by index instead of full slug — keeps share URLs short.
+  const TOPIC_IDS = Object.keys(CONTENT);
+  const STATUS_CODES = { done: "d", "in-progress": "p", skipped: "s" };
+  const STATUS_FROM_CODE = { d: "done", p: "in-progress", s: "skipped" };
+
+  function encodeProgress() {
+    // Format: "d:1,5,12|p:3,7|s:9" — only non-default statuses, indexed.
+    const buckets = { d: [], p: [], s: [] };
+    for (const [id, val] of Object.entries(status)) {
+      const code = STATUS_CODES[val];
+      const idx = TOPIC_IDS.indexOf(id);
+      if (code && idx >= 0) buckets[code].push(idx);
+    }
+    const parts = [];
+    for (const k of ["d", "p", "s"]) if (buckets[k].length) parts.push(k + ":" + buckets[k].join(","));
+    return parts.join("|");
   }
 
-  function restore(file) {
-    const reader = new FileReader();
-    reader.onload = () => {
-      try {
-        const parsed = JSON.parse(reader.result);
-        const incoming = parsed && typeof parsed === "object" && parsed.status && typeof parsed.status === "object" ? parsed.status : (parsed && typeof parsed === "object" ? parsed : null);
-        if (!incoming) throw new Error("not a progress file");
-        status = incoming;
-        save();
-        applyStatus();
-        alert("Progress restored.");
-      } catch (e) { alert("Could not read that file: " + (e.message || e)); }
-    };
-    reader.readAsText(file);
+  function decodeProgress(s) {
+    const out = {};
+    if (!s) return out;
+    for (const part of s.split("|")) {
+      const [k, list] = part.split(":");
+      const val = STATUS_FROM_CODE[k];
+      if (!val || !list) continue;
+      for (const n of list.split(",")) {
+        const idx = parseInt(n, 10);
+        if (Number.isFinite(idx) && TOPIC_IDS[idx]) out[TOPIC_IDS[idx]] = val;
+      }
+    }
+    return out;
+  }
+
+  async function copyShareLink() {
+    const code = encodeProgress();
+    const url = location.origin + location.pathname + (code ? "#p=" + code : "");
+    try {
+      await navigator.clipboard.writeText(url);
+      flashShareBtn("Link copied!");
+    } catch (e) {
+      // Fallback: prompt so user can copy manually
+      window.prompt("Copy this link:", url);
+    }
+  }
+
+  function flashShareBtn(text) {
+    const b = document.getElementById("share-btn");
+    if (!b) return;
+    const orig = b.textContent;
+    b.textContent = text;
+    setTimeout(() => { b.textContent = orig; }, 1400);
+  }
+
+  function loadFromHash() {
+    const m = location.hash.match(/p=([^&]+)/);
+    if (!m) return false;
+    const incoming = decodeProgress(decodeURIComponent(m[1]));
+    if (!Object.keys(incoming).length) return false;
+    const hasLocal = Object.keys(status).length > 0;
+    if (hasLocal && !confirm("This link contains saved progress. Replace your current progress with it?")) return false;
+    status = incoming;
+    save();
+    return true;
   }
 
   function applyStatus() {
@@ -617,14 +653,9 @@ ${svg}
     });
   });
 
-  document.getElementById("backup-btn").addEventListener("click", backup);
-  document.getElementById("restore-btn").addEventListener("click", () => document.getElementById("restore-input").click());
-  document.getElementById("restore-input").addEventListener("change", (e) => {
-    const f = e.target.files && e.target.files[0];
-    if (f) restore(f);
-    e.target.value = "";
-  });
+  document.getElementById("share-btn").addEventListener("click", copyShareLink);
 
+  loadFromHash();
   applyStatus();
 })();
 </script>

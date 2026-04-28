@@ -8,10 +8,7 @@ Click any topic to open a detail drawer with description and curated free resour
 
 ## Move progress between devices
 
-- **Backup** — downloads `android-roadmap-progress.json`.
-- **Restore** — load that file on another device.
-
-AirDrop / email / Google Drive the file from one device to another.
+Click **Copy link** in the top toolbar — your progress is encoded into the URL and copied to your clipboard. Send it to yourself (Notes / iMessage / WhatsApp / email) and open it on the other device. Bookmark the link to return to your latest state.
 
 ## Regenerating
 
